@@ -28,13 +28,15 @@ Authorization | Bearer ***access_token***
 ### 获取短信验证码
 - 请求方式: `post`
 - 请求地址: {host}`get-sms-code`
-- 请求参数: 
+- 请求参数:  
+
 ```json
 {
     "mobile": 15821827706
 }
 ```  
-- 响应内容: 
+- 响应内容:  
+
 ```json
 {
     "code": 1,
@@ -66,7 +68,6 @@ Authorization | Bearer ***access_token***
         "access_token": "uFYrhY7NUj68X9K_EbAFJ6axpWJVY70E"
     }
 }
-
 ```
 
 ### 获取用户信息
@@ -77,7 +78,8 @@ Authorization | Bearer ***access_token***
 ```
 access_token=4W1ZD1h_94Jmrx5PKqA24M-iuYvG8ce8
 ```  
-- 响应内容: 
+- 响应内容:  
+
 ```json  
 {
     "code": 1,
