@@ -73,7 +73,7 @@ Authorization | Bearer ***access_token***
 - 请求地址: {host}`users/0?access_token=4W1ZD1h_94Jmrx5PKqA24M-iuYvG8ce8`
 - 请求参数: 
 ```
-access_token=4W1ZD1h_94Jmrx5PKqA24M-iuYvG8ce8`
+access_token=4W1ZD1h_94Jmrx5PKqA24M-iuYvG8ce8
 ```  
 - 响应内容: 
 ```json
