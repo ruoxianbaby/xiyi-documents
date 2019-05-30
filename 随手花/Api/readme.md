@@ -17,9 +17,10 @@ Accept | application/json
 Content-Type | application/json
 
 需要验证的接口加上:  
+  
 key |  vaule
 ----- | --------
-Authorization | Bearer ***access_token***
+Authorization | Bearer ***access_token***  
 
 
 ## user模块
