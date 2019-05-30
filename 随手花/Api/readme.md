@@ -1,9 +1,9 @@
 # 用户端api
 
-- [user模块](./Api.md#user模块)  
-    - [获取短信验证码](./Api.md#获取短信验证码)  
-    - [获取access_token](./Api.md#获取access_token)
-    - [获取用户信息接口](./Api.md#获取用户信息接口)
+- [user模块](./#user模块)  
+    - [获取短信验证码](./#获取短信验证码)  
+    - [获取access_token](./#获取access_token)
+    - [获取用户信息接口](./#获取用户信息接口)
 - [产品模块]()
 
 
