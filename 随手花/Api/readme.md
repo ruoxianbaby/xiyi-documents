@@ -43,20 +43,21 @@ Authorization | Bearer ***access_token***
         "sms_code": 5934
     }
 }
-
 ```
 
 ### 获取access_token
 - 请求方式: `post`
 - 请求地址: {host}`get-access-token`
-- 请求参数: 
+- 请求参数:  
+
 ```json
 {
     "mobile": 15821827706, 
     "sms_code": 5934
 }
 ```  
-- 响应内容: 
+- 响应内容:  
+
 ```json
 {
     "code": 1,
@@ -71,12 +72,14 @@ Authorization | Bearer ***access_token***
 ### 获取用户信息
 - 请求方式: `get`
 - 请求地址: {host}`users/0?access_token=4W1ZD1h_94Jmrx5PKqA24M-iuYvG8ce8`
-- 请求参数: 
+- 请求参数:  
+
 ```
 access_token=4W1ZD1h_94Jmrx5PKqA24M-iuYvG8ce8
 ```  
 - 响应内容: 
-```json
+```json  
+
 {
     "code": 1,
     "message": "success",
@@ -96,5 +99,4 @@ access_token=4W1ZD1h_94Jmrx5PKqA24M-iuYvG8ce8
         "channel": null
     }
 }
-
 ```
