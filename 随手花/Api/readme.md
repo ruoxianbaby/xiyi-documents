@@ -716,8 +716,8 @@ Authorization | Bearer ***access_token***
 ```
 ### 获取必下款
 - 请求方式: `get`
-- 请求地址: {host}`products?type=2per-page=10&sort=sort`
-- 请求参数: `type=2per-page=10&sort=sort`  
+- 请求地址: {host}`products?type=2&per-page=10&sort=sort`
+- 请求参数: `type=2&per-page=10&sort=sort`  
 
 - 响应内容:  
 ```json
