@@ -5,12 +5,12 @@
     - [获取access_token](./#获取access_token)
     - [获取用户信息接口](./#获取用户信息)  
     - [获取用户申请记录](./#获取用户申请记录)
-- [产品模块](./产品模块)  
+- [产品模块](./#产品模块)  
     - [获取首页产品](./#获取首页产品)  
     - [获取首页4个产品](./#获取首页4个产品)  
     - [获取贷款大全首次加载](./#获取贷款大全首次加载)  
     - [获取必下款](./#获取必下款)  
-    - [获取推荐贷款](./#获取推荐贷款)
+    - [获取推荐贷款](./#获取首页产品) **同获取首页产品**
 
 ### 测试主机host: 47.103.61.179:81/  
 
@@ -78,11 +78,8 @@ Authorization | Bearer ***access_token***
 ### 获取用户信息
 - 请求方式: `get`
 - 请求地址: {host}`users/0?access_token=4W1ZD1h_94Jmrx5PKqA24M-iuYvG8ce8`
-- 请求参数:  
+- 请求参数: `access_token=4W1ZD1h_94Jmrx5PKqA24M-iuYvG8ce8`
 
-```
-access_token=4W1ZD1h_94Jmrx5PKqA24M-iuYvG8ce8
-```  
 - 响应内容:  
 
 ```json  
@@ -109,17 +106,14 @@ access_token=4W1ZD1h_94Jmrx5PKqA24M-iuYvG8ce8
 ### 获取用户申请记录
 
 ## 产品模块
-### 获取首页产品
+### 获取首页产品 **同获取推荐贷款**
 - 请求方式: `get`
 - 请求地址: {host}`products?type=1&per-page=10`
-- 请求参数:  
-```type=1&per-page=10```  
-- 说明: ```
-per-page: 每页数量
-page: 第几页
-sort: 根据那个字段排序,多字段用`,`号隔开, 逆序字段名前加`-`号  
-``` 
-
+- 请求参数: `type=1&per-page=10`  
+- 说明:
+>per-page: 每页数量
+>page: 第几页
+>sort: 根据那个字段排序,多字段用`,`号隔开, 逆序字段名前加`-`号  
 - 响应内容:  
 
 ```json
@@ -363,8 +357,7 @@ sort: 根据那个字段排序,多字段用`,`号隔开, 逆序字段名前加`-
 ### 获取首页4个产品
 - 请求方式: `get`
 - 请求地址: {host}`products?type=1&per-page=4`
-- 请求参数:  
-```type=1&per-page=4```  
+- 请求参数: `type=1&per-page=4`    
 
 - 响应内容:  
 ```json
@@ -481,8 +474,7 @@ sort: 根据那个字段排序,多字段用`,`号隔开, 逆序字段名前加`-
 ### 获取贷款大全首次加载
 - 请求方式: `get`
 - 请求地址: {host}`products?per-page=10&page=1&sort=sort`
-- 请求参数:  
-```per-page=10&page=1&sort=sort```  
+- 请求参数: `per-page=10&page=1&sort=sort`  
 
 - 响应内容:  
 ```json
@@ -722,3 +714,115 @@ sort: 根据那个字段排序,多字段用`,`号隔开, 逆序字段名前加`-
     }
 }
 ```
+### 获取必下款
+- 请求方式: `get`
+- 请求地址: {host}`products?type=2per-page=10&sort=sort`
+- 请求参数: `type=2per-page=10&sort=sort`  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "name": "随手花",
+                "image": "http://youloan.oss-cn-shanghai.aliyuncs.com/Upload",
+                "desc": "3分钟下款",
+                "max_price": 50000,
+                "apply_price": "2000-50000",
+                "rate": "0.3%",
+                "apply_num": 25456,
+                "lending_time": 3,
+                "max_duration": 14,
+                "apply_duration": null,
+                "url": "https://glhb.jiegezhima.com/ghb9/ghb.html?source=chuanqiqb",
+                "hot": 1,
+                "pass": 1,
+                "sort": 10,
+                "money": "500000",
+                "status": 1,
+                "user_price": 20,
+                "platform": 1
+            },
+            {
+                "id": 2,
+                "name": "随手花2",
+                "image": "http://youloan.oss-cn-shanghai.aliyuncs.com/Upload",
+                "desc": "3分钟下款",
+                "max_price": 50000,
+                "apply_price": "2000-50000",
+                "rate": "0.3%",
+                "apply_num": 25456,
+                "lending_time": 3,
+                "max_duration": 14,
+                "apply_duration": null,
+                "url": "https://glhb.jiegezhima.com/ghb9/ghb.html?source=chuanqiqb",
+                "hot": 1,
+                "pass": 1,
+                "sort": 11,
+                "money": "500000",
+                "status": 1,
+                "user_price": 20,
+                "platform": 1
+            },
+            {
+                "id": 4,
+                "name": "随手花2gdsg",
+                "image": "http://youloan.oss-cn-shanghai.aliyuncs.com/Upload",
+                "desc": "3分钟下款",
+                "max_price": 50000,
+                "apply_price": "2000-50000",
+                "rate": "0.3%",
+                "apply_num": 25456,
+                "lending_time": 3,
+                "max_duration": 14,
+                "apply_duration": null,
+                "url": "https://glhb.jiegezhima.com/ghb9/ghb.html?source=chuanqiqb",
+                "hot": 1,
+                "pass": 1,
+                "sort": 11,
+                "money": "500000",
+                "status": 1,
+                "user_price": 20,
+                "platform": 1
+            },
+            {
+                "id": 3,
+                "name": "随dad花2",
+                "image": "http://youloan.oss-cn-shanghai.aliyuncs.com/Upload",
+                "desc": "3分钟下款",
+                "max_price": 50000,
+                "apply_price": "2000-50000",
+                "rate": "0.3%",
+                "apply_num": 25456,
+                "lending_time": 3,
+                "max_duration": 14,
+                "apply_duration": null,
+                "url": "https://glhb.jiegezhima.com/ghb9/ghb.html?source=chuanqiqb",
+                "hot": 1,
+                "pass": 1,
+                "sort": 20,
+                "money": "500000",
+                "status": 1,
+                "user_price": 20,
+                "platform": 1
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://localhost:8081/products?sort=sort&type=2per-page%3D10&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 4,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+
