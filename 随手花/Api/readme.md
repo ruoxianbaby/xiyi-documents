@@ -6,6 +6,7 @@
     - [获取用户信息接口](./#获取用户信息)  
     - [获取用户申请记录](./#获取用户申请记录)
 - [产品模块](./#产品模块)  
+    - [获取首页精品](./#获取首页精品)
     - [获取首页热门推荐产品](./#获取首页热门推荐产品-同获取推荐贷款)  
     - [获取首页最新口子](./#获取首页最新口子)  
     - [获取贷款大全首次加载](./#获取贷款大全首次加载)  
@@ -106,15 +107,69 @@ Authorization | Bearer ***access_token***
 ```  
 ### 获取用户申请记录
 
-## 产品模块
+## 产品模块  
+### 获取首页精品  
+- 请求方式: `get`
+- 请求地址: {host}`products?type=hot&per-page=1`
+- 请求参数: `type=hot&per-page=1`  
+- 说明:  
+>fields: 只显示给定的字段,多字段用`,`号隔开  
+>per-page: 每页数量  
+>page: 第几页  
+>sort: 根据那个字段排序,多字段用`,`号隔开, 逆序字段名前加`-`号  
+- 响应内容:  
+```json
+    {
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 13,
+                "name": "24随手花2",
+                "image": "http://youloan.oss-cn-shanghai.aliyuncs.com/Upload",
+                "slogan": null,
+                "desc": "3分钟下款",
+                "max_price": 50000,
+                "apply_price": "2000-50000",
+                "rate": "0.3%",
+                "apply_num": 25456,
+                "lending_time": 3,
+                "max_duration": 14,
+                "apply_duration": null,
+                "url": "https://glhb.jiegezhima.com/ghb9/ghb.html?source=chuanqiqb",
+                "hot": 1,
+                "pass": 0,
+                "sort": 0,
+                "status": 1
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://localhost:8081/products?type=hot&per-page=1&page=1"
+            },
+            "next": {
+                "href": "http://localhost:8081/products?type=hot&per-page=1&page=2"
+            },
+            "last": {
+                "href": "http://localhost:8081/products?type=hot&per-page=1&page=5"
+            }
+        },
+        "_meta": {
+            "totalCount": 5,
+            "pageCount": 5,
+            "currentPage": 1,
+            "perPage": 1
+        }
+    }
+}
+```
+
 ### 获取首页热门推荐产品 **同获取推荐贷款**
 - 请求方式: `get`
 - 请求地址: {host}`products?type=1&per-page=10`
 - 请求参数: `type=1&per-page=10`  
-- 说明:
->per-page: 每页数量
->page: 第几页
->sort: 根据那个字段排序,多字段用`,`号隔开, 逆序字段名前加`-`号  
+ 
 - 响应内容:  
 
 ```json
@@ -357,8 +412,8 @@ Authorization | Bearer ***access_token***
 
 ### 获取首页最新口子
 - 请求方式: `get`
-- 请求地址: {host}`products?type=1&per-page=4`
-- 请求参数: `type=1&per-page=4`    
+- 请求地址: {host}`products?type=new&per-page=4`
+- 请求参数: `type=new&per-page=4`    
 
 - 响应内容:  
 ```json
