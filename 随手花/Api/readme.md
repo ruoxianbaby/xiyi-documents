@@ -9,6 +9,7 @@
     - [获取首页热门推荐产品](./#获取首页热门推荐产品-同获取推荐贷款)  
     - [获取首页最新口子](./#获取首页最新口子)  
     - [获取贷款大全首次加载](./#获取贷款大全首次加载)  
+    - [获取贷款详情](./#获取贷款详情)  
     - ~~[获取必下款](./#获取必下款)~~
     - ~~[获取推荐贷款](./#获取首页热门推荐产品-同获取推荐贷款) **同获取首页产品**~~
 
@@ -468,6 +469,37 @@ Authorization | Bearer ***access_token***
             "currentPage": 1,
             "perPage": 4
         }
+    }
+}
+```
+
+### 获取贷款详情 
+- 请求方式: `get`  
+- 请求地址: {host}`products/:id`  
+- 请求参数: `:id`  
+- 响应内容:
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "id": 1,
+        "name": "随手花",
+        "image": "http://youloan.oss-cn-shanghai.aliyuncs.com/Upload",
+        "slogan": null,
+        "desc": "3分钟下款",
+        "max_price": 50000,
+        "apply_price": "2000-50000",
+        "rate": "0.3%",
+        "apply_num": 25456,
+        "lending_time": 3,
+        "max_duration": 14,
+        "apply_duration": null,
+        "url": "https://glhb.jiegezhima.com/ghb9/ghb.html?source=chuanqiqb",
+        "hot": 1,
+        "pass": 1,
+        "sort": 10,
+        "status": 1
     }
 }
 ```  
