@@ -84,7 +84,7 @@ Authorization | Bearer ***access_token***
 
 ### 获取用户信息
 - 请求方式: `get`
-- 请求地址: {host}`users/0?access_token=4W1ZD1h_94Jmrx5PKqA24M-iuYvG8ce8`
+- 请求地址: {host}`users/0`
 - 请求参数: `access_token=4W1ZD1h_94Jmrx5PKqA24M-iuYvG8ce8`
 
 - 响应内容:  
@@ -115,7 +115,7 @@ Authorization | Bearer ***access_token***
 ## 产品模块  
 ### 申请贷款接口  
 - 请求方式: `post`
-- 请求地址: {host}`apply
+- 请求地址: {host}`apply`
 - 请求参数: 
 ```json
 {
