@@ -134,8 +134,8 @@ Authorization | Bearer ***access_token***
 
 ### 获取首页精品  
 - 请求方式: `get`
-- 请求地址: {host}`products?type=hot&per-page=1`
-- 请求参数: `type=hot&per-page=1`  
+- 请求地址: {host}`products?per-page=1&sort=sort`
+- 请求参数: `per-page=1&sort=sort`  
 - 说明:  
 >fields: 只显示给定的字段,多字段用`,`号隔开  
 >per-page: 每页数量  
