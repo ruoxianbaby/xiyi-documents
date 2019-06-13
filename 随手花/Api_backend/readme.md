@@ -8,6 +8,9 @@
     - [更新用户信息](./#更新用户信息) 
     - [删除用户](./#删除用户) 
     - [创建用户](./#创建用户)
+- [菜单](./#菜单)  
+    - [获取菜单导航](./#获取菜单导航)
+    
 ### 测试主机host: 47.103.61.179:82/  
 
 ### 全局header  
@@ -213,5 +216,108 @@ Authorization | Bearer ***access_token***
         "last_login_time": "2019-06-12 20:10:29",
         "id": 8
     }
+}
+```
+## 菜单
+### 获取菜单导航
+- 请求方式: `get`
+- 请求地址: {host}`admin/menu`
+- 请求参数:  
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": [
+        {
+            "id": "1",
+            "pid": "0",
+            "title": "用户管理",
+            "url": null,
+            "icon": "el-icon-lx-people",
+            "sort": "0",
+            "status": "1",
+            "subs": [
+                {
+                    "id": "2",
+                    "pid": "1",
+                    "title": "管理员列表",
+                    "url": "adminlist",
+                    "icon": null,
+                    "sort": "0",
+                    "status": "1"
+                },
+                {
+                    "id": "3",
+                    "pid": "1",
+                    "title": "随手花用户",
+                    "url": "userlist",
+                    "icon": null,
+                    "sort": "1",
+                    "status": "1"
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "pid": "0",
+            "title": "产品",
+            "url": null,
+            "icon": "el-icon-document",
+            "sort": "1",
+            "status": "1",
+            "subs": [
+                {
+                    "id": "5",
+                    "pid": "4",
+                    "title": "产品列表",
+                    "url": "productlist",
+                    "icon": null,
+                    "sort": "0",
+                    "status": "1"
+                },
+                {
+                    "id": "6",
+                    "pid": "4",
+                    "title": "产品数据",
+                    "url": "productdata",
+                    "icon": null,
+                    "sort": "1",
+                    "status": "1"
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "pid": "0",
+            "title": "系统设置",
+            "url": null,
+            "icon": "el-icon-setting",
+            "sort": "10",
+            "status": "1",
+            "subs": [
+                {
+                    "id": "8",
+                    "pid": "7",
+                    "title": "菜单管理",
+                    "url": "menumanagement",
+                    "icon": null,
+                    "sort": "0",
+                    "status": "1"
+                },
+                {
+                    "id": "9",
+                    "pid": "7",
+                    "title": "用户组管理",
+                    "url": "usergroupmanagement",
+                    "icon": null,
+                    "sort": "1",
+                    "status": "1"
+                }
+            ]
+        }
+    ]
 }
 ```
