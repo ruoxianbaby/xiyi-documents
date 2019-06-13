@@ -1,13 +1,13 @@
 ## **服务端api**
 <a href="./#服务端api" style="height:50px;width:35px;position:fixed;bottom:100px;right:0px;background:#00BCC1;opacity:0.6;color:#333;text-decoration:none;">回到顶部</a>
-- [用户模块](./#用户模块)  
+- [Admin模块](./#用户模块)  
     - [获取access_token](./#获取access_token)  
     - [access_token换取用户信息](./#access_token换取用户信息)  
-    - [获取用户列表](./#获取用户列表)  
-    - [获取用户信息](./#获取用户信息)  
-    - [更新用户信息](./#更新用户信息) 
-    - [删除用户](./#删除用户) 
-    - [创建用户](./#创建用户)
+    - [获取Admin用户列表](./#获取Admin用户列表)  
+    - [获取Admin用户详情](./#获取Admin用户详情)  
+    - [更新Admin用户信息](./#更新Admin用户信息) 
+    - [删除Admin用户](./#删除Admin用户) 
+    - [创建Admin用户](./#创建Admin用户)
 - [菜单](./#菜单)  
     - [获取菜单导航](./#获取菜单导航)
     
@@ -75,7 +75,7 @@ Authorization | Bearer ***access_token***
     }
 }
 ```
-### 获取用户列表 
+### 获取Admin用户列表 
 - 请求方式: `get`
 - 请求地址: {host}`admins`
 - 请求参数:  
@@ -117,7 +117,7 @@ Authorization | Bearer ***access_token***
 }
 ```
 
-### 获取用户信息 
+### 获取Admin用户详情 
 - 请求方式: `get`
 - 请求地址: {host}`admins/:id`
 - 请求参数:  `:id`
@@ -144,7 +144,7 @@ Authorization | Bearer ***access_token***
 }
 ```
 
-### 更新用户信息 
+### 更新Admin用户信息 
 - 请求方式: `put` or `patch`
 - 请求地址: {host}`admins/:id`
 - 请求参数:  `:id`
@@ -176,7 +176,7 @@ Authorization | Bearer ***access_token***
 }
 ```
 
-### 删除用户 
+### 删除Admin用户 
 - 请求方式: `delete`
 - 请求地址: {host}`admins/:id`
 - 请求参数:  `:id`
@@ -190,7 +190,7 @@ Authorization | Bearer ***access_token***
     "info": ""
 }
 ```
-### 创建用户 
+### 创建Admin用户 
 - 请求方式: `post`
 - 请求地址: {host}`admins`
 - 请求参数:  
