@@ -77,8 +77,8 @@ Authorization | Bearer ***access_token***
 ```
 ### 获取Admin用户列表 
 - 请求方式: `get`
-- 请求地址: {host}`admins`
-- 请求参数:  
+- 请求地址: {host}`admins?type=1,2`
+- 请求参数:  `type=1,2`
 
 - 响应内容:  
 
