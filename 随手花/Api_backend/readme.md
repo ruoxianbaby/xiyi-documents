@@ -75,7 +75,7 @@ Authorization | Bearer ***access_token***
     }
 }
 ```
-### 获取Admin用户列表 
+### 获取Admin用户列表  
 - 请求方式: `get`
 - 请求地址: {host}`admins?type=1,2`
 - 请求参数:  `type=1,2`
@@ -117,7 +117,7 @@ Authorization | Bearer ***access_token***
 }
 ```
 
-### 获取Admin用户详情 
+### 获取Admin用户详情  
 - 请求方式: `get`
 - 请求地址: {host}`admins/:id`
 - 请求参数:  `:id`
@@ -144,7 +144,7 @@ Authorization | Bearer ***access_token***
 }
 ```
 
-### 更新Admin用户信息 
+### 更新Admin用户信息  
 - 请求方式: `put` or `patch`
 - 请求地址: {host}`admins/:id`
 - 请求参数:  `:id`
@@ -176,7 +176,7 @@ Authorization | Bearer ***access_token***
 }
 ```
 
-### 删除Admin用户 
+### 删除Admin用户  
 - 请求方式: `delete`
 - 请求地址: {host}`admins/:id`
 - 请求参数:  `:id`
@@ -190,7 +190,7 @@ Authorization | Bearer ***access_token***
     "info": ""
 }
 ```
-### 创建Admin用户 
+### 创建Admin用户  
 - 请求方式: `post`
 - 请求地址: {host}`admins`
 - 请求参数:  
@@ -219,7 +219,7 @@ Authorization | Bearer ***access_token***
 }
 ```
 ## 菜单
-### 获取菜单导航
+### 获取菜单导航  
 - 请求方式: `get`
 - 请求地址: {host}`admin/menu`
 - 请求参数:  
