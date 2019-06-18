@@ -1007,7 +1007,7 @@ Authorization | Bearer ***access_token***
 - 请求方式: `get`
 - 请求地址: {host}`auditing?os=1&channel=baidu&version=1`
 - 请求参数: `os=1&channel=baidu&version=1`   
-> 说明: 通过auditing字段判断1审核显示论坛, 0则反之.
+> 说明: 通过auditing字段判断1审核显示论坛, 0则反之. os字段,系统1android,2ios,3web,4其他
 - 响应内容:  
 ```json
 {
