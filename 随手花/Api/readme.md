@@ -18,6 +18,10 @@
     - [刷单](./#刷单)  
     - [用户反馈](./#用户反馈)  
     - [商务合作](./#商务合作)  
+    - [获取审核接口](./#获取审核接口)  
+- [论坛](./#论坛)  
+    - [栏目](./#栏目)   
+    - [文章](./#文章)
 
 ### 测试主机host: 47.103.61.179:81/  
 
@@ -999,3 +1003,48 @@ Authorization | Bearer ***access_token***
     "info": ""
 }	
 ``` 
+### 获取审核接口
+- 请求方式: `get`
+- 请求地址: {host}`auditing?os=1&channel=baidu&version=1`
+- 请求参数: `os=1&channel=baidu&version=1`   
+> 说明: 通过auditing字段判断1审核显示论坛, 0则反之.
+- 响应内容:  
+```json
+{
+    "items": [
+        {
+            "id": 1,
+            "name": "first",
+            "os": 1,
+            "channel": "baidu",
+            "status": 1,
+            "auditing": 1,
+            "version": "1"
+        }
+    ],
+    "_links": {
+        "self": {
+            "href": "http://localhost:8081/auditing?os=1&channel=baidu&page=1"
+        }
+    },
+    "_meta": {
+        "totalCount": 1,
+        "pageCount": 1,
+        "currentPage": 1,
+        "perPage": 20
+    }
+}	
+```  
+## 论坛  
+### 栏目  
+- 请求方式: `get`
+- 请求地址: `http://47.103.61.179:83/index.php?r=site%2Fcolumn`
+- 响应内容:  
+```json
+{"status":1,"message":"success","info":[{"id":1,"name":"金融","status":1,"sort":1},{"id":2,"name":"推荐","status":1,"sort":1},{"id":3,"name":"科技","status":1,"sort":1},{"id":4,"name":"创业","status":1,"sort":1},{"id":5,"name":"内幕","status":1,"sort":1}]}
+```
+### 文章  
+- 请求方式: `get`
+- 请求地址: `http://47.103.61.179:83/index.php?r=site%2Farticle`
+- 响应内容:  
+
