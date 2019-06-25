@@ -13,7 +13,10 @@
     - [产品新增](./#产品新增)  
     - [产品修改](./#产品修改)  
     - [产品禁用](./#产品禁用)  
-- [随手花用户](./#随手花用户)
+- [随手花用户](./#随手花用户)  
+    - [随手花用户列表](./#随手花用户列表)  
+    - [随手花用户详情](./#随手花用户详情)  
+    - [随手花用户禁用](./随手花用户禁用)  
 - [菜单](./#菜单)  
     - [获取菜单导航](./#获取菜单导航)
 - [功能](./#功能)  
@@ -661,8 +664,9 @@ Authorization | Bearer ***access_token***
 ### 产品新增  
 - 请求方式: `put` or `patch`
 - 请求地址: {host}`products`
-- 请求参数:  
-```json
+- 请求参数: 
+
+```json  
 {
 	"name": "ceshi",
 	"image": "images/product/71167f01gy1g1a54ny31zj20sg0lcdhs.jpg",
@@ -749,6 +753,117 @@ Authorization | Bearer ***access_token***
     "info": ""
 }
 ```
+
+## 随手花用户  
+### 随手花用户列表  
+- 请求方式: `get`
+- 请求地址: {host}`users?channel_id=1&active=0&start_time=2018-01-01 00:00:00&end_time=2019-10-10 00:00:00`
+- 请求参数:  
+- 说明: 筛选功能的时间为注册时间
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 79,
+                "mobile": "15061690110",
+                "access_token": "pUPOweZqcyPUVsMnz1LXNPTJZnvwnRIZ",
+                "nick_name": null,
+                "avatar_image": null,
+                "register_time": "2019-06-03 15:26:05",
+                "last_login_time": "2019-06-21 17:45:57",
+                "register_ip": 2147483647,
+                "last_login_ip": 2147483647,
+                "status": 1,
+                "active": 0,
+                "active_time": null,
+                "channel_id": 1,
+                "package_id": null,
+                "login_time": null
+            },
+            {
+                "id": 80,
+                "mobile": "15901725624",
+                "access_token": "WhDSijD6Fuq6WPudUC0hqhQWe-HCVsX6",
+                "nick_name": null,
+                "avatar_image": null,
+                "register_time": "2019-06-03 18:30:10",
+                "last_login_time": "2019-06-17 15:20:30",
+                "register_ip": 2147483647,
+                "last_login_ip": 2147483647,
+                "status": 1,
+                "active": 0,
+                "active_time": null,
+                "channel_id": 1,
+                "package_id": null,
+                "login_time": null
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://localhost:8082/users?channel_id=1&active=0&start_time=2018-01-01+00%3A00%3A00&end_time=2019-10-10+00%3A00%3A00&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 2,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+### 随手花用户详情  
+
+- 请求方式: `get`
+- 请求地址: {host}`users/:id`
+- 请求参数:  
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "id": 80,
+        "mobile": "15901725624",
+        "access_token": "WhDSijD6Fuq6WPudUC0hqhQWe-HCVsX6",
+        "nick_name": null,
+        "avatar_image": null,
+        "register_time": "2019-06-03 18:30:10",
+        "last_login_time": "2019-06-17 15:20:30",
+        "register_ip": 2147483647,
+        "last_login_ip": 2147483647,
+        "status": 1,
+        "active": 0,
+        "active_time": null,
+        "channel_id": 1,
+        "package_id": null,
+        "login_time": null
+    }
+}
+```
+
+### 随手花用户禁用
+- 请求方式: `delete`
+- 请求地址: {host}`users/:id`
+- 请求参数:  
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "删除成功",
+    "info": ""
+}
+```
+
 
 ## 功能
 
