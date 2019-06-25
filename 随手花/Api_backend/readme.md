@@ -16,6 +16,9 @@
 - [随手花用户](./#随手花用户)
 - [菜单](./#菜单)  
     - [获取菜单导航](./#获取菜单导航)
+- [功能](./#功能)  
+    - [上传文件到阿里云](./#上传文件到阿里云)  
+
     
 ### 测试主机host: 47.103.61.179:82/  
 
@@ -661,9 +664,20 @@ Authorization | Bearer ***access_token***
 - 请求参数:  
 ```json
 {
-    "name": "你🐎死了",
-    "password": "123456"
+	"name": "ceshi",
+	"image": "images/product/71167f01gy1g1a54ny31zj20sg0lcdhs.jpg",
+	"desc": "下快快",
+	"max_price": 50000,
+	"apply_price": "2000-50000",
+	"rate": "0.03",
+	"lending_time": "3",
+	"max_duration": "15",
+	"url": "http://baidu.com",
+	"hot": 1,
+	"sort": 0,
+	"status": 1
 }
+
 ```
 
 - 响应内容:  
@@ -689,8 +703,18 @@ Authorization | Bearer ***access_token***
 - 请求参数:  
 ```json
 {
-    "name": "你🐎死了",
-    "password": "123456"
+	"name": "ceshi",
+	"image": "images/product/71167f01gy1g1a54ny31zj20sg0lcdhs.jpg",
+	"desc": "下快快",
+	"max_price": 50000,
+	"apply_price": "2000-50000",
+	"rate": "0.03",
+	"lending_time": "3",
+	"max_duration": "15",
+	"url": "http://baidu.com",
+	"hot": 1,
+	"sort": 0,
+	"status": 1
 }
 ```
 
@@ -713,7 +737,7 @@ Authorization | Bearer ***access_token***
 ```
 ### 产品禁用  
 - 请求方式: `delete`
-- 请求地址: {host}`admins/:id`
+- 请求地址: {host}`product/:id`
 - 请求参数:  
 
 - 响应内容:  
@@ -723,5 +747,49 @@ Authorization | Bearer ***access_token***
     "code": 1,
     "message": "删除成功",
     "info": ""
+}
+```
+
+## 功能
+
+### 上传文件到阿里云  
+- 请求方式: `post`  
+- 请求地址: {host}`upload-to-aliyun_oss`  
+- 请求参数:  `file`  
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "http://sshua.oss-cn-shanghai.aliyuncs.com/images/product/71167f01gy1g1a54ny31zj20sg0lcdhs.jpg",
+    "info": {
+        "url": "http://sshua.oss-cn-shanghai.aliyuncs.com/images/product/71167f01gy1g1a54ny31zj20sg0lcdhs.jpg",
+        "content_type": null,
+        "http_code": 200,
+        "header_size": 334,
+        "request_size": 467,
+        "filetime": -1,
+        "ssl_verify_result": 0,
+        "redirect_count": 0,
+        "total_time": 0.062,
+        "namelookup_time": 0.015,
+        "connect_time": 0.031,
+        "pretransfer_time": 0.031,
+        "size_upload": 36145,
+        "size_download": 0,
+        "speed_download": 0,
+        "speed_upload": 582983,
+        "download_content_length": 0,
+        "upload_content_length": 36145,
+        "starttransfer_time": 0.031,
+        "redirect_time": 0,
+        "redirect_url": "",
+        "primary_ip": "106.14.228.186",
+        "certinfo": [],
+        "primary_port": 80,
+        "local_ip": "192.168.5.191",
+        "local_port": 55841,
+        "method": "PUT"
+    }
 }
 ```
