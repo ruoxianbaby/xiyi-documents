@@ -706,7 +706,7 @@ Authorization | Bearer ***access_token***
 ```
 
 ### 产品新增  
-- 请求方式: `put` or `patch`
+- 请求方式: `post`
 - 请求地址: {host}`products`
 - 请求参数: 
 
@@ -733,15 +733,21 @@ Authorization | Bearer ***access_token***
 ```json
 {
     "code": 1,
-    "message": "添加成功",
+    "message": "创建成功",
     "info": {
-        "name": "13123",
-        "access_token": "7DMeKgUny6d2D9E8dfTLJjkq5Jd6JRJC",
-        "register_time": "2019-06-12 20:10:29",
-        "register_ip": 2130706433,
-        "last_login_ip": 2130706433,
-        "last_login_time": "2019-06-12 20:10:29",
-        "id": 8
+        "name": "ceshi",
+        "image": "images/product/71167f01gy1g1a54ny31zj20sg0lcdhs.jpg",
+        "desc": "下快快",
+        "max_price": 50000,
+        "apply_price": "2000-50000",
+        "rate": "0.03",
+        "lending_time": "3",
+        "max_duration": "15",
+        "url": "http://baidu.com",
+        "hot": 1,
+        "sort": 0,
+        "status": 1,
+        "id": 17
     }
 }
 ```
