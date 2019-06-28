@@ -747,22 +747,11 @@ Authorization | Bearer ***access_token***
 ```
 ### 产品修改  
 - 请求方式: `put` or `patch`
-- 请求地址: {host}`admins`
+- 请求地址: {host}`products/:id`
 - 请求参数:  
 ```json
 {
-	"name": "ceshi",
-	"image": "images/product/71167f01gy1g1a54ny31zj20sg0lcdhs.jpg",
-	"desc": "下快快",
-	"max_price": 50000,
-	"apply_price": "2000-50000",
-	"rate": "0.03",
-	"lending_time": "3",
-	"max_duration": "15",
-	"url": "http://baidu.com",
-	"hot": 1,
-	"sort": 0,
-	"status": 1
+    "name": "传奇钱包"
 }
 ```
 
@@ -771,15 +760,30 @@ Authorization | Bearer ***access_token***
 ```json
 {
     "code": 1,
-    "message": "添加成功",
+    "message": "success",
     "info": {
-        "name": "13123",
-        "access_token": "7DMeKgUny6d2D9E8dfTLJjkq5Jd6JRJC",
-        "register_time": "2019-06-12 20:10:29",
-        "register_ip": 2130706433,
-        "last_login_ip": 2130706433,
-        "last_login_time": "2019-06-12 20:10:29",
-        "id": 8
+        "id": 1,
+        "name": "传奇钱包",
+        "image": "http://youloan.oss-cn-shanghai.aliyuncs.com/Uploads/2019-05-10/5cd4d64e8fc6a.png",
+        "slogan": "易下款",
+        "desc": "3分钟下款",
+        "max_price": 50000,
+        "apply_price": "2000-50000",
+        "rate": "0.3%",
+        "apply_num": 25458,
+        "lending_time": 3,
+        "max_duration": 14,
+        "apply_duration": null,
+        "url": "https://glhb.jiegezhima.com/ghb9/ghb.html?source=chuanqiqb",
+        "new": 0,
+        "hot": 1,
+        "pass": 1,
+        "sort": 10,
+        "money": 499960,
+        "status": 0,
+        "user_price": 20,
+        "platform": 1,
+        "create_time": null
     }
 }
 ```
