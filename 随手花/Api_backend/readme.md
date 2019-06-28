@@ -10,6 +10,7 @@
     - [创建Admin用户](./#创建admin用户)  
 - [产品模块](./#产品模块)  
     - [产品列表](./#产品列表)  
+    - [产品详情](./#产品详情)  
     - [产品新增](./#产品新增)  
     - [产品修改](./#产品修改)  
     - [产品禁用](./#产品禁用)  
@@ -20,6 +21,7 @@
     - [随手花用户禁用](./#随手花用户禁用)  
 - [渠道模块](./#渠道模块)
     - [渠道列表](./#渠道列表)
+    - [渠道详情](./#渠道详情)
     - [渠道新增](./#渠道新增)
     - [渠道修改](./#渠道修改)
     - [渠道删除](./#渠道删除)
@@ -666,7 +668,43 @@ Authorization | Bearer ***access_token***
         }
     }
 }
+```  
+### 产品详情
+- 请求方式: `get`
+- 请求地址: {host}`products/:id`
+- 请求参数: `id`
+- 响应内容:
 ```
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "id": 1,
+        "name": "随手花",
+        "image": "http://youloan.oss-cn-shanghai.aliyuncs.com/Uploads/2019-05-10/5cd4d64e8fc6a.png",
+        "slogan": "易下款",
+        "desc": "3分钟下款",
+        "max_price": 50000,
+        "apply_price": "2000-50000",
+        "rate": "0.3%",
+        "apply_num": 25458,
+        "lending_time": 3,
+        "max_duration": 14,
+        "apply_duration": null,
+        "url": "https://glhb.jiegezhima.com/ghb9/ghb.html?source=chuanqiqb",
+        "new": 0,
+        "hot": 1,
+        "pass": 1,
+        "sort": 10,
+        "money": 499960,
+        "status": 0,
+        "user_price": 20,
+        "platform": 1,
+        "create_time": null
+    }
+}	
+```
+
 ### 产品新增  
 - 请求方式: `put` or `patch`
 - 请求地址: {host}`products`
@@ -708,7 +746,7 @@ Authorization | Bearer ***access_token***
 }
 ```
 ### 产品修改  
-- 请求方式: `post`
+- 请求方式: `put` or `patch`
 - 请求地址: {host}`admins`
 - 请求参数:  
 ```json
@@ -876,6 +914,181 @@ Authorization | Bearer ***access_token***
 
 ## 渠道模块
 ### 渠道列表
+
+- 请求方式: `get`
+- 请求地址: {host}`channels`
+- 请求参数:  
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "name": "包总",
+                "channel_sign": null,
+                "url": "http://www.baidu.com",
+                "admin_id": 1,
+                "cooperation_type": 1,
+                "qrcode": "1",
+                "status": 1,
+                "app_url": "1",
+                "create_time": "2019-06-17 13:42:07",
+                "creater_id": 0
+            },
+            {
+                "id": 2,
+                "name": "包总2",
+                "channel_sign": null,
+                "url": "http://www.baidu.com",
+                "admin_id": 1,
+                "cooperation_type": 1,
+                "qrcode": "1",
+                "status": 1,
+                "app_url": "1",
+                "create_time": "2019-06-17 13:42:07",
+                "creater_id": 0
+            },
+            {
+                "id": 3,
+                "name": "baozong",
+                "channel_sign": null,
+                "url": "http://m.sshua.com/channel/user?channel_sign=bMslBvgo-CUwbR2Pzu1XrXedRRyYU_RT",
+                "admin_id": 80,
+                "cooperation_type": 1,
+                "qrcode": "images/qrcode/bMslBvgo-CUwbR2Pzu1XrXedRRyYU_RT.png",
+                "status": 1,
+                "app_url": "sshua.com",
+                "create_time": "2019-06-27 10:49:36",
+                "creater_id": 1
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://47.103.61.179:82/channels?page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 3,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```  
+
+### 渠道详情  
+- 请求方式: `get`
+- 请求地址: {host}`channels/:id`
+- 请求参数:  
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "id": 2,
+        "name": "包总2",
+        "channel_sign": null,
+        "url": "http://www.baidu.com",
+        "admin_id": 1,
+        "cooperation_type": 1,
+        "qrcode": "1",
+        "status": 1,
+        "app_url": "1",
+        "create_time": "2019-06-17 13:42:07",
+        "creater_id": 0
+    }
+}
+```
+### 渠道新增
+- 请求方式: `post`
+- 请求地址: {host}`channels`
+- 请求参数:  
+```json
+{
+    "name": "baozong",
+    "admin_id": 80,
+    "cooperation_type": 1,
+    "app_url": "www.baidu.com"
+}
+```
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "name": "baozong",
+        "admin_id": 80,
+        "cooperation_type": 1,
+        "app_url": "www.baidu.com",
+        "creater_id": 1,
+        "channel_sign": "SVQh5SiymVQ1IMw5H9Pu4hm7Y3YpopJ0",
+        "url": "http://m.sshua.com/channel/user?channel_sign=SVQh5SiymVQ1IMw5H9Pu4hm7Y3YpopJ0",
+        "qrcode": "images/qrcode/SVQh5SiymVQ1IMw5H9Pu4hm7Y3YpopJ0.png",
+        "create_time": "2019-06-28 13:38:00",
+        "id": 6
+    }
+}
+```
+### 渠道修改
+- 请求方式: `put` or `patch`
+- 请求地址: {host}`localhost:8082/channels/:id`
+- 请求参数:  
+```json
+{
+    "name": "baozong",
+    "admin_id": 80,
+    "cooperation_type": 1,
+    "app_url": "www.baidu.com"
+}
+```
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "id": 5,
+        "name": "baozong",
+        "channel_sign": "RIyQBWf2jzWsKnTDAv4BqpTyJntf8j2o",
+        "url": "http://m.sshua.com/channel/user?channel_sign=RIyQBWf2jzWsKnTDAv4BqpTyJntf8j2o",
+        "admin_id": 80,
+        "cooperation_type": 1,
+        "qrcode": "images/qrcode/RIyQBWf2jzWsKnTDAv4BqpTyJntf8j2o.png",
+        "status": 1,
+        "app_url": "www.baidu.com",
+        "create_time": "2019-06-28 13:34:25",
+        "creater_id": 1
+    }
+}
+```
+
+### 渠道删除
+- 请求方式: `delete`
+- 请求地址: {host}`channels/:id`
+- 请求参数:  
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "删除成功",
+    "info": ""
+}
+```
 
 ## 功能
 
