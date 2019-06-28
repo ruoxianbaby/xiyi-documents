@@ -1100,7 +1100,8 @@ Authorization | Bearer ***access_token***
 ```json
 {
     "product": "/product/images",
-    "banner": "/banner/images"
+    "banner": "/banner/images",
+    ...
 }
 ```  
 
