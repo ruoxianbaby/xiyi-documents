@@ -674,7 +674,7 @@ Authorization | Bearer ***access_token***
 - 请求地址: {host}`products/:id`
 - 请求参数: `id`
 - 响应内容:
-```
+```json  
 {
     "code": 1,
     "message": "success",
@@ -1082,7 +1082,7 @@ Authorization | Bearer ***access_token***
 
 - 响应内容:  
 
-```json
+```json  
 {
     "code": 1,
     "message": "删除成功",
@@ -1105,8 +1105,7 @@ Authorization | Bearer ***access_token***
 
 ```
 - 响应内容:  
-
-```json
+```json  
 {
     "code": 1,
     "message": "http://sshua.oss-cn-shanghai.aliyuncs.com/images/product/71167f01gy1g1a54ny31zj20sg0lcdhs.jpg",
@@ -1139,5 +1138,5 @@ Authorization | Bearer ***access_token***
         "local_port": 55841,
         "method": "PUT"
     }
-}
-```
+} 
+```  
