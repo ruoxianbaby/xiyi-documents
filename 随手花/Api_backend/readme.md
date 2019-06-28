@@ -1102,8 +1102,8 @@ Authorization | Bearer ***access_token***
     "product" => "/product/images",
     "banner" => "/banner/images"
 ]
+```  
 
-```
 - 响应内容:  
 ```json  
 {
