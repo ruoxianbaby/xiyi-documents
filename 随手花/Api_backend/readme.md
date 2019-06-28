@@ -881,8 +881,16 @@ Authorization | Bearer ***access_token***
 
 ### 上传文件到阿里云  
 - 请求方式: `post`  
-- 请求地址: {host}`upload-to-aliyun_oss`  
-- 请求参数:  `file`  
+- 请求地址: {host}`upload-to-aliyun_oss?type=product`  
+- 请求参数:  `file` 
+- 说明: `type`字段 代表上传到不同的文件夹,对应关系如下:
+```php
+[
+    "product" => "/product/images",
+    "banner" => "/banner/images"
+]
+
+```
 - 响应内容:  
 
 ```json
