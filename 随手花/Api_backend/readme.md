@@ -1190,15 +1190,6 @@ Authorization | Bearer ***access_token***
                 "create_time": "2019-07-01 14:04:10",
                 "status": 1,
                 "channel_name": "包总"
-            },
-            {
-                "id": 5,
-                "channel_id": null,
-                "deduct": null,
-                "date_time": null,
-                "create_time": null,
-                "status": 1,
-                "channel_name": "包总"
             }
         ],
         "_links": {
