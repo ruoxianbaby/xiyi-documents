@@ -1151,3 +1151,159 @@ Authorization | Bearer ***access_token***
     }
 } 
 ```  
+
+## 劣质用户扣除模块
+### 扣量列表
+
+- 请求方式: `get`
+- 请求地址: {host}`/deducts`
+- 请求参数:  
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "channel_id": 1,
+                "deduct": 0.8,
+                "date_time": "2019-07-01",
+                "create_time": "2019-07-01 14:04:10",
+                "status": 0,
+                "channel_name": "包总"
+            },
+            {
+                "id": 4,
+                "channel_id": 1,
+                "deduct": 0.8,
+                "date_time": "2019-07-01",
+                "create_time": "2019-07-01 14:04:10",
+                "status": 1,
+                "channel_name": "包总"
+            },
+            {
+                "id": 5,
+                "channel_id": null,
+                "deduct": null,
+                "date_time": null,
+                "create_time": null,
+                "status": 1,
+                "channel_name": "包总"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://ssh.org:82/deducts?per-page=3&page=1"
+            },
+            "next": {
+                "href": "http://ssh.org:82/deducts?per-page=3&page=2"
+            },
+            "last": {
+                "href": "http://ssh.org:82/deducts?per-page=3&page=3"
+            }
+        },
+        "_meta": {
+            "totalCount": 9,
+            "pageCount": 3,
+            "currentPage": 1,
+            "perPage": 3
+        }
+    }
+}
+```  
+
+### 扣量详情  
+- 请求方式: `get`
+- 请求地址: {host}`/deducts/:id`
+- 请求参数:  
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "id": 1,
+        "channel_id": 1,
+        "deduct": 0.8,
+        "date_time": "2019-07-01",
+        "create_time": "2019-07-01 14:04:10",
+        "status": 0
+    }
+}
+```
+### 扣量新增
+- 请求方式: `post`
+- 请求地址: {host}`/deducts`
+- 请求参数:  
+```json
+{
+    "channel_id": 1,
+    "deduct": 0.8,
+    "date_time": "2019-06-30",
+    "status": 1
+}
+```
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "创建成功",
+    "info": {
+        "channel_id": "31",
+        "deduct": "0.7",
+        "date_time": "2019-06-30",
+        "create_time": "2019-07-01 16:54:17",
+        "id": 12
+    }
+}
+```
+### 渠道修改
+- 请求方式: `put` or `patch`
+- 请求地址: {host}`/deducts/:id`
+- 请求参数:  
+```json
+{
+	"channel_id":8,
+	"deduct":0.71,
+	"date_time":"2019-06-30"
+}
+```
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "id": 1,
+        "channel_id": 8,
+        "deduct": 0.71,
+        "date_time": "2019-06-30",
+        "create_time": "2019-07-01 14:04:10",
+        "status": 0
+    }
+}
+```
+
+### 渠道删除
+- 请求方式: `delete`
+- 请求地址: {host}`deducts/:id`
+- 请求参数:  
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "删除成功",
+    "info": ""
+}
+```
