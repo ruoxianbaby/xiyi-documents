@@ -1048,6 +1048,7 @@ Authorization | Bearer ***access_token***
   "platform": 1
 }
 ```  
+- 参数说明: `device_token`设备号, `client_id`友盟唯一标识, `platform`1Android,2ios,2web,4wechat,5others
 
 - 响应内容:  
 ```json
