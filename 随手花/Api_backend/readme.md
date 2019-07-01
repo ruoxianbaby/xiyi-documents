@@ -1261,7 +1261,7 @@ Authorization | Bearer ***access_token***
     }
 }
 ```
-### 渠道修改
+### 扣量修改
 - 请求方式: `put` or `patch`
 - 请求地址: {host}`/deducts/:id`
 - 请求参数:  
@@ -1290,7 +1290,7 @@ Authorization | Bearer ***access_token***
 }
 ```
 
-### 渠道删除
+### 扣量删除
 - 请求方式: `delete`
 - 请求地址: {host}`deducts/:id`
 - 请求参数:  
