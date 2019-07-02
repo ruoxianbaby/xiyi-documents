@@ -19,7 +19,10 @@
     - [用户反馈](./#用户反馈)  
     - [商务合作](./#商务合作)  
     - [获取审核接口](./#获取审核接口)  
-    - [上报设备号](./#上报设备号)
+    - [上报设备号](./#上报设备号)  
+    - [渠道推广页](./#渠道推广页)  
+   	- [获取csrf](./#获取csrf)  
+	- [获得渠道id](./#获得渠道id)
 - [论坛](./#论坛)  
     - [栏目](./#栏目)   
     - [文章](./#文章)
@@ -1058,6 +1061,37 @@ Authorization | Bearer ***access_token***
     "info": ""
 }	
 ``` 
+
+### 渠道推广页  
+#### 获取csrf  
+- 请求方式: `get`
+- 请求地址: `{host}csrf`
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "Br0VaEKwNOj2ArTQbsT46PC1FMhBFGcYDkwT3iIGmOFV62w-cN9lkaRQ9oND8M2ktMVxkABWEHBkPSunZlze1w==",
+    "info": ""
+}
+```
+
+#### 获得渠道id  
+- 请求方式: `post`
+- 请求地址: `{host}spread/get-channel-id`  
+- 请求参数: 
+`
+_csrf-api:ha5IRNHe3xPnMMLqICzj31uLpp4R7Gqg6I0pXBEeiQDW-DES47GOarVigLkNGNaTH_vDxlCuHciC_BElVUTPNg==
+channel_sign:dAcU9w-zfxDEdnj9rQAmk9_k9jUcWUHZ
+` 
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": 8,
+    "info": ""
+}
+```
 
 ## 论坛  
 ### 栏目  
