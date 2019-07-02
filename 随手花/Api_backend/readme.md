@@ -1304,3 +1304,60 @@ Authorization | Bearer ***access_token***
     "info": ""
 }
 ```
+
+## 数据统计模块
+### 今日实时PV/UV
+
+- 请求方式: `get`
+- 请求地址: {host}`/channel-analysis/today-count`
+- 请求参数:  
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "Success",
+    "info": {
+        "pv": "16",
+        "uv": "3"
+    }
+}
+```  
+
+### 产品每日统计
+
+- 请求方式: `get`
+- 请求地址: {host}`/channel-analysis/today-count?date=2019-07-01`
+- 请求参数: date
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "Success",
+    "info": [
+        {
+            "name": "注册按钮点击UV",
+            "value": 0
+        },
+        {
+            "name": "注册按钮点击PV",
+            "value": 0
+        },
+        {
+            "name": "注册按钮点击累积UV",
+            "value": 157
+        },
+        {
+            "name": "注册按钮点击累积PV",
+            "value": 4
+        },
+        {
+            "name": "实际注册人数",
+            "value": 0
+        }
+    ]
+}
+```  
