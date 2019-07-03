@@ -23,7 +23,8 @@
     - [渠道推广页](./#渠道推广页)  
         - [获取csrf](./#获取csrf)  
 	- [获得渠道id](./#获得渠道id)
-   - [获取产品url](./#获取产品url)
+   - [获取产品url](./#获取产品url)  
+   - [app下载链接](./#app下载链接)
 - [论坛](./#论坛)  
     - [栏目](./#栏目)   
     - [文章](./#文章)
@@ -1094,8 +1095,9 @@ channel_sign:dAcU9w-zfxDEdnj9rQAmk9_k9jUcWUHZ
 }
 ```
 ### 获取产品url
-- 请求方式: `get`
-- 请求地址: `{host}product-url?prod_sign=12`
+- 请求方式: `post`
+- 请求地址: `{host}product-url`
+- 请求参数: `prod_sign:12`
 - 响应内容:  
 ```json
 {
@@ -1103,7 +1105,19 @@ channel_sign:dAcU9w-zfxDEdnj9rQAmk9_k9jUcWUHZ
     "message": "Br0VaEKwNOj2ArTQbsT46PC1FMhBFGcYDkwT3iIGmOFV62w-cN9lkaRQ9oND8M2ktMVxkABWEHBkPSunZlze1w==",
     "info": ""
 }
-```
+```   
+### app下载链接
+- 请求方式: `post`
+- 请求地址: `{host}app-download`
+- 请求参数: `channel_sign:dAcU9w-zfxDEdnj9rQAmk9_k9jUcWUHZ`
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "https://7w2.cn/rw9q",
+    "info": ""
+}
+```   
 
 ## 论坛  
 ### 栏目  
