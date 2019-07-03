@@ -38,8 +38,9 @@
 - [数据统计模块](./#数据统计模块)
     - [今日实时PV/UV](./#今日实时PV/UV)
     - [产品每日统计](./#产品每日统计)
-    
-    
+    - [渠道每日统计-实时](./#渠道每日统计-实时)
+    - [渠道每日统计-历史](./#渠道每日统计-历史)
+	
 ### 测试主机host: 47.103.61.179:82/  
 
 ### 全局header  
@@ -1418,8 +1419,8 @@ Authorization | Bearer ***access_token***
 	p_old_pv - 产品pv(老客)  
 	p_old_uv - 产品uv(老客)  
 	reg_uv_pre - 注册转化率  
-	active_uv_pre - active_uv_pre  
-	p_uv_uv_pre - p_uv_uv_pre  
+	active_uv_pre - 激活转化率  
+	p_uv_uv_pre - 新客转化率  
 ```json  
 {
     "code": 1,
