@@ -1096,7 +1096,7 @@ channel_sign:dAcU9w-zfxDEdnj9rQAmk9_k9jUcWUHZ
 ```
 ### 获取产品url
 - 请求方式: `post`
-- 请求地址: `{host}product-url`
+- 请求地址: `{host}product/get-url`
 - 请求参数: `prod_sign:12`
 - 响应内容:  
 ```json
