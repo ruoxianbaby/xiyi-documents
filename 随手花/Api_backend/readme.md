@@ -1332,7 +1332,7 @@ Authorization | Bearer ***access_token***
 ### 产品每日统计
 
 - 请求方式: `get`
-- 请求地址: {host}`/channel-analysis/today-count?date=2019-07-01`
+- 请求地址: {host}`/channel-analysis/day-count?date=2019-07-01`
 - 请求参数: date
 
 - 响应内容:  
