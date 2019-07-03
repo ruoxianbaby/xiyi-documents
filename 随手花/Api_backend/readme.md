@@ -1408,7 +1408,18 @@ Authorization | Bearer ***access_token***
 - 请求参数: channel_name, start_time, end_time
 
 - 响应内容:  
-
+	channel_name - 渠道名称  
+	date - 统计日期  
+	uv - 推广页uv  
+	reg - 渠道注册  
+	active - 渠道激活  
+	p_pv - 产品pv(新客)  
+	p_uv - 产品uv(新客)  
+	p_old_pv - 产品pv(老客)  
+	p_old_uv - 产品uv(老客)  
+	reg_uv_pre - 注册转化率  
+	active_uv_pre - active_uv_pre  
+	p_uv_uv_pre - p_uv_uv_pre  
 ```json  
 {
     "code": 1,
@@ -1429,6 +1440,7 @@ Authorization | Bearer ***access_token***
                     "reg_uv_pre": "0.00",
                     "active_uv_pre": "0.00",
                     "p_uv_uv_pre": "0.00",
+                    "date": "2019-07-01",
                     "channel_name": "包总"
                 },
                 {
@@ -1443,6 +1455,7 @@ Authorization | Bearer ***access_token***
                     "reg_uv_pre": "50.00",
                     "active_uv_pre": "0.00",
                     "p_uv_uv_pre": "0.00",
+                    "date": "2019-07-02",
                     "channel_name": "包总"
                 }
             ]
@@ -1462,6 +1475,7 @@ Authorization | Bearer ***access_token***
                     "reg_uv_pre": "0.00",
                     "active_uv_pre": "0.00",
                     "p_uv_uv_pre": "0.00",
+                    "date": "2019-07-01",
                     "channel_name": "包总2"
                 },
                 {
@@ -1476,6 +1490,7 @@ Authorization | Bearer ***access_token***
                     "reg_uv_pre": "0.00",
                     "active_uv_pre": "0.00",
                     "p_uv_uv_pre": "0.00",
+                    "date": "2019-07-02",
                     "channel_name": "包总2"
                 }
             ]
