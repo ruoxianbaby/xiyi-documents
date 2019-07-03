@@ -1372,6 +1372,9 @@ Authorization | Bearer ***access_token***
 - 请求参数: 
 
 - 响应内容:  
+| reg      | 注册数     | 第二列     |
+| ---------- | :-----------:  | :-----------: |
+| active     | 激活数     | 第二列     |
 	reg		注册数  
 	active		激活数  
 	p_uv		产品点击uv  
