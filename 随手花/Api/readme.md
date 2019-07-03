@@ -23,6 +23,7 @@
     - [渠道推广页](./#渠道推广页)  
    	- [获取csrf](./#获取csrf)  
 	- [获得渠道id](./#获得渠道id)
+   - [获取产品url](./#获取产品url)
 - [论坛](./#论坛)  
     - [栏目](./#栏目)   
     - [文章](./#文章)
@@ -1089,6 +1090,17 @@ channel_sign:dAcU9w-zfxDEdnj9rQAmk9_k9jUcWUHZ
 {
     "code": 1,
     "message": 8,
+    "info": ""
+}
+```
+### 获取产品url
+- 请求方式: `get`
+- 请求地址: `{host}product-url?prod_sign=12`
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "Br0VaEKwNOj2ArTQbsT46PC1FMhBFGcYDkwT3iIGmOFV62w-cN9lkaRQ9oND8M2ktMVxkABWEHBkPSunZlze1w==",
     "info": ""
 }
 ```
