@@ -1372,7 +1372,10 @@ Authorization | Bearer ***access_token***
 - 请求参数: 
 
 - 响应内容:  
-
+	reg	注册数
+	active	激活数
+	p_uv	产品点击uv
+	p_pv	产品点击pv
 ```json  
 {
     "code": 1,
@@ -1381,10 +1384,10 @@ Authorization | Bearer ***access_token***
         {
             "channel_id": "1",
             "channel_name": "包总",
-            "reg": "1",		// 注册数
-            "active": "1",	// 激活数
-            "p_uv": "22",	// 产品点击uv
-            "p_pv": "6" 	// 产品点击pv
+            "reg": "1",	
+            "active": "1",
+            "p_uv": "22",
+            "p_pv": "6" 
         },
         {
             "channel_id": "2",
