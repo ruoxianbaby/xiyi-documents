@@ -1364,3 +1364,119 @@ Authorization | Bearer ***access_token***
     ]
 }
 ```  
+
+### 渠道每日统计-实时
+
+- 请求方式: `get`
+- 请求地址: {host}`/channel-analysis/today-list`
+- 请求参数: 
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "Success",
+    "info": [
+        {
+            "channel_id": "1",
+            "channel_name": "包总",
+            "reg": "1",		// 注册数
+            "active": "1",	// 激活数
+            "p_uv": "22",	// 产品点击uv
+            "p_pv": "6" 	// 产品点击pv
+        },
+        {
+            "channel_id": "2",
+            "channel_name": "包总2",
+            "reg": 0,
+            "active": 0,
+            "p_uv": "1",
+            "p_pv": "1"
+        }
+    ]
+}
+```  
+
+### 渠道每日统计-历史
+
+- 请求方式: `get`
+- 请求地址: {host}`/channel-analysis/day-list?channel_name=包总&start_time=2019-07-01&end_time=2019-07-03`
+- 请求参数: channel_name, start_time, end_time
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "Success",
+    "info": {
+        "1": {
+            "channel_name": "包总",
+            "list": [
+                {
+                    "channel_id": "1",
+                    "uv": "1",
+                    "reg": "2",
+                    "active": "2",
+                    "p_uv": "0",
+                    "p_pv": "0",
+                    "p_old_uv": "0",
+                    "p_old_pv": "0",
+                    "reg_uv_pre": "0.00",
+                    "active_uv_pre": "0.00",
+                    "p_uv_uv_pre": "0.00",
+                    "channel_name": "包总"
+                },
+                {
+                    "channel_id": "1",
+                    "uv": "2",
+                    "reg": "1",
+                    "active": "0",
+                    "p_uv": "0",
+                    "p_pv": "0",
+                    "p_old_uv": "0",
+                    "p_old_pv": "0",
+                    "reg_uv_pre": "50.00",
+                    "active_uv_pre": "0.00",
+                    "p_uv_uv_pre": "0.00",
+                    "channel_name": "包总"
+                }
+            ]
+        },
+        "2": {
+            "channel_name": "包总2",
+            "list": [
+                {
+                    "channel_id": "2",
+                    "uv": "1",
+                    "reg": "0",
+                    "active": "0",
+                    "p_uv": "1",
+                    "p_pv": "1",
+                    "p_old_uv": "0",
+                    "p_old_pv": "0",
+                    "reg_uv_pre": "0.00",
+                    "active_uv_pre": "0.00",
+                    "p_uv_uv_pre": "0.00",
+                    "channel_name": "包总2"
+                },
+                {
+                    "channel_id": "2",
+                    "uv": "2",
+                    "reg": "0",
+                    "active": "0",
+                    "p_uv": "0",
+                    "p_pv": "0",
+                    "p_old_uv": "1",
+                    "p_old_pv": "1",
+                    "reg_uv_pre": "0.00",
+                    "active_uv_pre": "0.00",
+                    "p_uv_uv_pre": "0.00",
+                    "channel_name": "包总2"
+                }
+            ]
+        }
+    }
+}
+```  
