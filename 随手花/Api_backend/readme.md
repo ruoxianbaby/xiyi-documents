@@ -1385,37 +1385,52 @@ Authorization | Bearer ***access_token***
 ### 产品每日统计
 
 - 请求方式: `get`
-- 请求地址: {host}`/channel-analysis/day-count?date=2019-07-01`
-- 请求参数: date
+- 请求地址: {host}`/channel-analysis/day-count`
+- 请求参数: 
 
 - 响应内容:  
 
 ```json  
 {
     "code": 1,
-    "message": "Success",
-    "info": [
-        {
-            "name": "注册按钮点击UV",
-            "value": 0
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 2,
+                "product_id": 13,
+                "pv": 1,
+                "pv_total": 2,
+                "uv": 2,
+                "uv_total": 4,
+                "create_time": "2019-07-04 14:54:15",
+                "date": "2019-07-03",
+                "product_name": "24随手花2"
+            },
+            {
+                "id": 1,
+                "product_id": 13,
+                "pv": 1,
+                "pv_total": 1,
+                "uv": 2,
+                "uv_total": 2,
+                "create_time": "2019-07-04 14:52:40",
+                "date": "2019-07-02",
+                "product_name": "24随手花2"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://ssh.org:82/channel-analysis/day-count?page=1"
+            }
         },
-        {
-            "name": "注册按钮点击PV",
-            "value": 0
-        },
-        {
-            "name": "注册按钮点击累积UV",
-            "value": 157
-        },
-        {
-            "name": "注册按钮点击累积PV",
-            "value": 4
-        },
-        {
-            "name": "实际注册人数",
-            "value": 0
+        "_meta": {
+            "totalCount": 2,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
         }
-    ]
+    }
 }
 ```  
 
