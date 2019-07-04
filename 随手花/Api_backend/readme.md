@@ -1571,7 +1571,7 @@ Authorization | Bearer ***access_token***
 ```  
 ### 刷单检测
 - 请求方式: `get`
-- 请求地址: {host}`click-farms`
+- 请求地址: {host}`click-farms?sort=-id`
 
 - 响应内容:  
 
