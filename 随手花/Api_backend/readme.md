@@ -40,7 +40,9 @@
     - [今日实时PV/UV](./#今日实时PV/UV)
     - [产品每日统计](./#产品每日统计)
     - [渠道每日统计-实时](./#渠道每日统计-实时)
-    - [渠道每日统计-历史](./#渠道每日统计-历史)
+    - [渠道每日统计-历史](./#渠道每日统计-历史)  
+- [刷单检测](./#刷单检测)
+    
 	
 ### 测试主机host: 47.103.61.179:82/  
 
@@ -1563,6 +1565,65 @@ Authorization | Bearer ***access_token***
                     "channel_name": "包总2"
                 }
             ]
+        }
+    }
+}
+```  
+### 刷单检测
+- 请求方式: `get`
+- 请求地址: {host}`click-farms`
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "create_time": "2019-07-01 17:48:45",
+                "mobile": "15061690110",
+                "user_id": null,
+                "channel_id": null,
+                "ip": null
+            },
+            {
+                "id": 3,
+                "create_time": "2019-07-01 15:00:42",
+                "mobile": "15901725624",
+                "user_id": null,
+                "channel_id": null,
+                "ip": null
+            },
+            {
+                "id": 4,
+                "create_time": null,
+                "mobile": null,
+                "user_id": null,
+                "channel_id": null,
+                "ip": null
+            },
+            {
+                "id": 5,
+                "create_time": null,
+                "mobile": null,
+                "user_id": null,
+                "channel_id": null,
+                "ip": null
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://localhost:8082/click-farms?name=15061690111&password=123456&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 4,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
         }
     }
 }
