@@ -1790,17 +1790,17 @@ today_active -> 激活
     "info": [
         {
             "name": "推广页UV",
-            "value": "3",
+            "value": 3,
             "washaway": 0.3333333333333333
         },
         {
             "name": "推广页注册",
-            "value": "3",
+            "value": 1,
             "washaway": 1
         },
         {
             "name": "激活",
-            "value": "1"
+            "value": 1
         }
     ]
 }
