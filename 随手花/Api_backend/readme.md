@@ -42,8 +42,10 @@
     - [渠道每日统计-实时](./#渠道每日统计-实时)
     - [渠道每日统计-历史](./#渠道每日统计-历史)  
 - [刷单检测](./#刷单检测)
-    
-	
+- [首页数据统计模块](./#首页数据统计模块)
+    - [今日实时](./#今日实时)
+    - [七日趋势](./#七日趋势)  
+		
 ### 测试主机host: 47.103.61.179:82/  
 
 ### 全局header  
@@ -1626,5 +1628,150 @@ Authorization | Bearer ***access_token***
             "perPage": 20
         }
     }
+}
+```  
+
+## 首页数据统计模块
+### 今日实时
+
+- 请求方式: `get`
+- 请求地址: {host}`/index/index`
+- 请求参数:  
+
+- 响应内容:  
+user_total -> 总用户人数  
+user_new -> 今日新增用户数  
+pdt_uv -> 今日产品UV  
+act_uv -> 新客UV  
+click_farm -> 今日刷单数  
+latent -> 意向用户  
+total_black -> 黑名单用户  
+very_black -> 极黑用户  
+  
+today_uv -> 推广页UV  
+today_reg -> 推广页注册  
+today_active -> 激活  
+
+```json  
+{
+    "code": 1,
+    "message": "Success",
+    "info": {
+        "user_total": "12",
+        "user_new": "0",
+        "pdt_uv": "0",
+        "act_uv": "0",
+        "click_farm": "0",
+        "very_black": "13380",
+        "total_black": "33917",
+        "latent": "247908",
+        "today_uv": "0",
+        "today_reg": "0",
+        "today_active": "0"
+    }
+}
+```  
+
+### 七日趋势
+
+- 请求方式: `get`
+- 请求地址: {host}`/index/channel-analysis`
+- 请求参数:  
+
+- 响应内容:  
+```json  
+{
+    "code": 1,
+    "message": "Success",
+    "info": [
+        [
+            {
+                "date": "2019-07-01",
+                "name": "推广页UV",
+                "value": "2"
+            },
+            {
+                "date": "2019-07-01",
+                "name": "推广页注册数",
+                "value": "2"
+            },
+            {
+                "date": "2019-07-01",
+                "name": "渠道激活数",
+                "value": "2"
+            },
+            {
+                "date": "2019-07-01",
+                "name": "产品新客UV数",
+                "value": "2"
+            }
+        ],
+        [
+            {
+                "date": "2019-07-02",
+                "name": "推广页UV",
+                "value": "6"
+            },
+            {
+                "date": "2019-07-02",
+                "name": "推广页注册数",
+                "value": "1"
+            },
+            {
+                "date": "2019-07-02",
+                "name": "渠道激活数",
+                "value": "0"
+            },
+            {
+                "date": "2019-07-02",
+                "name": "产品新客UV数",
+                "value": "0"
+            }
+        ],
+        [
+            {
+                "date": "2019-07-03",
+                "name": "推广页UV",
+                "value": "2"
+            },
+            {
+                "date": "2019-07-03",
+                "name": "推广页注册数",
+                "value": "0"
+            },
+            {
+                "date": "2019-07-03",
+                "name": "渠道激活数",
+                "value": "0"
+            },
+            {
+                "date": "2019-07-03",
+                "name": "产品新客UV数",
+                "value": "23"
+            }
+        ],
+        [
+            {
+                "date": "2019-07-04",
+                "name": "推广页UV",
+                "value": "2"
+            },
+            {
+                "date": "2019-07-04",
+                "name": "推广页注册数",
+                "value": "2"
+            },
+            {
+                "date": "2019-07-04",
+                "name": "渠道激活数",
+                "value": "1"
+            },
+            {
+                "date": "2019-07-04",
+                "name": "产品新客UV数",
+                "value": "1"
+            }
+        ]
+    ]
 }
 ```  
