@@ -1647,7 +1647,6 @@ click_farm -> 今日刷单数
 latent -> 意向用户  
 total_black -> 黑名单用户  
 very_black -> 极黑用户  
-  
 today_uv -> 推广页UV  
 today_reg -> 推广页注册  
 today_active -> 激活  
