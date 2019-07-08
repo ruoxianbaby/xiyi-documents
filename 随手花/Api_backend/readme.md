@@ -14,6 +14,7 @@
     - [产品新增](./#产品新增)  
     - [产品修改](./#产品修改)  
     - [产品禁用](./#产品禁用)  
+    - [产品流量扣除](./#产品流量扣除)  
 - [随手花用户](./#随手花用户)  
     - [随手花用户列表](./#随手花用户列表)  
     	- [用于筛选用户的渠道](./#用于筛选用户的渠道)
@@ -813,7 +814,7 @@ Authorization | Bearer ***access_token***
 ```
 ### 产品禁用  
 - 请求方式: `delete`
-- 请求地址: {host}`product/:id`
+- 请求地址: {host}`/product/:id`
 - 请求参数:  
 
 - 响应内容:  
@@ -828,7 +829,7 @@ Authorization | Bearer ***access_token***
 
 ### 产品流量扣除  
 - 请求方式: `post`
-- 请求地址: {host}`product/deduct`
+- 请求地址: {host}`/product/deduct`
 - 请求参数:  product_id  num  price
 
 - 响应内容:  
