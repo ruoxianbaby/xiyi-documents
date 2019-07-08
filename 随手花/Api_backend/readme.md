@@ -1576,6 +1576,82 @@ Authorization | Bearer ***access_token***
     }
 }
 ```  
+
+### 用户申请记录-列表
+
+- 请求方式: `get`
+- 请求地址: {host}`/apply-record/index`
+- 请求参数:  
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 599,
+                "user_id": 82,
+                "channel_id": 2,
+                "product_id": 13,
+                "apply_time": "2019-07-02 14:57:36",
+                "ip": 2147483647,
+                "mobile": "18308461696",
+                "product_name": "24随手花2"
+            },
+            {
+                "id": 598,
+                "user_id": 82,
+                "channel_id": null,
+                "product_id": 13,
+                "apply_time": "2019-07-02 14:30:50",
+                "ip": 2147483647,
+                "mobile": "18308461696",
+                "product_name": "24随手花2"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://ssh.org:82/apply-record/index?page=1"
+            },
+            "next": {
+                "href": "http://ssh.org:82/apply-record/index?page=2"
+            },
+            "last": {
+                "href": "http://ssh.org:82/apply-record/index?page=30"
+            }
+        },
+        "_meta": {
+            "totalCount": 599,
+            "pageCount": 30,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```  
+
+### 用户申请记录-申请人数
+
+- 请求方式: `get`
+- 请求地址: {host}`/apply-record/count`
+- 请求参数:  
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "Success",
+    "info": {
+        "total_num": "16",
+        "today_num": "0"
+    }
+}
+```  
+
 ### 刷单检测
 - 请求方式: `get`
 - 请求地址: {host}`click-farms?sort=-id`
