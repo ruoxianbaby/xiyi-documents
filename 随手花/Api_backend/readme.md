@@ -826,6 +826,21 @@ Authorization | Bearer ***access_token***
 }
 ```
 
+### 产品流量扣除  
+- 请求方式: `post`
+- 请求地址: {host}`product/deduct`
+- 请求参数:  product_id  num  price
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "新增成功",
+    "info": ""
+}
+```
+
 ## 随手花用户  
 ### 随手花用户列表  
 - 请求方式: `get`
