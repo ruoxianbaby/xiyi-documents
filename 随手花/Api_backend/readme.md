@@ -1450,6 +1450,8 @@ Authorization | Bearer ***access_token***
 	active - 激活数  
 	p_uv - 产品点击uv  
 	p_pv - 产品点击pv  
+	uv - 渠道uv
+	
 ```json  
 {
     "code": 1,
@@ -1458,18 +1460,20 @@ Authorization | Bearer ***access_token***
         {
             "channel_id": "1",
             "channel_name": "包总",
-            "reg": "1",	
-            "active": "1",
-            "p_uv": "22",
-            "p_pv": "6" 
+            "reg": 0,
+            "active": 0,
+            "p_uv": 0,
+            "p_pv": 0,
+            "uv": 0
         },
         {
             "channel_id": "2",
             "channel_name": "包总2",
             "reg": 0,
             "active": 0,
-            "p_uv": "1",
-            "p_pv": "1"
+            "p_uv": 0,
+            "p_pv": 0,
+            "uv": 0
         }
     ]
 }
