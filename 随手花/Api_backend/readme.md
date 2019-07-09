@@ -1319,11 +1319,16 @@ Authorization | Bearer ***access_token***
 - 请求地址: {host}`/deducts`
 - 请求参数:  
 ```json
+
 {
-    "channel_id": 1,
-    "deduct": 0.8,
-    "date_time": "2019-06-30",
-    "status": 1
+    "code": 1,
+    "message": "创建成功",
+    "info": {
+	    "channel_id": 1,
+	    "deduct": 0.8,
+	    "date_time": "2019-06-30",
+	    "status": 1
+	}
 }
 ```
 - 响应内容:  
@@ -1331,7 +1336,7 @@ Authorization | Bearer ***access_token***
 ```json  
 {
     "code": 1,
-    "message": "创建成功",
+    "message": "操作成功",
     "info": {
         "channel_id": "31",
         "deduct": "0.7",
@@ -1347,9 +1352,13 @@ Authorization | Bearer ***access_token***
 - 请求参数:  
 ```json
 {
+    "code": 1,
+    "message": "success",
+    "info": {
 	"channel_id":8,
 	"deduct":0.71,
 	"date_time":"2019-06-30"
+    }
 }
 ```
 
@@ -1688,7 +1697,7 @@ Authorization | Bearer ***access_token***
                 "mobile": "15061690110",
                 "user_id": null,
                 "channel_id": null,
-                "ip": null
+                "ip": "192.168.1.66"
             },
             {
                 "id": 3,
@@ -1696,7 +1705,7 @@ Authorization | Bearer ***access_token***
                 "mobile": "15901725624",
                 "user_id": null,
                 "channel_id": null,
-                "ip": null
+                "ip": "192.168.1.36"
             },
             {
                 "id": 4,
@@ -1704,7 +1713,7 @@ Authorization | Bearer ***access_token***
                 "mobile": null,
                 "user_id": null,
                 "channel_id": null,
-                "ip": null
+                "ip": "192.168.1.63"
             },
             {
                 "id": 5,
@@ -1712,7 +1721,7 @@ Authorization | Bearer ***access_token***
                 "mobile": null,
                 "user_id": null,
                 "channel_id": null,
-                "ip": null
+                "ip": "192.168.1.78"
             }
         ],
         "_links": {
