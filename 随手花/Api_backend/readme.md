@@ -235,7 +235,7 @@ Authorization | Bearer ***access_token***
 - 请求参数:  
 ```json
 {
-    "name": "你🐎死了",
+    "name": "name",
     "password": "123456"
 }
 ```
