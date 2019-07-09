@@ -1421,6 +1421,15 @@ Authorization | Bearer ***access_token***
 - 请求参数: 
 
 - 响应内容:  
+pv -> 注册按钮点击pv  
+pv_total -> 注册按钮点击累积pv  
+uv -> 注册按钮点击uv  
+uv_total -> 注册按钮点击累积uv  
+new_ctr_uv -> 新客uv  
+old_ctr_uv -> 老客uv  
+balance_type -> 结算方式 1:uv, 2:cpa, 3cps  
+user_price -> 结算单价
+income -> 收益
 
 ```json  
 {
@@ -1429,37 +1438,53 @@ Authorization | Bearer ***access_token***
     "info": {
         "items": [
             {
-                "id": 2,
-                "product_id": 13,
-                "pv": 1,
-                "pv_total": 2,
-                "uv": 2,
-                "uv_total": 4,
-                "create_time": "2019-07-04 14:54:15",
-                "date": "2019-07-03",
-                "product_name": "24随手花2"
-            },
-            {
-                "id": 1,
-                "product_id": 13,
-                "pv": 1,
-                "pv_total": 1,
+                "id": 24,
+                "product_id": 5,
+                "pv": 4,
+                "pv_total": 4,
                 "uv": 2,
                 "uv_total": 2,
-                "create_time": "2019-07-04 14:52:40",
-                "date": "2019-07-02",
-                "product_name": "24随手花2"
+                "create_time": "2019-07-09 17:24:36",
+                "date": "2019-07-08",
+                "new_ctr_uv": 1,
+                "old_ctr_uv": 0,
+                "balance_type": 1,
+                "user_price": null,
+                "product_name": "",
+                "income": 0
+            },
+            {
+                "id": 23,
+                "product_id": 1,
+                "pv": 1,
+                "pv_total": 1,
+                "uv": 1,
+                "uv_total": 1,
+                "create_time": "2019-07-09 17:09:27",
+                "date": "2019-07-08",
+                "new_ctr_uv": 0,
+                "old_ctr_uv": 0,
+                "balance_type": null,
+                "user_price": null,
+                "product_name": "",
+                "income": 0
             }
         ],
         "_links": {
             "self": {
+                "href": "http://ssh.org:82/channel-analysis/day-count?page=2"
+            },
+            "first": {
+                "href": "http://ssh.org:82/channel-analysis/day-count?page=1"
+            },
+            "prev": {
                 "href": "http://ssh.org:82/channel-analysis/day-count?page=1"
             }
         },
         "_meta": {
-            "totalCount": 2,
-            "pageCount": 1,
-            "currentPage": 1,
+            "totalCount": 22,
+            "pageCount": 2,
+            "currentPage": 2,
             "perPage": 20
         }
     }
