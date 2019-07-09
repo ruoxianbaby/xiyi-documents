@@ -1428,7 +1428,7 @@ uv_total -> 注册按钮点击累积uv
 new_ctr_uv -> 新客uv  
 old_ctr_uv -> 老客uv  
 balance_type -> 结算方式 1:uv, 2:cpa, 3cps  
-user_price -> 结算单价
+user_price -> 结算单价  
 income -> 收益
 
 ```json  
