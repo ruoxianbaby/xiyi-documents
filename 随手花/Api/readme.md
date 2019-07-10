@@ -145,8 +145,8 @@ Authorization | Bearer ***access_token***
 
 ### 获取首页精品  
 - 请求方式: `get`
-- 请求地址: {host}`products?per-page=1&type=boutique`
-- 请求参数: `per-page=1&type=boutique`  
+- 请求地址: {host}`products?per-page=1&boutique=1`
+- 请求参数: `per-page=1&boutique=1`  
 - 说明:  
 >fields: 只显示给定的字段,多字段用`,`号隔开  
 >per-page: 每页数量  
@@ -201,8 +201,8 @@ Authorization | Bearer ***access_token***
 ```
 ### 获取首页小额现金贷  
 - 请求方式: `get`
-- 请求地址: {host}`products?type=banner&per-page=1`
-- 请求参数: `type=banner&per-page=1`  
+- 请求地址: {host}`products?banner=1&per-page=1`
+- 请求参数: `banner=1&per-page=1`  
  
 - 响应内容:  
 
