@@ -47,6 +47,7 @@
 - [刷单检测](./#刷单检测)
 - [首页数据统计模块](./#首页数据统计模块)
     - [今日实时](./#今日实时)
+    - [用户统计](./#用户统计)
     - [七日趋势](./#七日趋势)  
     - [今日渠道转化](./#今日渠道转化)  
     
@@ -1777,29 +1778,46 @@ user_new -> 今日新增用户数
 pdt_uv -> 今日产品UV  
 act_uv -> 新客UV  
 click_farm -> 今日刷单数  
-latent -> 意向用户  
-total_black -> 黑名单用户  
-very_black -> 极黑用户  
-today_uv -> 推广页UV  
-today_reg -> 推广页注册  
-today_active -> 激活  
+last_pdt_uv -> 昨日产品UV  
+pre -> 今日UV效率  
+last_pre -> 昨日UV效率  
 
 ```json  
 {
     "code": 1,
     "message": "Success",
     "info": {
-        "user_total": "12",
-        "user_new": "0",
-        "pdt_uv": "0",
+        "user_total": "8",
+        "user_new": "3",
+        "pdt_uv": "1",
         "act_uv": "0",
         "click_farm": "0",
+        "last_pdt_uv": "26",
+        "pre": "25.00",
+        "last_pre": "2600.00"
+    }
+}
+```  
+
+### 用户统计
+
+- 请求方式: `get`
+- 请求地址: {host}`/index/user`
+- 请求参数:  
+
+- 响应内容:  
+latent -> 意向用户  
+total_black -> 黑名单用户  
+very_black -> 极黑用户  
+
+```json  
+{
+    "code": 1,
+    "message": "Success",
+    "info": {
         "very_black": "13380",
         "total_black": "33917",
-        "latent": "247908",
-        "today_uv": "0",
-        "today_reg": "0",
-        "today_active": "0"
+        "latent": "247908"
     }
 }
 ```  
