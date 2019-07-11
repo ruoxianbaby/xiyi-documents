@@ -8,7 +8,7 @@
     - [当日数据](./#当日数据)  
     - [历史数据](./#历史数据)  
 	
-### 测试主机host: 47.103.61.179:86/  
+### 测试主机host: 47.103.61.179:88/  
 
 ### 全局header  
 
@@ -73,15 +73,13 @@ Authorization | Bearer ***access_token***
 }
 ```
 
-## 渠道模块
+## 产品模块
 ### 当日数据
 - 请求方式: `get`
-- 请求地址: {host}`/channel/today-list`
+- 请求地址: {host}`/product/today-list`
 - 请求参数:  
 
 - 响应内容:  
-reg -> 注册  
-active -> 激活
 
 ```json
 {
@@ -89,13 +87,22 @@ active -> 激活
     "message": "Success",
     "info": [
         {
-            "channel_id": "13",
-            "channel_name": "test",
-            "channel_url": "http://wap.sshua.com/channel/1.html?channel_sign=1m-yljyfhU2Q7pusi1ZjhhBNRgy3MG-Q",
-            "channel_qrcode": "images/qrcode/1m-yljyfhU2Q7pusi1ZjhhBNRgy3MG-Q.png",
-            "uv": 2,
-            "reg": 1,
-            "active": 1
+            "product_name": "123",
+            "product_id": "76",
+            "pv": "3",
+            "uv": "1"
+        },
+        {
+            "product_name": "榕易借",
+            "product_id": "73",
+            "pv": "1",
+            "uv": "1"
+        },
+        {
+            "product_name": "开心钱包",
+            "product_id": "48",
+            "pv": "1",
+            "uv": "1"
         }
     ]
 }
@@ -103,34 +110,51 @@ active -> 激活
 
 ### 历史数据
 - 请求方式: `get`
-- 请求地址: {host}`/channel/day-list`
+- 请求地址: {host}`/product/day-list`
 - 请求参数:  
 
 - 响应内容:  
-reg -> 注册  
-active -> 激活
 
 ```json
 {
     "code": 1,
     "message": "Success",
-    "info": [
-        {
-            "channel_id": "13",
-            "uv": 1,
-            "reg": 1,
-            "active": 0,
-            "date": "2019-07-02",
-            "channel_name": "test"
-        },
-        {
-            "channel_id": "13",
-            "uv": 1,
-            "reg": 2,
-            "active": 2,
-            "date": "2019-07-01",
-            "channel_name": "test"
+    "info": {
+        "items": [
+            {
+                "product_id": "76",
+                "pv": "3",
+                "uv": "1",
+                "pv_total": "3",
+                "uv_total": "1",
+                "date": "2019-07-10",
+                "product_name": "123"
+            },
+            {
+                "product_id": "73",
+                "pv": "1",
+                "uv": "1",
+                "pv_total": "3",
+                "uv_total": "2",
+                "date": "2019-07-10",
+                "product_name": "榕易借"
+            },
+            {
+                "product_id": "48",
+                "pv": "1",
+                "uv": "1",
+                "pv_total": "11",
+                "uv_total": "7",
+                "date": "2019-07-10",
+                "product_name": "开心钱包"
+            }
+        ],
+        "_meta": {
+            "totalCount": 26,
+            "pageCount": 9,
+            "currentPage": 1,
+            "perPage": 3
         }
-    ]
+    }
 }
 ```
