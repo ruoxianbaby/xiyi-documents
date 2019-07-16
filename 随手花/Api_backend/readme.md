@@ -1492,6 +1492,47 @@ income -> 收益
 }
 ```  
 
+### 产品当日统计
+
+- 请求方式: `get`
+- 请求地址: {host}`/channel-analysis/product-list?:start_time&:end_time`
+- 请求参数: start_time 2019-09-07 12:00:00  end_time 2019-09-07 14:00:00
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "Success",
+    "info": [
+        {
+            "product_name": "红八钱包",
+            "product_id": "37",
+            "pv": "2",
+            "uv": "1",
+            "new_ctr_uv": 0,
+            "old_ctr_uv": 0
+        },
+        {
+            "product_name": "蜜瓜钱包",
+            "product_id": "38",
+            "pv": "1",
+            "uv": "1",
+            "new_ctr_uv": 0,
+            "old_ctr_uv": 0
+        },
+        {
+            "product_name": "藏宝阁",
+            "product_id": "40",
+            "pv": "3",
+            "uv": "1",
+            "new_ctr_uv": 0,
+            "old_ctr_uv": 0
+        }
+    ]
+}
+```  
+
 ### 渠道每日统计-实时
 
 - 请求方式: `get`
