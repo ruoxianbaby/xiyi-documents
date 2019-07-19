@@ -15,6 +15,7 @@
     - [产品修改](./#产品修改)  
     - [产品禁用](./#产品禁用)  
     - [产品流量扣除](./#产品流量扣除)  
+    - [产品定量下架](./#产品定量下架)  
 - [随手花用户](./#随手花用户)  
     - [随手花用户列表](./#随手花用户列表)  
     	- [用于筛选用户的渠道](./#用于筛选用户的渠道)
@@ -833,6 +834,21 @@ Authorization | Bearer ***access_token***
 - 请求方式: `post`
 - 请求地址: {host}`/product/deduct`
 - 请求参数:  product_id  num  price
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "新增成功",
+    "info": ""
+}
+```
+
+### 产品定量下架
+- 请求方式: `post`
+- 请求地址: {host}`/product/quantity-off`
+- 请求参数:  product_id  num  time
 
 - 响应内容:  
 
