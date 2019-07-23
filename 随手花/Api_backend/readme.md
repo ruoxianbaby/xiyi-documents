@@ -2013,3 +2013,200 @@ very_black -> 极黑用户
     ]
 }
 ```  
+
+## 菜单模块
+### 菜单列表
+
+- 请求方式: `get`
+- 请求地址: {host}`/menus`
+- 请求参数:  
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "pid": 0,
+                "title": "用户管理",
+                "url": null,
+                "icon": "el-icon-lx-people",
+                "sort": 0,
+                "status": 1,
+                "pname": ""
+            },
+            {
+                "id": 2,
+                "pid": 1,
+                "title": "管理员列表",
+                "url": "adminlist",
+                "icon": null,
+                "sort": 0,
+                "status": 1,
+                "pname": "用户管理"
+            },
+            {
+                "id": 3,
+                "pid": 1,
+                "title": "随手花用户",
+                "url": "userlist",
+                "icon": null,
+                "sort": 1,
+                "status": 1,
+                "pname": "用户管理"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://ssh.org:82/menus?perPage=3&page=1"
+            },
+            "next": {
+                "href": "http://ssh.org:82/menus?perPage=3&page=2"
+            },
+            "last": {
+                "href": "http://ssh.org:82/menus?perPage=3&page=2"
+            }
+        },
+        "_meta": {
+            "totalCount": 28,
+            "pageCount": 2,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```  
+
+### 菜单详情  
+- 请求方式: `get`
+- 请求地址: {host}`/menus/:id`
+- 请求参数:  
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "id": 22,
+        "pid": 17,
+        "title": "渠道每日统计",
+        "url": "dailycanalstatistics",
+        "icon": null,
+        "sort": 1,
+        "status": 1
+    }
+}
+```
+### 菜单新增
+- 请求方式: `post`
+- 请求地址: {host}`/menus`
+- 请求参数: 
+
+```json
+{
+    "pid": "2",
+    "title": "标题",
+    "url": "url",
+    "sort": "1",
+    "icon": "el-icon-edit-outline",
+    "status": "1"
+}
+```
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "创建成功",
+    "info": {
+        "pid": "2",
+        "title": "1000",
+        "url": "1",
+        "sort": "111",
+        "status": "1",
+        "id": 29
+    }
+}
+```
+### 菜单修改
+- 请求方式: `put` or `patch`
+- 请求地址: {host}`/menus/:id`
+- 请求参数:  
+
+```json
+{
+    "pid": "2",
+    "title": "标题",
+    "url": "url",
+    "sort": "1",
+    "icon": "el-icon-edit-outline",
+    "status": "1"
+}
+```
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "更新成功",
+    "info": {
+        "id": 22,
+        "pid": "2",
+        "title": "1000",
+        "url": "1",
+        "icon": null,
+        "sort": "111",
+        "status": "1"
+    }
+}
+```
+
+### 菜单隐藏
+- 请求方式: `delete`
+- 请求地址: {host}`menus/:id`
+- 请求参数:  
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "隐藏成功",
+    "info": ""
+}
+```
+
+### 菜单父级列表
+- 请求方式: `get`
+- 请求地址: {host}`/menu/parent-list`
+- 请求参数:  
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "Success",
+    "info": [
+        {
+            "id": "1",
+            "title": "用户管理"
+        },
+        {
+            "id": "4",
+            "title": "产品列表"
+        },
+        {
+            "id": "7",
+            "title": "系统设置"
+        }
+    ]
+}
+```
