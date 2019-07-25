@@ -3,6 +3,12 @@
 <a href="./#Service_api" style="height:50px;width:35px;position:fixed;bottom:100px;right:0px;background:#00BCC1;opacity:0.6;color:#333;text-decoration:none;">回到顶部</a>
 
 ### 测试主机host: 47.103.61.179:1022/  
+- [user模块](./#user模块)  
+    - [获取短信验证码](./#获取短信验证码)  
+    - [获取access_token](./#获取access_token)
+    - [获取用户信息接口](./#获取用户信息)  
+    - [获取用户申请记录](./#获取用户申请记录)
+
 
 ### 全局header  
 
