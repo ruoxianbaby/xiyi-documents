@@ -191,4 +191,5 @@ img_url 图片的链接 没有就是空串
 title 标题
 desc 描述
 user_name 昵称
+avatar_image 用户头像
 ```  
