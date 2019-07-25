@@ -131,15 +131,9 @@ Authorization | Bearer ***access_token***
 ### 获取首页文章列表
 - 请求方式: `get`
 - 请求地址: {host}`articles`
-- 请求参数:  
+- 请求参数:  per-page=10&page=2
 
-```json
-{
-    "id": 48,
-    "create_time":  "2019-07-22 11:23:49",
-    "title" : "哈哈"
-}
-```  
+
 
 - 响应内容:  
 
