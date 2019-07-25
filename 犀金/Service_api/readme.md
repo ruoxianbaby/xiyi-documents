@@ -196,7 +196,7 @@ avatar_image 用户头像
 
 
 ### 上传用户头像
-- 请求方式: `get`
+- 请求方式: `post`
 - 请求地址: {host}`user/upload-avater`
 - 请求参数: 
 ```json
