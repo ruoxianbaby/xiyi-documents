@@ -95,3 +95,25 @@ Authorization | Bearer ***access_token***
     }
 }
 ```  
+
+
+### 获取banner图片
+- 请求方式: `get`
+- 请求地址: {host}`banner/get-banner`
+- 请求参数: `access_token=4W1ZD1h_94Jmrx5PKqA24M-iuYvG8ce8`
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "url": [
+            "http://my_xijin_api.com/image/banner/1.jpg",
+            "http://my_xijin_api.com/image/banner/2.jpg",
+            "http://my_xijin_api.com/image/banner/3.jpg"
+        ]
+    }
+}
+```  
