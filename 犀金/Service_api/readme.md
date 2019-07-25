@@ -193,3 +193,30 @@ desc 描述
 user_name 昵称
 avatar_image 用户头像
 ```  
+
+
+### 上传用户头像
+- 请求方式: `get`
+- 请求地址: {host}`user/upload-avater`
+- 请求参数: 
+```json
+{
+    "id": 110, 
+    "image": "base64xxxxxxxxxxxx"
+}
+```  
+
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "上传成功",
+    "info": "http://my_xijin_api.com./images/avatar_image/110.jpg"
+}
+
+---
+id 上传头像的用户id
+image base64格式的流
+```  
