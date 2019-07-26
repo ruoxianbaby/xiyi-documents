@@ -272,7 +272,6 @@ is_collected 是否收藏，0代表没有收藏，1是收藏了
 - 响应内容:  
 content 评论内容  
 nick_name  用户的昵称  
-is_like  自己是否点了喜欢按钮，0代表没有点，1是点了  
 
 
 ```json  
