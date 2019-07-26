@@ -12,7 +12,7 @@
     - [获取首页文章列表](./#获取首页文章列表)
     - [上传用户头像](./#上传用户头像)
     - [文章详情](./#文章详情)
-    
+    - [文章详情中的评论接口](./#文章评论)
 ### 全局header  
 
 key |  vaule
@@ -256,6 +256,60 @@ is_collected 是否收藏，0代表没有收藏，1是收藏了
             "collect_num": 0,
             "is_collected": 0,
             "create_time": "2019-07-22 14:45:10"
+        }
+    }
+}
+
+```  
+
+
+###  文章评论
+- 请求方式: `get`
+- 请求地址: {host}`comments?article_id=18&per-page=1&page=2`
+- 请求参数: 
+
+
+- 响应内容:  
+content 评论内容  
+nick_name  用户的昵称  
+is_like  自己是否点了喜欢按钮，0代表没有点，1是点了  
+
+
+```json  
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "content": "评论2",
+                "create_time": "2019-07-25 15:23:13",
+                "user_id": 108,
+                "nick_name": "nick108"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/comments?article_id=18&per-page=1&page=2"
+            },
+            "first": {
+                "href": "http://my_xijin_api.com/comments?article_id=18&per-page=1&page=1"
+            },
+            "prev": {
+                "href": "http://my_xijin_api.com/comments?article_id=18&per-page=1&page=1"
+            },
+            "next": {
+                "href": "http://my_xijin_api.com/comments?article_id=18&per-page=1&page=3"
+            },
+            "last": {
+                "href": "http://my_xijin_api.com/comments?article_id=18&per-page=1&page=3"
+            }
+        },
+        "_meta": {
+            "totalCount": 3,
+            "pageCount": 3,
+            "currentPage": 2,
+            "perPage": 1
         }
     }
 }
