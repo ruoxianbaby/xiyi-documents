@@ -232,12 +232,12 @@ image base64格式的流
 
 
 - 响应内容:  
-title 标题
-content 文章内容
-article_like_num  文章喜欢总数
-is_like  自己是否点了喜欢按钮，0代表没有点，1是点了
-comment_num  评论总数
-is_collected 是否收藏，0代表没有收藏，1是收藏了 
+title 标题  
+content 文章内容  
+article_like_num  文章喜欢总数  
+is_like  自己是否点了喜欢按钮，0代表没有点，1是点了  
+comment_num  评论总数  
+is_collected 是否收藏，0代表没有收藏，1是收藏了  
 
 
 ```json  
