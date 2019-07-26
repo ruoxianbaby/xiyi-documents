@@ -11,7 +11,8 @@
     - [获取banner图片](./#获取banner图片)
     - [获取首页文章列表](./#获取首页文章列表)
     - [上传用户头像](./#上传用户头像)
-
+    - [文章详情](./#文章详情)
+    
 ### 全局header  
 
 key |  vaule
@@ -221,4 +222,42 @@ preview_content 文章内容预览
 ---
 id 上传头像的用户id
 image base64格式的流
+```  
+
+
+###  文章详情
+- 请求方式: `get`
+- 请求地址: {host}`articles/:id`
+- 请求参数: 
+
+
+- 响应内容:  
+title 标题
+content 文章内容
+article_like_num  文章喜欢总数
+is_like  自己是否点了喜欢按钮，0代表没有点，1是点了
+comment_num  评论总数
+is_collected 是否收藏，0代表没有收藏，1是收藏了 
+
+
+```json  
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "status": 1,
+        "message": "成功",
+        "info": {
+            "title": "葡萄酒专业到底在学啥？",
+            "content": "&lt;p class=&quot;ql-align-center&quot;&gt;一转眼又到了高考填志愿的季节。&lt;/p&gt;&lt;p class=&quot;ql-align-center&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p class=&quot;ql-align-center&quot;&gt;无数学子翻烂了志愿填报指南、参考学长学姐意见，各",
+            "article_like_num": 2,
+            "is_like": 1,
+            "comment_num": 3,
+            "collect_num": 0,
+            "is_collected": 0,
+            "create_time": "2019-07-22 14:45:10"
+        }
+    }
+}
+
 ```  
