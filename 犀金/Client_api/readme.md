@@ -156,11 +156,12 @@ Authorization | Bearer ***access_token***
                 "update_time": "2019-07-23 19:10:00",
                 "creater": 108,
                 "status": 0,
-                "user_name": "nick108",
+                "admin_name": "nick108",
                 "before_time": "3天前",
                 "like_num": "0",
                 "comment_num": "0",
                 "img_url": ""
+                "preview_content": "<p class=\"ql-align-center\">一转眼又到了高考填志愿的季节。</p><p class=\"ql-align-center\"><br></p><p class=\"ql-align-center\">无数学子翻烂了志愿填报指南、参考学长学姐意见，各种途径打探，都想报一门好专业。</p><p class=\"ql-align-center\"><br></p><p cla"
             },
         ],
         "_links": {
@@ -190,8 +191,9 @@ comment_num 评论数
 img_url 图片的链接 没有就是空串
 title 标题
 desc 描述
-user_name 昵称
+admin_name 后台管理员名
 avatar_image 用户头像
+preview_content 文章内容预览
 ```  
 
 
