@@ -107,7 +107,7 @@ Authorization | Bearer ***access_token***
 
 ### 获取banner图片
 - 请求方式: `get`
-- 请求地址: {host}`banner/get-banner`
+- 请求地址: {host}`general/get-banner`
 
 
 - 响应内容:  
