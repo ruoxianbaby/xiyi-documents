@@ -279,7 +279,7 @@ collected 是否收藏，0代表没有收藏，1是收藏了
 
 
 - 响应内容:  
-
+like是多少个点赞
 
 
 ```json  
@@ -295,6 +295,7 @@ collected 是否收藏，0代表没有收藏，1是收藏了
                         "content": "评论2",
                         "create_time": "2019-07-25 15:23:13",
                         "user_name": "nick108",
+			"like": "2",
                         "time_before": "1天前"
                     },
                     {
@@ -302,6 +303,7 @@ collected 是否收藏，0代表没有收藏，1是收藏了
                         "content": "评论3",
                         "create_time": "2019-07-25 15:23:16",
                         "user_name": "nicheng222",
+			"like": "2",
                         "time_before": "1天前"
                     },
                     {
@@ -309,28 +311,8 @@ collected 是否收藏，0代表没有收藏，1是收藏了
                         "content": "测试测试测试",
                         "create_time": "2019-07-27 14:21:39",
                         "user_name": "nick108",
+			"like": "12",
                         "time_before": "55分钟前"
-                    },
-                    {
-                        "id": "6",
-                        "content": "测试测试测试",
-                        "create_time": "2019-07-27 14:21:25",
-                        "user_name": "nick107",
-                        "time_before": "56分钟前"
-                    },
-                    {
-                        "id": "7",
-                        "content": "测试测试测试",
-                        "create_time": "2019-07-27 14:23:03",
-                        "user_name": "nick107",
-                        "time_before": "54分钟前"
-                    },
-                    {
-                        "id": "8",
-                        "content": "测试测试测试",
-                        "create_time": "2019-07-27 14:23:20",
-                        "user_name": "nick107",
-                        "time_before": "54分钟前"
                     }
                 ],
             }
