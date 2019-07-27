@@ -264,8 +264,8 @@ collected 是否收藏，0代表没有收藏，1是收藏了
 
 ###  文章评论
 - 请求方式: `get`
-- 请求地址: {host}`comments?article_id=18&per-page=1&page=2`
-- 请求参数: 
+- 请求地址: {host}`articles?id=18&fields=title,create_time,like_num,like,comment_num,collect_num,collect,content`
+- 请求参数:   ?id 是文章的id
 
 
 - 响应内容:  
