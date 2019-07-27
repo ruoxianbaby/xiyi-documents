@@ -274,7 +274,7 @@ collected 是否收藏，0代表没有收藏，1是收藏了
 
 ###  文章评论
 - 请求方式: `get`
-- 请求地址: {host}`articles?id=18&fields=like_num,like,comment_num,collect_num,collect,comment`
+- 请求地址: {host}`articles?id=18&fields=comment`
 - 请求参数:   ?id 是文章的id
 
 
@@ -289,8 +289,6 @@ collected 是否收藏，0代表没有收藏，1是收藏了
         "info": {
         "items": [
             {
-                "like_num": "1",
-                "like": 0,
                 "comment": [
                     {
                         "id": "2",
@@ -335,9 +333,6 @@ collected 是否收藏，0代表没有收藏，1是收藏了
                         "time_before": "54分钟前"
                     }
                 ],
-                "comment_num": "6",
-                "collect_num": "1",
-                "collect": 1
             }
         ],
         "_links": {
