@@ -216,7 +216,7 @@ image base64格式的流
 
 ###  文章详情
 - 请求方式: `get`
-- 请求地址: {host}`articles/:id`
+- 请求地址: {host}`http://my_xijin_api.com/articles?id=18&fields=title,create_time,like_num,like,comment_num,collect_num,collect,content`
 - 请求参数: 
 
 
