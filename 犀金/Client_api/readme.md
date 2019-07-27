@@ -279,8 +279,8 @@ collected 是否收藏，0代表没有收藏，1是收藏了
 
 
 - 响应内容:  
-like是多少个点赞
-
+like_num是多少个点赞
+like 0 代表该用户未点赞，1代表点了赞
 
 ```json  
 {
@@ -295,7 +295,8 @@ like是多少个点赞
                         "content": "评论2",
                         "create_time": "2019-07-25 15:23:13",
                         "user_name": "nick108",
-			"like": "2",
+			"like": "0",			
+			"like_num": "2",
                         "time_before": "1天前"
                     },
                     {
@@ -303,7 +304,8 @@ like是多少个点赞
                         "content": "评论3",
                         "create_time": "2019-07-25 15:23:16",
                         "user_name": "nicheng222",
-			"like": "2",
+			"like": "1",
+			"like_num": "2",
                         "time_before": "1天前"
                     },
                     {
@@ -311,7 +313,8 @@ like是多少个点赞
                         "content": "测试测试测试",
                         "create_time": "2019-07-27 14:21:39",
                         "user_name": "nick108",
-			"like": "12",
+			"like": "0",
+			"like_num": "2",
                         "time_before": "55分钟前"
                     }
                 ],
