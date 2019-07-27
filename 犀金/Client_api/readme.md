@@ -144,25 +144,14 @@ Authorization | Bearer ***access_token***
     "info": {
         "items": [
             {
-                "id": 48,
-                "type": null,
-                "origin": "",
-                "author": null,
-                "title": "前44",
+                "title": "创业就像谈恋爱",
                 "desc": null,
-                "profile": null,
-                "content": "&lt;p&gt;日期二无若群无&lt;/p&gt;",
-                "create_time": "2019-07-22 11:23:49",
-                "update_time": "2019-07-23 19:10:00",
-                "creater": 108,
-                "status": 0,
-                "admin_name": "nick108",
-                "before_time": "3天前",
+                "admin_name": "",
+                "avatar_image": "",
                 "like_num": "0",
                 "comment_num": "0",
-                "img_url": ""
-                "preview_content": "<p class=\"ql-align-center\">一转眼又到了高考填志愿的季节。</p><p class=\"ql-align-center\"><br></p><p class=\"ql-align-center\">无数学子翻烂了志愿填报指南、参考学长学姐意见，各种途径打探，都想报一门好专业。</p><p class=\"ql-align-center\"><br></p><p cla"
-            },
+                "img_url": "https://xqimg.imedao.com/169b2bfdbe46c4393fdaa724.jpg"
+            }
         ],
         "_links": {
             "self": {
