@@ -223,9 +223,9 @@ image base64格式的流
 title 标题  
 content 文章内容  
 article_like_num  文章喜欢总数  
-is_like  自己是否点了喜欢按钮，0代表没有点，1是点了  
+like  自己是否点了喜欢按钮，0代表没有点，1是点了  
 comment_num  评论总数  
-is_collected 是否收藏，0代表没有收藏，1是收藏了  
+collected 是否收藏，0代表没有收藏，1是收藏了  
 
 
 ```json  
@@ -233,17 +233,28 @@ is_collected 是否收藏，0代表没有收藏，1是收藏了
     "code": 1,
     "message": "success",
     "info": {
-        "status": 1,
-        "message": "成功",
-        "info": {
-            "title": "葡萄酒专业到底在学啥？",
-            "content": "&lt;p class=&quot;ql-align-center&quot;&gt;一转眼又到了高考填志愿的季节。&lt;/p&gt;&lt;p class=&quot;ql-align-center&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p class=&quot;ql-align-center&quot;&gt;无数学子翻烂了志愿填报指南、参考学长学姐意见，各",
-            "article_like_num": 2,
-            "is_like": 1,
-            "comment_num": 3,
-            "collect_num": 0,
-            "is_collected": 0,
-            "create_time": "2019-07-22 14:45:10"
+        "items": [
+            {
+                "title": "葡萄酒专业到底在学啥？",
+                "content": "<p class=\"ql-align-center\">一转眼又到了高考填志愿的季节。</p><p class=\"ql-align-center\"><br></p><p class=\"ql-align-center\">无数学子翻烂了志愿填报指南、参考学长学姐意见，各种途径打探，都想报一门好专业。</p><p class=\"ql-align-center\"><br></p><p class=\"ql-align-center\">近些年，一门专业在填报指南上的曝光率越来越高，它就是——</p><p class=\"ql-align-center\"><br></p><p class=\"ql-align-center\">葡萄酒专业</p>",
+                "create_time": "2019-07-22 14:45:10",
+                "like_num": "2",
+                "like": 0,
+                "comment_num": "3",
+                "collect_num": "0",
+                "collect": 0
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/articles?id=18&fields=title%2Ccreate_time%2Clike_num%2Clike%2Ccomment_num%2Ccollect_num%2Ccollect%2Ccontent&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 1,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
         }
     }
 }
