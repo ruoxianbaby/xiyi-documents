@@ -131,7 +131,7 @@ Authorization | Bearer ***access_token***
 
 ### 获取首页文章列表
 - 请求方式: `get`
-- 请求地址: {host}`articles?fields=title,desc,avatar_image,admin_name,like_num,comment_num,img_url&per-page=2&page=2`
+- 请求地址: {host}`articles?fields=title,desc,avatar_image,author,like_num,comment_num,img_url&per-page=2&page=2`
 - 请求参数:   
 
 
@@ -146,7 +146,7 @@ Authorization | Bearer ***access_token***
             {
                 "title": "创业就像谈恋爱",
                 "desc": null,
-                "admin_name": "",
+                "author": "",
                 "avatar_image": "",
                 "like_num": "0",
                 "comment_num": "0",
