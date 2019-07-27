@@ -274,50 +274,82 @@ collected 是否收藏，0代表没有收藏，1是收藏了
 
 ###  文章评论
 - 请求方式: `get`
-- 请求地址: {host}`articles?id=18&fields=title,create_time,like_num,like,comment_num,collect_num,collect,content`
+- 请求地址: {host}`articles?id=18&fields=like_num,like,comment_num,collect_num,collect,comment`
 - 请求参数:   ?id 是文章的id
 
 
 - 响应内容:  
-content 评论内容  
-nick_name  用户的昵称  
+
 
 
 ```json  
 {
     "code": 1,
     "message": "success",
-    "info": {
+        "info": {
         "items": [
             {
-                "content": "评论2",
-                "create_time": "2019-07-25 15:23:13",
-                "user_id": 108,
-                "nick_name": "nick108"
+                "like_num": "1",
+                "like": 0,
+                "comment": [
+                    {
+                        "id": "2",
+                        "content": "评论2",
+                        "create_time": "2019-07-25 15:23:13",
+                        "user_name": "nick108",
+                        "time_before": "1天前"
+                    },
+                    {
+                        "id": "3",
+                        "content": "评论3",
+                        "create_time": "2019-07-25 15:23:16",
+                        "user_name": "nicheng222",
+                        "time_before": "1天前"
+                    },
+                    {
+                        "id": "5",
+                        "content": "测试测试测试",
+                        "create_time": "2019-07-27 14:21:39",
+                        "user_name": "nick108",
+                        "time_before": "55分钟前"
+                    },
+                    {
+                        "id": "6",
+                        "content": "测试测试测试",
+                        "create_time": "2019-07-27 14:21:25",
+                        "user_name": "nick107",
+                        "time_before": "56分钟前"
+                    },
+                    {
+                        "id": "7",
+                        "content": "测试测试测试",
+                        "create_time": "2019-07-27 14:23:03",
+                        "user_name": "nick107",
+                        "time_before": "54分钟前"
+                    },
+                    {
+                        "id": "8",
+                        "content": "测试测试测试",
+                        "create_time": "2019-07-27 14:23:20",
+                        "user_name": "nick107",
+                        "time_before": "54分钟前"
+                    }
+                ],
+                "comment_num": "6",
+                "collect_num": "1",
+                "collect": 1
             }
         ],
         "_links": {
             "self": {
-                "href": "http://my_xijin_api.com/comments?article_id=18&per-page=1&page=2"
-            },
-            "first": {
-                "href": "http://my_xijin_api.com/comments?article_id=18&per-page=1&page=1"
-            },
-            "prev": {
-                "href": "http://my_xijin_api.com/comments?article_id=18&per-page=1&page=1"
-            },
-            "next": {
-                "href": "http://my_xijin_api.com/comments?article_id=18&per-page=1&page=3"
-            },
-            "last": {
-                "href": "http://my_xijin_api.com/comments?article_id=18&per-page=1&page=3"
+                "href": "http://my_xijin_api.com/articles?id=18&fields=like_num%2Clike%2Ccomment_num%2Ccollect_num%2Ccollect%2Ccomment&page=1"
             }
         },
         "_meta": {
-            "totalCount": 3,
-            "pageCount": 3,
-            "currentPage": 2,
-            "perPage": 1
+            "totalCount": 1,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
         }
     }
 }
