@@ -113,18 +113,25 @@ Authorization | Bearer ***access_token***
 
 
 - 响应内容:  
-
+id -> 文章的id
 ```json  
 {
     "code": 1,
-    "message": "success",
-    "info": {
-        "url": [
-            "http://my_xijin_api.com/image/banner/1.jpg",
-            "http://my_xijin_api.com/image/banner/2.jpg",
-            "http://my_xijin_api.com/image/banner/3.jpg"
-        ]
-    }
+    "message": "操作成功",
+    "info": [
+        {
+            "id": "61",
+            "images": "https://xqimg.imedao.com/169b2bfdbe46c4393fdaa724.jpg"
+        },
+        {
+            "id": "62",
+            "images": "https://xqimg.imedao.com/169b2bfdbe46c4393fdaa724.jpg"
+        },
+        {
+            "id": "63",
+            "images": "https://xqimg.imedao.com/169b2bfdbe46c4393fdaa724.jpg"
+        }
+    ]
 }
 ```  
 
