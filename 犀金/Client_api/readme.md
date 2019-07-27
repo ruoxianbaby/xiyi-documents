@@ -131,9 +131,8 @@ Authorization | Bearer ***access_token***
 
 ### 获取首页文章列表
 - 请求方式: `get`
-- 请求地址: {host}`articles`
-- 请求参数:  per-page=10&page=2
-
+- 请求地址: {host}`articles?fields=title,desc,avatar_image,admin_name,like_num,comment_num,img_url&per-page=2&page=2`
+- 请求参数:   
 
 
 - 响应内容:  
