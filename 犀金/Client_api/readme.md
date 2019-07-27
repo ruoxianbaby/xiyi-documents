@@ -353,6 +353,7 @@ nick_name  用户的昵称
 - 请求方式: `post`
 - 请求地址: {host}`comments`
 - 请求参数: 
+id 文章的id
 ```json  
 {
 	"id": 18,
