@@ -13,6 +13,7 @@
     - [上传用户头像](./#上传用户头像)
     - [文章详情](./#文章详情)
     - [文章详情中的评论接口](./#文章评论)
+    - [点赞收藏toggle](./#点赞收藏toggle)
 ### 全局header  
 
 key |  vaule
@@ -131,7 +132,7 @@ Authorization | Bearer ***access_token***
 
 ### 获取首页文章列表
 - 请求方式: `get`
-- 请求地址: {host}`articles?fields=title,desc,avatar_image,author,like_num,comment_num,img_url&per-page=2&page=2`
+- 请求地址: {host}`?fields=id,title,desc,avatar_image,author,before_time,like_num,comment_num,img_url&per-page=2&page=2`
 - 请求参数:   
 
 
@@ -313,3 +314,30 @@ nick_name  用户的昵称
 }
 
 ```  
+
+
+
+###  点赞收藏toggle
+- 请求方式: `get`
+- 请求地址: {host}`articles/18?type=1`
+- 请求参数:   18是文章id，type 1代表喜欢，2代表收藏
+
+
+- 响应内容:  
+- active  0 代表切换成了没点赞状态，1代表成了已点赞
+
+
+```json  
+{
+    "code": 1,
+    "message": "切换成功",
+    "info": {
+        "active": 0
+    }
+}
+
+```  
+
+
+
+
