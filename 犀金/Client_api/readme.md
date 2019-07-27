@@ -297,6 +297,7 @@ like 0 代表该用户未点赞，1代表点了赞
                         "user_name": "nick108",
 			"like": "0",			
 			"like_num": "2",
+			"avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/107.jpg",
                         "time_before": "1天前"
                     },
                     {
@@ -306,6 +307,7 @@ like 0 代表该用户未点赞，1代表点了赞
                         "user_name": "nicheng222",
 			"like": "1",
 			"like_num": "2",
+			"avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/107.jpg",
                         "time_before": "1天前"
                     },
                     {
@@ -315,6 +317,7 @@ like 0 代表该用户未点赞，1代表点了赞
                         "user_name": "nick108",
 			"like": "0",
 			"like_num": "2",
+			"avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/107.jpg",
                         "time_before": "55分钟前"
                     }
                 ],
