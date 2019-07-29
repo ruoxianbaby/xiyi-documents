@@ -74,7 +74,8 @@ Authorization | Bearer ***access_token***
     "mobile": 15821827706, 
     "sms_code": 5934,
     "wechat_open_id": "",
-    "qq_open_id": ""
+    "qq_open_id": "",
+    "avatar_image": ""
 }
 ```  
 - 响应内容:  
