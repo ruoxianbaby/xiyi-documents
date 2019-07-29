@@ -168,7 +168,7 @@ id -> 文章的id
         "auditing": null, //审核状态, 1 正在审核
         "version": null,
         "app_url": null,
-        "force": null // 是否强制更新
+        "force": null // 是否强制更新 1是
     }
 }
 ```
