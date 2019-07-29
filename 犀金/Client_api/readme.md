@@ -10,7 +10,9 @@
     - [上传用户头像](./#上传用户头像)
 - [banner模块](./#banner模块)
     - [获取banner图片](./#获取banner图片)
-- [文章模块]
+- [app相关](./#app相关)
+    - [app版本更新](./#app版本更新)
+- [文章模块](./#文章模块)
     - [获取首页文章列表](./#获取首页文章列表)
     - [文章详情](./#文章详情)
     - [文章详情中的评论接口 没有点进去的](./#文章评论)
@@ -140,6 +142,36 @@ id -> 文章的id
 }
 ```  
 
+## app相关
+### app版本更新
+- 请求方式: `get`
+- 请求地址: {host}`general/app-check-version`
+- 请求参数: 
+```json
+{
+    "os": 1, // 系统1android,2ios,3web,4其他
+    "channel": "百度" // 渠道名
+}
+```  
+
+- 响应内容:  
+```json  
+{
+    "code": 1,
+    "message": "",
+    "info": {
+        "id": 2,
+        "name": "test",
+        "os": null,
+        "channel": null,
+        "status": 1,
+        "auditing": null, //审核状态, 1 正在审核
+        "version": null,
+        "app_url": null,
+        "force": null // 是否强制更新
+    }
+}
+```
 
 
 ### 获取首页文章列表
