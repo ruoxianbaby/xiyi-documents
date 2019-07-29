@@ -17,6 +17,7 @@
     - [添加文章评论](./#添加文章评论)
     - [删除评论](./#删除评论)
     - [更多评论点进去的最新评论](./#更多评论点进去的最新评论)
+    - [更多评论点进去的最re评论](./#更多评论点进去的最re评论)
 ### 全局header  
 
 key |  vaule
@@ -469,6 +470,167 @@ article_id 文章的id
             "pageCount": 1,
             "currentPage": 1,
             "perPage": 2
+        }
+    }
+}
+id 是当前评论的id
+comment_count 是这篇文章的评论总数
+like 是当前用户是否对这个评论点赞 1代表是
+like_count 是这条评论已经被点了多少次的赞
+child 是这条评论下的子评论
+```  
+
+###  更多评论点进去的最热评论
+- 请求方式: `get`
+- 请求地址: {host}`comments?article_id=58&pid=0&per-page=2&page=1&sort=-child_count`
+- 请求参数:  
+article_id 文章的id  
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 13,
+                "article_id": 58,
+                "user_id": 108,
+                "content": "哈哈 58的2",
+                "pid": 0,
+                "child_count": 14,
+                "create_time": "2019-07-29 10:54:09",
+                "update_time": null,
+                "del": null,
+                "comment_count": "8",
+                "nick_name": "nick108",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/107.jpg",
+                "like": 0,
+                "like_count": "0",
+                "child": [
+                    {
+                        "id": "14",
+                        "article_id": "58",
+                        "user_id": "109",
+                        "content": "评论13",
+                        "pid": "13",
+                        "child_count": "0",
+                        "create_time": "2019-07-29 11:06:44",
+                        "update_time": null,
+                        "del": null,
+                        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/109.jpg",
+                        "nick_name": "nicheng222",
+                        "like": 0,
+                        "like_count": "0"
+                    },
+                    {
+                        "id": "15",
+                        "article_id": "58",
+                        "user_id": "108",
+                        "content": "评论13",
+                        "pid": "13",
+                        "child_count": "0",
+                        "create_time": "2019-07-29 11:06:47",
+                        "update_time": null,
+                        "del": null,
+                        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/107.jpg",
+                        "nick_name": "nick108",
+                        "like": 0,
+                        "like_count": "0"
+                    },
+                    {
+                        "id": "16",
+                        "article_id": "58",
+                        "user_id": "107",
+                        "content": "评论13",
+                        "pid": "13",
+                        "child_count": "0",
+                        "create_time": "2019-07-29 11:06:49",
+                        "update_time": null,
+                        "del": null,
+                        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-07-26/imjCmH90IdyOFBslNKk2m-jYQwv759ns.png",
+                        "nick_name": "nick107",
+                        "like": 0,
+                        "like_count": "0"
+                    },
+                    {
+                        "id": "44",
+                        "article_id": "58",
+                        "user_id": "109",
+                        "content": "评论55",
+                        "pid": "13",
+                        "child_count": "0",
+                        "create_time": "2019-07-26 17:36:41",
+                        "update_time": null,
+                        "del": null,
+                        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/109.jpg",
+                        "nick_name": "nicheng222",
+                        "like": 0,
+                        "like_count": "0"
+                    }
+                ]
+            },
+            {
+                "id": 10,
+                "article_id": 58,
+                "user_id": 107,
+                "content": "哈哈哈",
+                "pid": 0,
+                "child_count": 2,
+                "create_time": "2019-07-29 09:51:26",
+                "update_time": null,
+                "del": null,
+                "comment_count": "8",
+                "nick_name": "nick107",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-07-26/imjCmH90IdyOFBslNKk2m-jYQwv759ns.png",
+                "like": 1,
+                "like_count": "1",
+                "child": [
+                    {
+                        "id": "11",
+                        "article_id": "58",
+                        "user_id": "108",
+                        "content": "58的子",
+                        "pid": "10",
+                        "child_count": "0",
+                        "create_time": "2019-07-29 09:59:59",
+                        "update_time": null,
+                        "del": null,
+                        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/107.jpg",
+                        "nick_name": "nick108",
+                        "like": 1,
+                        "like_count": "1"
+                    },
+                    {
+                        "id": "12",
+                        "article_id": "58",
+                        "user_id": "107",
+                        "content": "58的子2",
+                        "pid": "10",
+                        "child_count": "0",
+                        "create_time": "2019-07-29 10:03:46",
+                        "update_time": null,
+                        "del": null,
+                        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-07-26/imjCmH90IdyOFBslNKk2m-jYQwv759ns.png",
+                        "nick_name": "nick107",
+                        "like": 0,
+                        "like_count": "0"
+                    }
+                ]
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/comments?article_id=58&pid=0&sort=-child_count&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 2,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
         }
     }
 }
