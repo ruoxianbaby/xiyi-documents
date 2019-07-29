@@ -134,15 +134,15 @@ id -> 文章的id
     "info": [
         {
             "id": "61",
-            "images": "https://xqimg.imedao.com/169b2bfdbe46c4393fdaa724.jpg"
+            "image": "https://xqimg.imedao.com/169b2bfdbe46c4393fdaa724.jpg"
         },
         {
             "id": "62",
-            "images": "https://xqimg.imedao.com/169b2bfdbe46c4393fdaa724.jpg"
+            "image": "https://xqimg.imedao.com/169b2bfdbe46c4393fdaa724.jpg"
         },
         {
             "id": "63",
-            "images": "https://xqimg.imedao.com/169b2bfdbe46c4393fdaa724.jpg"
+            "image": "https://xqimg.imedao.com/169b2bfdbe46c4393fdaa724.jpg"
         }
     ]
 }
