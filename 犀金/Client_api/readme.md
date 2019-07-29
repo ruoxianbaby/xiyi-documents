@@ -409,19 +409,7 @@ like 0 代表该用户未点赞，1代表点了赞
                     }
                 ],
             }
-        ],
-        "_links": {
-            "self": {
-                "href": "http://my_xijin_api.com/articles?id=18&fields=like_num%2Clike%2Ccomment_num%2Ccollect_num%2Ccollect%2Ccomment&page=1"
-            }
-        },
-        "_meta": {
-            "totalCount": 1,
-            "pageCount": 1,
-            "currentPage": 1,
-            "perPage": 20
-        }
-    }
+        ]
 }
 
 ```  
