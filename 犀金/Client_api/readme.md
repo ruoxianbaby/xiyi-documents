@@ -300,6 +300,7 @@ author  作者
 desc 副标题  
 preview_image 文章的顶部图片  
 recommand 文章推荐，至多返回3个，没有则为空
+label 文章标签
 
 ```json  
 {
@@ -317,6 +318,20 @@ recommand 文章推荐，至多返回3个，没有则为空
                 "collect_num": "0",
                 "collect": 0
 		"focus": 1,
+		"label": [
+                    {
+                        "id": "1",
+                        "name": "标签1"
+                    },
+                    {
+                        "id": "2",
+                        "name": "标签2"
+                    },
+                    {
+                        "id": "3",
+                        "name": "标签3"
+                    }
+                ],
 		"recommand": [
                     {
                         "id": "77",
