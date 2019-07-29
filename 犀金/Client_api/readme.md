@@ -12,6 +12,7 @@
     - [获取banner图片](./#获取banner图片)
 - [app相关](./#app相关)
     - [app版本更新](./#app版本更新)
+    - [app工作url](./#app工作url)
 - [文章模块](./#文章模块)
     - [获取首页文章列表](./#获取首页文章列表)
     - [文章详情](./#文章详情)
@@ -172,6 +173,23 @@ id -> 文章的id
         "version": null,
         "app_url": null,
         "force": null // 是否强制更新 1是
+    }
+}
+```
+
+### app工作url
+- 请求方式: `get`
+- 请求地址: {host}`app-settings/1`
+- 请求参数: 
+
+- 响应内容:  
+```json  
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "id": 1,
+        "webview_url": "https://xijin.sshua.com/index.html"
     }
 }
 ```
