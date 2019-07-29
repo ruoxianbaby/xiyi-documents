@@ -16,7 +16,7 @@
     - [文章点赞收藏toggle](./#文章点赞收藏toggle)
     - [添加文章评论](./#添加文章评论)
     - [删除评论](./#删除评论)
-    - [更多评论点进去的评论接口列表](./#更多评论点进去的评论接口列表)
+    - [更多评论点进去的最新评论](./#更多评论点进去的最新评论)
 ### 全局header  
 
 key |  vaule
@@ -383,9 +383,9 @@ id 评论的id
 
 ```  
 
-###  更多评论点进去的评论接口列表
+###  更多评论点进去的最新评论
 - 请求方式: `get`
-- 请求地址: {host}`comments?article_id=58&pid=0&per-page=2&page=1`
+- 请求地址: {host}`comments?article_id=58&pid=0&per-page=2&page=1&sort=-id`
 - 请求参数:  
 article_id 文章的id  
 
