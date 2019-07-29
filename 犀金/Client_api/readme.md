@@ -70,7 +70,9 @@ Authorization | Bearer ***access_token***
 ```json
 {
     "mobile": 15821827706, 
-    "sms_code": 5934
+    "sms_code": 5934,
+    "wechat_open_id": "",
+    "qq_open_id": ""
 }
 ```  
 - 响应内容:  
