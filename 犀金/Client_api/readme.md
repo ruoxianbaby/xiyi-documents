@@ -7,12 +7,15 @@
     - [获取短信验证码](./#获取短信验证码)  
     - [获取access_token](./#获取access_token)
     - [获取用户信息接口](./#获取用户信息)   
-    - [上传用户头像](./#上传用户头像)
+    - [上传用户头像] > 先调用上传图片的接口,再调用更新用户信息的接口
+    - [更新用户信息](./#更新用户信息)
+    - [绑定微信qq] > 参考更新用户信息
     - [主页浏览](./#主页浏览)
         - [新增浏览记录](./#新增浏览记录)
 - [通用模块](./#通用模块)
 	- [用户反馈](./#用户反馈)
 	- [上报设备号](./#上报设备号)  
+	- [上传图片接口](./#上传图片接口)
 - [app相关](./#app相关)
     - [app版本更新](./#app版本更新)
     - [app工作url](./#app工作url)
@@ -96,7 +99,6 @@ Authorization | Bearer ***access_token***
 - 请求方式: `get`
 - 请求地址: {host}`users/:id`
 
-
 - 响应内容:  
 
 ```json  
@@ -120,6 +122,33 @@ Authorization | Bearer ***access_token***
     }
 }
 ```  
+### 更新用户信息
+- 请求方式: `post`
+- 请求地址: {host}`user/update`
+- 请求参数:
+```json
+{
+	"nick_name": "dada",
+	"wechat_open_id": "dad",
+	"qq_open_id": "djehwgqwj"		
+}
+```
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "更新成功",
+    "info": {
+        "id": 1,
+        "nick_name": "dada",
+        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-07-26/imjCmH90IdyOFBslNKk2m-jYQwv759ns.png",
+        "register_time": "2019-07-11 14:33:50",
+        "register_ip": "127.255.255.255"
+    }
+}
+```  
+
 ### 主页浏览  
 ### 新增浏览记录  
 - 请求方式: `post`
@@ -175,6 +204,15 @@ Authorization | Bearer ***access_token***
     "info": ""
 }	
 ``` 
+### 上传图片接口  
+- 请求方式: `post`
+- 请求地址: {host}`generals/upload-file-and-to-aliyun_oss?type=avatar`
+- 请求参数 `type=avatar`, `type` 说明:支持 avatar, article 等等
+```json
+{
+    "file": [binary]
+}
+```
 
 ### 获取banner图片
 - 请求方式: `get`
@@ -308,34 +346,6 @@ admin_name 后台管理员名
 avatar_image 用户头像
 preview_content 文章内容预览
 ```  
-
-
-### 上传用户头像
-- 请求方式: `post`
-- 请求地址: {host}`user/upload-avatar`
-- 请求参数: 
-```json
-{
-    "id": 110, 
-    "image": "base64xxxxxxxxxxxx"
-}
-```  
-
-
-- 响应内容:  
-
-```json  
-{
-    "code": 1,
-    "message": "上传成功",
-    "info": "http://my_xijin_api.com./images/avatar_image/110.jpg"
-}
-
----
-id 上传头像的用户id
-image base64格式的流
-```  
-
 
 ###  文章详情
 - 请求方式: `get`
