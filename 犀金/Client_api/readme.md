@@ -96,7 +96,7 @@ Authorization | Bearer ***access_token***
 
 ### 获取用户信息
 - 请求方式: `get`
-- 请求地址: {host}`users/0`
+- 请求地址: {host}`users/:id`
 
 
 - 响应内容:  
