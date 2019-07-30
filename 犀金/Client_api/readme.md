@@ -16,6 +16,7 @@
         - [新增浏览记录](./#新增浏览记录)
 	- 查看今日,历史浏览人数  
 		>参考[获取用户信息接口](./#获取用户信息)接口
+    - [我的收藏](./#我的收藏)
 - [通用模块](./#通用模块)
 	- [用户反馈](./#用户反馈)
 	- [上报设备号](./#上报设备号)  
@@ -172,6 +173,52 @@ Authorization | Bearer ***access_token***
     "info": ""
 }
 ```  
+### 我的收藏
+- 请求方式: `get`
+- 请求地址: {host}`users/my-collect`
+- 响应内容:  
+```json  
+{
+    "code": 1,
+    "message": "",
+    "info": [
+        {
+            "title": "创业就像谈恋爱",
+            "preview_image": "http://img.wine-talk.cn/data/news/image/20190627/20190627150612_27223.jpg",
+            "desc": "miaoshu"
+        },
+        {
+            "title": "三大核心板块，轻松掌握电商运营",
+            "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-07-24/e4dde71190ef76c69bf19d0adbcf4bfeae5167c9.jpeg",
+            "desc": "miaoshu"
+        }
+    ]
+}
+```
+### 历史记录
+- 请求方式: `get`
+- 请求地址: {host}`users/my-browse-record`
+- 响应内容:  
+```json  
+{
+    "code": 1,
+    "message": "",
+    "info": [
+        {
+            "title": "创业就像谈恋爱",
+            "preview_image": "http://img.wine-talk.cn/data/news/image/20190627/20190627150612_27223.jpg",
+            "desc": "miaoshu"
+        },
+        {
+            "title": "三大核心板块，轻松掌握电商运营",
+            "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-07-24/e4dde71190ef76c69bf19d0adbcf4bfeae5167c9.jpeg",
+            "desc": "miaoshu"
+        }
+    ]
+}
+```
+
+
 ### 通用模块
 ### 用户反馈  
 - 请求方式: `post`
