@@ -36,6 +36,7 @@
     - [删除评论](./#删除评论)
     - [更多评论点进去的最新评论](./#更多评论点进去的最新评论)
     - [更多评论点进去的最热评论](./#更多评论点进去的最热评论)
+    - [评论列表详情](./#评论列表详情)
     - [评论点赞toggle](./#评论点赞toggle)
 ### 全局header  
 
@@ -693,7 +694,7 @@ child 是这条评论下的子评论
 
 ###  更多评论点进去的最热评论
 - 请求方式: `get`
-- 请求地址: {host}`comments?article_id=58&pid=0&per-page=2&page=1&sort=-child_count`
+- 请求地址: {host}`comments?article_id=58&pid=0&per-page=3&page=1&sort=-child_count`
 - 请求参数:  
 article_id 文章的id  
 
@@ -879,6 +880,99 @@ pid 3 3代表着这个评论的id 代表上级评论的id是3，如果是最顶�
 }
 
 ```  
+###  评论列表详情
+- 请求方式: `get`
+- 请求地址: {host}`comment/comment-detail?id=2`
+- 请求参数: 
+
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 2,
+                "article_id": 18,
+                "user_id": 108,
+                "content": "评论2",
+                "pid": 0,
+                "child_count": 2,
+                "create_time": "2019-07-25 15:23:13",
+                "update_time": null,
+                "del": null,
+                "comment_count": "21",
+                "nick_name": "",
+                "avatar_image": "",
+                "like": 0,
+                "like_count": "3",
+                "child": [
+                    {
+                        "id": "3",
+                        "article_id": "18",
+                        "user_id": "109",
+                        "content": "评论3",
+                        "pid": "2",
+                        "child_count": "0",
+                        "create_time": "2019-07-25 15:23:16",
+                        "update_time": null,
+                        "del": null,
+                        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/109.jpg",
+                        "nick_name": "nicheng222",
+                        "like": 0,
+                        "like_count": "1"
+                    },
+                    {
+                        "id": "5",
+                        "article_id": "18",
+                        "user_id": "108",
+                        "content": "测试测试测试",
+                        "pid": "2",
+                        "child_count": "0",
+                        "create_time": "2019-07-27 14:21:39",
+                        "update_time": null,
+                        "del": null,
+                        "avatar_image": "",
+                        "nick_name": "",
+                        "like": 0,
+                        "like_count": "1"
+                    },
+                    {
+                        "id": "7",
+                        "article_id": "18",
+                        "user_id": "107",
+                        "content": "测试测试测试",
+                        "pid": "2",
+                        "child_count": "0",
+                        "create_time": "2019-07-27 14:23:03",
+                        "update_time": null,
+                        "del": null,
+                        "avatar_image": "",
+                        "nick_name": "",
+                        "like": 0,
+                        "like_count": "0"
+                    }
+                ]
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/comment/comment-detail?id=2&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 1,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```  
+
 
 ###  评论点赞toggle
 - 请求方式: `put`
