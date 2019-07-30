@@ -89,6 +89,29 @@ Authorization | Bearer ***access_token***
 }
 ```
 
+### 第三方平台获取access_token
+- 请求方式: `post`
+- 请求地址: {host}`get-access-token-tpp`
+- 请求参数:  
+
+```json
+{
+    "wechat_open_id": "",
+    "qq_open_id": "",
+}
+```  
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "access_token": "uFYrhY7NUj68X9K_EbAFJ6axpWJVY70E"
+    }
+}
+```
+
 ### 获取用户信息
 - 请求方式: `get`
 - 请求地址: {host}`users/0`
