@@ -340,6 +340,7 @@ label 文章标签
                 "collect_num": "0",
                 "collect": 0
 		"focus": 1,
+		"share_url": "http://47.103.61.179:8084",
 		"label": [
                     {
                         "id": "1",
