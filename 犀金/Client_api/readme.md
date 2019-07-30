@@ -62,9 +62,7 @@ Authorization | Bearer ***access_token***
 {
     "code": 1,
     "message": "获取成功",
-    "info": {
-        "sms_code": 5934
-    }
+    "info": ""
 }
 ```
 
