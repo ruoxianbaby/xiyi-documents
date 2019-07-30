@@ -212,6 +212,14 @@ Authorization | Bearer ***access_token***
 {
     "file": [binary]
 }
+```  
+- 响应内容:
+```json
+{
+    "code": 1,
+    "message": "上传成功",
+    "info": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-07-30/jVPW6-x-jkY0s8zoOAm7lGslg0q9ebbZ.jpg"
+}
 ```
 
 ### 获取banner图片
@@ -245,7 +253,7 @@ id -> 文章的id
 ## app相关
 ### app版本更新
 - 请求方式: `get`
-- 请求地址: {host}`general/app-check-version`
+- 请求地址: {host}`generals/app-check-version`
 - 请求参数: 
 ```json
 {
