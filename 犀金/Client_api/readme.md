@@ -417,7 +417,7 @@ id -> 文章的id
 
 ### 获取首页文章列表
 - 请求方式: `get`
-- 请求地址: {host}`?fields=id,title,desc,avatar_image,author,before_time,like_num,comment_num,img_url&per-page=2&page=2`
+- 请求地址: {host}`articles`
 - 请求参数:   
 
 
@@ -473,7 +473,7 @@ preview_content 文章内容预览
 
 ###  文章详情
 - 请求方式: `get`
-- 请求地址: {host}`articles?id=18`
+- 请求地址: {host}`articles?id=18&expand=content`
 - 请求参数: 
 
 
