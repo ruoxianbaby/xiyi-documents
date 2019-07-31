@@ -177,7 +177,7 @@ Authorization | Bearer ***access_token***
 ``` 
 
 ### 主页浏览  
-### 新增浏览记录  
+### 新增主页浏览记录  
 - 请求方式: `post`
 - 请求地址: {host}`user-profile-browses`
 - 请求参数:  
