@@ -19,6 +19,9 @@
 		参考[获取用户信息接口](./#获取用户信息)接口
     - [我的收藏](./#我的收藏)
     - [历史记录](./#历史记录)
+- [搜索](./#搜索)
+    - [文章搜索](./#文章搜索)
+    - [用户搜索](./#用户搜索)
 - [通用模块](./#通用模块)
 	- [用户反馈](./#用户反馈)
 	- [上报设备号](./#上报设备号)  
@@ -133,8 +136,8 @@ Authorization | Bearer ***access_token***
 ```json
 {
 	"nick_name": "dada",
-	"wechat_open_id": "dad",
-	"qq_open_id": "djehwgqwj"		
+	"wechat_token": "dad",
+	"qq_token": "djehwgqwj"		
 }
 ```
 - 响应内容:  
@@ -154,8 +157,8 @@ Authorization | Bearer ***access_token***
 ```  
 ### 检查是否绑定微信qq
 - 请求方式: `get`
-- 请求地址: {host}`user/check-bind?wechat_open_id=dad`
-- 请求参数:  `wechat_open_id=dad` 或者 `qq_open_id=dahkn`  
+- 请求地址: {host}`user/check-bind?wechat_token=dad`
+- 请求参数:  `wechat_token=dad` 或者 `qq_token=dahkn`  
 - 响应内容:  
 ```json  
 {
@@ -166,8 +169,8 @@ Authorization | Bearer ***access_token***
         "nick_name": "dada",
         "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-07-26/imjCmH90IdyOFBslNKk2m-jYQwv759ns.png",
         "register_time": "2019-07-11 14:33:50",
-        "wechat_open_id": "dad",
-        "qq_open_id": "djehwgqwj",
+        "wechat_token": "dad",
+        "qq_token": "djehwgqwj",
         "register_ip": "127.255.255.255"
     }
 }
@@ -236,7 +239,30 @@ Authorization | Bearer ***access_token***
     ]
 }
 ```
-
+### 搜索
+### 用户搜索
+- 请求方式: `get`
+- 请求地址: {host}`users?nick_name=da`
+> 参数 `nick_name=da` 模糊搜索
+- 响应内容:  
+```json  
+{
+    "code": 1,
+    "message": "",
+    "info": [
+        {
+            "title": "创业就像谈恋爱",
+            "preview_image": "http://img.wine-talk.cn/data/news/image/20190627/20190627150612_27223.jpg",
+            "desc": "miaoshu"
+        },
+        {
+            "title": "三大核心板块，轻松掌握电商运营",
+            "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-07-24/e4dde71190ef76c69bf19d0adbcf4bfeae5167c9.jpeg",
+            "desc": "miaoshu"
+        }
+    ]
+}
+```
 
 ### 通用模块
 ### 用户反馈  
@@ -894,16 +920,9 @@ pid 3 3代表着这个评论的id 代表上级评论的id是3，如果是最顶�
 
 ```json  
 {
-    "code": 1,
+    "code": 0,
     "message": "添加成功",
-    "info": {
-        "id": "36",
-        "user_id": 1,
-        "content": "测试测试测试",
-        "create_time": "2019-07-31 11:43:26",
-        "nick_name": "dad2332131a",
-        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-07-26/imjCmH90IdyOFBslNKk2m-jYQwv759ns.png"
-    }
+    "info": ""
 }
 
 ```  
