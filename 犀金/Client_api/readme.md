@@ -241,26 +241,48 @@ Authorization | Bearer ***access_token***
 ```
 ### 历史记录
 - 请求方式: `get`
-- 请求地址: {host}`users/my-browse-record`
+- 请求地址: {host}`article-browses?user_id=1`
+- 请求参数: `user_id=1` 
 - 响应内容:  
 ```json  
 {
     "code": 1,
-    "message": "",
-    "info": [
-        {
-            "title": "创业就像谈恋爱",
-            "preview_image": "http://img.wine-talk.cn/data/news/image/20190627/20190627150612_27223.jpg",
-            "desc": "miaoshu"
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 19,
+                "user_id": 1,
+                "article_id": 61,
+                "title": "创业就像谈恋爱",
+                "preview_image": "http://img.wine-talk.cn/data/news/image/20190627/20190627150612_27223.jpg",
+                "desc": "miaoshu",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-07-26/imjCmH90IdyOFBslNKk2m-jYQwv759ns.png"
+            },
+            {
+                "id": 26,
+                "user_id": 1,
+                "article_id": 63,
+                "title": "三大核心板块，轻松掌握电商运营",
+                "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-07-24/e4dde71190ef76c69bf19d0adbcf4bfeae5167c9.jpeg",
+                "desc": "miaoshu",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-07-26/imjCmH90IdyOFBslNKk2m-jYQwv759ns.png"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://localhost:8001/article-collects?user_id=1&page=1"
+            }
         },
-        {
-            "title": "三大核心板块，轻松掌握电商运营",
-            "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-07-24/e4dde71190ef76c69bf19d0adbcf4bfeae5167c9.jpeg",
-            "desc": "miaoshu"
+        "_meta": {
+            "totalCount": 2,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
         }
-    ]
+    }
 }
-```
+```  
 ### 搜索
 ### 用户搜索
 - 请求方式: `get`
