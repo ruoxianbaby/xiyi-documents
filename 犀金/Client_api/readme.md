@@ -896,7 +896,14 @@ pid 3 3代表着这个评论的id 代表上级评论的id是3，如果是最顶�
 {
     "code": 0,
     "message": "添加成功",
-    "info": ""
+    "info": {
+        "id": "36",
+        "user_id": 1,
+        "content": "测试测试测试",
+        "create_time": "2019-07-31 11:43:26",
+        "nick_name": "dad2332131a",
+        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-07-26/imjCmH90IdyOFBslNKk2m-jYQwv759ns.png"
+    }
 }
 
 ```  
