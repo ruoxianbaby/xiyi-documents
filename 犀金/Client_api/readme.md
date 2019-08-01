@@ -254,8 +254,6 @@ Authorization | Bearer ***access_token***
     "info": {
         "items": [
             {
-                "aid": "1075",
-                "user_id": "109",
                 "id": "63",
                 "title": "三大核心板块，轻松掌握电商运营",
                 "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-07-24/e4dde71190ef76c69bf19d0adbcf4bfeae5167c9.jpeg",
@@ -265,8 +263,6 @@ Authorization | Bearer ***access_token***
                 "my_view_count": "2"
             },
             {
-                "aid": "1058",
-                "user_id": "109",
                 "id": "65",
                 "title": "葡萄酒投资回报超股票黄金",
                 "preview_image": "http://img.wine-talk.cn/data/news/image/20190627/20190627150612_27223.jpg",
