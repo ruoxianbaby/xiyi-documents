@@ -516,7 +516,7 @@ preview_content 文章内容预览
 
 ###  文章详情
 - 请求方式: `get`
-- 请求地址: {host}`articles?id=18&expand=content`
+- 请求地址: {host}`articles?id=183&expand=content,comment,label,recommend`
 - 请求参数: 
 
 
