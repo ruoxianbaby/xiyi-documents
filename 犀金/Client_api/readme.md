@@ -213,6 +213,8 @@ Authorization | Bearer ***access_token***
                 "title": "创业就像谈恋爱",
                 "preview_image": "http://img.wine-talk.cn/data/news/image/20190627/20190627150612_27223.jpg",
                 "desc": "miaoshu",
+                "comment_num": "0",
+                "like_num": "0",
                 "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-07-26/imjCmH90IdyOFBslNKk2m-jYQwv759ns.png"
             },
             {
@@ -222,12 +224,14 @@ Authorization | Bearer ***access_token***
                 "title": "三大核心板块，轻松掌握电商运营",
                 "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-07-24/e4dde71190ef76c69bf19d0adbcf4bfeae5167c9.jpeg",
                 "desc": "miaoshu",
+                "comment_num": "0",
+                "like_num": "0",
                 "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-07-26/imjCmH90IdyOFBslNKk2m-jYQwv759ns.png"
             }
         ],
         "_links": {
             "self": {
-                "href": "http://localhost:8001/article-collects?user_id=1&page=1"
+                "href": "http://xj.org/article-collects?user_id=1&page=1"
             }
         },
         "_meta": {
@@ -249,14 +253,28 @@ Authorization | Bearer ***access_token***
     "message": "",
     "info": [
         {
-            "title": "创业就像谈恋爱",
+            "title": "葡萄酒专业到底在学啥？",
             "preview_image": "http://img.wine-talk.cn/data/news/image/20190627/20190627150612_27223.jpg",
-            "desc": "miaoshu"
+            "desc": "miaoshu",
+            "id": "18",
+            "like_num": "0",
+            "comment_num": "6"
         },
         {
-            "title": "三大核心板块，轻松掌握电商运营",
-            "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-07-24/e4dde71190ef76c69bf19d0adbcf4bfeae5167c9.jpeg",
-            "desc": "miaoshu"
+            "title": "垃圾分类的商业模式我都想好了",
+            "preview_image": "http://img.wine-talk.cn/data/news/image/20190627/20190627150612_27223.jpg",
+            "desc": "miaoshu",
+            "id": "64",
+            "like_num": "0",
+            "comment_num": "0"
+        },
+        {
+            "title": "开赚钱的咖啡店，你必须知道这7件事",
+            "preview_image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/05b93d90b5b94b71a5dd8020587f33c6.jpeg",
+            "desc": "miaoshu",
+            "id": "58",
+            "like_num": "0",
+            "comment_num": "3"
         }
     ]
 }
@@ -422,7 +440,7 @@ id -> 文章的id
 
 ### app工作url
 - 请求方式: `get`
-- 请求地址: {host}`app-settings/1`
+- 请求地址: {host}`app-settings/1?os=&version=&channel=`
 - 请求参数: 
 
 - 响应内容:  
