@@ -241,48 +241,26 @@ Authorization | Bearer ***access_token***
 ```
 ### 历史记录
 - 请求方式: `get`
-- 请求地址: {host}`article-browses?user_id=1`
-- 请求参数: `user_id=1` 
+- 请求地址: {host}`users/my-browse-record`
 - 响应内容:  
 ```json  
 {
     "code": 1,
-    "message": "success",
-    "info": {
-        "items": [
-            {
-                "id": 19,
-                "user_id": 1,
-                "article_id": 61,
-                "title": "创业就像谈恋爱",
-                "preview_image": "http://img.wine-talk.cn/data/news/image/20190627/20190627150612_27223.jpg",
-                "desc": "miaoshu",
-                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-07-26/imjCmH90IdyOFBslNKk2m-jYQwv759ns.png"
-            },
-            {
-                "id": 26,
-                "user_id": 1,
-                "article_id": 63,
-                "title": "三大核心板块，轻松掌握电商运营",
-                "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-07-24/e4dde71190ef76c69bf19d0adbcf4bfeae5167c9.jpeg",
-                "desc": "miaoshu",
-                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-07-26/imjCmH90IdyOFBslNKk2m-jYQwv759ns.png"
-            }
-        ],
-        "_links": {
-            "self": {
-                "href": "http://localhost:8001/article-collects?user_id=1&page=1"
-            }
+    "message": "",
+    "info": [
+        {
+            "title": "创业就像谈恋爱",
+            "preview_image": "http://img.wine-talk.cn/data/news/image/20190627/20190627150612_27223.jpg",
+            "desc": "miaoshu"
         },
-        "_meta": {
-            "totalCount": 2,
-            "pageCount": 1,
-            "currentPage": 1,
-            "perPage": 20
+        {
+            "title": "三大核心板块，轻松掌握电商运营",
+            "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-07-24/e4dde71190ef76c69bf19d0adbcf4bfeae5167c9.jpeg",
+            "desc": "miaoshu"
         }
-    }
+    ]
 }
-```  
+```
 ### 搜索
 ### 用户搜索
 - 请求方式: `get`
@@ -861,6 +839,7 @@ article_id 文章的id
                         "create_time": "2019-07-31 14:29:14",
                         "update_time": null,
                         "del": null,
+			"time_before": "3小时前",	
                         "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-07-26/imjCmH90IdyOFBslNKk2m-jYQwv759ns.png",
                         "nick_name": "dad2",
                         "like_count": "4",
@@ -874,6 +853,7 @@ article_id 文章的id
                         "pid": "1",
                         "reply_pid": "2",
                         "like": 0,
+			"time_before": "3小时前",
                         "child_count": "0",
                         "create_time": "2019-07-31 14:29:21",
                         "update_time": null,
@@ -975,7 +955,7 @@ active 0 代表切换成未点赞的状态，1是已点赞
 
 ###  评论详情
 - 请求方式: `get`
-- 请求地址: {host}`comment/comment-detail?id=5&child_per_page=10&child_offset_page=0`
+- 请求地址: {host}`comment/comment-detail?id=5`
 - 请求参数: 
 id 评论的id
 child_per_page=10  每页显示10条
@@ -1016,6 +996,7 @@ child_offset_page=0  第1页
                         "reply_pid": "5",
                         "like_num": "0",
                         "child_count": "0",
+			"time_before": "3小时前",
                         "create_time": "2019-07-31 15:47:55",
                         "update_time": null,
                         "del": null,
@@ -1031,6 +1012,7 @@ child_offset_page=0  第1页
                         "user_id": "1",
                         "content": "好啊123",
                         "pid": "5",
+			"time_before": "3小时前",
                         "reply_pid": "5",
                         "like_num": "0",
                         "child_count": "0",
@@ -1051,6 +1033,7 @@ child_offset_page=0  第1页
                         "pid": "5",
                         "reply_pid": "7",
                         "like_num": "0",
+			"time_before": "3小时前",
                         "child_count": "0",
                         "create_time": "2019-07-31 15:48:35",
                         "update_time": null,
@@ -1070,6 +1053,7 @@ child_offset_page=0  第1页
                         "content": "我评论7",
                         "pid": "5",
                         "reply_pid": "7",
+			"time_before": "3小时前",
                         "like_num": "0",
                         "child_count": "0",
                         "create_time": "2019-07-31 16:41:50",
