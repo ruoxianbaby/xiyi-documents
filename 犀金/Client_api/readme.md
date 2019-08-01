@@ -609,7 +609,7 @@ label 文章标签
 
 ###  文章评论
 - 请求方式: `get`
-- 请求地址: {host}`articles?id=18&fields=comment`
+- 请求地址: {host}`articles?id=18&expand=comment`
 - 请求参数:   ?id 是文章的id
 
 
