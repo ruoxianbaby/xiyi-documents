@@ -245,7 +245,7 @@ Authorization | Bearer ***access_token***
 ```
 ### 历史记录
 - 请求方式: `get`
-- 请求地址: {host}`users/my-browse-record?page=&perPage=`
+- 请求地址: {host}`users/my-browse-record?page=&per-page=`
 - 响应内容:  
 ```json  
 {
