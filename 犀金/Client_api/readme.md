@@ -958,8 +958,7 @@ active 0 代表切换成未点赞的状态，1是已点赞
 - 请求地址: {host}`comment/comment-detail?id=5`
 - 请求参数: 
 id 评论的id
-child_per_page=10  每页显示10条
-child_offset_page=0  第1页
+
 
 - 响应内容:  
 
