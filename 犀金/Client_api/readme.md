@@ -458,7 +458,7 @@ id -> 文章的id
 
 ### 获取首页文章列表
 - 请求方式: `get`
-- 请求地址: {host}`articles`
+- 请求地址: {host}`articles?sort=-id`
 - 请求参数:   
 
 
