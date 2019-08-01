@@ -245,38 +245,44 @@ Authorization | Bearer ***access_token***
 ```
 ### 历史记录
 - 请求方式: `get`
-- 请求地址: {host}`users/my-browse-record`
+- 请求地址: {host}`users/my-browse-record?page=&perPage=`
 - 响应内容:  
 ```json  
 {
     "code": 1,
     "message": "",
-    "info": [
-        {
-            "title": "葡萄酒专业到底在学啥？",
-            "preview_image": "http://img.wine-talk.cn/data/news/image/20190627/20190627150612_27223.jpg",
-            "desc": "miaoshu",
-            "id": "18",
-            "like_num": "0",
-            "comment_num": "6"
-        },
-        {
-            "title": "垃圾分类的商业模式我都想好了",
-            "preview_image": "http://img.wine-talk.cn/data/news/image/20190627/20190627150612_27223.jpg",
-            "desc": "miaoshu",
-            "id": "64",
-            "like_num": "0",
-            "comment_num": "0"
-        },
-        {
-            "title": "开赚钱的咖啡店，你必须知道这7件事",
-            "preview_image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/05b93d90b5b94b71a5dd8020587f33c6.jpeg",
-            "desc": "miaoshu",
-            "id": "58",
-            "like_num": "0",
-            "comment_num": "3"
+    "info": {
+        "items": [
+            {
+                "aid": "1075",
+                "user_id": "109",
+                "id": "63",
+                "title": "三大核心板块，轻松掌握电商运营",
+                "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-07-24/e4dde71190ef76c69bf19d0adbcf4bfeae5167c9.jpeg",
+                "desc": "miaoshu",
+                "like_num": "0",
+                "comment_num": "2",
+                "my_view_count": "2"
+            },
+            {
+                "aid": "1058",
+                "user_id": "109",
+                "id": "65",
+                "title": "葡萄酒投资回报超股票黄金",
+                "preview_image": "http://img.wine-talk.cn/data/news/image/20190627/20190627150612_27223.jpg",
+                "desc": "miaoshu",
+                "like_num": "0",
+                "comment_num": "0",
+                "my_view_count": "1"
+            }
+        ],
+        "_meta": {
+            "totalCount": "9",
+            "pageCount": 5,
+            "currentPage": "1",
+            "perPage": "2"
         }
-    ]
+    }
 }
 ```
 ### 搜索
