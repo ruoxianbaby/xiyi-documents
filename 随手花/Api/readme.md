@@ -123,6 +123,20 @@ Authorization | Bearer ***access_token***
 ```  
 ### 获取用户申请记录
 
+### 获取h5 url
+- 请求方式: `get`
+- 请求地址: {host}`user/get-h5-url`
+- 请求参数: 
+
+- 响应内容: 
+```json
+{
+    "code": 1,
+    "message": "Success",
+    "info": "http://m.sshua.com"
+}
+```
+
 ## 产品模块  
 ### 申请贷款接口  
 - 请求方式: `post`
