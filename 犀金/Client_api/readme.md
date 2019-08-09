@@ -538,7 +538,7 @@ desc 副标题
 preview_image 文章的顶部图片  
 recommand 文章推荐，至多返回3个，没有则为空
 label 文章标签
-
+type_name 文章类型
 ```json  
 {
     "code": 1,
@@ -555,6 +555,8 @@ label 文章标签
                 "collect_num": "0",
                 "collect": 0
 		"focus": 1,
+		"type": 1111,
+		"type_name": "类型111",	
 		"label": [
                     {
                         "id": "1",
