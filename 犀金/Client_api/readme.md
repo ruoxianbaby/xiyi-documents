@@ -46,6 +46,10 @@
     - [评论点赞toggle](./#评论点赞toggle)
     - [评论详情](./#评论详情)
     - [举报文章](./#举报文章)
+- [活动模块](./#活动模块)
+    - [活动列表](./#活动列表)
+
+
 ### 全局header  
 
 key |  vaule
@@ -1203,6 +1207,66 @@ to_uid 是你要举报的那个用户的id
     "message": "success",
     "info": ""
 }
+```  
+
+###  活动列表
+- 请求方式: `get`
+- 请求地址: {host}`activities`
+- 请求参数:   
+
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "title": "标题",
+                "location": "上海",
+                "price": "1333.33",
+                "user_id": 155,
+                "preview_image": "",
+                "activity_time": "2019-08-12",
+                "registration_deadline": "2019-08-12 10:57:38",
+                "is_free": 1,
+                "creater_name": "琪琪男孩",
+                "activity_time_end": "2019-08-14"
+            },
+            {
+                "id": 2,
+                "title": "标题222",
+                "location": "北京",
+                "price": "1222.00",
+                "user_id": 156,
+                "preview_image": "",
+                "activity_time": "2019-08-12",
+                "registration_deadline": "2019-08-12 13:17:28",
+                "is_free": 1,
+                "creater_name": "Release my soul",
+                "activity_time_end": "2019-08-16"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/activities?page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 2,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+is_free 1代表是免费的
+registration_deadline 报名截止日期
+activity_time 活动开始日期
+activity_time_end 活动end日期
 ```  
 
 
