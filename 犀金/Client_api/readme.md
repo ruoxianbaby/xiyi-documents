@@ -48,7 +48,7 @@
     - [举报文章](./#举报文章)
 - [活动模块](./#活动模块)
     - [活动列表](./#活动列表)
-
+    - [活动详情](./#活动详情)
 
 ### 全局header  
 
@@ -1269,4 +1269,63 @@ activity_time 活动开始日期
 activity_time_end 活动end日期
 ```  
 
+###  活动详情
+- 请求方式: `get`
+- 请求地址: {host}`activities/1?expand=content,item`
+- 请求参数:   
+
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "title": "标题",
+                "location": "上海",
+                "price": "1333.33",
+                "user_id": 155,
+                "preview_image": "",
+                "activity_time": "2019-08-12",
+                "registration_deadline": "2019-08-12 10:57:38",
+                "is_free": 1,
+                "creater_name": "琪琪男孩",
+                "activity_time_end": "2019-08-14",
+                "content": "内容内容内容内容内容内容内容内容内容",
+                "item": [
+                    {
+                        "id": "1",
+                        "price": "555.00"
+                    },
+                    {
+                        "id": "2",
+                        "price": "2111.00"
+                    },
+                    {
+                        "id": "3",
+                        "price": "866.00"
+                    }
+                ]
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/activities/1?expand=content%2Citem&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 1,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+content 活动详情内容
+item 活动报名时候报名的项目
+```  
 
