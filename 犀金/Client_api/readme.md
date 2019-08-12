@@ -1299,15 +1299,18 @@ activity_time_end 活动end日期
                 "item": [
                     {
                         "id": "1",
-                        "price": "555.00"
+                        "price": "555.00",
+			"is_register": 1
                     },
                     {
                         "id": "2",
-                        "price": "2111.00"
+                        "price": "2111.00",
+			"is_register": 0
                     },
                     {
                         "id": "3",
-                        "price": "866.00"
+                        "price": "866.00",
+			"is_register": 1
                     }
                 ]
             }
@@ -1327,6 +1330,7 @@ activity_time_end 活动end日期
 }
 content 活动详情内容
 item 活动报名时候报名的项目
+	is_register 报过名就是1，报过名的不能再次报名活动项目
 ```  
 
 
@@ -1338,7 +1342,7 @@ item 活动报名时候报名的项目
 ```json  
 {
 	"id": 2,
-	"mobile": 123,
+	"mobile": 18955445555,
 	"name": "feixiang",
 	"price": 123.00
 }
