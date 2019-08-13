@@ -51,6 +51,7 @@
     - [活动详情](./#活动详情)
     - [活动报名提交](./#活动报名提交)
     - [检测是否已经报名](./#检测是否已经报名)
+    - [我的门票](./#我的门票)
 ### 全局header  
 
 key |  vaule
@@ -1377,6 +1378,35 @@ item 活动报名时候报名的项目
     "message": "已经报名过该项目",
     "info": {
         "is_register": true
+    }
+}
+```  
+
+
+
+###  我的门票
+- 请求方式: `get`
+- 请求地址: {host}`activity-item-sign-up/my-ticket?activity=3`
+- 请求参数:   
+
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "获取成功",
+    "info": {
+        "id": "3",
+        "title": "标题",
+        "location": "上海",
+        "price": "133.00",
+        "preview_image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/59081007160c1.jpg",
+        "activity_time": "2019-08-12 17:19:07",
+        "activity_time_end": "2019-08-12 17:19:09",
+        "is_free": "1",
+        "mobile": "13636655412",
+        "user_name": "微微笑"
     }
 }
 ```  
