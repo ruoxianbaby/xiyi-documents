@@ -1341,8 +1341,9 @@ item 活动报名时候报名的项目
 - 请求参数:   
 ```json  
 {
-	"id": 2,
-	"mobile": 18955445555,
+	"activity_item_id": 3,
+	"activity_id": 3,
+	"mobile": 123,
 	"name": "feixiang",
 	"price": 123.00
 }
