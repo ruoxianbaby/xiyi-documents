@@ -1342,7 +1342,6 @@ item 活动报名时候报名的项目
 - 请求参数:   
 ```json  
 {
-	"activity_item_id": 3,
 	"activity_id": 3,
 	"mobile": 123,
 	"name": "feixiang",
