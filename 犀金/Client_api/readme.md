@@ -1297,24 +1297,7 @@ activity_time_end 活动end日期
                 "is_free": 1,
                 "creater_name": "琪琪男孩",
                 "activity_time_end": "2019-08-14",
-                "content": "内容内容内容内容内容内容内容内容内容",
-                "item": [
-                    {
-                        "id": "1",
-                        "price": "555.00",
-			"is_register": 1
-                    },
-                    {
-                        "id": "2",
-                        "price": "2111.00",
-			"is_register": 0
-                    },
-                    {
-                        "id": "3",
-                        "price": "866.00",
-			"is_register": 1
-                    }
-                ]
+                "content": "内容内容内容内容内容内容内容内容内容"
             }
         ],
         "_links": {
