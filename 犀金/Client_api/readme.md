@@ -52,6 +52,8 @@
     - [活动报名提交](./#活动报名提交)
     - [检测是否已经报名](./#检测是否已经报名)
     - [我的门票](./#我的门票)
+- [优选模块](./#优选模块)
+    - [动态列表](./#动态列表)
 ### 全局header  
 
 key |  vaule
@@ -1393,3 +1395,54 @@ item 活动报名时候报名的项目
     }
 }
 ```  
+
+
+
+
+###  动态列表
+- 请求方式: `get`
+- 请求地址: {host}`message-dynamic/get-dynamic`
+- 请求参数:   
+
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "操作成功",
+    "info": [
+        {
+            "user_id": "4",
+            "type": "2",
+            "create_time": "1小时前",
+            "content": "内容123",
+            "article_comment_id": "200",
+            "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/72024891.jpg",
+            "nick_name": "梦太阳",
+            "info": "我真的一个人去吃过火锅，好像也没那么让人难以接受",
+            "article_id": "543",
+            "article_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-08-19/ZM6ERzrqZfUS-yRmogiEoeLCBfjABsz1.jpg"
+        },
+        {
+            "user_id": "3",
+            "type": "1",
+            "create_time": "1小时前",
+            "content": "内容5555",
+            "article_comment_id": "65",
+            "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/64194272.jpg",
+            "nick_name": "时光偏执",
+            "info": "葡萄酒投资回报超股票黄金",
+            "article_image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/d5269bf3cf144969aecb2546393421cc_th.jpg",
+            "article_id": "65"
+        }
+    ]
+}
+```  
+
+
+
+
+
+
+
