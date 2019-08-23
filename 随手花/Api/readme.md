@@ -1144,7 +1144,7 @@ channel_sign:dAcU9w-zfxDEdnj9rQAmk9_k9jUcWUHZ
 ``` 
 
 ### 第三方登录 
-[!第三方登录](../static/img/1566539317(1).jpg)
+ ![第三方登录](../static/img/1566539317(1).jpg)
 
 ## 论坛  
 ### 栏目  
