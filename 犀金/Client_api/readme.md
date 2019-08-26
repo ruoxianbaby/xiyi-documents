@@ -1533,7 +1533,53 @@ item 活动报名时候报名的项目
 }
 ```
 
+### 创业背景图列表
+- 请求方式: `get`
+- 请求地址: {host}`business-backgrounds`
 
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "img_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg"
+            },
+            {
+                "id": 2,
+                "img_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg"
+            },
+            {
+                "id": 3,
+                "img_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg"
+            },
+            {
+                "id": 4,
+                "img_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg"
+            },
+            {
+                "id": 5,
+                "img_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://xj.org/business-backgrounds?page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 5,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
 
 
 
