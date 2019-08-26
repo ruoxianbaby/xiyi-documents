@@ -1480,6 +1480,59 @@ item 活动报名时候报名的项目
 }
 ```
 
+### 创业类型列表
+- 请求方式: `get`
+- 请求地址: {host}`business-types`
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "name": "求县令",
+                "logo": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/64194272.jpg"
+            },
+            {
+                "id": 2,
+                "name": "求资金",
+                "logo": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/64194272.jpg"
+            },
+            {
+                "id": 3,
+                "name": "求方案",
+                "logo": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/64194272.jpg"
+            },
+            {
+                "id": 4,
+                "name": "约个饭",
+                "logo": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/64194272.jpg"
+            },
+            {
+                "id": 5,
+                "name": "其他活动",
+                "logo": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/64194272.jpg"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://xj.org/business-types?page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 5,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+
 
 
 
