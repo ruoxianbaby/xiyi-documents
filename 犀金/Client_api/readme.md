@@ -1440,7 +1440,45 @@ item 活动报名时候报名的项目
 }
 ```  
 
+## 创业模块
 
+### 城市搜索列表
+- 请求方式: `get`
+- 请求地址: {host}`city/list?name=`
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 310000,
+                "name": "上海市",
+                "pid": 86
+            },
+            {
+                "id": 361100,
+                "name": "江西省·上饶市",
+                "pid": 360000
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://xj.org/city/list?name=%E4%B8%8A&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 2,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
 
 
 
