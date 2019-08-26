@@ -1666,7 +1666,7 @@ item 活动报名时候报名的项目
     "c_id": "创业背景图列表id",
     "t_id": "城市搜索列表id",
     "area": "领域",
-    "end_time": "结束时间",
+    "end_time": "结束时间 e.g. 2019-09",
     "description": "描述",
     "pics": [ 
 	"https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg",
