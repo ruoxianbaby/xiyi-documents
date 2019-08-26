@@ -1444,7 +1444,7 @@ item 活动报名时候报名的项目
 
 ### 城市搜索列表
 - 请求方式: `get`
-- 请求地址: {host}`cities/list?name=`
+- 请求地址: {host}`cities?name=`
 
 - 响应内容:  
 
