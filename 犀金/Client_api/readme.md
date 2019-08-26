@@ -1662,13 +1662,13 @@ item 活动报名时候报名的项目
 - 请求参数:  
 ```json
 {
-    "b_id": 1,
-    "c_id": 1,
-    "t_id": 1,
+    "b_id": (./#创业背景图列表)id,
+    "c_id": (./#创业背景图列表)id,
+    "t_id": (./#城市搜索列表)id,
     "area": "领域",
-    "end_time": "2019-09",
+    "end_time": "结束时间",
     "description": "描述",
-    "pics": [
+    "pics": [ 
 	"https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg",
 	"https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg"
     ]
@@ -1682,11 +1682,11 @@ item 活动报名时候报名的项目
     "code": 1,
     "message": "success",
     "info": {
-        "b_id": 1,
-        "c_id": 1,
-        "t_id": 1,
+        "b_id": (./#创业背景图列表)id,
+        "c_id": (./#创业背景图列表)id,
+        "t_id": (./#城市搜索列表)id,
         "area": "领域",
-        "end_time": "2019-09",
+        "end_time": "结束时间",
         "description": "描述",
         "id": 1
     }
