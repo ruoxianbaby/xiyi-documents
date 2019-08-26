@@ -1660,18 +1660,20 @@ item 活动报名时候报名的项目
 - 请求方式: `post`
 - 请求地址: {host}`businesses`
 - 请求参数:  
-        {
-            "b_id": 1,
-            "c_id": 1,
-            "t_id": 1,
-            "area": "领域",
-            "end_time": "2019-09",
-            "description": "描述",
-            "pics": [
-                "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg",
-                "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg"
-            ]
-        }
+```json
+{
+    "b_id": 1,
+    "c_id": 1,
+    "t_id": 1,
+    "area": "领域",
+    "end_time": "2019-09",
+    "description": "描述",
+    "pics": [
+	"https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg",
+	"https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg"
+    ]
+}
+```
 
 - 响应内容:  
 
