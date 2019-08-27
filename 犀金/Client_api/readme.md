@@ -1781,8 +1781,8 @@ item 活动报名时候报名的项目
 
 ### 专题列表
 - 请求方式: `get`
-- 请求地址: {host}`article-types`
-- 请求参数:  
+- 请求地址: {host}`article-types?per-page=20&page=1`
+- 请求参数:  per-page 每页多少条，page 第几页
 
 
 - 响应内容:  
