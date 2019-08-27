@@ -1783,6 +1783,9 @@ item 活动报名时候报名的项目
 - 请求方式: `get`
 - 请求地址: {host}`article-types`
 - 请求参数:  
+
+
+- 响应内容:  
 ```json
 {
     "code": 1,
@@ -1865,6 +1868,9 @@ item 活动报名时候报名的项目
 - 请求方式: `get`
 - 请求地址: {host}`articles?type=12`
 - 请求参数:  type=12 的12对应的是专题列表的 at_id
+
+
+- 响应内容:  
 ```json
 {
     "code": 1,
@@ -1950,6 +1956,14 @@ item 活动报名时候报名的项目
 - 请求参数:  
 ```json
 {
+	"article_type_id":12
+}
+```
+
+
+- 响应内容:  
+```json
+{
     "code": 1,
     "message": "切换成功",
     "info": {
@@ -1965,6 +1979,9 @@ item 活动报名时候报名的项目
 - 请求方式: `post`
 - 请求地址: {host}`article-types/11`
 - 请求参数:  
+
+
+- 响应内容:  
 ```json
 {
     "code": 1,
