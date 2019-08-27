@@ -47,6 +47,7 @@
     - [评论详情](./#评论详情)
     - [举报文章](./#举报文章)
     - [专题列表](./#专题列表)
+    - [专题详情](./#专题详情)    
     - [专题好文列表](./#专题好文列表)
     - [检查该专题是否已经订阅](./#检查该专题是否已经订阅)
     - [专题订阅和取消订阅](./#专题订阅和取消订阅)    
@@ -1795,7 +1796,7 @@ item 活动报名时候报名的项目
                 "topic_des": "描述1",
                 "subscription_num": 112,
                 "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/82107701.jpg",
-                "is_del": 0
+                "is_sub": 0
             },
             {
                 "at_id": 10,
@@ -1804,7 +1805,7 @@ item 活动报名时候报名的项目
                 "topic_des": "描述2",
                 "subscription_num": 111,
                 "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/96392785.jpg",
-                "is_del": 0
+                "is_sub": 0
             },
             {
                 "at_id": 11,
@@ -1813,7 +1814,7 @@ item 活动报名时候报名的项目
                 "topic_des": "描述3",
                 "subscription_num": 212,
                 "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/9825760.jpg",
-                "is_del": 0
+                "is_sub": 0
             },
             {
                 "at_id": 12,
@@ -1822,7 +1823,7 @@ item 活动报名时候报名的项目
                 "topic_des": "描述4",
                 "subscription_num": 214,
                 "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/53568112.jpg",
-                "is_del": 0
+                "is_sub": 0
             },
             {
                 "at_id": 13,
@@ -1831,7 +1832,7 @@ item 活动报名时候报名的项目
                 "topic_des": "描述5",
                 "subscription_num": 132,
                 "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/87280608.jpg",
-                "is_del": 0
+                "is_sub": 0
             },
             {
                 "at_id": 14,
@@ -1840,7 +1841,7 @@ item 活动报名时候报名的项目
                 "topic_des": "描述6",
                 "subscription_num": 177,
                 "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/54815439.jpg",
-                "is_del": 0
+                "is_sub": 0
             }
         ],
         "_links": {
@@ -1856,7 +1857,7 @@ item 活动报名时候报名的项目
         }
     }
 }
-"at_id": 9 专题好文列表的id
+"at_id": 9 专题好文列表的id   is_sub是否订阅 1代表已经订阅
 ```
 
 
@@ -1942,19 +1943,6 @@ item 活动报名时候报名的项目
 ```
 
 
-### 检查该专题是否已经订阅
-- 请求方式: `get`
-- 请求地址: {host}`article-type-subscription/check-sub`
-- 请求参数:  
-```json
-{
-    "code": 1,
-    "message": "已经订阅",
-    "info": {
-        "is_sub": 1
-    }
-}
-```
 
 ### 专题订阅和取消订阅
 - 请求方式: `post`
@@ -1972,3 +1960,38 @@ item 活动报名时候报名的项目
 ```
 
 
+
+### 专题详情
+- 请求方式: `post`
+- 请求地址: {host}`article-types/11`
+- 请求参数:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "at_id": 11,
+                "at_name": "时令新商机",
+                "topic": "专题3",
+                "topic_des": "描述3",
+                "subscription_num": 212,
+                "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/9825760.jpg",
+                "is_sub": 0
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/article-types/11?page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 1,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
