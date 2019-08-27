@@ -1694,3 +1694,80 @@ item 活动报名时候报名的项目
 }
 ```
 
+### 创业首页列表
+- 请求方式: `get`
+- 请求地址: {host}`businesses`
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 4,
+                "u_id": 4,
+                "b_id": 1,
+                "c_id": 370200,
+                "t_id": 1,
+                "area": "领域",
+                "description": "描述",
+                "interested_nums": 0,
+                "create_time": "2019-08-26 16:59:59",
+                "update_time": "2019-08-27 10:57:00",
+                "end_time": "0000-00-00",
+                "status": 1,
+                "is_del": 0,
+                "type_name": "求县令",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/72024891.jpg",
+                "city_name": "青岛市",
+                "background_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg"
+            },
+            {
+                "id": 3,
+                "u_id": 3,
+                "b_id": 1,
+                "c_id": 321300,
+                "t_id": 1,
+                "area": "领域",
+                "description": "描述",
+                "interested_nums": 0,
+                "create_time": "2019-08-26 16:59:41",
+                "update_time": "2019-08-27 10:57:00",
+                "end_time": "0000-00-00",
+                "status": 1,
+                "is_del": 0,
+                "type_name": "求县令",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/64194272.jpg",
+                "city_name": "宿迁市",
+                "background_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://xj.org/businesses?sort=-id&page=3&per-page=2"
+            },
+            "first": {
+                "href": "http://xj.org/businesses?sort=-id&page=1&per-page=2"
+            },
+            "prev": {
+                "href": "http://xj.org/businesses?sort=-id&page=2&per-page=2"
+            },
+            "next": {
+                "href": "http://xj.org/businesses?sort=-id&page=4&per-page=2"
+            },
+            "last": {
+                "href": "http://xj.org/businesses?sort=-id&page=4&per-page=2"
+            }
+        },
+        "_meta": {
+            "totalCount": 8,
+            "pageCount": 4,
+            "currentPage": 3,
+            "perPage": 2
+        }
+    }
+}
+```
