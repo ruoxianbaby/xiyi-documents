@@ -1777,6 +1777,78 @@ item 活动报名时候报名的项目
 }
 ```
 
+### 创业内页列表
+- 请求方式: `get`
+- 请求地址: {host}`business/list`
+- 请求参数:  
+id 首页列表id  
+t_id 首页列表t_id || 主题搜索列表id  
+c_id 地点搜索列表id  
+end_time 截止时间  
+page  per-page
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": "1",
+                "u_id": "1",
+                "b_id": "1",
+                "c_id": "110106",
+                "t_id": "1",
+                "area": "领域",
+                "description": "描述",
+                "interested_nums": "0",
+                "create_time": "2019-08-26 16:47:01",
+                "update_time": "2019-08-27 11:09:30",
+                "end_time": "-0001年11月",
+                "status": "1",
+                "is_del": "0",
+                "pic_list": [
+                    "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg",
+                    "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg"
+                ],
+                "nick_name": "智能机器人",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+                "city_name": "丰台区"
+            },
+            {
+                "id": "6",
+                "u_id": "6",
+                "b_id": "1",
+                "c_id": "653000",
+                "t_id": "1",
+                "area": "领域",
+                "description": "描述",
+                "interested_nums": "0",
+                "create_time": "2019-08-26 17:00:22",
+                "update_time": "2019-08-27 10:57:00",
+                "end_time": "2019年09月",
+                "status": "1",
+                "is_del": "0",
+                "pic_list": [
+                    "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg",
+                    "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg"
+                ],
+                "nick_name": "啊哒嘀",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/32240700.jpg",
+                "city_name": ""
+            }
+        ],
+        "_meta": {
+            "totalCount": 2,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
 
 ### 专题列表
 - 请求方式: `get`
