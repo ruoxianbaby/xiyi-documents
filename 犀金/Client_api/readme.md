@@ -46,6 +46,8 @@
     - [评论点赞toggle](./#评论点赞toggle)
     - [评论详情](./#评论详情)
     - [举报文章](./#举报文章)
+    - [专题列表](./#专题列表)
+    - [专题好文列表](./#专题好文列表)    
 - [活动模块](./#活动模块)
     - [活动列表](./#活动列表)
     - [活动详情](./#活动详情)
@@ -1772,3 +1774,171 @@ item 活动报名时候报名的项目
     }
 }
 ```
+
+
+### 专题列表
+- 请求方式: `get`
+- 请求地址: {host}`article-types`
+- 请求参数:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "at_id": 9,
+                "at_name": "职场经验谈",
+                "topic": "专题1",
+                "topic_des": "描述1",
+                "subscription_num": 112,
+                "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/82107701.jpg",
+                "is_del": 0
+            },
+            {
+                "at_id": 10,
+                "at_name": "Ta的创业故事",
+                "topic": "专题2",
+                "topic_des": "描述2",
+                "subscription_num": 111,
+                "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/96392785.jpg",
+                "is_del": 0
+            },
+            {
+                "at_id": 11,
+                "at_name": "时令新商机",
+                "topic": "专题3",
+                "topic_des": "描述3",
+                "subscription_num": 212,
+                "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/9825760.jpg",
+                "is_del": 0
+            },
+            {
+                "at_id": 12,
+                "at_name": "创业者的自我修养",
+                "topic": "专题4",
+                "topic_des": "描述4",
+                "subscription_num": 214,
+                "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/53568112.jpg",
+                "is_del": 0
+            },
+            {
+                "at_id": 13,
+                "at_name": "大神设计",
+                "topic": "专题5",
+                "topic_des": "描述5",
+                "subscription_num": 132,
+                "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/87280608.jpg",
+                "is_del": 0
+            },
+            {
+                "at_id": 14,
+                "at_name": "投资指南",
+                "topic": "专题6",
+                "topic_des": "描述6",
+                "subscription_num": 177,
+                "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/54815439.jpg",
+                "is_del": 0
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/article-types?page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 6,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+"at_id": 9 专题好文列表的id
+```
+
+
+### 专题好文列表
+- 请求方式: `get`
+- 请求地址: {host}`articles?type=12`
+- 请求参数:  type=12 的12对应的是专题列表的 at_id
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+		{
+                "id": 58,
+                "type": 12,
+                "origin": "开始吧",
+                "author": "阿军",
+                "title": "开赚钱的咖啡店，你必须知道这7件事",
+                "desc": "开一家咖啡店并不是个容易的事",
+                "profile": null,
+                "preview_image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/05b93d90b5b94b71a5dd8020587f33c6.jpeg",
+                "comment_num": "6",
+                "like_num": "1",
+                "create_time": "2019-07-23 16:51:01",
+                "update_time": "2019-08-09 14:02:24",
+                "creater": 110,
+                "admin_id": 92,
+                "status": 1,
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/72429149.jpg",
+                "type_name": "创业者的自我修养",
+                "preview_content": "<p>想来也是，在步履匆匆的生活节奏下，咖啡馆打包了大多数人想要的「理想生活」的样子：阳光、咖啡、绿植、书本、慢时光......可以和喜欢的一切在一起。但眼看着街角的咖啡店，一年换了好几块招牌，梦想到梦想破灭的距",
+                "before_time": "34天前",
+                "share_url": "http://47.103.61.179:8084",
+                "like": 0,
+                "focus": 0,
+                "collect_num": "1",
+                "collect": 0,
+                "img_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/05b93d90b5b94b71a5dd8020587f33c6.jpeg"
+            },
+	      {
+                "id": 70,
+                "type": 12,
+                "origin": "信合企业服务平台",
+                "author": "刻苦铭心",
+                "title": "创业千万条，商标是头条",
+                "desc": "商标保护的重要性",
+                "profile": null,
+                "preview_image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%287%29.jpg",
+                "comment_num": 0,
+                "like_num": "0",
+                "create_time": "2019-07-24 12:29:25",
+                "update_time": "2019-08-09 14:08:09",
+                "creater": 124,
+                "admin_id": 92,
+                "status": 1,
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/18889273.jpg",
+                "type_name": "创业者的自我修养",
+                "preview_content": "<p class=\"ql-align-justify\">商标其于企业，如名字之于人，起步之初或只是形象，但是随着企业的发展商标的重要性也日益凸显，尤其在当前经济形势下企业之间竞争加剧，商标就更显得举足轻重了。</p><p class=\"ql-align-justify\"><br></p><p c",
+                "before_time": "33天前",
+                "share_url": "http://47.103.61.179:8084",
+                "like": 0,
+                "focus": 0,
+                "collect_num": "0",
+                "collect": 0,
+                "img_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%287%29.jpg"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/article-types?page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 2,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 2
+        }
+    }
+}
+"at_id": 9 专题好文列表的id
+```
+
+
+
+
