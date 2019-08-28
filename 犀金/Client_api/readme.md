@@ -69,6 +69,7 @@
     - [创业发布](./#创业发布)
     - [创业首页列表](./#创业首页列表)
     - [创业内页列表](./#创业内页列表)
+    - [举报创业邦](./#举报创业邦)    
 ### 全局header  
 
 key |  vaule
@@ -2124,6 +2125,34 @@ page  per-page
             "currentPage": 1,
             "perPage": 20
         }
+    }
+}
+```
+
+
+
+
+### 专题详情
+- 请求方式: `post`
+- 请求地址: {host}`business-reports`
+- 请求参数:  
+```json
+{
+	"business_id": 1,
+	"content": "非法的东西"
+}
+```
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "创建成功",
+    "info": {
+        "business_id": 1,
+        "content": "非法的东西",
+        "user_id": 1,
+        "id": 3
     }
 }
 ```
