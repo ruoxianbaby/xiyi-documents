@@ -2132,7 +2132,7 @@ page  per-page
 
 
 
-### 专题详情
+### 举报创业邦
 - 请求方式: `post`
 - 请求地址: {host}`business-reports`
 - 请求参数:  
