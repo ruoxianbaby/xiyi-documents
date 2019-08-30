@@ -69,6 +69,7 @@
     - [热门城市列表](./#热门城市列表)  
     - [创业背景图列表](./#创业背景图列表)
     - [创业发布](./#创业发布)
+    - [创业首页轮播图](./#创业首页轮播图)
 
     - [举报创业邦](./#举报创业邦)    
 ### 全局header  
@@ -2130,7 +2131,43 @@ page  per-page
 }
 ```
 
+### 创业首页轮播图
+- 请求方式: `get`
+- 请求地址: {host}`business-banners?sort=-id`  
 
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 3,
+                "img_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg",
+                "web_url": "http://www.baidu.com"
+            },
+            {
+                "id": 2,
+                "img_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg",
+                "web_url": "http://www.baidu.com"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://xj.org/business-banners?sort=-id&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 2,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
 
 
 
