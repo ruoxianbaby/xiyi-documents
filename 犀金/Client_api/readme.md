@@ -2214,7 +2214,8 @@ page  per-page
     "info": {
         "focus_num": 3,
         "focused_num": 2,
-        "nick_name": "智能机器人"
+        "nick_name": "智能机器人",
+        "mobile": "150****0110"
     }
 }
 foucus_num关注数，focused_num被关注数
