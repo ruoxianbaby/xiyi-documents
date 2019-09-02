@@ -73,7 +73,8 @@
     - [举报创业邦](./#举报创业邦)    
 - [我的](./#我的)
     - [关注和昵称信息](./#关注和昵称信息)
-    - [发布的文章](./#发布的文章)    
+    - [发布的文章](./#发布的文章)   
+    - [我的创业邦](./#我的创业邦)   
 ### 全局header  
 
 key |  vaule
@@ -2278,6 +2279,98 @@ foucus_num关注数，focused_num被关注数
             "pageCount": 2,
             "currentPage": 1,
             "perPage": 3
+        }
+    }
+}
+```
+
+
+
+
+
+### 我的创业邦
+- 请求方式: `get`
+- 请求地址: {host}`businesses?u_id=1`
+- 请求参数:  uid,用户id
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 8,
+                "u_id": 1,
+                "b_id": 1,
+                "c_id": 460300,
+                "t_id": 1,
+                "area": "领域",
+                "description": "描述",
+                "interested_nums": 0,
+                "create_time": "2019-08-27 10:57:48",
+                "update_time": "2019-08-28 15:10:42",
+                "end_time": "2019-09-01",
+                "status": 1,
+                "is_del": 0,
+                "type_name": "求贤令",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+                "city_name": "三沙市",
+                "background_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-08-28/oN2NdUF4ggE1gwDMXUzzPg2VXDWKKB62.jpg",
+                "type_logo": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-08-28/ir5S-RuAcVb-3v_uME1zHkWWdhhQkTCK.png"
+            },
+            {
+                "id": 7,
+                "u_id": 1,
+                "b_id": 1,
+                "c_id": 710000,
+                "t_id": 2,
+                "area": "领域",
+                "description": "描述",
+                "interested_nums": 0,
+                "create_time": "2019-08-27 10:54:41",
+                "update_time": "2019-08-27 18:00:19",
+                "end_time": "2019-09-01",
+                "status": 1,
+                "is_del": 0,
+                "type_name": "求资金",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+                "city_name": "台湾省",
+                "background_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-08-28/oN2NdUF4ggE1gwDMXUzzPg2VXDWKKB62.jpg",
+                "type_logo": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-08-28/_gL9-fmosnl7MXWacQ2GCnfuUfyE75_h.png"
+            },
+            {
+                "id": 1,
+                "u_id": 1,
+                "b_id": 1,
+                "c_id": 110106,
+                "t_id": 1,
+                "area": "领域",
+                "description": "描述",
+                "interested_nums": 0,
+                "create_time": "2019-08-26 16:47:01",
+                "update_time": "2019-08-29 17:28:55",
+                "end_time": "2019-08-29",
+                "status": 1,
+                "is_del": 0,
+                "type_name": "求贤令",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+                "city_name": "丰台区",
+                "background_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-08-28/oN2NdUF4ggE1gwDMXUzzPg2VXDWKKB62.jpg",
+                "type_logo": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-08-28/ir5S-RuAcVb-3v_uME1zHkWWdhhQkTCK.png"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/businesses?u_id=1&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 3,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
         }
     }
 }
