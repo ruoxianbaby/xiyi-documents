@@ -2215,7 +2215,9 @@ page  per-page
         "focus_num": 3,
         "focused_num": 2,
         "nick_name": "智能机器人",
-        "mobile": "150****0110"
+        "mobile": "150****0110",
+        "gender": "男",
+        "city_name": "北京市东城区"
     }
 }
 foucus_num关注数，focused_num被关注数
