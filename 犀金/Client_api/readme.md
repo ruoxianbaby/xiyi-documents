@@ -73,6 +73,7 @@
     - [举报创业邦](./#举报创业邦)    
 - [我的](./#我的)
     - [关注和昵称信息](./#关注和昵称信息)
+    - [发布的文章](./#发布的文章)    
 ### 全局header  
 
 key |  vaule
@@ -2199,9 +2200,6 @@ page  per-page
 
 
 
-
-
-
 ### 关注和昵称信息
 - 请求方式: `get`
 - 请求地址: {host}`my-center/get-focus-info`
@@ -2219,4 +2217,68 @@ page  per-page
     }
 }
 foucus_num关注数，focused_num被关注数
+```
+
+
+
+
+### 发布的文章
+- 请求方式: `get`
+- 请求地址: {host}`articles?my=1&page=1&per-page=3`
+- 请求参数:  articles?my=1是写死的，后面的参数代表page=1第一页,per-page显示3条
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 58,
+                "title": "开赚钱的咖啡店，你必须知道这7件事",
+                "comment_num": 6,
+                "like_num": "1",
+                "create_time": "2019-07-23 16:51:01",
+                "update_time": "2019-08-09 14:02:24",
+                "type_name": "创业者的自我修养"
+            },
+            {
+                "id": 61,
+                "title": "为什么说创业就像谈恋爱",
+                "comment_num": 5,
+                "like_num": "1",
+                "create_time": "2019-07-24 10:09:47",
+                "update_time": "2019-08-09 14:03:06",
+                "type_name": "Ta的创业故事"
+            },
+            {
+                "id": 62,
+                "title": "聪明投资者的预期收益",
+                "comment_num": 0,
+                "like_num": "0",
+                "create_time": "2019-07-24 10:27:34",
+                "update_time": "2019-08-09 14:03:55",
+                "type_name": "投资指南"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/articles?my=1&page=1&per-page=3"
+            },
+            "next": {
+                "href": "http://my_xijin_api.com/articles?my=1&page=2&per-page=3"
+            },
+            "last": {
+                "href": "http://my_xijin_api.com/articles?my=1&page=2&per-page=3"
+            }
+        },
+        "_meta": {
+            "totalCount": 4,
+            "pageCount": 2,
+            "currentPage": 1,
+            "perPage": 3
+        }
+    }
+}
 ```
