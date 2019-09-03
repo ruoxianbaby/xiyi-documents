@@ -76,6 +76,7 @@
     - [关注和昵称信息](./#关注和昵称信息)
     - [发布的文章](./#发布的文章)   
     - [我的创业邦](./#我的创业邦)
+    - [我的订阅](./#我的订阅)     
     - [通知消息设置](./#通知消息设置)    
     - [建议和反馈](./#建议和反馈)    
     - [编辑个人资料](./#编辑个人资料)     
@@ -2404,6 +2405,98 @@ foucus_num关注数，focused_num被关注数
         }
     }
 }
+```
+
+### 我的订阅
+- 请求方式: `get`
+- 请求地址: {host}`article-type/list?id=1?page=1&per-page=10`
+- 请求参数:  id 用户的id， page=1&per-page=10分页参数
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 62,
+                "title": "聪明投资者的预期收益",
+                "preview_image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/%E9%A6%96%E9%A1%B511.png",
+                "desc": "投机就是投机，千万不要自以为是在投资",
+                "avatar_image": "",
+                "type_name": "",
+                "author": "",
+                "preview_content": "",
+                "before_time": "",
+                "share_url": "http://47.103.61.179:8084",
+                "like_num": "0",
+                "like": 0,
+                "focus": 0,
+                "comment_num": 0,
+                "collect_num": "0",
+                "collect": 0,
+                "img_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/%E9%A6%96%E9%A1%B511.png"
+            },
+            {
+                "id": 63,
+                "title": "三大核心板块，轻松掌握电商运营",
+                "preview_image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/%E9%A6%96%E9%A1%B5.png",
+                "desc": "电商运营中一定要具备的三大技能",
+                "avatar_image": "",
+                "type_name": "",
+                "author": "",
+                "preview_content": "",
+                "before_time": "",
+                "share_url": "http://47.103.61.179:8084",
+                "like_num": "0",
+                "like": 0,
+                "focus": 0,
+                "comment_num": 0,
+                "collect_num": "0",
+                "collect": 0,
+                "img_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/%E9%A6%96%E9%A1%B5.png"
+            },
+            {
+                "id": 65,
+                "title": "葡萄酒投资回报超股票黄金",
+                "preview_image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/d5269bf3cf144969aecb2546393421cc_th.jpg",
+                "desc": "酒类投资到底可以赚到多少钱？",
+                "avatar_image": "",
+                "type_name": "",
+                "author": "",
+                "preview_content": "",
+                "before_time": "",
+                "share_url": "http://47.103.61.179:8084",
+                "like_num": "0",
+                "like": 0,
+                "focus": 0,
+                "comment_num": 0,
+                "collect_num": "0",
+                "collect": 0,
+                "img_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/d5269bf3cf144969aecb2546393421cc_th.jpg"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/article-type/list?id=1%3Fpage%3D1&per-page=3&page=1"
+            },
+            "next": {
+                "href": "http://my_xijin_api.com/article-type/list?id=1%3Fpage%3D1&per-page=3&page=2"
+            },
+            "last": {
+                "href": "http://my_xijin_api.com/article-type/list?id=1%3Fpage%3D1&per-page=3&page=84"
+            }
+        },
+        "_meta": {
+            "totalCount": 251,
+            "pageCount": 84,
+            "currentPage": 1,
+            "perPage": 3
+        }
+    }
+}
+preview_image 图 title 标题， desc副标题
 ```
 
 
