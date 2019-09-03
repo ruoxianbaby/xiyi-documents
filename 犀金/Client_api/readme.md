@@ -2225,8 +2225,8 @@ page  per-page
 
 ### 关注和昵称信息
 - 请求方式: `get`
-- 请求地址: {host}`my-center/get-focus-info`
-- 请求参数:  
+- 请求地址: {host}`my-center/get-focus-info?id=1`
+- 请求参数:  id  是用户的id
 
 - 响应内容:  
 ```json
@@ -2250,8 +2250,8 @@ foucus_num关注数，focused_num被关注数
 
 ### 发布的文章
 - 请求方式: `get`
-- 请求地址: {host}`articles?my=1&page=1&per-page=3`
-- 请求参数:  articles?my=1是写死的，后面的参数代表page=1第一页,per-page显示3条
+- 请求地址: {host}`articles?creater=110&page=1&per-page=3`
+- 请求参数:  creater是用户的id，后面的参数代表page=1第一页,per-page显示3条
 
 - 响应内容:  
 ```json
