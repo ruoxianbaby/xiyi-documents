@@ -2316,8 +2316,8 @@ foucus_num关注数，focused_num被关注数
 
 ### 我的创业邦
 - 请求方式: `get`
-- 请求地址: {host}`businesses?u_id=1`
-- 请求参数:  uid,用户id
+- 请求地址: {host}`businesses?u_id=1&page=1&per-page=10`
+- 请求参数:  uid,用户id，后面的是分页 第一页 取10条
 
 - 响应内容:  
 ```json
