@@ -2432,20 +2432,11 @@ foucus_num关注数，focused_num被关注数
 {
 	"content":"反馈的内容",
 	"mobile": "联系人手机 可选的",
-	"email": "联系人邮箱 也是可选的"
+	"email": "联系人邮箱 也是可选的",
+	"pics":["https://www.baidu.com","https://www.jd.com"]
 }
 ```
 - 响应内容:  
 ```json
-{
-    "code": 1,
-    "message": "操作成功",
-    "info": {
-        "content": "反馈的内容",
-        "mobile": "联系人手机 可选的",
-        "email": "联系人邮箱 也是可选的",
-        "user_id": 1,
-        "id": 3
-    }
-}
+不需要关注
 ```
