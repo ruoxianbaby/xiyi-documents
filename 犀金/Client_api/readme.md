@@ -29,6 +29,7 @@
 	- [上报设备号](./#上报设备号)  
 	- [上传图片接口](./#上传图片接口)
 	- [get贷超url](./#get贷超url)
+	- [客户端上传文件到oss](./#客户端上传文件到oss)
 - [app相关](./#app相关)
     - [app版本更新](./#app版本更新)
     - [app工作url](./#app工作url)
@@ -442,6 +443,26 @@ id -> 文章的id
     ]
 }
 ```  
+
+### 客户端上传文件到oss 
+> 需要看阿里云的文档以及SDK
+获取accessid与accesskey接口
+- 请求方式: `get`
+- 请求地址: {host}`generals/get-sts?client_name=client_name`
+- 请求参数: client_name 客户端标识,随便传自己能分清就好
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "AccessKeySecret": "BT27qhskFeJvofZ4sq3LVgMf71WArAjCrTSdftdVe2PQ",
+        "AccessKeyId": "STS.NJFWquAp6915YuszySQNhGP1K",
+        "Expiration": "2019-09-03T04:42:40Z",
+        "SecurityToken": "CAIS9gF1q6Ft5B2yfSjIr4nzHMvBrK8XjvPeW1PCnnkGXcFEqJWaqTz2IHlKdHduBe0XtPs0nGxU7foZlqJ4T55IQ1Dza8J148z2MdFixM+T1fau5Jko1beHewHKeTOZsebWZ+LmNqC/Ht6md1HDkAJq3LL+bk/Mdle5MJqP+/UFB5ZtKWveVzddA8pMLQZPsdITMWCrVcygKRn3mGHdfiEK00he8TontP7kn5LNu0GG1gaqlbAvyt6vcsT+Xa5FJ4xiVtq55utye5fa3TRYgxowr/4o3PIapWqW5I7GWwUNuEndKY7T6cZzIQphb6Q/GqhUQQNzf0azPYUagAGHr8Z/h1DEiA5rGioeYZpk8Cj75yFbmZ54pBLK96AjFyPGjI21qxsSV8jvxfstno9RxYIVHzIIC40+kDQeKhR0Iimvd1kfiuPDNGG5VMOaNsnZgBGcrh2RVKy77YMFz/YvjJ68c5kb/6vOrUpdIcl66hPjfWRRFxdyr/Kj68bWug=="
+    }
+}
+```
 
 ## app相关
 ### app版本更新
