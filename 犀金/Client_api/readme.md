@@ -2240,8 +2240,7 @@ page  per-page
         "focused_num": 2,
         "nick_name": "智能机器人",
         "mobile": "150****0110",
-        "gender": "男",
-        "city_name": "北京市东城区"
+        "gender": "男"
     }
 }
 foucus_num关注数，focused_num被关注数
@@ -2449,7 +2448,7 @@ foucus_num关注数，focused_num被关注数
 - 请求方式: `put`
 - 请求地址: {host}`user/update`
 - 请求参数:  
-注： 如果更新什么就传什么参，光更新手机号就只需要传手机号
+注： 更新什么就传什么参，光更新手机号就只需要传手机号
 ```json
 {
 	"nick_name":"微微笑",
