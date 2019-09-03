@@ -77,7 +77,8 @@
     - [发布的文章](./#发布的文章)   
     - [我的创业邦](./#我的创业邦)
     - [通知消息设置](./#通知消息设置)    
-    - [建议和反馈](./#建议和反馈)       
+    - [建议和反馈](./#建议和反馈)    
+    - [编辑个人资料](./#编辑个人资料)     
 ### 全局header  
 
 key |  vaule
@@ -2439,4 +2440,40 @@ foucus_num关注数，focused_num被关注数
 - 响应内容:  
 ```json
 不需要关注
+```
+
+
+
+
+### 编辑个人资料
+- 请求方式: `put`
+- 请求地址: {host}`user/update`
+- 请求参数:  
+注： 如果更新什么就传什么参，光更新手机号就只需要传手机号
+```json
+{
+	"nick_name":"微微笑",
+	"mobile": "15061690110",
+	"gender": 0,
+	"avatar_image" : "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg"
+}
+```
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "更新成功",
+    "info": {
+        "id": 1,
+        "mobile": "15061690110",
+        "access_token": "o2iSTUyXyr0ij-1m22KAuToup00JaZ1S",
+        "nick_name": "微微笑",
+        "wechat_token": "dad",
+        "qq_token": "djehwgqwj",
+        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+        "register_time": "2019-07-11 14:33:50",
+        "last_login_time": "2019-08-20 18:01:11",
+        "register_ip": "31.84.183.44"
+    }
+}
 ```
