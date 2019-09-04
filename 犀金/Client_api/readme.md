@@ -30,6 +30,7 @@
 	- [上传图片接口](./#上传图片接口)
 	- [get贷超url](./#get贷超url)
 	- [客户端上传文件到oss](./#客户端上传文件到oss)
+	- [检测手机号](./#检测手机号)
 - [app相关](./#app相关)
     - [app版本更新](./#app版本更新)
     - [app工作url](./#app工作url)
@@ -464,6 +465,26 @@ id -> 文章的id
         "Expiration": "2019-09-03T04:42:40Z",
         "SecurityToken": "CAIS9gF1q6Ft5B2yfSjIr4nzHMvBrK8XjvPeW1PCnnkGXcFEqJWaqTz2IHlKdHduBe0XtPs0nGxU7foZlqJ4T55IQ1Dza8J148z2MdFixM+T1fau5Jko1beHewHKeTOZsebWZ+LmNqC/Ht6md1HDkAJq3LL+bk/Mdle5MJqP+/UFB5ZtKWveVzddA8pMLQZPsdITMWCrVcygKRn3mGHdfiEK00he8TontP7kn5LNu0GG1gaqlbAvyt6vcsT+Xa5FJ4xiVtq55utye5fa3TRYgxowr/4o3PIapWqW5I7GWwUNuEndKY7T6cZzIQphb6Q/GqhUQQNzf0azPYUagAGHr8Z/h1DEiA5rGioeYZpk8Cj75yFbmZ54pBLK96AjFyPGjI21qxsSV8jvxfstno9RxYIVHzIIC40+kDQeKhR0Iimvd1kfiuPDNGG5VMOaNsnZgBGcrh2RVKy77YMFz/YvjJ68c5kb/6vOrUpdIcl66hPjfWRRFxdyr/Kj68bWug=="
     }
+}
+```
+### 检测手机号
+> 先调用发送验证码接口
+- 请求方式: `get`
+- 请求地址: {host}`user/check-mobile`
+- 请求参数: 
+```json
+{
+	"mobile": 15061690110,
+	"sms_code": 5525
+}
+```  
+
+- 响应内容:  
+```json  
+{
+    "code": 1,
+    "message": "success",
+    "info": ""
 }
 ```
 
