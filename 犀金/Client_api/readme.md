@@ -452,7 +452,7 @@ id -> 文章的id
 > 需要看阿里云的文档以及SDK
 获取accessid与accesskey接口
 - 请求方式: `get`
-- 请求地址: {host}`generals/get-sts?client_name=client_name`
+- 请求地址: {host}`general/get-sts?client_name=client_name`
 - 请求参数: client_name 客户端标识,随便传自己能分清就好
 - 响应内容:  
 ```json
