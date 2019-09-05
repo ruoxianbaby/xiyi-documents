@@ -1747,9 +1747,9 @@ item 活动报名时候报名的项目
         }
     }
 }
-user_id xxx回复了你的评论/  评论了你的文章
-article_comment_id 粉丝对你发布的文章或者是评论进行了回复 
-type 1 对文章评论  2 对评论的回复
+type 1 文章    2 评论
+user_id  谁回复了你的评论/  评论了你的文章  评论者的id
+article_comment_id 粉丝对你发布的文章或者是评论进行了回复 ，代表的是你的哪一条文章/评论 的id
 info  xxx回复了你的评论yyyy     yyyy就是info  就是回复了你什么的评论 /文章
 content 回复评论的内容 / 评论文章的内容
 ```  
