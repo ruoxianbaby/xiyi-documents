@@ -1720,7 +1720,6 @@ item 活动报名时候报名的项目
                 "article_comment_id": "200",
                 "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/72024891.jpg",
                 "nick_name": "梦太阳",
-                "read": "1",
                 "info": "我真的一个人去吃过火锅，好像也没那么让人难以接受",
                 "article_id": "543",
                 "article_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-08-19/ZM6ERzrqZfUS-yRmogiEoeLCBfjABsz1.jpg"
@@ -1733,7 +1732,6 @@ item 活动报名时候报名的项目
                 "article_comment_id": "65",
                 "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/64194272.jpg",
                 "nick_name": "时光偏执",
-                "read": "1",
                 "info": "葡萄酒投资回报超股票黄金",
                 "article_image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/d5269bf3cf144969aecb2546393421cc_th.jpg",
                 "article_id": "65"
@@ -1790,12 +1788,10 @@ inform_num 通知数，  dynamic_num 动态数，  new_fans_num 粉丝数
     "info": {
         "items": [
             {
-                "read": 0,
                 "nick_name": "多啦A梦",
                 "fans_id": 166
             },
             {
-                "read": 0,
                 "nick_name": "阿军",
                 "fans_id": 110
             }
