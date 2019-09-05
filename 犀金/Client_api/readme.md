@@ -1700,8 +1700,8 @@ item 活动报名时候报名的项目
 
 ###  动态列表
 - 请求方式: `get`
-- 请求地址: {host}`message-dynamic/get-dynamic`
-- 请求参数:   
+- 请求地址: {host}`message-dynamic/get-dynamic?page=1&per-page=10`
+- 请求参数:   page=1&per-page=10 第一页显示10条
 
 
 - 响应内容:  
@@ -1738,6 +1738,7 @@ item 活动报名时候报名的项目
     ]
 }
 user_id xxx回复了你的评论/  评论了你的文章
+article_comment_id 粉丝对你发布的文章或者是评论进行了回复 
 type 1 对文章评论  2 对评论的回复
 info  xxx回复了你的评论yyyy     yyyy就是info  就是回复了你什么的评论 /文章
 content 回复评论的内容 / 评论文章的内容
