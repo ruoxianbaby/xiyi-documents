@@ -73,7 +73,7 @@
     - [创业首页轮播图](./#创业首页轮播图)
     - [举报创业邦](./#举报创业邦)    
 - [我的](./#我的)
-    - [关注和昵称信息](./#关注和昵称信息)
+    - [信息](./#信息)
     - [发布的文章](./#发布的文章)   
     - [我的创业邦](./#我的创业邦)
     - [我的订阅](./#我的订阅)     
@@ -2243,7 +2243,7 @@ page  per-page
 
 
 
-### 关注和昵称信息
+### 信息
 - 请求方式: `get`
 - 请求地址: {host}`my-center/get-focus-info?id=1`
 - 请求参数:  id  是用户的id
@@ -2254,14 +2254,17 @@ page  per-page
     "code": 1,
     "message": "操作成功",
     "info": {
-        "focus_num": 3,
+        "focus_num": 4,
         "focused_num": 2,
-        "nick_name": "智能机器人",
+        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+        "nick_name": "微微笑",
+        "focus": 1,
         "mobile": "150****0110",
-        "gender": "男"
+        "gender": "男",
+        "city_name": "北京市东城区"
     }
 }
-foucus_num关注数，focused_num被关注数
+foucus_num关注数，focused_num被关注数,focus 1代表已经关注 ,avatar_image 头像
 ```
 
 
