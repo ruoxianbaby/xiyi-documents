@@ -2142,6 +2142,8 @@ page  per-page
                 ],
                 "nick_name": "智能机器人",
                 "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+		"huanxin_uuid": "",
+                "huanxin_nickname": "",
                 "city_name": "丰台区"
             },
             {
@@ -2164,6 +2166,8 @@ page  per-page
                 ],
                 "nick_name": "啊哒嘀",
                 "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/32240700.jpg",
+		"huanxin_uuid": "",
+                "huanxin_nickname": "",
                 "city_name": ""
             }
         ],
