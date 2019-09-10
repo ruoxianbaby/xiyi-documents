@@ -62,6 +62,7 @@
     - [通知数](./#通知数)
     - [动态列表](./#动态列表)
     - [新增粉丝列表](./#新增粉丝列表)
+    - [评论文章回复评论通知透传](./#评论文章回复评论通知透传)   
 - [创业模块](./#创业模块)
     - [创业首页列表](./#创业首页列表)
     - [创业内页列表](./#创业内页列表)
@@ -1751,6 +1752,9 @@ user_id  谁回复了你的评论/  评论了你的文章  评论者的id
 article_comment_id 粉丝对你发布的文章或者是评论进行了回复 ，代表的是你的哪一条文章/评论 的id
 info  xxx回复了你的评论yyyy     yyyy就是info  就是回复了你什么的评论 /文章
 content 回复评论的内容 / 评论文章的内容
+
+nick_name 回复了 info ： content
+nick_name 评论了 info ： content
 ```  
 
 ###  通知数
@@ -1806,6 +1810,31 @@ inform_num 通知数，  dynamic_num 动态数，  new_fans_num 粉丝数
     }
 }
 ```  
+
+###  评论文章回复评论通知透传
+- 请求方式: `get`
+- 请求地址:  可以评论文章或者回复他人评论
+- 请求参数:  
+
+
+- 响应内容:  
+
+```json  
+{
+    "type": 2,
+    "nick_name": "微微笑",
+    "article_comment_id": "403",
+    "article_comment_info": "融资方面 还是需要有经验的人帮忙扶持下",
+    "content": "还不错"
+}
+nick_name 回复了 article_comment_info ： content
+type 1 是评论了文章
+type 2 是回复了评论
+```  
+
+
+
+
 ## 创业模块
 
 ### 城市搜索列表
