@@ -62,6 +62,7 @@
     - [通知数](./#通知数)
     - [动态列表](./#动态列表)
     - [新增粉丝列表](./#新增粉丝列表)
+    - [更新设备device_tokens](./#更新设备device_tokens) 
     - [通知透传](./#通知透传)   
 - [创业模块](./#创业模块)
     - [创业首页列表](./#创业首页列表)
@@ -1810,6 +1811,33 @@ inform_num 通知数，  dynamic_num 动态数，  new_fans_num 粉丝数
     }
 }
 ```  
+
+
+###  更新设备device_tokens
+- 请求方式: `post`
+- 请求地址: {host}`general/set-device-tokens`
+- 请求参数: 
+
+```json  
+{
+	"user_id": 2,
+	"type": 1,
+	"device_tokens": "安卓或ios的一长串token"
+}
+type 1是安卓，2是IOS
+```  
+
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "操作成功",
+    "info": ""
+}
+```  
+
 
 ###  通知透传
 - 请求方式: `get`
