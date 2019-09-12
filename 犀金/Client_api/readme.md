@@ -2261,6 +2261,7 @@ id 首页列表id
 t_id 首页列表t_id || 主题搜索列表id  
 c_id 地点搜索列表id  
 end_time 截止时间  
+description 关键词  
 page  per-page
 
 - 响应内容:  
