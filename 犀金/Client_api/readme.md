@@ -60,6 +60,7 @@
     - [我的门票](./#我的门票)
 - [优选模块](./#优选模块)
     - [通知数](./#通知数)
+    - [通知列表](./#通知列表)    
     - [动态列表](./#动态列表)
     - [新增粉丝列表](./#新增粉丝列表)
     - [更新设备device_tokens](./#更新设备device_tokens) 
@@ -1700,6 +1701,81 @@ item 活动报名时候报名的项目
 ```  
 
 
+###  通知列表
+- 请求方式: `get`
+- 请求地址: {host}`inform-dynamics?page=1&per-page=20`
+- 请求参数:   page=1&per-page=20是分页参数
+
+
+- 响应内容:  
+
+```json  
+{
+    "code": 1,
+    "message": "操作成功",
+    "info": {
+        "items": [
+            {
+                "id": "1",
+                "dc_id": "3",
+                "url": "https://www.baidu.com",
+                "title": "金枪鱼借钱",
+                "icon": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/%E9%A6%96%E9%A1%B511.png",
+                "desc": "描述",
+                "create_time": "2019-09-12 11:07:24",
+                "read": 1
+            },
+            {
+                "id": "2",
+                "dc_id": "22",
+                "url": "https://www.baidu.com",
+                "title": "红烧肉贷款",
+                "icon": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%286%29.jpg",
+                "desc": "描述",
+                "create_time": "2019-09-12 11:07:34",
+                "read": 1
+            },
+            {
+                "id": "3",
+                "dc_id": "11",
+                "url": "https://www.baidu.com",
+                "title": "代上钱包",
+                "icon": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20190802112834.jpg",
+                "desc": "描述",
+                "create_time": "2019-09-12 11:12:06",
+                "read": 1
+            },
+            {
+                "id": "4",
+                "dc_id": "12",
+                "url": "https://www.baidu.com",
+                "title": "测试产品",
+                "icon": "",
+                "desc": "测试产品测试推送",
+                "create_time": "2019-09-12 11:27:44",
+                "read": 1
+            },
+            {
+                "id": "5",
+                "dc_id": "123",
+                "url": "https://www.baidu.com",
+                "title": "123",
+                "icon": "https://xijin.oss-cn-shanghai.aliyuncs.com/others/2019-09-12/QC4VD1hft5zfwcZZnqBnKTKhMKWAbE-r.jpg",
+                "desc": "123123",
+                "create_time": "2019-09-12 11:29:24",
+                "read": 1
+            }
+        ],
+        "_meta": {
+            "totalCount": 5,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+
+```  
 
 ###  动态列表
 - 请求方式: `get`
