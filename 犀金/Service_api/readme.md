@@ -4,11 +4,11 @@
 
 ### 测试主机host: 47.103.61.179:1081  
 - [创业邦](./#创业邦)  
-    - [创业邦列表](./#创业邦列表)  
+    - [创业列表](./#创业列表)  
 
 ## 创业邦
 
-### 创业邦列表
+### 创业列表
 - 请求方式: `get`
 - 请求地址: {host}`businesses`
 
@@ -121,6 +121,59 @@
         "end_time": "2019-09",
         "description": "描述",
         "id": 1
+    }
+}
+```
+
+### 创业修改
+- 请求方式: `post`
+- 请求地址: {host}`businesses/:id`
+- 请求参数:  
+```json
+{
+    "b_id": "创业背景图列表id",
+    "c_id": "城市搜索列表id",
+    "t_id": "创业类型列表id",
+    "area": "领域",
+    "end_time": "结束时间 e.g. 2019-09",
+    "description": "描述",
+    "pics": [ 
+	    "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg",
+	    "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg"
+    ]
+}
+```
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "b_id": 1,
+        "c_id": 1,
+        "t_id": 1,
+        "area": "领域",
+        "end_time": "2019-09",
+        "description": "描述",
+        "id": 1
+    }
+}
+```
+
+### 创业删除
+- 请求方式: `delete`
+- 请求地址: {host}`businesses/:id`
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        
     }
 }
 ```
