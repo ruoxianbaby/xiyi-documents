@@ -101,8 +101,8 @@
     "end_time": "结束时间 e.g. 2019-09",
     "description": "描述",
     "pics": [ 
-	    "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg",
-	    "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg"
+	"https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg",
+	"https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/45973393.jpg"
     ]
 }
 ```
@@ -165,6 +165,24 @@
 ### 创业删除
 - 请求方式: `delete`
 - 请求地址: {host}`businesses/:id`
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        
+    }
+}
+```
+
+### 创业设置私有
+- 请求方式: `post`
+- 请求地址: {host}`business/set-private`
+- 请求参数:  
+id,is_pri
 
 - 响应内容:  
 
