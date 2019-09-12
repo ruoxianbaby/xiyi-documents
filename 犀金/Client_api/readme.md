@@ -1850,7 +1850,7 @@ nick_name 评论了 info ： content
     "code": 1,
     "message": "操作成功",
     "info": {
-        "inform_num": 0,   这个暂时写死的
+        "inform_num": 0,
         "dynamic_num": 0,
         "new_fans_num": 0
     }
