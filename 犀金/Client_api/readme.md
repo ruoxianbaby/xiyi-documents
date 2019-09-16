@@ -1943,7 +1943,6 @@ type 1和2数据格式返回一致
 type 1 是评论了文章
 type 2 是回复了评论
 ```  
-- type=3的是推送贷超通知  
 - type=4是新增的粉丝推送 ↓
 ```json  
 {
@@ -1954,6 +1953,12 @@ user_id 粉丝的id
 nick_name 粉丝的昵称
 ```  
 
+type=3 发贷超通知
+```json  
+ticker 标题栏信息
+title 标题
+text 描述
+```  
 
 
 ## 创业模块
