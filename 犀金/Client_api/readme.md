@@ -149,7 +149,7 @@ Authorization | Bearer ***access_token***
 ### 获取用户信息
 - 请求方式: `get`
 - 请求地址: {host}`users/:id`
-> 参数说明: 拼接上`?expand=today-browse,total-browse` 可查看今日和总浏览数
+> 参数说明: 拼接上`?expand=today-browse,total-browse,focus,article_count` 可查看今日和总浏览数,关注数, 发表文章数
 - 响应内容:  
 
 ```json  
@@ -328,7 +328,8 @@ Authorization | Bearer ***access_token***
 ### 用户搜索
 - 请求方式: `get`
 - 请求地址: {host}`users?nick_name=da`
-> 参数 `nick_name=da` 模糊搜索
+> 参数 `nick_name=da` 模糊搜索  
+> 拼接上`?expand=today-browse,total-browse,focus,article_count` 可查看今日和总浏览数,关注数, 发表文章数
 - 响应内容:  
 ```json  
 {
