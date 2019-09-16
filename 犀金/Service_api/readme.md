@@ -5,12 +5,17 @@
 ### 测试主机host: 47.103.61.179:1081  
 - [创业邦](./#创业邦)  
     - [创业列表](./#创业列表)  
+- [反馈管理](./#反馈管理)  
+    - [反馈列表](./#反馈列表)  
 
 ## 创业邦
 
 ### 创业列表
 - 请求方式: `get`
 - 请求地址: {host}`businesses`
+
+
+
 
 - 响应内容:  
 
@@ -192,6 +197,96 @@ id,is_pri
     "message": "success",
     "info": {
         
+    }
+}
+```
+
+## 反馈管理
+
+### 反馈列表
+- 请求方式: `get`
+- 请求地址: {host}`suggestions`
+- 请求参数:  
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "user_id": 1,
+                "content": "反馈的内容",
+                "mobile": "联系人手机 可选的",
+                "email": "联系人邮箱 也是可选的",
+                "create_time": "2019-09-16 10:47:04",
+                "nick_name": "微微笑",
+                "pics": []
+            },
+            {
+                "id": 2,
+                "user_id": 1,
+                "content": "哈哈",
+                "mobile": "联系人手机 可选的",
+                "email": "联系人邮箱 也是可选的",
+                "create_time": "2019-09-16 10:47:02",
+                "nick_name": "微微笑",
+                "pics": []
+            },
+            {
+                "id": 3,
+                "user_id": 1,
+                "content": "反馈的内容",
+                "mobile": "联系人手机 可选的",
+                "email": "联系人邮箱 也是可选的",
+                "create_time": "2019-09-16 10:47:00",
+                "nick_name": "微微笑",
+                "pics": []
+            },
+            {
+                "id": 5,
+                "user_id": 1,
+                "content": "反馈的内容",
+                "mobile": "联系人手机 可选的",
+                "email": "联系人邮箱 也是可选的",
+                "create_time": "2019-09-03 13:54:11",
+                "nick_name": "微微笑",
+                "pics": []
+            },
+            {
+                "id": 6,
+                "user_id": 1,
+                "content": "反馈的内容",
+                "mobile": "联系人手机 可选的",
+                "email": "联系人邮箱 也是可选的",
+                "create_time": "2019-09-03 13:55:03",
+                "nick_name": "微微笑",
+                "pics": [
+                    {
+                        "id": "6",
+                        "img_url": "https://www.baidu.com"
+                    },
+                    {
+                        "id": "7",
+                        "img_url": "https://www.jd.com"
+                    }
+                ]
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_service.com/suggestions?page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 5,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
     }
 }
 ```
