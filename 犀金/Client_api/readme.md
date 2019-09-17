@@ -1824,7 +1824,8 @@ item 活动报名时候报名的项目
                 "info": "我真的一个人去吃过火锅，好像也没那么让人难以接受",
 		"read": 0,	
                 "article_id": "543",
-                "article_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-08-19/ZM6ERzrqZfUS-yRmogiEoeLCBfjABsz1.jpg"
+                "article_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-08-19/ZM6ERzrqZfUS-yRmogiEoeLCBfjABsz1.jpg",
+		 "top_comment_id": "459"
             },
             {
                 "user_id": "3",
@@ -1837,7 +1838,8 @@ item 活动报名时候报名的项目
                 "info": "葡萄酒投资回报超股票黄金",
 		"read": 0,
                 "article_image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/d5269bf3cf144969aecb2546393421cc_th.jpg",
-                "article_id": "65"
+                "article_id": "65",
+		"top_comment_id": "459"
             }
         ],
         "_meta": {
@@ -1851,10 +1853,10 @@ item 活动报名时候报名的项目
 read 0 未读, 1已读
 type 1 文章    2 评论
 user_id  谁回复了你的评论/  评论了你的文章  评论者的id
-article_comment_id 粉丝对你发布的文章或者是评论进行了回复 ，代表的是你的哪一条文章/评论 的id
+article_comment_id 评论的id
 info  xxx回复了你的评论yyyy     yyyy就是info  就是回复了你什么的评论 /文章
 content 回复评论的内容 / 评论文章的内容
-
+top_comment_id  评论的id，用于调用comment/comment-detail?id=460 评论详情的接口
 nick_name 回复了 info ： content
 nick_name 评论了 info ： content
 ```  
