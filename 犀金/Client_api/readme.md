@@ -86,7 +86,8 @@
     - [通知消息设置](./#通知消息设置)    
     - [建议和反馈](./#建议和反馈)    
     - [编辑个人资料](./#编辑个人资料)
-    - [关注作者](./#关注作者)         
+    - [关注作者](./#关注作者)  
+    - [我的/ta的关注列表](./#我的/ta的关注列表)       
 ### 全局header  
 
 key |  vaule
@@ -2785,4 +2786,66 @@ topic是标题 topic_des 是副标题
     }
 }
 1代表点击关注了，  0代表取消了关注
+```
+
+
+
+### 我的/ta的关注列表
+- 请求方式: `get`
+- 请求地址: {host}`focu/fan-focus?id=1&page=1&per-page=10`
+- 请求参数:  
+注： id用户的id  page=1&per-page=10分页参数
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "user_id": "172",
+                "nick_name": "美妆师A4",
+                "is_focus": "0"
+            },
+            {
+                "user_id": "187",
+                "nick_name": "你为何放弃治疗",
+                "is_focus": "1"
+            },
+            {
+                "user_id": "13",
+                "nick_name": "怂咖",
+                "is_focus": "0"
+            },
+            {
+                "user_id": "167",
+                "nick_name": "缠绵过后",
+                "is_focus": "0"
+            },
+            {
+                "user_id": "212",
+                "nick_name": "小可爱",
+                "is_focus": "0"
+            },
+            {
+                "user_id": "162",
+                "nick_name": "仙人球",
+                "is_focus": "0"
+            },
+            {
+                "user_id": "219",
+                "nick_name": "无情",
+                "is_focus": "0"
+            }
+        ],
+        "_meta": {
+            "totalCount": 7,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+is_focus    1代表已关注，  0代表未关注   不登录的话都是未关注的状态点击关注需要登录
 ```
