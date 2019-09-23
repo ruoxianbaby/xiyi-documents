@@ -87,7 +87,7 @@
     - [建议和反馈](./#建议和反馈)    
     - [编辑个人资料](./#编辑个人资料)
     - [关注作者](./#关注作者)  
-    - [ta的关注列表](./#ta的关注列表)       
+    - [ta的关注和粉丝](./#ta的关注和粉丝)       
 ### 全局header  
 
 key |  vaule
@@ -2790,11 +2790,11 @@ topic是标题 topic_des 是副标题
 
 
 
-### ta的关注列表
+### ta的关注和粉丝
 - 请求方式: `get`
-- 请求地址: {host}`focu/fan-focus?id=1&page=1&per-page=10`
+- 请求地址: {host}`focu/fan-focus?id=1&type=1&page=1&per-page=10`
 - 请求参数:  
-注： id用户的id  page=1&per-page=10分页参数
+注： id用户的id  type=1是关注列表 type=2是粉丝列表  page=1&per-page=10分页参数
 
 - 响应内容:  
 ```json
@@ -2847,5 +2847,6 @@ topic是标题 topic_des 是副标题
         }
     }
 }
+type 1和2  返回的数据格式一致
 is_focus    1代表已关注，  0代表未关注   不登录的话都是未关注的状态点击关注需要登录
 ```
