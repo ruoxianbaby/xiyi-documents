@@ -2806,11 +2806,13 @@ topic是标题 topic_des 是副标题
             {
                 "user_id": "172",
                 "nick_name": "美妆师A4",
+		"avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/62621043.jpg",
                 "is_focus": "0"
             },
             {
                 "user_id": "187",
                 "nick_name": "你为何放弃治疗",
+		"avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/62621043.jpg",
                 "is_focus": "1"
             },
             {
@@ -2821,21 +2823,25 @@ topic是标题 topic_des 是副标题
             {
                 "user_id": "167",
                 "nick_name": "缠绵过后",
+		"avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/62621043.jpg",
                 "is_focus": "0"
             },
             {
                 "user_id": "212",
                 "nick_name": "小可爱",
+		"avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/62621043.jpg",
                 "is_focus": "0"
             },
             {
                 "user_id": "162",
                 "nick_name": "仙人球",
+		"avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/62621043.jpg",
                 "is_focus": "0"
             },
             {
                 "user_id": "219",
                 "nick_name": "无情",
+		"avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/62621043.jpg",
                 "is_focus": "0"
             }
         ],
