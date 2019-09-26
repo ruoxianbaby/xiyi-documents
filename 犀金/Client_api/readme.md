@@ -93,6 +93,9 @@
     - [电台列表详情](./#电台列表详情)    
     - [电台点赞](./#电台点赞)
     - [电台收藏](./#电台收藏)    
+    - [电台列表内页的评论](./#电台列表内页的评论)     
+    - [电台最新评论](./#电台最新评论)     
+    - [电台最热评论](./#电台最热评论)         
 ### 全局header  
 
 key |  vaule
@@ -3041,4 +3044,341 @@ id 是电台的id
 }
 active 1 代表收藏成功 切换成了已经收藏了状态
 active 0 取消收藏成功
+```
+
+
+
+### 电台列表内页的评论
+- 请求方式: `get`
+- 请求地址: {host}`radio-comments?radio_id=1&type=no_child&per-page=3`
+- 请求参数:  
+
+id 是电台的id
+```  
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 2,
+                "radio_id": 1,
+                "user_id": 110,
+                "content": "评论了一下文222",
+                "pid": 0,
+                "reply_pid": 0,
+                "like_num": 0,
+                "child_count": 2,
+                "create_time": "2019-09-26 15:03:23",
+                "update_time": null,
+                "del": 0,
+                "is_private": 0,
+                "comment_count": "4",
+                "nick_name": "阿军666",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-09-24/Pbz6lnGFMImGC76WNnbtL20lEKv4tLkt.png",
+                "time_before": "3小时前",
+                "like": 0,
+                "like_count": "0"
+            },
+            {
+                "id": 3,
+                "radio_id": 1,
+                "user_id": 1,
+                "content": "评论33",
+                "pid": 0,
+                "reply_pid": 0,
+                "like_num": 0,
+                "child_count": 1,
+                "create_time": "2019-09-26 15:09:21",
+                "update_time": null,
+                "del": 0,
+                "is_private": 0,
+                "comment_count": "4",
+                "nick_name": "微微笑",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+                "time_before": "3小时前",
+                "like": 1,
+                "like_count": "1"
+            },
+            {
+                "id": 1,
+                "radio_id": 1,
+                "user_id": 1,
+                "content": "评论内容11",
+                "pid": 0,
+                "reply_pid": 0,
+                "like_num": 0,
+                "child_count": 1,
+                "create_time": "2019-09-26 14:48:16",
+                "update_time": null,
+                "del": 0,
+                "is_private": 0,
+                "comment_count": "4",
+                "nick_name": "微微笑",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+                "time_before": "3小时前",
+                "like": 0,
+                "like_count": "0"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/radio-comments?radio_id=1&type=no_child&per-page=3&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 3,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 3
+        }
+    }
+}
+```
+
+
+
+
+
+
+### 电台最新评论
+- 请求方式: `get`
+- 请求地址: {host}`radio-comments?radio_id=1&type=new&page=1&per-page=20`
+- 请求参数:  
+
+id 是电台的id  page=1&per-page=20分页参数 自行设定，不传也可
+```  
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 3,
+                "radio_id": 1,
+                "user_id": 1,
+                "content": "评论33",
+                "pid": 0,
+                "reply_pid": 0,
+                "like_num": 0,
+                "child_count": 1,
+                "create_time": "2019-09-26 15:09:21",
+                "update_time": null,
+                "del": 0,
+                "is_private": 0,
+                "comment_count": "4",
+                "nick_name": "微微笑",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+                "time_before": "3小时前",
+                "like": 1,
+                "like_count": "1",
+                "child": []
+            },
+            {
+                "id": 2,
+                "radio_id": 1,
+                "user_id": 110,
+                "content": "评论了一下文222",
+                "pid": 0,
+                "reply_pid": 0,
+                "like_num": 0,
+                "child_count": 2,
+                "create_time": "2019-09-26 15:03:23",
+                "update_time": null,
+                "del": 0,
+                "is_private": 0,
+                "comment_count": "4",
+                "nick_name": "阿军666",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-09-24/Pbz6lnGFMImGC76WNnbtL20lEKv4tLkt.png",
+                "time_before": "3小时前",
+                "like": 0,
+                "like_count": "0",
+                "child": [
+                    {
+                        "id": 4,
+                        "radio_id": 1,
+                        "user_id": 13,
+                        "content": "我回复了",
+                        "pid": 2,
+                        "reply_pid": 2,
+                        "like_num": 0,
+                        "child_count": 0,
+                        "create_time": "2019-09-26 16:10:15",
+                        "update_time": null,
+                        "del": 0,
+                        "is_private": 0,
+                        "time_before": "2小时前",
+                        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/82888066.jpg",
+                        "nick_name": "怂咖",
+                        "like": 0,
+                        "like_count": 0,
+                        "replied_user_id": 110,
+                        "replied_nick_name": "阿军666"
+                    }
+                ]
+            },
+            {
+                "id": 1,
+                "radio_id": 1,
+                "user_id": 1,
+                "content": "评论内容11",
+                "pid": 0,
+                "reply_pid": 0,
+                "like_num": 0,
+                "child_count": 1,
+                "create_time": "2019-09-26 14:48:16",
+                "update_time": null,
+                "del": 0,
+                "is_private": 0,
+                "comment_count": "4",
+                "nick_name": "微微笑",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+                "time_before": "3小时前",
+                "like": 0,
+                "like_count": "0",
+                "child": []
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/radio-comments?radio_id=1&type=new&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 3,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+
+
+
+
+### 电台最热评论
+- 请求方式: `get`
+- 请求地址: {host}`radio-comments?radio_id=1&type=hot&page=1&per-page=20`
+- 请求参数:  
+
+id 是电台的id  page=1&per-page=20分页参数 自行设定，不传也可
+数据格式与最新评论是一致的 
+```  
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 2,
+                "radio_id": 1,
+                "user_id": 110,
+                "content": "评论了一下文222",
+                "pid": 0,
+                "reply_pid": 0,
+                "like_num": 0,
+                "child_count": 2,
+                "create_time": "2019-09-26 15:03:23",
+                "update_time": null,
+                "del": 0,
+                "is_private": 0,
+                "comment_count": "4",
+                "nick_name": "阿军666",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-09-24/Pbz6lnGFMImGC76WNnbtL20lEKv4tLkt.png",
+                "time_before": "3小时前",
+                "like": 0,
+                "like_count": "0",
+                "child": [
+                    {
+                        "id": 4,
+                        "radio_id": 1,
+                        "user_id": 13,
+                        "content": "我回复了",
+                        "pid": 2,
+                        "reply_pid": 2,
+                        "like_num": 0,
+                        "child_count": 0,
+                        "create_time": "2019-09-26 16:10:15",
+                        "update_time": null,
+                        "del": 0,
+                        "is_private": 0,
+                        "time_before": "2小时前",
+                        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/82888066.jpg",
+                        "nick_name": "怂咖",
+                        "like": 0,
+                        "like_count": 0,
+                        "replied_user_id": 110,
+                        "replied_nick_name": "阿军666"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "radio_id": 1,
+                "user_id": 1,
+                "content": "评论33",
+                "pid": 0,
+                "reply_pid": 0,
+                "like_num": 0,
+                "child_count": 1,
+                "create_time": "2019-09-26 15:09:21",
+                "update_time": null,
+                "del": 0,
+                "is_private": 0,
+                "comment_count": "4",
+                "nick_name": "微微笑",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+                "time_before": "3小时前",
+                "like": 1,
+                "like_count": "1",
+                "child": []
+            },
+            {
+                "id": 1,
+                "radio_id": 1,
+                "user_id": 1,
+                "content": "评论内容11",
+                "pid": 0,
+                "reply_pid": 0,
+                "like_num": 0,
+                "child_count": 1,
+                "create_time": "2019-09-26 14:48:16",
+                "update_time": null,
+                "del": 0,
+                "is_private": 0,
+                "comment_count": "4",
+                "nick_name": "微微笑",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+                "time_before": "3小时前",
+                "like": 0,
+                "like_count": "0",
+                "child": []
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/radio-comments?radio_id=1&type=hot&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 3,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
 ```
