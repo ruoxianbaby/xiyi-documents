@@ -90,7 +90,8 @@
     - [ta的关注和粉丝](./#ta的关注和粉丝)       
 - [电台](./#电台)
     - [电台列表](./#电台列表)
-
+    - [电台点赞](./#电台点赞)
+    - [电台收藏](./#电台收藏)    
 ### 全局header  
 
 key |  vaule
@@ -2865,9 +2866,115 @@ is_focus    1代表已关注，  0代表未关注   不登录的话都是未关�
 ### 电台列表
 - 请求方式: `get`
 - 请求地址: {host}`radios`
-- 请求参数:  
-注： id用户的id
+- 响应参数:  
 ```json
-模板
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 2,
+                "type": 1,
+                "origin": "来源2",
+                "title": "标题2",
+                "desc": "描述",
+                "preview_image": "https://www.baidu.com",
+                "comment_num": 0,
+                "like_num": 0,
+                "create_time": "2019-09-26",
+                "creater": 25,
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/95849225.jpg",
+                "type_name": "暂时写死",
+                "author": "凉汜",
+                "before_time": "2小时前",
+                "like": 0,
+                "collect_num": 0,
+                "collect": 0
+            },
+            {
+                "id": 1,
+                "type": 1,
+                "origin": "来源",
+                "title": "标题",
+                "desc": "描述",
+                "preview_image": "https://www.baidu.com",
+                "comment_num": 0,
+                "like_num": 0,
+                "create_time": "2019-09-26",
+                "creater": 25,
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/95849225.jpg",
+                "type_name": "暂时写死",
+                "author": "凉汜",
+                "before_time": "2小时前",
+                "like": 0,
+                "collect_num": 1,
+                "collect": 0
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/radios?page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 2,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
 ```
 
+### 电台点赞
+- 请求方式: `post`
+- 请求地址: {host}`radio-like/like`
+- 请求参数:  
+
+```json
+{
+	"id":1
+}
+```  
+id 是电台的id
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "active": 0
+    }
+}
+active 1 代表点赞成功 切换成了已经点赞的状态
+active 0 取消点赞成功
+```
+
+
+
+### 电台收藏
+- 请求方式: `post`
+- 请求地址: {host}`radio-collect/collect`
+- 请求参数:  
+
+```json
+{
+	"id":1
+}
+```  
+id 是电台的id
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "active": 0
+    }
+}
+active 1 代表收藏成功 切换成了已经收藏了状态
+active 0 取消收藏成功
+```
