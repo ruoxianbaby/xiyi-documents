@@ -90,6 +90,7 @@
     - [ta的关注和粉丝](./#ta的关注和粉丝)       
 - [电台](./#电台)
     - [电台列表](./#电台列表)
+    - [电台列表详情](./#电台列表详情)    
     - [电台点赞](./#电台点赞)
     - [电台收藏](./#电台收藏)    
 ### 全局header  
@@ -2925,6 +2926,69 @@ is_focus    1代表已关注，  0代表未关注   不登录的话都是未关�
 }
 ```
 
+
+### 电台列表详情
+- 请求方式: `get`
+- 请求地址: {host}`radios/1?expand=content,label,recommend`
+- 请求参数:  
+1 是电台的id， ? 后面参数写死
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "type": 1,
+                "origin": "来源",
+                "title": "标题",
+                "desc": "描述",
+                "preview_image": "https://www.baidu.com",
+                "comment_num": 0,
+                "like_num": -2,
+                "create_time": "2019-09-26",
+                "creater": 25,
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/95849225.jpg",
+                "author": "凉汜",
+                "before_time": "4小时前",
+                "like": 0,
+                "collect_num": 0,
+                "collect": 0,
+                "content": "内容",
+                "label": [
+                    {
+                        "id": "1",
+                        "name": "标签1"
+                    },
+                    {
+                        "id": "2",
+                        "name": "标签2"
+                    },
+                    {
+                        "id": "3",
+                        "name": "标签3"
+                    }
+                ]
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/radios/1?expand=content%2Clabel%2Crecommend&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 1,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
 ### 电台点赞
 - 请求方式: `post`
 - 请求地址: {host}`radio-like/like`
