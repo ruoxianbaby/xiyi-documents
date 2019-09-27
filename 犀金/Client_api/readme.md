@@ -97,6 +97,7 @@
     - [电台最新评论](./#电台最新评论)     
     - [电台最热评论](./#电台最热评论)         
     - [电台评论详情](./#电台评论详情)   
+    - [电台post评论](./#电台post评论)       
 ### 全局header  
 
 key |  vaule
@@ -3471,3 +3472,44 @@ id 是电台的id  page=1&per-page=20分页参数 自行设定，不传也可
     }
 }
 ```
+
+
+
+
+### 电台post评论
+- 请求方式: `post`
+- 请求地址: {host}`radio-comments`
+- 请求参数:  
+
+```json
+{
+	"id": 2,
+	"content":"评论电台",
+	"pid": 0
+}
+```
+id radio的id，pid 0 是代表评论电台，其他则是回复评论。
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "添加成功",
+    "info": {
+        "id": 9,
+        "radio_id": 2,
+        "content": "哈哈哈",
+        "create_time": "2019-09-27 17:41:00",
+        "user_id": 1,
+        "pid": 0,
+        "reply_pid": 0,
+        "is_private": 0,
+        "del": 0,
+        "nick_name": "微微笑",
+        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+        "time_before": "刚刚"
+    }
+}
+```
+
