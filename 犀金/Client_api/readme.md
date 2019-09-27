@@ -2870,7 +2870,8 @@ is_focus    1代表已关注，  0代表未关注   不登录的话都是未关�
 ## 电台
 ### 电台列表
 - 请求方式: `get`
-- 请求地址: {host}`radios`
+- 请求地址: {host}`radios?sort=-id&page=1&per-page=20`
+sort=-id 表示最新的时间排在最上面， sort=id 代表最老的时间在最上面   page=1&per-page=20 分页参数
 - 响应参数:  
 ```json
 {
