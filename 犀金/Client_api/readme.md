@@ -96,6 +96,7 @@
     - [电台列表内页的评论](./#电台列表内页的评论)     
     - [电台最新评论](./#电台最新评论)     
     - [电台最热评论](./#电台最热评论)         
+    - [电台评论详情](./#电台评论详情)   
 ### 全局header  
 
 key |  vaule
@@ -3375,6 +3376,83 @@ id 是电台的id  page=1&per-page=20分页参数 自行设定，不传也可
         },
         "_meta": {
             "totalCount": 3,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+
+
+
+
+
+### 电台评论详情
+- 请求方式: `get`
+- 请求地址: {host}`radio-comments/2`
+- 请求参数:  
+/2  是评论的id
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 2,
+                "radio_id": 1,
+                "user_id": 110,
+                "content": "评论了一下文222",
+                "pid": 0,
+                "reply_pid": 0,
+                "like_num": 0,
+                "child_count": 2,
+                "create_time": "2019-09-26 15:03:23",
+                "update_time": null,
+                "del": 0,
+                "is_private": 0,
+                "comment_count": "4",
+                "nick_name": "阿军666",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-09-24/Pbz6lnGFMImGC76WNnbtL20lEKv4tLkt.png",
+                "time_before": "19小时前",
+                "like": 0,
+                "like_count": "0",
+                "child": [
+                    {
+                        "id": 4,
+                        "radio_id": 1,
+                        "user_id": 13,
+                        "content": "我回复了",
+                        "pid": 2,
+                        "reply_pid": 2,
+                        "like_num": 0,
+                        "child_count": 0,
+                        "create_time": "2019-09-26 16:10:15",
+                        "update_time": null,
+                        "del": 0,
+                        "is_private": 0,
+                        "time_before": "18小时前",
+                        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/82888066.jpg",
+                        "nick_name": "怂咖",
+                        "like": 0,
+                        "like_count": 0,
+                        "replied_user_id": 110,
+                        "replied_nick_name": "阿军666"
+                    }
+                ]
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/radio-comments/2?page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 1,
             "pageCount": 1,
             "currentPage": 1,
             "perPage": 20
