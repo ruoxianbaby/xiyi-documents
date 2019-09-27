@@ -3159,7 +3159,7 @@ id 是电台的id
 
 ### 电台最新评论
 - 请求方式: `get`
-- 请求地址: {host}`radio-comments?radio_id=1&type=new&page=1&per-page=20`
+- 请求地址: {host}`radio-comments?radio_id=1&type=new&pid=0&page=1&per-page=20`
 - 请求参数:  
 
 id 是电台的id  page=1&per-page=20分页参数 自行设定，不传也可
@@ -3279,7 +3279,7 @@ id 是电台的id  page=1&per-page=20分页参数 自行设定，不传也可
 
 ### 电台最热评论
 - 请求方式: `get`
-- 请求地址: {host}`radio-comments?radio_id=1&type=hot&page=1&per-page=20`
+- 请求地址: {host}`radio-comments?radio_id=1&type=hot&pid=0&page=1&per-page=20`
 - 请求参数:  
 
 id 是电台的id  page=1&per-page=20分页参数 自行设定，不传也可
