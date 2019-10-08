@@ -440,7 +440,7 @@ id,is_pri
 
 ### 电台新增
 - 请求方式: `post`
-- 请求地址: {host}`radios/1?expand=content,label_id_list`
+- 请求地址: {host}`radios
 - 请求参数: 
 ```json
 {
