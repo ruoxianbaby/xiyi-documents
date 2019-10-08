@@ -8,6 +8,12 @@
 - [反馈管理](./#反馈管理)  
     - [反馈列表](./#反馈列表)  
     - [反馈删除](./#反馈删除)  
+- [电台](./#电台)  
+    - [电台列表](./#电台列表)  
+    - [电台详情](./#电台详情)  
+    - [电台新增](./#电台新增)    
+    - [电台更新](./#电台更新)  
+    - [时间轴列表](./#时间轴列表)     
 ## 创业邦
 
 ### 创业列表
@@ -298,6 +304,304 @@ id,is_pri
 
 - 响应内容:  
 
+```json
+{
+    "code": 1,
+    "message": "删除成功",
+    "info": ""
+}
+```
+
+## 电台
+
+### 电台列表
+- 请求方式: `get`
+- 请求地址: {host}`radios`
+- 请求参数: 
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "radio_url": "https://alioss.gcores.com/uploads/audio/e7486ee5-d5c8-4621-ba8a-752bf762f8bc.mp3",
+                "type": 1,
+                "origin": "来源1",
+                "title": "标题1",
+                "desc": "描述",
+                "preview_image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/05b93d90b5b94b71a5dd8020587f33c6.jpeg",
+                "comment_num": 4,
+                "like_num": 3,
+                "create_time": "2019-09-26 10:45:27",
+                "update_time": "2019-09-26 10:45:30",
+                "creater": 25,
+                "admin_id": 0,
+                "status": 1
+            },
+            {
+                "id": 2,
+                "radio_url": "https://alioss.gcores.com/uploads/audio/52d73fbd-6add-4c3c-b922-4ef3347fc33d.mp3",
+                "type": 1,
+                "origin": "来源2",
+                "title": "标题2",
+                "desc": "描述",
+                "preview_image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/%E9%A6%96%E9%A1%B51.png",
+                "comment_num": 14,
+                "like_num": 1,
+                "create_time": "2019-09-26 10:45:27",
+                "update_time": "2019-09-26 10:45:30",
+                "creater": 25,
+                "admin_id": 0,
+                "status": 1
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_service.com/radios?page=1"
+            },
+            "next": {
+                "href": "http://my_xijin_service.com/radios?page=2"
+            },
+            "last": {
+                "href": "http://my_xijin_service.com/radios?page=2"
+            }
+        },
+        "_meta": {
+            "totalCount": 22,
+            "pageCount": 2,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+
+
+### 电台详情
+- 请求方式: `get`
+- 请求地址: {host}`radios/1?expand=content,label_id_list`
+- 请求参数: 
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "radio_url": "https://alioss.gcores.com/uploads/audio/e7486ee5-d5c8-4621-ba8a-752bf762f8bc.mp3",
+                "type": 1,
+                "origin": "来源1",
+                "title": "标题1",
+                "desc": "描述",
+                "preview_image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/05b93d90b5b94b71a5dd8020587f33c6.jpeg",
+                "comment_num": 4,
+                "like_num": 3,
+                "create_time": "2019-09-26 10:45:27",
+                "update_time": "2019-09-26 10:45:30",
+                "creater": 25,
+                "admin_id": 0,
+                "status": 1,
+                "content": "内容",
+                "label_id_list": [
+                    "标签1",
+                    "标签2",
+                    "标签3"
+                ]
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_service.com/radios/1?expand=content%2Clabel_id_list&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 1,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+
+
+
+### 电台新增
+- 请求方式: `post`
+- 请求地址: {host}`radios/1?expand=content,label_id_list`
+- 请求参数: 
+```json
+{
+	"content":"测试1",
+	"title":"标题1",
+	"radio_url":"https://www.baidu.com",
+	"origin":"来源1",
+	"desc": "描述1",
+	"preview_image":"https://www.baidu.com",
+	"status": 1,
+	"participants": [1,2,3]
+}
+participants 是参与者的id，也就是用户的id，有多个
+```
+- 响应内容:  
+
+```json
+
+```
+
+### 电台更新
+- 请求方式: `put`
+- 请求地址: {host}`radios/25`
+- 请求参数: 
+```json
+{
+	"content":"测试1",
+	"title":"标题1",
+	"radio_url":"https://www.baidu.com",
+	"origin":"来源1",
+	"desc": "描述1",
+	"preview_image":"https://www.baidu.com",
+	"participants": [1,2,3]
+}
+与文章类似
+```
+- 响应内容:  
+
+```json
+
+```
+
+
+### 时间轴列表
+- 请求方式: `get`
+- 请求地址: {host}`radio-shafts?radio_id=1`
+- 请求参数: 
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "radio_id": 1,
+                "at": 0,
+                "title": "开场白",
+                "content": "我是开车白",
+                "quote_href": "https://www.baidu.com"
+            },
+            {
+                "id": 2,
+                "radio_id": 1,
+                "at": 10,
+                "title": "标题",
+                "content": "内容",
+                "quote_href": ""
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_service.com/radio-shafts?radio_id=1&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 2,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+
+
+### 时间轴新增
+- 请求方式: `post`
+- 请求地址: {host}`radio-shafts?radio_id=1`
+- 请求参数: 
+
+```json
+{
+	"radio_id":"2",
+	"at": 0,
+	"title": "开场白",
+	"content": "开场",
+	"quote_href":"https://www.baidu.com"
+}
+```
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "radio_id": "2",
+        "at": 11,
+        "title": "开场白1",
+        "content": "开场1",
+        "quote_href": "https://www.baidu.com",
+        "id": 4
+    }
+}
+```
+
+
+
+### 时间轴更新
+- 请求方式: `put`
+- 请求地址: {host}`radio-shafts/3`
+- 请求参数:  /3是时间轴的id
+
+```json
+{
+	"radio_id":"2",
+	"at": 0,
+	"title": "开场白",
+	"content": "开场",
+	"quote_href":"https://www.baidu.com"
+}
+```
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "radio_id": "2",
+        "at": 11,
+        "title": "开场白1",
+        "content": "开场1",
+        "quote_href": "https://www.baidu.com",
+        "id": 4
+    }
+}
+```
+
+
+
+### 时间轴删除
+- 请求方式: `delete`
+- 请求地址: {host}`radio-shafts/3`
+- 请求参数:  /3是时间轴的id
+
+```json
+
+```
+- 响应内容:  
 ```json
 {
     "code": 1,
