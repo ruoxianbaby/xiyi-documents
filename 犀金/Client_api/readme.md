@@ -100,6 +100,7 @@
     - [电台评论点赞](./#电台评论点赞)        
     - [电台post评论](./#电台post评论)
     - [电台举报](./#电台举报)     
+    - [电台时间轴](./#电台时间轴)   
 ### 全局header  
 
 key |  vaule
@@ -3561,4 +3562,54 @@ id radio的id
     }
 }
 1 已点赞
+```
+
+
+
+
+### 电台时间轴
+- 请求方式: `get`
+- 请求地址: {host}`radio-shafts?id=1`
+- 请求参数:   id 是电台的id
+
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "radio_id": 1,
+                "at": 0,
+                "title": "开场白",
+                "content": "我是开车白",
+                "quote_href": "https://www.baidu.com"
+            },
+            {
+                "id": 2,
+                "radio_id": 1,
+                "at": 10,
+                "title": "标题",
+                "content": "内容",
+                "quote_href": ""
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/radio-shafts?id=1&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 2,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+content是内容，quote_href是外链，可能有外链，表示引用了别人的
 ```
