@@ -3586,6 +3586,7 @@ id radio的id
                 "radio_id": 1,
                 "at": 0,
                 "title": "开场白",
+		"image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/82888066.jpg",
                 "content": "我是开车白",
                 "quote_href": "https://www.baidu.com"
             },
@@ -3594,6 +3595,7 @@ id radio的id
                 "radio_id": 1,
                 "at": 10,
                 "title": "标题",
+		"image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/82888066.jpg",
                 "content": "内容",
                 "quote_href": ""
             }
