@@ -101,6 +101,7 @@
     - [电台post评论](./#电台post评论)
     - [电台举报](./#电台举报)     
     - [电台时间轴](./#电台时间轴)   
+    - [电台banner](./#电台banner)   
 ### 全局header  
 
 key |  vaule
@@ -3614,4 +3615,24 @@ id radio的id
     }
 }
 content是内容，quote_href是外链，可能有外链，表示引用了别人的  at时间点，0代表第0秒的时刻
+```
+
+### 电台banner
+- 请求方式: `get`
+- 请求地址: {host}`radio/new`
+- 请求参数: 
+
+```json
+
+```
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "id": 4,
+        "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-10-15/0ic789-zUCHJQw6av6cuXvbb0kr1XPTS.jpg"
+    }
+}
 ```
