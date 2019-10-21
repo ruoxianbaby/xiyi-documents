@@ -17,7 +17,6 @@
     - [时间轴新增](./#时间轴新增)
     - [时间轴更新](./#时间轴更新)    
     - [时间轴删除](./#时间轴删除)    
-    - [电台banner](./#电台banner)    
 ## 创业邦
 
 ### 创业列表
@@ -614,22 +613,4 @@ participants 是参与者的id，也就是用户的id，有多个
 }
 ```
 
-### 电台banner
-- 请求方式: `get`
-- 请求地址: {host}`radio/new`
-- 请求参数: 
 
-```json
-
-```
-- 响应内容:  
-```json
-{
-    "code": 1,
-    "message": "success",
-    "info": {
-        "id": 4,
-        "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-10-15/0ic789-zUCHJQw6av6cuXvbb0kr1XPTS.jpg"
-    }
-}
-```
