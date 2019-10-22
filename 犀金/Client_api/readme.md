@@ -26,6 +26,8 @@
     - [综合搜索](./#综合搜索) 
     - [文章搜索](./#文章搜索)
     - [用户搜索](./#用户搜索)
+    - [电台搜索](./#电台搜索)   
+    - [创业邦搜索](./#创业邦搜索)  
 - [通用模块](./#通用模块)
 	- [用户反馈](./#用户反馈)
 	- [上报设备号](./#上报设备号)  
@@ -514,6 +516,96 @@ Authorization | Bearer ***access_token***
 ```json  
 
 ```
+
+
+### 电台搜索
+- 请求方式: `get`
+- 请求地址: {host}`radios?title=%要搜索的内容%`
+- 请求参数: 直接把要搜索的内容传递到参数上
+
+```json
+
+```
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 7,
+                "radio_url": "http://xijin-test.oss-cn-shanghai.aliyuncs.com/radio/2019-10-15/1571132739853.mp3",
+                "size": "88393.52",
+                "type": 0,
+                "origin": "",
+                "title": "低成本创业是不是一个伪命题？",
+                "desc": "孤注一掷的勇气究竟能否开花结果",
+                "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-10-18/xNL52KR6FJCKxzw4JjyMkXtE75a66J0L.png",
+                "comment_num": 0,
+                "like_num": 25,
+                "create_time": "2019-10-15",
+                "before_time": "5天前",
+                "like": 0,
+                "collect_num": 0,
+                "collect": 0,
+                "share_url": "http://my_xijin_api.com/?id=7&radio_url=http://xijin-test.oss-cn-shanghai.aliyuncs.com/radio/2019-10-15/1571132739853.mp3",
+                "radio_time": "36:58",
+                "radio_size": "86.32MB",
+                "participants": [
+                    {
+                        "id": 121,
+                        "nick_name": "主页菌",
+                        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-09-27/Am7n0XLBqZ_Pffl1JJhgHzf9mCltG_79.png"
+                    },
+                    {
+                        "id": 227,
+                        "nick_name": "Ծ‸Ծ",
+                        "avatar_image": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLRbCnyAoRJV6QbTeOicKR3icGsNIxgfkqu6b9Zf4a7ViaVECzzianqFcqPxTRyzLVynlkgRdueibZO7nQ/132"
+                    },
+                    {
+                        "id": 374,
+                        "nick_name": null,
+                        "avatar_image": null
+                    }
+                ],
+                "radio_shaft": [
+                    {
+                        "id": 204,
+                        "radio_id": 7,
+                        "at": 38,
+                        "title": "本期内容",
+                        "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-10-18/UrqvpKCnfpdA7vzKMJSCC-Rg77bY7oyf.png",
+                        "content": "低成本创业有多难，本期节目我们跟大家聊一聊这个话题。很多时候不一定是创业思路不对，只是在最艰难的时候，没有资金会让你力不从心。",
+                        "quote_href": ""
+                    }
+                  
+                ]
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/radios?title=%E4%BD%8E%E6%88%90%E6%9C%AC&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 1,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+### 创业邦搜索
+- 请求方式: `get`
+- 请求地址: {host}`businesses?description=我`
+- 响应内容:  
+```json  
+
+```
+
+
 ### 通用模块
 ### 用户反馈  
 - 请求方式: `post`
