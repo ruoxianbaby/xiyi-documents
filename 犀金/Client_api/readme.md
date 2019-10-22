@@ -23,6 +23,7 @@
     - [拉黑用户](./#拉黑用户)
     - [检查重复手机号](./#检查重复手机号)   
 - [搜索](./#搜索)
+    - [综合搜索](./#综合搜索) 
     - [文章搜索](./#文章搜索)
     - [用户搜索](./#用户搜索)
 - [通用模块](./#通用模块)
@@ -344,6 +345,129 @@ Authorization | Bearer ***access_token***
 }
 ```
 ### 搜索
+
+### 综合搜索
+- 请求方式: `get`
+- 请求地址: {host}`searches?keyword=我`
+
+- 响应内容:  
+```json  
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "radio_data": [
+            {
+                "id": "2",
+                "title": "我为什么要“做人留一线”？聊一聊生活在一线城市的利与弊",
+                "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-10-17/mDOyRKbP1FyrgblUPHPMhlCBhi4zal7t.png"
+            }
+        ],
+        "business_data": [
+            {
+                "id": "110",
+                "area": "共享充电宝",
+                "description": "搞共享充电宝的有兴趣+，产品开发已经成熟，广告已接好，找地推，各个城市分开推广，我们提供设备和服务，客户你来布局。我们是按照你开的客户的使用情况分成的，做得好真的可以躺着赚钱。有兴趣聊一下",
+                "type_name": "求贤令",
+                "background_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-09-18/ZpZS4rgGmkxl0d8gvu5iwTKYUIl_Bb1Q.jpg",
+                "city_name": "苏州市"
+            },
+            {
+                "id": "108",
+                "area": "跨境代购",
+                "description": "招微商下游，有没有想做澳洲代购的，提供澳洲直邮批发的货源！可以帮忙代发，提供全程服务。你只要给我订单，我帮你解决一切，有意私聊",
+                "type_name": "求贤令",
+                "background_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-09-18/Bd2bjy-Qv7GTimEUgh9hYiUjheqb1WI1.jpg",
+                "city_name": "上海市"
+            },
+            {
+                "id": "104",
+                "area": "淘宝卖家",
+                "description": "我是开淘宝店的，卖食品，三钻，一直收益平平，推广太烧钱了，感觉再给马云打工。有么有大佬能指条明路",
+                "type_name": "求方案",
+                "background_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-09-02/inkutBskMs5ys8xy41GqAFKWt8PMOXri.png",
+                "city_name": "四川省"
+            },
+            {
+                "id": "100",
+                "area": "软件工程",
+                "description": "公司已开，坐标深圳，主要从事原创Vtuber行业，现在已经在B站开号并获取了一定的流量。公司需要一个靠谱的Unity程序员实现动态捕捉设备和Unity引擎的连接，实现直播。我们理念非常新颖，发张实拍，B站号：Facemoe，有意者欢迎私聊",
+                "type_name": "求贤令",
+                "background_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-09-18/PyvV0rS39k6ty2NHp2_fw1iz0IIrvKfM.jpg",
+                "city_name": "深圳市"
+            },
+            {
+                "id": "5",
+                "area": "互联网Vtuber",
+                "description": "公司已开，坐标深圳，主要从事原创Vtuber行业，现在已经在B站开号并获取了一定的流量。可出让60%股份，求融资，300万元。公司主打Mixed Reality Idol，这个概念在中国是首创。有兴趣欢迎看我们B站号：Facemoe",
+                "type_name": "求资金",
+                "background_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-08-28/KNYnpWCwtGPyCsni30ZoVcoouQGukTGi.jpg",
+                "city_name": "深圳市"
+            },
+            {
+                "id": "4",
+                "area": "私域电商",
+                "description": "和阿里合作的新项目，是做的私域电商平台+供应链，目前再招城市合伙人，我们公司提供系统，功能是可以帮助所有想再线上卖货的商家搭建属于商家自己的小taobao平台，并提供一个丰富的货源，我们来做线上推广，合伙人做线下推广，可以baidu美物满仓",
+                "type_name": "求贤令",
+                "background_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-09-18/Bd2bjy-Qv7GTimEUgh9hYiUjheqb1WI1.jpg",
+                "city_name": "成都市"
+            }
+        ],
+        "article_data": [
+            {
+                "id": "928",
+                "title": "我们都小看了周杰伦的带货能力",
+                "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-09-18/3_9ew8wBix25izH8E-mKq2dalUDz4cl6.jpg",
+                "type": "12",
+                "like_num": "21",
+                "type_name": "创业者的自我修养"
+            },
+            {
+                "id": "917",
+                "title": "二十多通电话后，我摸清了加盟奶茶店的这些坑",
+                "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-09-17/VadpVfpGSy2OMS4iv9dbB3F3S4dJ3rNK.jpg",
+                "type": "12",
+                "like_num": "42",
+                "type_name": "创业者的自我修养"
+            },
+            {
+                "id": "912",
+                "title": "日本老龄化消费调研：哪类产品更好卖？有哪些值得我们借鉴",
+                "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-09-17/1vx-ikns4tsvO-whlj0KK4n9ANuaZjpr.jpg",
+                "type": "14",
+                "like_num": "41",
+                "type_name": "投资指南"
+            }
+        ],
+        "user_data": [
+            {
+                "id": "15",
+                "nick_name": "深伴我",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/9825760.jpg",
+                "focus_num": "1",
+                "product_num": "2"
+            },
+            {
+                "id": "18",
+                "nick_name": "醉友我",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/13742375.jpg",
+                "focus_num": "1",
+                "product_num": "5"
+            },
+            {
+                "id": "37",
+                "nick_name": "顾及我",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/90135688.jpg",
+                "focus_num": "0",
+                "product_num": "4"
+            }
+        ]
+    }
+}
+电台和创业邦最多反了6条数据，文章和犀客最多返了3条数据， 查看更多调另外的搜索接口。
+```
+
+
 ### 用户搜索
 - 请求方式: `get`
 - 请求地址: {host}`users?nick_name=da`
