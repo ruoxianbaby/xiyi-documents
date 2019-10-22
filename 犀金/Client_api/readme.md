@@ -2941,7 +2941,7 @@ sort=-id 表示最新的时间排在最上面， sort=id 代表最老的时间�
 
 ### 电台列表详情
 - 请求方式: `get`
-- 请求地址: {host}`radios/1?expand=content,label,recommend`
+- 请求地址: {host}`radios/1?expand=content,label,recommend,read_recommend`
 - 请求参数:  
 1 是电台的id， ? 后面参数写死
 
@@ -3644,7 +3644,7 @@ content是内容，quote_href是外链，可能有外链，表示引用了别人
 
 ### 我的电台
 - 请求方式: `get`
-- 请求地址: {host}`radios?expand=content,label,recommend&my=1`
+- 请求地址: {host}`radios?my=1`
 - 请求参数:  全部写死
 
 ```json
