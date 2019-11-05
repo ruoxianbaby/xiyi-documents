@@ -4011,3 +4011,61 @@ content是内容，quote_href是外链，可能有外链，表示引用了别人
 ```
 
 
+
+## 赚钱圈
+### 领域列表
+- 请求方式: `get`
+- 请求地址: {host}`make-money-types`  
+- 响应参数:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": [
+        {
+            "id": 1,
+            "name": "宠物"
+        },
+        {
+            "id": 2,
+            "name": "创业"
+        },
+        {
+            "id": 3,
+            "name": "奶茶"
+        }
+    ]
+}
+```
+
+### 圈子创建
+- 请求方式: `post`
+- 请求地址: {host}`make-money-groups`
+- 请求参数:  
+
+```json
+{
+	"type_id": 1 领域列表id,
+	"name":"名称",
+	"logo": "http://123.456.org",
+	"im_group_id": "群组id"
+}
+```
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "type_id": "1",
+        "name": "名称",
+        "logo": "http://123.456.org",
+        "im_group_id": "123321",
+        "announcement": "",
+        "u_id": 1,
+        "id": 6
+    }
+}
+```
