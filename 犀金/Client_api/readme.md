@@ -4069,3 +4069,81 @@ content是内容，quote_href是外链，可能有外链，表示引用了别人
     }
 }
 ```
+
+### 圈子修改
+- 请求方式: `put`
+- 请求地址: {host}`make-money-groups/:im_group_id`
+- 请求参数:  
+
+```json
+{
+	"type_id": "领域列表id",
+	"name":"名称",
+	"logo": "http://123.456.org",
+	"announcement": "公告",
+	"join_need_consent": "加入是否需要审核 0:不需要，1:需要"
+}
+```
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "id": 1,
+        "u_id": 1,
+        "type_id": "1",
+        "name": "名称",
+        "logo": "http://123.456.org",
+        "announcement": "",
+        "im_group_id": "123321",
+        "create_time": "2019-11-05 16:50:19",
+        "update_time": "2019-11-05 16:53:35",
+        "join_need_consent": 0,
+        "status": 1
+    }
+}
+```
+
+### 圈子信息
+- 请求方式: `get`
+- 请求地址: {host}`make-money-groups/:im_group_id`
+- 请求参数:  
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "id": "1",
+        "u_id": "1",
+        "type_id": "11",
+        "name": "名称",
+        "logo": "http://123.456.org",
+        "announcement": "",
+        "im_group_id": "123321",
+        "create_time": "2019-11-05 16:50:19",
+        "update_time": "2019-11-05 17:22:48",
+        "join_need_consent": "0",
+        "status": "1",
+        "is_owner": 1
+    }
+}
+```
+
+### 圈子删除
+- 请求方式: `delete`
+- 请求地址: {host}`make-money-groups/:im_group_id`
+- 请求参数:  
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": ""
+}
+```
