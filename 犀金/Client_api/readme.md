@@ -4241,3 +4241,64 @@ content是内容，quote_href是外链，可能有外链，表示引用了别人
     }
 }
 ```
+
+
+### 聊天点赞
+- 请求方式: `post`
+- 请求地址: {host}`im-message-upvote/create`
+- 请求参数:  
+
+```json
+{
+	"group_id": "第三方群组id",
+	"message_id":"第三方信息id",
+	"upvote_user_id": "第三方用户id"
+}
+```
+
+- 响应内容:  
+
+```json
+{
+    "code": 0,
+    "message": "existed",
+    "info": ""
+}
+```
+
+
+### 聊天点赞查询
+- 请求方式: `post`
+- 请求地址: {host}`im-message-upvote/view?group_id=&upvote_user_id=&message_id=`
+- 请求参数:  message_id
+
+```json
+{
+	"group_id": "第三方群组id",
+	"message_id":"第三方信息id",
+	"upvote_user_id": "第三方用户id"
+}
+```
+
+- 响应内容:  
+upvote_count： 点赞数  
+is_upvoted： 是否已点赞
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": [
+        {
+            "message_id": "1",
+            "upvote_count": 1,
+            "is_upvoted": false
+        },
+        {
+            "message_id": "2",
+            "upvote_count": 1,
+            "is_upvoted": false
+        }
+    ]
+}
+```
