@@ -4099,17 +4099,19 @@ content是内容，quote_href是外链，可能有外链，表示引用了别人
     "code": 1,
     "message": "success",
     "info": {
-        "id": 1,
-        "u_id": 1,
+        "id": "46",
+        "u_id": "375",
         "type_id": "1",
-        "name": "名称",
-        "logo": "http://123.456.org",
+        "name": "第一个圈子",
+        "logo": "/storage/emulated/0/Android/data/com.xiyi.rhinobillion/cache/luban_disk_cache/1573440058945274.jpeg",
+        "nums": "0",
         "announcement": "",
-        "im_group_id": "123321",
-        "create_time": "2019-11-05 16:50:19",
-        "update_time": "2019-11-05 16:53:35",
-        "join_need_consent": 0,
-        "status": 1
+        "im_group_id": "98609944133633",
+        "create_time": "2019-11-11 10:42:52",
+        "update_time": "2019-11-11 10:42:52",
+        "join_need_consent": "0",
+        "status": "1",
+        "is_owner": 0
     }
 }
 ```
@@ -4125,18 +4127,19 @@ content是内容，quote_href是外链，可能有外链，表示引用了别人
     "code": 1,
     "message": "success",
     "info": {
-        "id": "1",
-        "u_id": "1",
-        "type_id": "11",
-        "name": "名称",
-        "logo": "http://123.456.org",
+        "id": "46",
+        "u_id": "375",
+        "type_id": "1",
+        "name": "第一个圈子",
+        "logo": "/storage/emulated/0/Android/data/com.xiyi.rhinobillion/cache/luban_disk_cache/1573440058945274.jpeg",
+        "nums": "0",
         "announcement": "",
-        "im_group_id": "123321",
-        "create_time": "2019-11-05 16:50:19",
-        "update_time": "2019-11-05 17:22:48",
+        "im_group_id": "98609944133633",
+        "create_time": "2019-11-11 10:42:52",
+        "update_time": "2019-11-11 10:42:52",
         "join_need_consent": "0",
         "status": "1",
-        "is_owner": 1
+        "is_owner": 0
     }
 }
 ```
