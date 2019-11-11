@@ -4268,7 +4268,7 @@ content是内容，quote_href是外链，可能有外链，表示引用了别人
 
 
 ### 聊天点赞查询
-- 请求方式: `post`
+- 请求方式: `get`
 - 请求地址: {host}`im-message-upvote/view?group_id=&upvote_user_id=&message_id=`
 - 请求参数:  group_id,upvote_user_id,message_id   注：message_id 可传多个 ',' 拼接  e.g. 1,2,3,4,5
 
@@ -4292,5 +4292,52 @@ is_upvoted： 是否已点赞
             "is_upvoted": false
         }
     ]
+}
+```
+
+
+### 根据第三方用户id查询用户信息
+- 请求方式: `get`
+- 请求地址: {host}`make-money-group/get-user-info?im_user_id=`
+- 请求参数:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "id": 181,
+        "mobile": "18888888181",
+        "password": null,
+        "access_token": "181",
+        "nick_name": "微微笑",
+        "gender": 1,
+        "city_id": null,
+        "wechat_token": null,
+        "qq_token": null,
+        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/16791610.jpg",
+        "register_time": "2019-08-01 15:03:27",
+        "last_login_time": null,
+        "register_ip": null,
+        "last_login_ip": null,
+        "status": 1,
+        "device_id": null,
+        "os": null,
+        "focus_num": 44,
+        "focused_num": 44,
+        "login_time": null,
+        "active": null,
+        "active_time": null,
+        "conceal_hide": null,
+        "cause_of_violation": "",
+        "huanxin_uuid": "d6a16400-d3a0-11e9-bbdf-6321e961491c",
+        "huanxin_type": "user",
+        "huanxin_created": 2147483647,
+        "huanxin_modified": 2147483647,
+        "huanxin_username": "18888888181",
+        "huanxin_password": "181",
+        "huanxin_activated": 1,
+        "huanxin_nickname": "18888888181"
+    }
 }
 ```
