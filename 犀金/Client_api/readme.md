@@ -4158,3 +4158,86 @@ content是内容，quote_href是外链，可能有外链，表示引用了别人
     "info": ""
 }
 ```
+
+
+### 圈子列表
+- 请求方式: `get`
+- 请求地址: {host}`make-money-groups?type_id=`
+- 请求参数:  
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 47,
+                "u_id": 253,
+                "type_id": 3,
+                "name": "不一样的奶茶店",
+                "logo": "https://xijin-test.oss-cn-shanghai.aliyuncs.com/image/1573451241973695.jpeg",
+                "nums": 1,
+                "upvote_nums": 2,
+                "description": "",
+                "announcement": "",
+                "im_group_id": "98621558161410",
+                "create_time": "2019-11-11 13:47:28",
+                "update_time": "2019-11-11 13:59:54",
+                "join_need_consent": 0,
+                "status": 1
+            },
+            {
+                "id": 46,
+                "u_id": 375,
+                "type_id": 1,
+                "name": "第一个圈子",
+                "logo": "/storage/emulated/0/Android/data/com.xiyi.rhinobillion/cache/luban_disk_cache/1573440058945274.jpeg",
+                "nums": 0,
+                "upvote_nums": 2,
+                "description": "",
+                "announcement": "",
+                "im_group_id": "98609944133633",
+                "create_time": "2019-11-11 10:42:52",
+                "update_time": "2019-11-11 13:59:47",
+                "join_need_consent": 0,
+                "status": 1
+            },
+            {
+                "id": 45,
+                "u_id": 375,
+                "type_id": 1,
+                "name": "第一个圈子",
+                "logo": "/storage/emulated/0/Android/data/com.xiyi.rhinobillion/cache/luban_disk_cache/1573440058945274.jpeg",
+                "nums": 0,
+                "upvote_nums": 0,
+                "description": "",
+                "announcement": "",
+                "im_group_id": "98609943085058",
+                "create_time": "2019-11-11 10:42:50",
+                "update_time": "2019-11-11 10:42:50",
+                "join_need_consent": 0,
+                "status": 1
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://xj.org/make-money-groups?page=1"
+            },
+            "next": {
+                "href": "http://xj.org/make-money-groups?page=2"
+            },
+            "last": {
+                "href": "http://xj.org/make-money-groups?page=3"
+            }
+        },
+        "_meta": {
+            "totalCount": 43,
+            "pageCount": 3,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
