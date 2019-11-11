@@ -4270,7 +4270,7 @@ content是内容，quote_href是外链，可能有外链，表示引用了别人
 ### 聊天点赞查询
 - 请求方式: `post`
 - 请求地址: {host}`im-message-upvote/view?group_id=&upvote_user_id=&message_id=`
-- 请求参数:  message_id
+- 请求参数:  message_id 可传多个 ',' 拼接  e.g. 1,2,3,4,5
 
 ```json
 {
