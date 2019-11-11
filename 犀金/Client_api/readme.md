@@ -4054,7 +4054,8 @@ content是内容，quote_href是外链，可能有外链，表示引用了别人
 	"type_id": "领域列表id",
 	"name":"名称",
 	"logo": "http://123.456.org",
-	"im_group_id": "群组id"
+	"im_group_id": "群组id",
+	"description": "描述"
 }
 ```
 
