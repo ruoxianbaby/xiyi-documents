@@ -4171,6 +4171,9 @@ content是内容，quote_href是外链，可能有外链，表示引用了别人
 - 请求地址: {host}`make-money-groups?type_id=`
 - 请求参数:  
 - 响应内容:  
+join_need_consent  加入需要审核 0: 不需要 1:需要;  
+is_new  是否新群 0：否 1： 是  
+join_status  进群状态  0:未进群，1：已进群，2：申请中
 
 ```json
 {
@@ -4179,70 +4182,76 @@ content是内容，quote_href是外链，可能有外链，表示引用了别人
     "info": {
         "items": [
             {
-                "id": 47,
+                "id": 32,
                 "u_id": 253,
-                "type_id": 3,
-                "name": "不一样的奶茶店",
-                "logo": "https://xijin-test.oss-cn-shanghai.aliyuncs.com/image/1573451241973695.jpeg",
+                "type_id": 5,
+                "name": "水果",
+                "logo": "https://xijin-test.oss-cn-shanghai.aliyuncs.com/image/1573616440601456.png",
                 "nums": 1,
-                "upvote_nums": 2,
-                "description": "",
-                "announcement": "",
-                "im_group_id": "98621558161410",
-                "create_time": "2019-11-11 13:47:28",
-                "update_time": "2019-11-11 13:59:54",
+                "upvote_nums": 0,
+                "description": "我要吃水果",
+                "announcement": "我要吃水果",
+                "im_group_id": "98794786062337",
+                "create_time": "2019-10-13 11:40:51",
+                "update_time": "2019-11-13 14:48:35",
                 "join_need_consent": 0,
-                "status": 1
+                "status": 1,
+                "is_new": 0,
+                "join_status": 1
             },
             {
-                "id": 46,
-                "u_id": 375,
-                "type_id": 1,
-                "name": "第一个圈子",
-                "logo": "/storage/emulated/0/Android/data/com.xiyi.rhinobillion/cache/luban_disk_cache/1573440058945274.jpeg",
-                "nums": 0,
-                "upvote_nums": 2,
-                "description": "",
-                "announcement": "",
-                "im_group_id": "98609944133633",
-                "create_time": "2019-11-11 10:42:52",
-                "update_time": "2019-11-11 13:59:47",
-                "join_need_consent": 0,
-                "status": 1
-            },
-            {
-                "id": 45,
-                "u_id": 375,
-                "type_id": 1,
-                "name": "第一个圈子",
-                "logo": "/storage/emulated/0/Android/data/com.xiyi.rhinobillion/cache/luban_disk_cache/1573440058945274.jpeg",
-                "nums": 0,
+                "id": 31,
+                "u_id": 377,
+                "type_id": 2,
+                "name": "测试",
+                "logo": "https://xijin-test.oss-cn-shanghai.aliyuncs.com/image/157361263285718.jpeg",
+                "nums": 1,
                 "upvote_nums": 0,
                 "description": "",
                 "announcement": "",
-                "im_group_id": "98609943085058",
-                "create_time": "2019-11-11 10:42:50",
-                "update_time": "2019-11-11 10:42:50",
+                "im_group_id": "98790786793476",
+                "create_time": "2019-11-13 10:37:17",
+                "update_time": "2019-11-13 10:37:17",
                 "join_need_consent": 0,
-                "status": 1
+                "status": 1,
+                "is_new": 1,
+                "join_status": 0
+            },
+            {
+                "id": 30,
+                "u_id": 377,
+                "type_id": 7,
+                "name": "共享资本",
+                "logo": "https://xijin-test.oss-cn-shanghai.aliyuncs.com/image/1573545050343395.jpeg",
+                "nums": 1,
+                "upvote_nums": 0,
+                "description": "",
+                "announcement": "",
+                "im_group_id": "98719919833089",
+                "create_time": "2019-11-12 15:50:52",
+                "update_time": "2019-11-12 15:50:52",
+                "join_need_consent": 0,
+                "status": 1,
+                "is_new": 1,
+                "join_status": 0
             }
         ],
         "_links": {
             "self": {
-                "href": "http://xj.org/make-money-groups?page=1"
+                "href": "http://xj.org/make-money-groups?per-page=3&page=1"
             },
             "next": {
-                "href": "http://xj.org/make-money-groups?page=2"
+                "href": "http://xj.org/make-money-groups?per-page=3&page=2"
             },
             "last": {
-                "href": "http://xj.org/make-money-groups?page=3"
+                "href": "http://xj.org/make-money-groups?per-page=3&page=11"
             }
         },
         "_meta": {
-            "totalCount": 43,
-            "pageCount": 3,
+            "totalCount": 31,
+            "pageCount": 11,
             "currentPage": 1,
-            "perPage": 20
+            "perPage": 3
         }
     }
 }
