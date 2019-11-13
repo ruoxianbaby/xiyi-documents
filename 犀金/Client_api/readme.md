@@ -4347,3 +4347,90 @@ is_upvoted： 是否已点赞
     }
 }
 ```
+
+### 圈子成员新增
+- 请求方式: `post`
+- 请求地址: {host}`make-money-group-users`
+- 请求参数:  
+
+```json
+{
+	"u_id": "用户id",
+	"im_group_id": "群组id"
+}
+```
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "im_group_id": "1",
+        "u_id": "2",
+        "im_u_id": "8129f730-d3a0-11e9-8561-d7ace6d28bae",
+        "id": 5
+    }
+}
+```
+
+### 圈子成员删除
+- 请求方式: `delete`
+- 请求地址: {host}`make-money-group-user/delete?u_id=&im_group_id=`
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": ""
+}
+```
+
+### 圈子成员列表
+- 请求方式: `delete`
+- 请求地址: {host}`make-money-group-users?im_group_id=`
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 2,
+                "u_id": 2,
+                "im_u_id": "8129f730-d3a0-11e9-8561-d7ace6d28bae",
+                "im_group_id": "1",
+                "create_time": "2019-11-13 14:00:31",
+                "nick_name": "陌南尘",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/50939351.jpg"
+            },
+            {
+                "id": 5,
+                "u_id": 2,
+                "im_u_id": "8129f730-d3a0-11e9-8561-d7ace6d28bae",
+                "im_group_id": "1",
+                "create_time": "2019-11-13 14:33:00",
+                "nick_name": "陌南尘",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/50939351.jpg"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://xj.org/make-money-group-users?im_group_id=1&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 2,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
