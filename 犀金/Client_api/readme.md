@@ -4365,11 +4365,14 @@ is_upvoted： 是否已点赞
 - 请求地址: {host}`make-money-group-users`
 - 请求参数:  
 u_id 可传多个','拼接  e.g. 1,2,3  
+im_u_id 可传多个','拼接  e.g. 1,2,3  
+u_id im_u_id 二选一  
 
 ```json
 {
 	"u_id": "用户id",
-	"im_group_id": "群组id"
+	"im_group_id": "群组id",
+	"im_u_id": "第三方用户id"
 }
 ```
 
@@ -4390,9 +4393,11 @@ u_id 可传多个','拼接  e.g. 1,2,3
 
 ### 圈子成员删除
 - 请求方式: `delete`
-- 请求地址: {host}`make-money-group-user/delete?u_id=&im_group_id=`
+- 请求地址: {host}`make-money-group-user/delete?u_id=&im_group_id=&im_u_id=`
 - 请求参数:  
-u_id 可传多个','拼接  e.g. 1,2,3    
+u_id 可传多个','拼接  e.g. 1,2,3  
+im_u_id 可传多个','拼接  e.g. 1,2,3  
+u_id im_u_id 二选一  
 
 - 响应内容:  
 
