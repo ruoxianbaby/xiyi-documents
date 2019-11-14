@@ -4391,6 +4391,7 @@ u_id 可传多个','拼接  e.g. 1,2,3
 ### 圈子成员删除
 - 请求方式: `delete`
 - 请求地址: {host}`make-money-group-user/delete?u_id=&im_group_id=`
+- 请求参数:  
 u_id 可传多个','拼接  e.g. 1,2,3    
 
 - 响应内容:  
