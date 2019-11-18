@@ -121,6 +121,7 @@
     - [圈子成员新增](./#圈子成员新增)      
     - [圈子成员删除](./#圈子成员删除)      
     - [圈子成员列表](./#圈子成员列表)      
+    - [用户信息查询](./#用户信息查询)          
 
 ### 全局header  
 
@@ -4450,6 +4451,64 @@ u_id im_u_id 二选一
             "pageCount": 1,
             "currentPage": 1,
             "perPage": 20
+        }
+    }
+}
+```
+
+### 用户信息查询
+- 请求方式: `post`
+- 请求地址: {host}`make-money-group-user/users`
+
+- 请求参数:  
+
+```json
+{
+    "im_u_id":[
+        "827cb5f0-d3a0-11e9-84ec-07ac2d1f5769",
+        "821da600-d3a0-11e9-a4a3-fdc526cebe1b",
+        "8129f730-d3a0-11e9-8561-d7ace6d28bae"
+    ]
+}
+```
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 2,
+                "nick_name": "陌南尘",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/50939351.jpg",
+                "huanxin_uuid": "8129f730-d3a0-11e9-8561-d7ace6d28bae"
+            },
+            {
+                "id": 7,
+                "nick_name": "青莳",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/82107701.jpg",
+                "huanxin_uuid": "821da600-d3a0-11e9-a4a3-fdc526cebe1b"
+            },
+            {
+                "id": 9,
+                "nick_name": "落幕",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/13706446.jpg",
+                "huanxin_uuid": "827cb5f0-d3a0-11e9-84ec-07ac2d1f5769"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://xj.org/make-money-group-user/users?page=1&per-page=200"
+            }
+        },
+        "_meta": {
+            "totalCount": 3,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 200
         }
     }
 }
