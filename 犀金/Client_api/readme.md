@@ -4547,3 +4547,114 @@ u_id im_u_id 二选一
     ]
 }
 ```
+
+### 名片列表
+- 请求方式: `get`
+- 请求地址: {host}`business-cards`
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "u_id": 110,
+                "name": "1",
+                "position": "1",
+                "mobile": "1",
+                "wechat_username": "1"
+            },
+            {
+                "id": 2,
+                "u_id": 110,
+                "name": "1",
+                "position": "2",
+                "mobile": "3",
+                "wechat_username": "4"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://xj.org/business-cards?page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 2,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+
+### 名片新增
+- 请求方式: `post`
+- 请求地址: {host}`business-cards`
+- 请求参数:  
+name 姓名  
+position 职位  
+mobile 手机号  
+wechat_username 微信用户名  
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "创建成功",
+    "info": {
+        "name": "1",
+        "position": "2",
+        "mobile": "3",
+        "wechat_username": "4",
+        "u_id": 110,
+        "id": 3
+    }
+}
+```
+
+### 名片新增
+- 请求方式: `put`
+- 请求地址: {host}`business-cards/:id`
+- 请求参数:  
+name 姓名  
+position 职位  
+mobile 手机号  
+wechat_username 微信用户名  
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "id": 1,
+        "u_id": 1,
+        "name": "1",
+        "position": "2",
+        "mobile": "3",
+        "wechat_username": "4"
+    }
+}
+```
+
+### 名片删除
+- 请求方式: `delete`
+- 请求地址: {host}`business-cards/:id`
+- 请求参数:  
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": ""
+}
+```
