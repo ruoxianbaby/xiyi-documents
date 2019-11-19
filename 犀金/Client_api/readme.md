@@ -122,6 +122,7 @@
     - [圈子成员删除](./#圈子成员删除)      
     - [圈子成员列表](./#圈子成员列表)      
     - [用户信息查询](./#用户信息查询)          
+    - [关注用户列表](./#关注用户列表)              
 
 ### 全局header  
 
@@ -4511,5 +4512,38 @@ u_id im_u_id 二选一
             "perPage": 200
         }
     }
+}
+```
+
+### 关注用户列表
+- 请求方式: `get`
+- 请求地址: {host}`focu/my-focus`
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": [
+        {
+            "user_id": "1",
+            "nick_name": "微微笑",
+            "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+            "huanxin_username": "15061690111"
+        },
+        {
+            "user_id": "220",
+            "nick_name": "天马行空",
+            "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/29491511.jpg",
+            "huanxin_username": "18888888220"
+        },
+        {
+            "user_id": "125",
+            "nick_name": "微笑",
+            "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/16479535.jpg",
+            "huanxin_username": "18888888125"
+        }
+    ]
 }
 ```
