@@ -4634,6 +4634,7 @@ position 职位
 mobile 手机号  
 wechat_username 微信用户名  
 b_id 背景图id  
+company_name 公司名  
 
 - 响应内容:  
 
@@ -4661,6 +4662,8 @@ company_name 公司名
 position 职位  
 mobile 手机号  
 wechat_username 微信用户名  
+b_id 背景图id  
+company_name 公司名  
 
 - 响应内容:  
 
