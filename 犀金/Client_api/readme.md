@@ -4655,6 +4655,7 @@ b_id 背景图id
 - 请求地址: {host}`business-cards/:id`
 - 请求参数:  
 name 姓名  
+company_name 公司名  
 position 职位  
 mobile 手机号  
 wechat_username 微信用户名  
