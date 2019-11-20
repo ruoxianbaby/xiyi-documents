@@ -4552,6 +4552,39 @@ u_id im_u_id 二选一
 }
 ```
 
+### 名片背景图列表
+- 请求方式: `get`
+- 请求地址: {host}`business-card-backgrounds`
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "img_url": "1",
+                "sort_num": 1
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://xj.org/business-card-backgrounds?page=1&per-page=888"
+            }
+        },
+        "_meta": {
+            "totalCount": 1,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 888
+        }
+    }
+}
+```
+
 ### 名片列表
 - 请求方式: `get`
 - 请求地址: {host}`business-cards`
@@ -4565,32 +4598,26 @@ u_id im_u_id 二选一
     "info": {
         "items": [
             {
-                "id": 1,
-                "u_id": 110,
-                "name": "1",
-                "position": "1",
-                "mobile": "1",
-                "wechat_username": "1"
-            },
-            {
-                "id": 2,
+                "id": 3,
                 "u_id": 110,
                 "name": "1",
                 "position": "2",
                 "mobile": "3",
-                "wechat_username": "4"
+                "wechat_username": "4",
+                "b_id": 1,
+                "background_img": "http://123.456.org"
             }
         ],
         "_links": {
             "self": {
-                "href": "http://xj.org/business-cards?page=1"
+                "href": "http://xj.org/business-cards?page=1&per-page=888"
             }
         },
         "_meta": {
-            "totalCount": 2,
+            "totalCount": 1,
             "pageCount": 1,
             "currentPage": 1,
-            "perPage": 20
+            "perPage": 888
         }
     }
 }
@@ -4604,6 +4631,7 @@ name 姓名
 position 职位  
 mobile 手机号  
 wechat_username 微信用户名  
+b_id 背景图id  
 
 - 响应内容:  
 
