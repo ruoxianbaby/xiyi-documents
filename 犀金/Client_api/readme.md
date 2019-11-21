@@ -4696,3 +4696,37 @@ company_name 公司名
     "info": ""
 }
 ```
+
+### 更改群主
+- 请求方式: `post`
+- 请求地址: {host}`business-cards`
+- 请求参数:  
+im_group_id   
+im_u_id   
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "id": 62,
+        "u_id": "3",
+        "type_id": 16,
+        "name": "家居",
+        "logo": "https://xijin-test.oss-cn-shanghai.aliyuncs.com/image/1574304338497.jpg",
+        "nums": 4,
+        "upvote_nums": 2,
+        "description": "落后",
+        "announcement": "候哦",
+        "im_group_id": "99363093282817",
+        "create_time": "2019-11-19 18:13:51",
+        "update_time": "2019-11-21 11:42:16",
+        "join_need_consent": 0,
+        "status": 0,
+        "is_new": 1,
+        "join_status": 0
+    }
+}
+```
