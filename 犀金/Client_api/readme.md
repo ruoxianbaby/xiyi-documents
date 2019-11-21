@@ -485,6 +485,41 @@ Authorization | Bearer ***access_token***
                 "focus_num": "0",
                 "product_num": "4"
             }
+        ],
+	"group_data": [
+            {
+                "name": "嗯",
+                "description": "男女皆可",
+                "logo": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-11-19/mFc57bZa84qSO5HM7_MmChUA9RX3O6lf.png",
+                "nums": 1,
+                "upvote_nums": 0,
+                "im_group_id": 99343851913217,
+                "create_time": "2019-11-19 13:08:00",
+                "is_new": 1,
+                "join_status": 0
+            },
+            {
+                "name": "嗯",
+                "description": "男女皆可",
+                "logo": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-11-19/mFc57bZa84qSO5HM7_MmChUA9RX3O6lf.png",
+                "nums": 1,
+                "upvote_nums": 0,
+                "im_group_id": 99343825698817,
+                "create_time": "2019-11-19 13:07:45",
+                "is_new": 1,
+                "join_status": 0
+            },
+            {
+                "name": "嗯",
+                "description": "女款",
+                "logo": "https://xijin.oss-cn-shanghai.aliyuncs.com/avatar/images/2019-11-19/S-YCzgFfvi1-4HapB9iXQBEaJDm2zdNl.png",
+                "nums": 1,
+                "upvote_nums": 0,
+                "im_group_id": 99339510808578,
+                "create_time": "2019-11-19 11:59:00",
+                "is_new": 1,
+                "join_status": 0
+            }
         ]
     }
 }
