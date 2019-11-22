@@ -4735,7 +4735,7 @@ company_name 公司名
 
 ### 更改群主
 - 请求方式: `post`
-- 请求地址: {host}`business-cards`
+- 请求地址: {host}`make-money-group/change-owener`
 - 请求参数:  
 im_group_id   
 im_u_id   
