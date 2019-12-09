@@ -856,7 +856,7 @@ id -> 文章的id
 
 ### 获取首页文章列表
 - 请求方式: `get`
-- 请求地址: {host}`articles?sort=-id`
+- 请求地址: {host}`articles?page=1&per-page=20`
 - 请求参数:   
 
 
@@ -868,15 +868,46 @@ id -> 文章的id
     "message": "success",
     "info": {
         "items": [
-            {
-                "title": "创业就像谈恋爱",
-                "desc": null,
-                "author": "",
-                "avatar_image": "",
-                "like_num": "0",
-                "comment_num": "0",
-                "img_url": "https://xqimg.imedao.com/169b2bfdbe46c4393fdaa724.jpg"
-            }
+    	    {
+            "id": 983,
+            "type": 9,
+            "origin": "管理的常识",
+            "author": "沉沦",
+            "title": "遇到会做这5项工作的内部导师，一定要珍惜",
+            "desc": "必须要明白“渡人渡己”的道理",
+            "profile": null,
+            "premium": 0,
+            "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-09-25/CwBqchQagJ7y6O8nn7PAIteOn18h2o_c.jpg",
+            "comment_num": "2",
+            "like_num": "25",
+            "create_time": "2019-09-25",
+            "update_time": null,
+            "creater": 41,
+            "admin_id": null,
+            "status": 1,
+            "type_status": 1,
+            "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/86023080.jpg",
+            "type_name": "职场经验谈",
+            "preview_content": "<p class=\"ql-align-justify\"><strong>01&nbsp;优秀职场导师，乃企业之幸</strong></p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\">华为公司是国内最早实施内部导师制，且获得极大成功的企业之一。但众多企业纷纷仿效之后，却发现有效?",
+            "before_time": "74天前",
+            "share_url": "https://api.xykj1.com/share",
+            "like": 0,
+            "focus": 0,
+            "collect_num": "1",
+            "collect": 0,
+            "img_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-09-25/CwBqchQagJ7y6O8nn7PAIteOn18h2o_c.jpg"
+     	    },
+	    {
+            "at_id": "11",
+            "at_name": "时令新商机",
+            "topic": "专题3",
+            "topic_des": "洞察各行各业的机会与挑战，找准风口，做飞的最高的那只风筝",
+            "subscription_num": "214",
+            "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/others/2019-09-12/ktY8nx5yPO_KM2QCwIR8z99YswO6uHgv.png",
+            "weight": "0",
+            "is_del": "0",
+            "type_status": 2
+      	     }
         ],
         "_links": {
             "self": {
@@ -899,6 +930,8 @@ id -> 文章的id
 }
 
 ---
+type_status 1 文章   2是专题
+
 before_time 多久之前
 like_num 多少个喜欢
 comment_num 评论数
