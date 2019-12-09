@@ -4820,7 +4820,7 @@ im_u_id
 
 ### 小报列表
 - 请求方式: `get`
-- 请求地址: {host}`xj.org/week-news/list?type=list`
+- 请求地址: {host}`week-news/list?type=list`
 - 请求参数:  page
 
 - 响应内容:  
