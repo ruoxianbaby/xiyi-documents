@@ -4249,7 +4249,7 @@ content是内容，quote_href是外链，可能有外链，表示引用了别人
 
 ### 圈子列表
 - 请求方式: `get`
-- 请求地址: {host}`make-money-groups?type_id=`
+- 请求地址: {host}`make-money-groups?type_id=&rand=`
 - 请求参数:  
 - 响应内容:  
 join_need_consent  加入需要审核 0: 不需要 1:需要;  
