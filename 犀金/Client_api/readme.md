@@ -4858,3 +4858,37 @@ im_u_id
     }
 }
 ```
+
+### 赚钱圈banner
+- 请求方式: `get`
+- 请求地址: {host}`make-money-banners`
+- 请求参数:  
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "type": 0,
+                "pic": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-12-09/%E7%BC%96%E7%BB%84%2029%402x.png"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://xj.org/make-money-banners?page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 1,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
