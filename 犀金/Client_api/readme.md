@@ -4251,7 +4251,7 @@ content是内容，quote_href是外链，可能有外链，表示引用了别人
 ### 圈子列表
 - 请求方式: `get`
 - 请求地址: {host}`make-money-groups?type_id=&rand=`
-- 请求参数:  
+- 请求参数:  rand=1为随机  
 - 响应内容:  
 join_need_consent  加入需要审核 0: 不需要 1:需要;  
 is_new  是否新群 0：否 1： 是  
