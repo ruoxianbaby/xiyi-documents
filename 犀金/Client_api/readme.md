@@ -130,6 +130,7 @@
     - [小报当日数量统计](./#小报当日数量统计)         
     - [小报列表](./#小报列表)         
     - [赚钱圈banner](./#赚钱圈banner)         
+    - [赚钱圈圈子信息](./#赚钱圈圈子信息)         
 
 ### 全局header  
 
@@ -143,7 +144,6 @@ Content-Type | application/json
 key |  vaule
 ----- | --------
 Authorization | Bearer ***access_token***  
-
 
 
 
@@ -4891,5 +4891,36 @@ im_u_id
             "perPage": 20
         }
     }
+}
+```
+
+### 赚钱圈圈子信息
+- 请求方式: `get`
+- 请求地址: {host}`make-money-group/list?im_group_id=`
+- 请求参数:  im_group_id 多个',' 拼接 e.g. 1,2,3,4,5
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": [
+        {
+            "im_group_id": "99993166872577",
+            "type_id": "2",
+            "type_name": "创业"
+        },
+        {
+            "im_group_id": "100021273952257",
+            "type_id": "3",
+            "type_name": "奶茶"
+        },
+        {
+            "im_group_id": "100032309166081",
+            "type_id": "3",
+            "type_name": "奶茶"
+        }
+    ]
 }
 ```
