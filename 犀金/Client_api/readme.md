@@ -131,6 +131,7 @@
     - [小报列表](./#小报列表)         
     - [赚钱圈banner](./#赚钱圈banner)         
     - [赚钱圈圈子信息](./#赚钱圈圈子信息)         
+    - [个人中心我/他的圈子](./#个人中心我/他的圈子)         
 
 ### 全局header  
 
@@ -4920,6 +4921,30 @@ im_u_id
             "im_group_id": "100032309166081",
             "type_id": "3",
             "type_name": "奶茶"
+        }
+    ]
+}
+```
+
+### 个人中心我/他的圈子
+- 请求方式: `get`
+- 请求地址: {host}`make-money-group/center-list?u_id=&per-page=`
+- 请求参数:  u_id不传时表示个人中心
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": [
+        {
+            "id": "7",
+            "name": "测试群数据",
+            "im_group_id": "100514439168001",
+            "logo": "https://xijin-test.oss-cn-shanghai.aliyuncs.com/image/1574934276199.jpg",
+            "type_id": "16",
+            "type_pic": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-12-17/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20191218111231.png"
         }
     ]
 }
