@@ -4215,21 +4215,23 @@ content是内容，quote_href是外链，可能有外链，表示引用了别人
     "code": 1,
     "message": "success",
     "info": {
-        "id": "36",
-        "u_id": "254",
-        "type_id": "3",
-        "name": "开奶茶店群1",
-        "logo": "https://xijin-test.oss-cn-shanghai.aliyuncs.com/image/1573709508937301.jpeg",
-        "nums": "9",
-        "upvote_nums": "6",
-        "description": "1111111111111",
-        "announcement": "1111111111111",
-        "im_group_id": "98892384370689",
-        "create_time": "2019-11-14 13:32:07",
-        "update_time": "2019-11-19 18:53:26",
+        "id": "7",
+        "u_id": "379",
+        "type_id": "16",
+        "name": "测试群数据",
+        "logo": "https://xijin-test.oss-cn-shanghai.aliyuncs.com/image/1574934276199.jpg",
+        "nums": "4",
+        "upvote_nums": "11",
+        "description": "偶遇",
+        "announcement": "偶遇",
+        "im_group_id": "100514439168001",
+        "create_time": "2019-12-02 11:14:00",
+        "update_time": "2019-12-18 14:51:21",
         "join_need_consent": "0",
         "status": "1",
-        "is_owner": 0
+        "is_owner": 0,
+        "owner_name": "木",
+        "join_status": 1
     }
 }
 ```
