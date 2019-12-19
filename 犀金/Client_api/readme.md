@@ -4492,7 +4492,7 @@ u_id im_u_id 二选一
 ```
 
 ### 圈子成员列表
-- 请求方式: `delete`
+- 请求方式: `get`
 - 请求地址: {host}`make-money-group-users?im_group_id=`
 
 - 响应内容:  
