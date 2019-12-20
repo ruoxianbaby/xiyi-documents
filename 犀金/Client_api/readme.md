@@ -1608,9 +1608,9 @@ to_uid 是你要拉黑那个用户的id
 - 请求方式: `post`
 - 请求地址: {host}`user-reports`
 - 请求参数:   
-to_uid 是你要举报的那个用户的id
-mgk_id 是你要举报的那个群的id
-to_uid mgk_id 只能传一个
+to_uid 是你要举报的那个用户的id  
+mgk_id 是你要举报的那个群的id  
+to_uid mgk_id 只能传一个  
 
 ```json  
 {
