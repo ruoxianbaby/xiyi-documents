@@ -1146,9 +1146,9 @@ channel_sign:dAcU9w-zfxDEdnj9rQAmk9_k9jUcWUHZ
 ``` 
 
 ### 第三方登录 
- ![第三方登录](../static/img/1566539317(1).jpg)
- 
- ### 引流app 
+ ![第三方登录](../static/img/1566539317(1).jpg)  
+   
+### 引流app 
 - 请求方式: `post`
 - 请求地址: `{host}app-download/info`
 - 响应参数: type 0:浏览5次 1:退出
