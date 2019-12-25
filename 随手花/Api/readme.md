@@ -28,7 +28,8 @@
     - [获取产品url](./#获取产品url)  
     - [app下载链接](./#app下载链接)  
     - [第三方登录](./#第三方登录)
-    - [犀金贷超](./#犀金贷超)
+    - [犀金贷超](./#犀金贷超)  
+    - [引流app](./#引流app)   
 - [论坛](./#论坛)  
     - [栏目](./#栏目)   
     - [文章](./#文章)
@@ -1146,6 +1147,34 @@ channel_sign:dAcU9w-zfxDEdnj9rQAmk9_k9jUcWUHZ
 
 ### 第三方登录 
  ![第三方登录](../static/img/1566539317(1).jpg)
+ 
+ ### 引流app 
+- 请求方式: `post`
+- 请求地址: `{host}app-download/info`
+- 响应参数: type 0:浏览5次 1:退出
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "",
+    "info": [
+        {
+            "id": "1",
+            "title": "123",
+            "name": "",
+            "type": "0",
+            "ios_version": "",
+            "android_version": "",
+            "download_url": "",
+            "description": "",
+            "icon": "",
+            "is_boutique": "0",
+            "is_new": "0",
+            "status": "1"
+        }
+    ]
+}
+``` 
 
 ### 犀金贷超
 请求贷超的接口需要在头部加上 `os=xijin_android` or `os=xijin_ios`
