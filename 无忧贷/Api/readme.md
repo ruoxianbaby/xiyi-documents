@@ -1,8 +1,8 @@
 ## **用户端api**
 <a href="./#用户端api" style="height:50px;width:35px;position:fixed;bottom:100px;right:0px;background:#00BCC1;opacity:0.6;color:#333;text-decoration:none;">回到顶部</a>
-- [论坛](./#论坛)  
-    - [栏目](./#栏目)   
-    - [文章](./#文章)
+- [商城](./#商城)  
+    - [商品列表](./#商品列表)   
+    - [商品分类](./#商品分类)
 
 ### 测试主机host: 47.103.61.179:8074/  
 
@@ -20,17 +20,101 @@ key |  vaule
 Authorization | Bearer ***access_token***  
 
 
-## 论坛  
-### 栏目  
+## 商城  
+### 商品列表  
 - 请求方式: `get`
-- 请求地址: `index.php?r=site%2Fcolumn`
+- 请求地址: `goods`
+- 请求参数:
+```json
+is_seckill=1 代表是秒杀产品
+is_recommand=1 代表是推荐产品
+type=xxx  分类id
+```
 - 响应内容:  
 ```json
-{"status":1,"message":"success","info":[{"id":1,"name":"金融","status":1,"sort":1},{"id":2,"name":"推荐","status":1,"sort":1},{"id":3,"name":"科技","status":1,"sort":1},{"id":4,"name":"创业","status":1,"sort":1},{"id":5,"name":"内幕","status":1,"sort":1}]}
+{
+    "code": 1,
+    "message": "success",
+    "info": [
+        {
+            "id": "6",
+            "type_name": "美妆",
+            "type_id": "1",
+            "name": "好看的衣服1",
+            "image": "https://www.baidu.com",
+            "price_now": "1.00",
+            "price_origin": "3.00",
+            "specification": "大号",
+            "deliver_addr": "北京",
+            "sold_num": "55",
+            "is_recommand": "0",
+            "is_seckill": "0",
+            "dis_count": "3.3"
+        },
+        {
+            "id": "5",
+            "type_name": "男装",
+            "type_id": "5",
+            "name": "好看的衣服1",
+            "image": "https://www.baidu.com",
+            "price_now": "30.00",
+            "price_origin": "60.00",
+            "specification": "大号",
+            "deliver_addr": "北京",
+            "sold_num": "55",
+            "is_recommand": "0",
+            "is_seckill": "0",
+            "dis_count": "5"
+        },
+        {
+            "id": "4",
+            "type_name": "鞋履",
+            "type_id": "4",
+            "name": "好看的衣服1",
+            "image": "https://www.baidu.com",
+            "price_now": "30.00",
+            "price_origin": "60.00",
+            "specification": "大号",
+            "deliver_addr": "北京",
+            "sold_num": "55",
+            "is_recommand": "1",
+            "is_seckill": "1",
+            "dis_count": "5"
+        }
+    ]
+}
 ```
-### 文章  
+### 商品分类  
 - 请求方式: `get`
-- 请求地址: `index.php?r=site%2Farticle`
+- 请求地址: `good/get-type`
 - 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": [
+        {
+            "id": "1",
+            "name": "美妆"
+        },
+        {
+            "id": "2",
+            "name": "女装"
+        },
+        {
+            "id": "3",
+            "name": "配饰"
+        },
+        {
+            "id": "4",
+            "name": "鞋履"
+        },
+        {
+            "id": "5",
+            "name": "男装"
+        }
+    ]
+}
+```
 
 
