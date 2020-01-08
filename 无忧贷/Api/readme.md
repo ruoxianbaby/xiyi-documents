@@ -8,6 +8,7 @@
 - [订单](./#订单)  
     - [订单生成](./#订单生成)   
     - [订单列表](./#订单列表)   
+    - [订单详情](./#订单详情)       
     - [支付宝异步通知url](./#支付宝异步通知url)  
 ### 测试主机host: 47.103.61.179:8074/  
 
@@ -242,5 +243,38 @@ status
 }
 ```
 
+### 订单详情  
+- 请求方式: `get`
+- 请求地址: `get-order-detail?order_sign=2020010848484897`
+- 请求参数:
+
+```
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": [
+        {
+            "id": "1",
+            "type_name": "美妆",
+            "type_id": "1",
+            "name": "好看的衣服1",
+            "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/banner/images2019-08-19/eck8-RoLvhF-gzRQFXC1E2kNxwrGRLS-.png",
+            "price_now": "30.00",
+            "price_origin": "60.00",
+            "specification": "大号",
+            "deliver_addr": "北京",
+            "sold_num": "55",
+            "is_seckill": "0",
+            "is_recommand": "0",
+            "free_mail": "0",
+            "free_tax": "0",
+            "dis_count": "5",
+            "logistics": null
+        }
+    ]
+}
+```
 ### 支付宝异步通知url  
 - 请求地址: `good/async-notify`
