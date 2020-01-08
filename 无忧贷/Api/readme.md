@@ -179,8 +179,6 @@ free_mail 1是包邮，free_tax1是免税，dis_count 5折，
 
 
 
-
-
 ## 订单  
 ### 订单生成  
 - 请求方式: `post`
@@ -215,7 +213,7 @@ free_mail 1是包邮，free_tax1是免税，dis_count 5折，
 
 ### 订单列表  
 - 请求方式: `get`
-- 请求地址: `get-order-detail?status=1`
+- 请求地址: `get-order-list?status=1`
 - 请求参数:
 status
 1已提交，2已付款，3已发货，4已收货,7已完成
