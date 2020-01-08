@@ -3,7 +3,7 @@
 - [商城](./#商城)  
     - [商品列表](./#商品列表)   
     - [商品分类](./#商品分类)
-
+    - [商品详情](./#商品详情)
 ### 测试主机host: 47.103.61.179:8074/  
 
 ### 全局header  
@@ -115,6 +115,36 @@ type=xxx  分类id
         }
     ]
 }
+```
+### 商品详情  
+- 请求方式: `get`
+- 请求地址: `goods/1`
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": [
+        {
+            "id": "1",
+            "type_name": "美妆",
+            "type_id": "1",
+            "name": "好看的衣服1",
+            "image": "https://www.baidu.com",
+            "price_now": "30.00",
+            "price_origin": "60.00",
+            "specification": "大号",
+            "deliver_addr": "北京",
+            "sold_num": "55",
+            "is_recommand": "0",
+            "is_seckill": "0",
+            "free_mail": "0",
+            "free_tax": "0",
+            "dis_count": "5"
+        }
+    ]
+}
+free_mail 1是包邮，free_tax1是免税，dis_count 5折，
 ```
 
 
