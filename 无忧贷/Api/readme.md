@@ -5,6 +5,9 @@
     - [商品分类](./#商品分类)
     - [商品详情](./#商品详情)
     - [商品banner](./#商品banner)
+- [订单](./#订单)  
+    - [订单生成](./#订单生成)   
+  
 ### 测试主机host: 47.103.61.179:8074/  
 
 ### 全局header  
@@ -169,5 +172,42 @@ free_mail 1是包邮，free_tax1是免税，dis_count 5折，
             "image": "https://www.baidu.com"
         }
     ]
+}
+```
+
+
+
+
+
+
+## 订单  
+### 订单生成  
+- 请求方式: `post`
+- 请求地址: `good/post-order`
+- 请求参数:
+```json
+{
+	"goods_id": 1,
+	"user_name": "fyx",
+	"mobile": "18964590201",
+	"receive_addr": "上海市浦东新区张杨路707号"
+}
+```
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "user_id": 97,
+        "goods_id": 1,
+        "user_name": "fyx",
+        "mobile": "18964590201",
+        "receive_addr": "上海市浦东新区张杨路707号",
+        "status": 1,
+        "order_sign": "2020010855574857",
+        "create_time": "2020-01-08 15:29:59",
+        "id": 5
+    }
 }
 ```
