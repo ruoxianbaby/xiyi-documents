@@ -28,6 +28,7 @@ Authorization | Bearer ***access_token***
 - 请求参数:
 ```json
 is_seckill=1 代表是秒杀产品
+is_recommend=1 代表是推荐产品
 type=xxx  分类id
 ```
 - 响应内容:  
