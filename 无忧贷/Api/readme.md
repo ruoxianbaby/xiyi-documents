@@ -7,7 +7,8 @@
     - [商品banner](./#商品banner)
 - [订单](./#订单)  
     - [订单生成](./#订单生成)   
-  
+    - [订单列表](./#订单列表)   
+    - [支付宝异步通知url](./#支付宝异步通知url)  
 ### 测试主机host: 47.103.61.179:8074/  
 
 ### 全局header  
@@ -211,3 +212,37 @@ free_mail 1是包邮，free_tax1是免税，dis_count 5折，
     }
 }
 ```
+
+### 订单列表  
+- 请求方式: `get`
+- 请求地址: `get-order-detail?status=1`
+- 请求参数:
+status
+1已提交，2已付款，3已发货，4已收货,7已完成
+```
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": [
+        {
+            "name": "好看的衣服1",
+            "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/banner/images2019-08-19/eck8-RoLvhF-gzRQFXC1E2kNxwrGRLS-.png",
+            "price": "30.00",
+            "id": "1",
+            "order_sign": "2020010857495451"
+        },
+        {
+            "name": "好看的衣服1",
+            "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/banner/images2019-08-19/eck8-RoLvhF-gzRQFXC1E2kNxwrGRLS-.png",
+            "price": "30.00",
+            "id": "4",
+            "order_sign": "2020010848484897"
+        }
+    ]
+}
+```
+
+### 支付宝异步通知url  
+- 请求地址: `good/async-notify`
