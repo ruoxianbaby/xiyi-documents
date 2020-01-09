@@ -5005,11 +5005,12 @@ im_u_id
         "interests": [
             {
                 "type_name": "星选酒店",
+                "type_desc": "豪华酒店8.5折扣起",
                 "interests": [
                     {
                         "id": "2",
                         "name": "索菲亚酒店",
-                        "pic": "pic"
+                        "pic": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2020-01-09/ZI34aqWq1bcdnB_1Gk2DZDRLSuGmLII3.jpg"
                     },
                     {
                         "id": "3",
@@ -5020,6 +5021,7 @@ im_u_id
             },
             {
                 "type_name": "果汁茶饮",
+                "type_desc": "8折喝上网红茶",
                 "interests": [
                     {
                         "id": "4",
