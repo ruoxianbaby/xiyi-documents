@@ -4979,6 +4979,7 @@ im_u_id
                 "name": "群青会员",
                 "pre_price": "199.00",
                 "now_price": "19.90",
+                "con_price": "19.00",
                 "pic": "pic",
                 "days": "30",
                 "status": "1"
@@ -4988,6 +4989,7 @@ im_u_id
                 "name": "蓝金会员",
                 "pre_price": "599.00",
                 "now_price": "59.90",
+                "con_price": "59.00",
                 "pic": "pic",
                 "days": "30",
                 "status": "1"
@@ -4997,6 +4999,7 @@ im_u_id
                 "name": "黑金会员",
                 "pre_price": "999.00",
                 "now_price": "99.90",
+                "con_price": "99.00",
                 "pic": "pic",
                 "days": "30",
                 "status": "1"
@@ -5034,6 +5037,16 @@ im_u_id
                         "pic": "pic"
                     }
                 ]
+            },
+            {
+                "type_name": "测试",
+                "type_desc": "123123",
+                "interests": []
+            },
+            {
+                "type_name": "123123",
+                "type_desc": "123123123123",
+                "interests": []
             }
         ]
     }
