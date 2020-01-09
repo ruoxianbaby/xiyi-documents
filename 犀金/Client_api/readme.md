@@ -4954,3 +4954,84 @@ im_u_id
     ]
 }
 ```
+
+
+
+## 权益  
+
+### 列表
+- 请求方式: `get`
+- 请求地址: {host}`interests`
+
+```  
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "cards": [
+            {
+                "id": "1",
+                "name": "群青会员",
+                "pre_price": "199.00",
+                "now_price": "19.90",
+                "pic": "pic",
+                "days": "30",
+                "status": "1"
+            },
+            {
+                "id": "2",
+                "name": "蓝金会员",
+                "pre_price": "599.00",
+                "now_price": "59.90",
+                "pic": "pic",
+                "days": "30",
+                "status": "1"
+            },
+            {
+                "id": "3",
+                "name": "黑金会员",
+                "pre_price": "999.00",
+                "now_price": "99.90",
+                "pic": "pic",
+                "days": "30",
+                "status": "1"
+            }
+        ],
+        "interests": [
+            {
+                "type_name": "星选酒店",
+                "interests": [
+                    {
+                        "id": "2",
+                        "name": "索菲亚酒店",
+                        "pic": "pic"
+                    },
+                    {
+                        "id": "3",
+                        "name": "丽惠卡尔顿酒店",
+                        "pic": "pic"
+                    }
+                ]
+            },
+            {
+                "type_name": "果汁茶饮",
+                "interests": [
+                    {
+                        "id": "4",
+                        "name": "COCO",
+                        "pic": "pic"
+                    },
+                    {
+                        "id": "5",
+                        "name": "奈茶的雪",
+                        "pic": "pic"
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
