@@ -10,7 +10,6 @@
     - [订单列表](./#订单列表)   
     - [订单详情](./#订单详情)   
     - [订单取消](./#订单取消)
-    - [支付宝异步通知url](./#支付宝异步通知url)  
 ### 测试主机host: 47.103.61.179:8074/  
 
 ### 全局header  
@@ -200,15 +199,16 @@ free_mail 1是包邮，free_tax1是免税，dis_count 5折，
     "code": 1,
     "message": "success",
     "info": {
-        "user_id": 97,
-        "goods_id": 1,
-        "user_name": "fyx",
-        "mobile": "18964590201",
-        "receive_addr": "上海市浦东新区张杨路707号",
-        "status": 1,
-        "order_sign": "2020010855574857",
-        "create_time": "2020-01-08 15:29:59",
-        "id": 5
+        "app_id": "AKFN2G",
+        "sign_type": "RSA2",
+        "charset": "utf-8",
+        "timestamp": "2020-01-09 14:22:23",
+        "notify_url": "http://47.103.61.179:8074/goods/async-notify",
+        "subject": "好看的衣服1",
+        "out_trade_no": "2020010910255991",
+        "total_amount": "30.00",
+        "product_code": "QUICK_MSECURITY_PAY",
+        "version": "1.0"
     }
 }
 ```
@@ -277,8 +277,7 @@ status
     ]
 }
 ```
-### 支付宝异步通知url  
-- 请求地址: `good/async-notify`
+
 
 ### 订单取消  
 - 请求方式: `post`
