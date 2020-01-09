@@ -318,14 +318,18 @@ status 是5，写死
     "message": "success",
     "info": [
         {
-            "id": "2",
-            "user_id": "97",
-            "addr": "上海嘉定"
+		"id":1,
+		"addr": "上海。。",
+		"province":"11",
+		"city":"xxx",
+		"district":"xxxx"
         },
         {
-            "id": "3",
-            "user_id": "97",
-            "addr": "上海。。"
+		"id":1,
+		"addr": "上海。。",
+		"province":"11",
+		"city":"xxx",
+		"district":"xxxx"
         }
     ]
 }
@@ -337,7 +341,10 @@ status 是5，写死
 - 请求参数:
 ```json
 {
-	"addr": "上海。。"
+	"addr": "上海。。",
+	"province":"11",
+	"city":"xxx",
+	"district":"xxxx"
 }
 ```
 - 响应内容:  
@@ -353,7 +360,10 @@ status 是5，写死
 ```json
 {
 	"id":1,
-	"addr": "上海2。。"
+	"addr": "上海。。",
+	"province":"11",
+	"city":"xxx",
+	"district":"xxxx"
 }
 ```
 - 响应内容:  
