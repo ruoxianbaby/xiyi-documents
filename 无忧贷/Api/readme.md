@@ -262,24 +262,33 @@ status
     "info": [
         {
             "id": "1",
-            "type_name": "美妆",
-            "type_id": "1",
-            "name": "好看的衣服1",
-            "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/banner/images2019-08-19/eck8-RoLvhF-gzRQFXC1E2kNxwrGRLS-.png",
+            "type_name": "女装",
+            "type_id": "2",
+            "name": "好看的衣服2222",
+            "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/banner/images2019-08-19/iBjRITW80HxbJ0J-UX769P0jsmbBHxj5.png",
             "price_now": "30.00",
             "price_origin": "60.00",
             "specification": "大号",
+            "detail_url": "https://www.baidu.com",
             "deliver_addr": "北京",
             "sold_num": "55",
-            "is_seckill": "0",
+            "is_seckill": "1",
             "is_recommand": "0",
             "free_mail": "0",
             "free_tax": "0",
+            "receive_addr": "上海市浦东新区张杨路707号",
             "dis_count": "5",
-            "logistics": null
+            "logistics": [
+                {
+                    "context": "上海分拨中心/装件入车扫描 ",
+                    "time": "2012-08-28 16:33:19",
+                    "ftime": "2012-08-28 16:33:19"
+                }
+            ]
         }
     ]
 }
+receive_addr 地址信息
 ```
 
 
