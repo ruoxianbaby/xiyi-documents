@@ -277,7 +277,10 @@ status
             "free_mail": "0",
             "free_tax": "0",
             "receive_addr": "上海市浦东新区张杨路707号",
+            "mobile": "18964590201",
+            "user_name": "fyx",
             "dis_count": "5",
+            "state": "0",
             "logistics": [
                 {
                     "context": "上海分拨中心/装件入车扫描 ",
