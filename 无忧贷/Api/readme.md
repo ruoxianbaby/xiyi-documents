@@ -203,16 +203,15 @@ free_mail 1是包邮，free_tax1是免税，dis_count 5折，
     "code": 1,
     "message": "success",
     "info": {
-        "app_id": "AKFN2G",
-        "sign_type": "RSA2",
-        "charset": "utf-8",
-        "timestamp": "2020-01-09 14:22:23",
-        "notify_url": "http://47.103.61.179:8074/goods/async-notify",
-        "subject": "好看的衣服1",
-        "out_trade_no": "2020010910255991",
-        "total_amount": "30.00",
-        "product_code": "QUICK_MSECURITY_PAY",
-        "version": "1.0"
+        "gatewayUrl": "https://openapi.alipay.com/gateway.do",
+        "appId": null,
+        "rsaPrivateKey": null,
+        "format": "json",
+        "charset": "UTF-8",
+        "signType": "RSA2",
+        "alipayrsaPublicKey": null,
+        "notifyUrl": "http://47.103.61.179:8074/goods/async-notify",
+        "bizcontent": "{\"subject\": \"好看的衣服2222\",\"out_trade_no\": \"2020011357991025\",\"total_amount\": \"30.00\",\"product_code\":\"QUICK_MSECURITY_PAY\"}"
     }
 }
 ```
@@ -231,18 +230,30 @@ status
     "message": "success",
     "info": [
         {
-            "name": "好看的衣服1",
-            "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/banner/images2019-08-19/eck8-RoLvhF-gzRQFXC1E2kNxwrGRLS-.png",
+            "name": "好看的衣服2222",
+            "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/banner/images2019-08-19/iBjRITW80HxbJ0J-UX769P0jsmbBHxj5.png",
+            "specification": "大号",
             "price": "30.00",
-            "id": "1",
-            "order_sign": "2020010857495451"
-        },
-        {
-            "name": "好看的衣服1",
-            "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/banner/images2019-08-19/eck8-RoLvhF-gzRQFXC1E2kNxwrGRLS-.png",
-            "price": "30.00",
-            "id": "4",
-            "order_sign": "2020010848484897"
+            "id": "2",
+            "order_sign": "2020011357991025",
+            "status": "1",
+            "user_name": "fyx",
+            "mobile": "18964590201",
+            "receive_addr": "上海市浦东新区张杨路707号",
+            "goods_specification": "大号",
+            "goods_service": "七天无理由退换",
+            "goods_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/banner/images2019-08-19/iBjRITW80HxbJ0J-UX769P0jsmbBHxj5.png",
+            "subject": "好看的衣服2222",
+            "total_amount": "30.00",
+            "gatewayUrl": "https://openapi.alipay.com/gateway.do",
+            "appId": null,
+            "rsaPrivateKey": null,
+            "format": "json",
+            "charset": "UTF-8",
+            "signType": "RSA2",
+            "alipayrsaPublicKey": null,
+            "notifyUrl": "http://47.103.61.179:8074/goods/async-notify",
+            "bizcontent": "{\"subject\": \"好看的衣服2222\",\"out_trade_no\": \"2020011357991025\",\"total_amount\": \"30.00\",\"product_code\":\"QUICK_MSECURITY_PAY\"}"
         }
     ]
 }
