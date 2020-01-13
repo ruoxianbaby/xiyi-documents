@@ -1,5 +1,7 @@
 ## **用户端api**
 <a href="./#用户端api" style="height:50px;width:35px;position:fixed;bottom:100px;right:0px;background:#00BCC1;opacity:0.6;color:#333;text-decoration:none;">回到顶部</a>
+- [短信](./#短信)  
+    - [无忧米短信](./#无忧米短信)
 - [商城](./#商城)  
     - [商品列表](./#商品列表)   
     - [商品分类](./#商品分类)
@@ -29,6 +31,25 @@ key |  vaule
 ----- | --------
 Authorization | Bearer ***access_token***  
 
+
+
+## 短信  
+### 无忧米短信  
+- 请求方式: `post`
+- 请求地址: `user/yuyoumi-sms`
+- 请求参数:
+```json
+{
+    "mobile": "18964590201"
+}
+```
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success"
+}
+```
 
 ## 商城  
 ### 商品列表  
