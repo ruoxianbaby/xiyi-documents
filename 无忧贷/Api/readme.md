@@ -36,7 +36,7 @@ Authorization | Bearer ***access_token***
 ## 短信  
 ### 无忧米短信  
 - 请求方式: `post`
-- 请求地址: `user/yuyoumi-sms`
+- 请求地址: `user/wuyoumi-sms`
 - 请求参数:
 ```json
 {
