@@ -255,8 +255,8 @@ status
             "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/banner/images2019-08-19/iBjRITW80HxbJ0J-UX769P0jsmbBHxj5.png",
             "specification": "大号",
             "price": "30.00",
-            "id": "2",
-            "order_sign": "2020011357991025",
+            "id": "28",
+            "order_sign": "2020011557101569",
             "status": "1",
             "user_name": "fyx",
             "mobile": "18964590201",
@@ -266,15 +266,7 @@ status
             "goods_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/banner/images2019-08-19/iBjRITW80HxbJ0J-UX769P0jsmbBHxj5.png",
             "subject": "好看的衣服2222",
             "total_amount": "30.00",
-            "gatewayUrl": "https://openapi.alipay.com/gateway.do",
-            "appId": null,
-            "rsaPrivateKey": null,
-            "format": "json",
-            "charset": "UTF-8",
-            "signType": "RSA2",
-            "alipayrsaPublicKey": null,
-            "notifyUrl": "http://47.103.61.179:8074/goods/async-notify",
-            "bizcontent": "{\"subject\": \"好看的衣服2222\",\"out_trade_no\": \"2020011357991025\",\"total_amount\": \"30.00\",\"product_code\":\"QUICK_MSECURITY_PAY\"}"
+            "order_detail": "alipay_sdk=alipay-sdk-php-easyalipay-20190926&app_id=2021001107603787&biz_content=%7B%22subject%22%3A+%22%E5%A5%BD%E7%9C%8B%E7%9A%84%E8%A1%A3%E6%9C%8D2222%22%2C%22out_trade_no%22%3A+%222020011557101569%22%2C%22total_amount%22%3A+%2230.00%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&notify_url=https%3A%2F%2Fapi.5youfenqi.com%2Fgood%2Fasync-notify&sign_type=RSA2&timestamp=2020-01-15+16%3A05%3A13&version=1.0&sign=A75NFAKY7DyQw5yZXAg7bjbO7Lk5Wykq8tynTaMNFBMy9%2BsO329wRRECso6jxcrmJFFn2P3gBepxrS%2BKELNQLCO%2FXCf9u%2FibmOnReANp7YvNBvQFiJh2dHcoZxZyap%2BEOMytvhzrQsm7xQvMYqLOSjE4B5UqdEBz%2FThJBKn2GHpJYoaR%2BcBDJ%2FNZqAWfggumDL95Al041u9YI8tfm2PTGK4rrpAx5Nkgf7EBLI%2FzH9BzhaXASlXiLVmDLtXSoqv08SETJDFM%2BmUhBCzjgm%2BKJeKpp37ay1wNgAK2Yeg%2BtsgG9dyP3uskdXEvEsTOS4PI8QyWKd3AZAldJgdoEAIi6A%3D%3D"
         }
     ]
 }
