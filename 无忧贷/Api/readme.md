@@ -390,6 +390,7 @@ status 是5，写死
 ```
 - 响应内容:  
 ```json
+取消之后显示订单已关闭
 {
     "code": 1,
     "message": "success",
