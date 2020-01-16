@@ -134,6 +134,7 @@
     - [个人中心我/他的圈子](./#个人中心我/他的圈子)       
 - [权益](./#权益)
     - [权益列表](./#权益列表)
+    - [权益购买](./#权益购买)
 
 ### 全局header  
 
@@ -5049,6 +5050,23 @@ im_u_id
                 "interests": []
             }
         ]
+    }
+}
+```
+
+### 权益购买
+- 请求方式: `get`
+- 请求地址: {host}`interest/buy`
+
+```  
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "url": "https://m-test.yhouse.com/m/joint-login?token=9211DC9D80D28C2CB2A4171BFFE6F3BC&redirectUrl=https%3A%2F%2Fm-test.yhouse.com%2Fm%2Flianyun%2Fsshua%2Fpayment.html"
     }
 }
 ```
