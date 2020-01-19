@@ -133,8 +133,10 @@
     - [赚钱圈圈子信息](./#赚钱圈圈子信息)         
     - [个人中心我/他的圈子](./#个人中心我/他的圈子)       
 - [权益](./#权益)
-    - [权益列表](./#权益列表)
-    - [权益购买](./#权益购买)
+    - [权益列表](./#权益列表)   
+    - [权益购买](./#权益购买)   
+    - [权益使用](./#权益使用)   
+    - [权益中心](./#权益中心)   
 
 ### 全局header  
 
@@ -5068,5 +5070,50 @@ im_u_id
     "info": {
         "url": "https://m-test.yhouse.com/m/joint-login?token=9211DC9D80D28C2CB2A4171BFFE6F3BC&redirectUrl=https%3A%2F%2Fm-test.yhouse.com%2Fm%2Flianyun%2Fsshua%2Fpayment.html"
     }
+}
+```
+
+### 权益使用
+- 请求方式: `get`
+- 请求地址: {host}`interest/use`
+
+```  
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "url": "https://m-test.yhouse.com/m/joint-login?token=70FB1D9C2ABCAD7843ABAAC61C637BCC&redirectUrl=https%3A%2F%2Fm-test.yhouse.com%2Fm%2Fypass-list%2Fbuild%2F%23%2F"
+    }
+}
+```
+
+### 权益中心
+- 请求方式: `get`
+- 请求地址: {host}`interest/my`
+
+```  
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "Success",
+    "info": [
+        {
+            "id": "16",
+            "user_id": "270",
+            "card_id": "2",
+            "days": "30",
+            "create_time": "2020-01-19 15:05:09",
+            "finish_time": "2020-02-18",
+            "card_name": "蓝金会员",
+            "card_price": "59.90",
+            "card_pic": "pic",
+            "remain_days": 29
+        }
+    ]
 }
 ```
