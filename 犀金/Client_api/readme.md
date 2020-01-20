@@ -5113,6 +5113,7 @@ im_u_id
             "card_name": "蓝金会员",
             "card_price": "59.90",
             "card_pic": "pic",
+            "pre_price": "599.00",
             "remain_days": 29
         }
     ]
