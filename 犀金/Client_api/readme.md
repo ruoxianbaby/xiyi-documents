@@ -137,7 +137,8 @@
     - [权益购买](./#权益购买)   
     - [权益使用](./#权益使用)   
     - [我的权益](./#我的权益)   
-
+    - [权益信息](./#权益信息)   
+    
 ### 全局header  
 
 key |  vaule
@@ -5113,6 +5114,46 @@ im_u_id
             "card_price": "59.90",
             "card_pic": "pic",
             "remain_days": 29
+        }
+    ]
+}
+```
+
+### 权益信息
+- 请求方式: `get`
+- 请求地址: {host}`interest/info`
+
+```  
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "Success",
+    "info": [
+        {
+            "id": "1",
+            "name": "星选酒店",
+            "description": "豪华酒店8.5折扣起",
+            "pic": ""
+        },
+        {
+            "id": "2",
+            "name": "果汁茶饮",
+            "description": "8折喝上网红茶",
+            "pic": ""
+        },
+        {
+            "id": "3",
+            "name": "测试",
+            "description": "123123",
+            "pic": ""
+        },
+        {
+            "id": "5",
+            "name": "123123",
+            "description": "123123123123",
+            "pic": ""
         }
     ]
 }
