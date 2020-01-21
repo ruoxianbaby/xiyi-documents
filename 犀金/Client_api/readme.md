@@ -4980,77 +4980,88 @@ im_u_id
         "cards": [
             {
                 "id": "1",
+                "y_sku_id": "SS839",
                 "name": "群青会员",
-                "pre_price": "199.00",
-                "now_price": "19.90",
+                "pre_price": "39.00",
+                "now_price": "29.00",
                 "con_price": "19.00",
-                "pic": "pic",
+                "pic": "https://xijin.oss-cn-shanghai.aliyuncs.com/banner/images2020-01-20/fIGU8G0xDW1PooJH2H5JYyoJ9Z2J5P49.png",
                 "days": "30",
+                "unlimited_times": "0",
                 "status": "1"
             },
             {
                 "id": "2",
+                "y_sku_id": "SS840",
                 "name": "蓝金会员",
-                "pre_price": "599.00",
-                "now_price": "59.90",
-                "con_price": "59.00",
-                "pic": "pic",
-                "days": "30",
+                "pre_price": "88.00",
+                "now_price": "69.00",
+                "con_price": "58.00",
+                "pic": "https://xijin.oss-cn-shanghai.aliyuncs.com/banner/images2020-01-20/g-okUF2HfSmQM4zEQWfeOiP3pd_YPpQG.png",
+                "days": "90",
+                "unlimited_times": "0",
                 "status": "1"
             },
             {
                 "id": "3",
+                "y_sku_id": "SS841",
                 "name": "黑金会员",
-                "pre_price": "999.00",
-                "now_price": "99.90",
-                "con_price": "99.00",
-                "pic": "pic",
-                "days": "30",
+                "pre_price": "249.00",
+                "now_price": "199.00",
+                "con_price": "188.00",
+                "pic": "https://xijin.oss-cn-shanghai.aliyuncs.com/banner/images2020-01-20/EIIBoVYMxV6CFNJG3HTIX0EAM6Onswxi.png",
+                "days": "365",
+                "unlimited_times": "1",
                 "status": "1"
             }
         ],
         "interests": [
             {
-                "type_name": "星选酒店",
-                "type_desc": "豪华酒店8.5折扣起",
-                "interests": [
-                    {
-                        "id": "2",
-                        "name": "索菲亚酒店",
-                        "pic": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2020-01-09/ZI34aqWq1bcdnB_1Gk2DZDRLSuGmLII3.jpg"
-                    },
-                    {
-                        "id": "3",
-                        "name": "丽惠卡尔顿酒店",
-                        "pic": "pic"
-                    }
-                ]
-            },
-            {
                 "type_name": "果汁茶饮",
                 "type_desc": "8折喝上网红茶",
                 "interests": [
                     {
-                        "id": "4",
-                        "name": "COCO",
-                        "pic": "pic"
+                        "id": "2",
+                        "name": "奈雪の茶",
+                        "pic": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2020-01-20/RL8He66fG_JubnwtdIyZfRHBCDN64f-Y.jpeg"
                     },
                     {
-                        "id": "5",
-                        "name": "奈茶的雪",
-                        "pic": "pic"
+                        "id": "3",
+                        "name": "COCO都可",
+                        "pic": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2020-01-20/zMFEPOsC1McoGYyga8q9CDI7IWg6VY7X.jpeg"
+                    },
+                    {
+                        "id": "10",
+                        "name": "天使之橙",
+                        "pic": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2020-01-21/63PsT7VoyfNp_JwxH3ScMdp0CB9uaRvH.jpeg"
                     }
                 ]
             },
             {
-                "type_name": "测试",
-                "type_desc": "123123",
-                "interests": []
-            },
-            {
-                "type_name": "123123",
-                "type_desc": "123123123123",
-                "interests": []
+                "type_name": "休闲零食",
+                "type_desc": "半价享零食",
+                "interests": [
+                    {
+                        "id": "11",
+                        "name": "良品铺子",
+                        "pic": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2020-01-21/juMkDQIVfIPnpBq54K56qs-BmSLed236.jpeg"
+                    },
+                    {
+                        "id": "12",
+                        "name": "来伊份",
+                        "pic": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2020-01-21/_I_W9OF5VKiMoDwernNHs2L3KCwZpk5A.jpeg"
+                    },
+                    {
+                        "id": "13",
+                        "name": "洽洽",
+                        "pic": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2020-01-21/SqWLyOivuQW2Jqus8mr-pYcvmUI6I_Xq.jpeg"
+                    },
+                    {
+                        "id": "14",
+                        "name": "周黑鸭",
+                        "pic": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2020-01-21/rbmQUkuN-138vccDB1zKua_CU0eg6prq.jpeg"
+                    }
+                ]
             }
         ]
     }
