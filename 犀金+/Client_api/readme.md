@@ -205,8 +205,8 @@ per-page=50 写死
 - 响应内容:  
 注：  
 image_url 在第一层是没有意义的，在第二层category_child,category_brand用来展示logo  
-category_child中点进去用id,点进去的接口  jmbs?jmb_category_id=5  （这个分类中所有的加盟宝列表 - 转到加盟宝某个分类列表）  
-category_brand中点进去用id,点进去的接口  jmb/detail?id=1  （加盟宝详情接口）  
+category_child中点进去用id,点进去的接口  jmbs?jmb_category_id=5  （这个分类中所有的加盟宝列表 - 转到加盟宝某个分类列表）(./#加盟宝某个分类列表)  
+category_brand中点进去用id,点进去的接口  jmb/detail?id=1  （加盟宝详情接口）(./#加盟宝详情)    
 ```json
 {
     "code": 1,
