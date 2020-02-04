@@ -8,6 +8,10 @@
     - [所有分类](./#所有分类)  
     - [加盟宝详情](./#加盟宝详情)  
     - [加盟宝某个分类列表](./#加盟宝某个分类列表)  
+    - [加盟宝评论](./#加盟宝评论)  
+    - [加盟宝评论页面](./#加盟宝评论页面)  
+    - [加盟宝评论详情](./#加盟宝评论详情)  
+    - [加盟宝评论点赞](./#加盟宝评论点赞)  
 
 ### 测试主机host: 47.103.61.179:1022/  
 
@@ -400,4 +404,229 @@ category_brand中点进去用id,点进去的接口  jmb/detail?id=1  （加盟�
         }
     }
 }
+```
+
+### 加盟宝评论  
+- 请求方式: `post`
+- 请求地址: `jmb-comments`
+- 请求参数:  
+```json
+{
+	"id": 1,
+	"content":"还不错",
+	"pid": 0    0是评论加盟宝,非0是评论其他
+}
+```
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "添加成功",
+    "info": {
+        "id": 4,
+        "jmb_id": 1,
+        "content": "还不错",
+        "create_time": "2020-02-04 16:59:47",
+        "user_id": 1,
+        "pid": 3,
+        "reply_pid": 3,
+        "nick_name": "微微笑",
+        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+        "time_before": "刚刚"
+    }
+}
+```
+
+
+
+### 加盟宝评论页面  
+- 请求方式: `get`
+- 请求地址: `jmb-comments?jmb_id=1`
+- 请求参数:  jmb_id 是当前加盟宝详情页的加盟宝id
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": "1",
+                "jmb_id": "1",
+                "user_id": "1",
+                "content": "还不错",
+                "pid": "0",
+                "reply_pid": "0",
+                "like_num": "1",
+                "create_time": "2020-02-04 17:47:52",
+                "update_time": null,
+                "nick_name": "微微笑",
+                "user_name": "微微笑",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+                "time_before": "30分钟前",
+                "like": "0",
+                "like_count": "0",
+                "child": []
+            },
+            {
+                "id": "2",
+                "jmb_id": "1",
+                "user_id": "1",
+                "content": "还不错",
+                "pid": "0",
+                "reply_pid": "0",
+                "like_num": "0",
+                "create_time": "2020-02-04 16:57:16",
+                "update_time": null,
+                "nick_name": "微微笑",
+                "user_name": "微微笑",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+                "time_before": "1小时前",
+                "like": "0",
+                "like_count": "0",
+                "child": []
+            },
+            {
+                "id": "3",
+                "jmb_id": "1",
+                "user_id": "1",
+                "content": "还不错",
+                "pid": "0",
+                "reply_pid": "0",
+                "like_num": "0",
+                "create_time": "2020-02-04 16:57:35",
+                "update_time": null,
+                "nick_name": "微微笑",
+                "user_name": "微微笑",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+                "time_before": "1小时前",
+                "like": "0",
+                "like_count": "0",
+                "child": [
+                    {
+                        "id": "4",
+                        "jmb_id": "1",
+                        "user_id": "2",
+                        "content": "还不错",
+                        "pid": "3",
+                        "reply_pid": "3",
+                        "like_num": "1",
+                        "create_time": "2020-02-04 16:59:47",
+                        "update_time": null,
+                        "time_before": "1小时前",
+                        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/50939351.jpg",
+                        "nick_name": "陌南尘",
+                        "like": "0",
+                        "like_count": "0",
+                        "replied_user_id": "1",
+                        "replied_nick_name": "微微笑"
+                    }
+                ]
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/jmb-comments?jmb_id=1&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 3,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+
+
+
+### 加盟宝评论详情  
+- 请求方式: `get`
+- 请求地址: `jmb-comments/1`
+- 请求参数:  
+1是评论的id
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": "3",
+                "jmb_id": "1",
+                "user_id": "1",
+                "content": "还不错",
+                "pid": "0",
+                "reply_pid": "0",
+                "like_num": "0",
+                "create_time": "2020-02-04 16:57:35",
+                "update_time": null,
+                "nick_name": "微微笑",
+                "user_name": "微微笑",
+                "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+                "time_before": "1小时前",
+                "like": "0",
+                "like_count": "0",
+                "child": [
+                    {
+                        "id": "4",
+                        "jmb_id": "1",
+                        "user_id": "2",
+                        "content": "还不错",
+                        "pid": "3",
+                        "reply_pid": "3",
+                        "like_num": "1",
+                        "create_time": "2020-02-04 16:59:47",
+                        "update_time": null,
+                        "time_before": "1小时前",
+                        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/50939351.jpg",
+                        "nick_name": "陌南尘",
+                        "like": "0",
+                        "like_count": "0",
+                        "replied_user_id": "1",
+                        "replied_nick_name": "微微笑"
+                    }
+                ]
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/jmb-comments/3?page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 1,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+
+
+
+### 加盟宝评论点赞  
+- 请求方式: `post`
+- 请求地址: `jmb-comment/click-like`
+- 请求参数:  
+```json
+{
+	"id": 1   评论的id
+}
+```
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "添加成功",
+    "info": {
+        "active": 1
+    }
+}
+1 切换成已点赞的状态
 ```
