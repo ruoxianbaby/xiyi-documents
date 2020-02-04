@@ -3,6 +3,7 @@
 - [加盟宝](./#加盟宝)
     - [首页分类](./#首页分类)  
     - [首页热门专区](./#首页热门专区)
+    - [热门专区全部](./#热门专区全部)
     - [首页热门推荐](./#首页热门推荐)
     - [所有分类](./#所有分类)  
     - [加盟宝详情](./#加盟宝详情)  
@@ -103,6 +104,45 @@ per-page=5 写死
 }
 ```
 
+
+### 热门全部  
+- 请求方式: `get`
+- 请求地址: `jmb/get-hot-prefecture?page=1&per-page=20`
+- 请求参数:  
+注：带分页
+```json
+
+```
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": "1",
+                "jmb_category_id": "5",
+                "name": "餐饮美食",
+                "desc": "原料，店面设计的支持",
+                "image_url": ""
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/jmb/get-hot-prefecture?per-page=5&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 1,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 5
+        }
+    }
+}
+```
+
 ### 首页热门推荐  
 - 请求方式: `get`
 - 请求地址: `jmbs?is_hot_recommend=1?per-page=50`
@@ -159,10 +199,10 @@ per-page=50 写死
 - 请求参数:  
 
 - 响应内容:  
-注：
-image_url 在第一层是没有意义的，在第二层category_child,category_brand用来展示logo
-category_child中点进去用id,点进去的接口  jmbs?jmb_category_id=5  （这个分类中所有的加盟宝列表 - 转到加盟宝某个分类列表）
-category_brand中点进去用id,点进去的接口  jmb/detail?id=1  （加盟宝详情接口） 
+注：  
+image_url 在第一层是没有意义的，在第二层category_child,category_brand用来展示logo  
+category_child中点进去用id,点进去的接口  jmbs?jmb_category_id=5  （这个分类中所有的加盟宝列表 - 转到加盟宝某个分类列表）  
+category_brand中点进去用id,点进去的接口  jmb/detail?id=1  （加盟宝详情接口）  
 ```json
 {
     "code": 1,
