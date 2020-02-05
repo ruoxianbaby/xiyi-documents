@@ -8,10 +8,13 @@
     - [所有分类](./#所有分类)  
     - [加盟宝详情](./#加盟宝详情)  
     - [加盟宝某个分类列表](./#加盟宝某个分类列表)  
+    - [加盟宝投资金额搜索](./#加盟宝投资金额搜索)  
     - [加盟宝评论](./#加盟宝评论)  
     - [加盟宝评论页面](./#加盟宝评论页面)  
     - [加盟宝评论详情](./#加盟宝评论详情)  
     - [加盟宝评论点赞](./#加盟宝评论点赞)  
+    - [获取加盟方式](./#获取加盟方式)  
+    - [我的加盟](./#我的加盟)
 
 ### 测试主机host: 47.103.61.179:1022/  
 
@@ -166,7 +169,7 @@ per-page=50 写死
                 "name": "和府捞面2",
                 "direct_store_num": "121234",
                 "apply_num": "11111",
-                "join_fee": "10-25万",
+                "est_init_investment": "10-25万",
                 "image_url": "https://www.baidu.com",
                 "category_name": "餐饮",
                 "brand_year": "6"   年限
@@ -175,7 +178,7 @@ per-page=50 写死
                 "name": "和府捞面",
                 "direct_store_num": "121234",
                 "apply_num": "11111",
-                "join_fee": "10-25万",
+                "est_init_investment": "10-25万",
                 "image_url": "https://www.baidu.com",
                 "category_name": "餐饮",
                 "brand_year": "6"
@@ -385,7 +388,7 @@ category_brand中点进去用id,点进去的接口  jmb/detail?id=1  （加盟�
                 "name": "和府捞面",
                 "direct_store_num": "121234",
                 "apply_num": "11111",
-                "join_fee": "10-25万",
+                "est_init_investment": "10-25万",
                 "image_url": "https://www.baidu.com",
                 "category_name": "餐饮",
                 "brand_year": "6"   年限
@@ -629,4 +632,111 @@ category_brand中点进去用id,点进去的接口  jmb/detail?id=1  （加盟�
     }
 }
 1 切换成已点赞的状态
+```
+
+
+
+### 加盟宝投资金额搜索  
+- 请求方式: `get`
+- 请求地址: `jmbs?est_init_investment=10-25万`
+- 请求参数:  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "name": "和府捞面2",
+                "direct_store_num": "121234",
+                "apply_num": "11115",
+                "est_init_investment": "10-25万",
+                "image_url": "https://www.baidu.com",
+                "category_name": "餐饮",
+                "brand_year": "6"
+            },
+            {
+                "name": "和府捞面",
+                "direct_store_num": "121234",
+                "apply_num": "11116",
+                "est_init_investment": "10-25万",
+                "image_url": "https://www.baidu.com",
+                "category_name": "餐饮",
+                "brand_year": "6"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/jmbs?est_init_investment=10-25%E4%B8%87&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 2,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+
+
+
+### 获取加盟方式  
+- 请求方式: `get`
+- 请求地址: `jmb-detail/get?id=1`
+- 请求参数:  
+id 加盟宝id  
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "is_vip": true,
+        "origin_price": "33.00",
+        "vip_price": "22.00",
+        "period": "永久"
+    }
+}
+```
+
+
+
+### 我的加盟  
+- 请求方式: `get`
+- 请求地址: `jmb-user/get-my`
+- 请求参数:  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "jmb_id": "1",
+                "image_url": "https://www.baidu.com",
+                "name": "和府捞面",
+                "est_init_investment": "10-25万",
+                "period": "永久",
+                "contact_way": "110"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/jmb-user/get-my?page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 1,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
 ```
