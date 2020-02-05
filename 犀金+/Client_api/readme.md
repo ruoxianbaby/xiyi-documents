@@ -112,7 +112,7 @@ per-page=5 写死
 ```
 
 
-### 热门全部  
+### 热门专区全部  
 - 请求方式: `get`
 - 请求地址: `jmb/get-hot-prefecture?page=1&per-page=20`
 - 请求参数:  
