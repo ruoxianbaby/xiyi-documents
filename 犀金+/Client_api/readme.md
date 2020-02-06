@@ -5,7 +5,8 @@
     - [首页热门专区](./#首页热门专区)
     - [热门专区全部](./#热门专区全部)
     - [首页热门推荐](./#首页热门推荐)
-    - [所有分类](./#所有分类)  
+    - [一级分类](./#一级分类)  
+    - [二级分类](./#二级分类)  
     - [加盟宝详情](./#加盟宝详情)  
     - [加盟宝某个分类列表](./#加盟宝某个分类列表)  
     - [加盟宝投资金额搜索](./#加盟宝投资金额搜索)  
@@ -200,92 +201,80 @@ per-page=50 写死
 ```
 
 
-### 所有分类  
+### 一级分类  
 - 请求方式: `get`
-- 请求地址: `jmb/get-category`
+- 请求地址: `jmb/get-first-cate`
 - 请求参数:  
 
 - 响应内容:  
 注：  
-image_url 在第一层是没有意义的，在第二层category_child,category_brand用来展示logo  
-category_child中点进去用id,点进去的接口  jmbs?jmb_category_id=5  （这个分类中所有的加盟宝列表 - 转到加盟宝某个分类列表）(./#加盟宝某个分类列表)  
-category_brand中点进去用id,点进去的接口  jmb/detail?id=1  （加盟宝详情接口）(./#加盟宝详情)    
+   
 ```json
 {
     "code": 1,
     "message": "success",
     "info": [
         {
-            "id": "0",  在热门这 此处没有意义
-            "image_url": "",   在热门这 此处没有意义
-            "name": "热门",
-            "category_child": [],  热门没有该项，请看设计图
-            "category_brand": [
-                {
-                    "id": "1",
-                    "name": "和府捞面", 
-                    "image_url": "https://www.baidu.com"
-                },
-                {
-                    "id": "2",
-                    "name": "和府捞面2",
-                    "image_url": "https://www.baidu.com"
-                }
-            ]
+            "id": "0",
+            "name": "热门"
         },
         {
             "id": "1",
-            "name": "餐饮",
-            "image_url": "",
-            "category_child": [
-                {
-                    "id": "5",
-                    "name": "快餐1",
-                    "image_url": ""
-                },
-                {
-                    "id": "6",
-                    "name": "快餐22",
-                    "image_url": ""
-                }
-            ],
-            "category_brand": [
-                {
-                    "id": "1",
-                    "name": "和府捞面",
-                    "image_url": "https://www.baidu.com"
-                },
-                {
-                    "id": "2",
-                    "name": "和府捞面2",
-                    "image_url": "https://www.baidu.com"
-                }
-            ]
+            "name": "餐饮"
         },
         {
             "id": "2",
-            "name": "教育",
-            "image_url": "",
-            "category_child": [],
-            "category_brand": []
+            "name": "教育"
         },
         {
             "id": "3",
-            "name": "酒店",
-            "image_url": "",
-            "category_child": [],
-            "category_brand": []
+            "name": "酒店"
         },
         {
             "id": "4",
-            "name": "早教",
-            "image_url": "",
-            "category_child": [],
-            "category_brand": []
+            "name": "早教"
         }
     ]
 }
 ```
+
+
+### 二级分类  
+- 请求方式: `get`
+- 请求地址: `get-child-cate?id=1`
+- 请求参数:  
+
+- 响应内容:  
+注：  
+   
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": [
+        {
+            "id": "5",
+            "name": "快餐1",
+            "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg",
+            "type": "1"
+        },
+        {
+            "id": "6",
+            "name": "快餐22",
+            "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg",
+            "type": "1"
+        },
+        {
+            "id": "1",
+            "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg",
+            "name": "和府捞面",
+            "type": "2"
+        }
+    ]
+}
+type1点进去是这个分类下的加盟宝列表， 2点进去是加盟宝详情
+```
+
 
 
 ### 加盟宝详情  
