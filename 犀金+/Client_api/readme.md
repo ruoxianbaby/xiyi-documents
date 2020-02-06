@@ -7,6 +7,8 @@
     - [首页热门推荐](./#首页热门推荐)
     - [一级分类](./#一级分类)  
     - [二级分类](./#二级分类)  
+    - [加盟宝首页banner](./#加盟宝首页banner)  
+    - [分类上面的广告图](./#分类上面的广告图)
     - [加盟宝详情](./#加盟宝详情)  
     - [加盟宝某个分类列表](./#加盟宝某个分类列表)  
     - [加盟宝投资金额搜索](./#加盟宝投资金额搜索)  
@@ -275,6 +277,74 @@ per-page=50 写死
 type1点进去是这个分类下的加盟宝列表， 2点进去是加盟宝详情
 ```
 
+
+
+### 加盟宝首页banner  
+- 请求方式: `get`
+- 请求地址: `jmb/get-banner`
+- 请求参数:  
+
+- 响应内容:  
+注：  
+   
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": [
+        {
+            "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg",
+            "jmb_id": "1",
+            "use_out_link": "0",
+            "out_link_url": ""
+        },
+        {
+            "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg",
+            "jmb_id": "0",
+            "use_out_link": "1",
+            "out_link_url": "https://www.baidu.com"
+        },
+        {
+            "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg",
+            "jmb_id": "2",
+            "use_out_link": "0",
+            "out_link_url": ""
+        },
+        {
+            "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg",
+            "jmb_id": "3",
+            "use_out_link": "0",
+            "out_link_url": ""
+        }
+    ]
+}
+use_out_link 为1 代表点击图片的时候跳转到 out_link_url 这个外部链接
+use_out_link 为0 代表点击图片的时候跳转到 jmb_id 对应的加盟宝详情
+```
+
+
+### 分类上面的广告图  
+- 请求方式: `get`
+- 请求地址: `jmb/get-ad`
+- 请求参数:  
+
+- 响应内容:  
+注：  
+   
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg",
+        "jmb_id": "4",
+        "use_out_link": "0",
+        "out_link_url": ""
+    }
+}
+use_out_link 为1 代表点击图片的时候跳转到 out_link_url 这个外部链接
+use_out_link 为0 代表点击图片的时候跳转到 jmb_id 对应的加盟宝详情
+```
 
 
 ### 加盟宝详情  
