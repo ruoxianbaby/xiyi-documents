@@ -17,6 +17,8 @@
     - [加盟宝评论点赞](./#加盟宝评论点赞)  
     - [获取加盟方式](./#获取加盟方式)  
     - [我的加盟](./#我的加盟)
+    - [收藏动作](./#收藏动作)
+    - [个人中心我的收藏](./#个人中心我的收藏)
 
 ### 测试主机host: 47.103.61.179:1022/  
 
@@ -371,7 +373,8 @@ use_out_link 为0 代表点击图片的时候跳转到 jmb_id 对应的加盟宝
                 "create_time": "2020-02-03 15:11:27",
                 "update_time": null,
                 "category_name": "餐饮",
-                "brand_year": "6"
+                "brand_year": "6",
+                "collect": "1"
             }
         ],
         "_links": {
@@ -409,7 +412,8 @@ use_out_link 为0 代表点击图片的时候跳转到 jmb_id 对应的加盟宝
   `deposit_fee`  '保证金',
   `device_fee` '设备费用',
   `other_fee`  '其他费用',
-  `info` text COMMENT '富文本内容',
+  `info` '富文本内容',
+  `collect` '文章收藏 1已收藏 0未收藏',
 ```
 
 
@@ -780,4 +784,92 @@ id 加盟宝id
         }
     }
 }
+```
+
+
+
+### 收藏动作  
+- 请求方式: `post`
+- 请求地址: `jmb/collect`
+- 请求参数:  
+```json
+{
+	"id": 3   加盟宝id
+}
+```
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "操作成功",
+    "info": {
+        "active": 1
+    }
+}
+active
+1 操作成功之后我已收藏
+0 操作成功之后我已取消收藏
+```
+
+
+
+### 个人中心我的收藏  
+- 请求方式: `get`
+- 请求地址: `article-collects?user_id=1`
+- 请求参数:  
+```json
+{
+	"id": 3   加盟宝id
+}
+```
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 225,
+                "user_id": 1,
+                "type": 1,
+                "create_time": null,
+                "title": "和府捞面",
+                "preview_image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg",
+                "jmb_id": 1
+            },
+            {
+                "id": 10,
+                "user_id": 1,
+                "type": 0,
+                "create_time": null,
+                "title": "30岁之前最重要的投资是什么",
+                "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-08-07/EtYiPv2cwBB5p1s_tZnER6D_IIqUtwQH.jpg",
+                "comment_num": 1,
+                "like_num": 14,
+                "article_id": 290
+            },
+            {
+                "id": 8,
+                "user_id": 1,
+                "type": 0,
+                "create_time": null,
+                "title": "30位创业精英的30条创业心得（下）",
+                "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-08-06/6smHqBgViMwP6y6HsKkejEahwPWhdrVB.jpg",
+                "comment_num": 1,
+                "like_num": 12,
+                "article_id": 278
+            }
+        ],
+        "_meta": {
+            "totalCount": 3,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+因为里面还有文章的内容，加了个type区分类型
+type 0 代表的是文章
+type 1 是加盟宝
 ```
