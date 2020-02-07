@@ -817,11 +817,6 @@ active
 - 请求方式: `get`
 - 请求地址: `article-collects?user_id=1`
 - 请求参数:  
-```json
-{
-	"id": 3   加盟宝id
-}
-```
 - 响应内容:  
 ```json
 {
