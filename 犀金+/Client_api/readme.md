@@ -18,6 +18,7 @@
     - [获取加盟方式](./#获取加盟方式)  
     - [创建支付订单](./#创建支付订单)  
     - [我的加盟](./#我的加盟)
+    - [我的加盟详情](./#我的加盟详情)
     - [收藏动作](./#收藏动作)
     - [个人中心我的收藏](./#个人中心我的收藏)
 
@@ -829,6 +830,43 @@ id 加盟宝id
 active
 1 操作成功之后我已收藏
 0 操作成功之后我已取消收藏
+```
+
+### 我的加盟详情  
+- 请求方式: `get`
+- 请求地址: `jmb-user/get-my?id=2`
+- 请求参数:  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": "2",
+                "jmb_id": "1",
+                "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg",
+                "name": "和府捞面",
+                "est_init_investment": "10-25万",
+                "period": "永久",
+                "contact_way": "110"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/jmb-user/get-my?id=2&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 1,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
 ```
 
 
