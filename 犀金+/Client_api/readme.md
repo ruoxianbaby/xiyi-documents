@@ -502,22 +502,59 @@ use_out_link 为0 代表点击图片的时候跳转到 jmb_id 对应的加盟宝
     "info": {
         "items": [
             {
-                "id": "1",
+                "id": "3",
                 "jmb_id": "1",
                 "user_id": "1",
                 "content": "还不错",
                 "pid": "0",
                 "reply_pid": "0",
-                "like_num": "1",
-                "create_time": "2020-02-04 17:47:52",
+                "like_num": "0",
+                "create_time": "2020-02-04 16:57:35",
                 "update_time": null,
                 "nick_name": "微微笑",
                 "user_name": "微微笑",
                 "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
-                "time_before": "30分钟前",
+                "time_before": "5天前",
                 "like": "0",
                 "like_count": "0",
-                "child": []
+                "child": [
+                    {
+                        "id": "5",
+                        "jmb_id": "1",
+                        "user_id": "1",
+                        "content": "还可以的",
+                        "pid": "3",
+                        "reply_pid": "4",
+                        "like_num": "0",
+                        "create_time": "2020-02-10 16:42:43",
+                        "update_time": null,
+                        "time_before": "刚刚",
+                        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+                        "nick_name": "微微笑",
+                        "like": "0",
+                        "like_count": "0",
+                        "replied_user_id": "2",
+                        "replied_nick_name": "陌南尘"
+                    },
+                    {
+                        "id": "4",
+                        "jmb_id": "1",
+                        "user_id": "2",
+                        "content": "还不错",
+                        "pid": "3",
+                        "reply_pid": "3",
+                        "like_num": "0",
+                        "create_time": "2020-02-04 16:59:47",
+                        "update_time": null,
+                        "time_before": "5天前",
+                        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/50939351.jpg",
+                        "nick_name": "陌南尘",
+                        "like": "0",
+                        "like_count": "0",
+                        "replied_user_id": "1",
+                        "replied_nick_name": "微微笑"
+                    }
+                ]
             },
             {
                 "id": "2",
@@ -532,47 +569,28 @@ use_out_link 为0 代表点击图片的时候跳转到 jmb_id 对应的加盟宝
                 "nick_name": "微微笑",
                 "user_name": "微微笑",
                 "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
-                "time_before": "1小时前",
+                "time_before": "5天前",
                 "like": "0",
                 "like_count": "0",
                 "child": []
             },
             {
-                "id": "3",
+                "id": "1",
                 "jmb_id": "1",
                 "user_id": "1",
                 "content": "还不错",
                 "pid": "0",
                 "reply_pid": "0",
-                "like_num": "0",
-                "create_time": "2020-02-04 16:57:35",
+                "like_num": "1",
+                "create_time": "2020-02-04 17:47:52",
                 "update_time": null,
                 "nick_name": "微微笑",
                 "user_name": "微微笑",
                 "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
-                "time_before": "1小时前",
-                "like": "0",
-                "like_count": "0",
-                "child": [
-                    {
-                        "id": "4",
-                        "jmb_id": "1",
-                        "user_id": "2",
-                        "content": "还不错",
-                        "pid": "3",
-                        "reply_pid": "3",
-                        "like_num": "1",
-                        "create_time": "2020-02-04 16:59:47",
-                        "update_time": null,
-                        "time_before": "1小时前",
-                        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/50939351.jpg",
-                        "nick_name": "陌南尘",
-                        "like": "0",
-                        "like_count": "0",
-                        "replied_user_id": "1",
-                        "replied_nick_name": "微微笑"
-                    }
-                ]
+                "time_before": "5天前",
+                "like": "1",
+                "like_count": "1",
+                "child": []
             }
         ],
         "_links": {
