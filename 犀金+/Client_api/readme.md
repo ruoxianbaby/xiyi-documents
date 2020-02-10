@@ -16,6 +16,7 @@
     - [加盟宝评论详情](./#加盟宝评论详情)  
     - [加盟宝评论点赞](./#加盟宝评论点赞)  
     - [获取加盟方式](./#获取加盟方式)  
+    - [创建支付订单](./#创建支付订单)  
     - [我的加盟](./#我的加盟)
     - [收藏动作](./#收藏动作)
     - [个人中心我的收藏](./#个人中心我的收藏)
@@ -746,6 +747,25 @@ id 加盟宝id
         "period": "永久"
     }
 }
+```
+
+### 创建支付订单  
+- 请求方式: `post`
+- 请求地址: `jmb-detail/buy`
+- 请求参数:  
+```json
+{
+	"id": 1   加盟宝的id
+}
+```
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "订单生成成功",
+    "info": "alipay_sdk=alipay-sdk-php-easyalipay-20190926&app_id=2021001107613197&biz_content=%7B%22subject%22%3A+%22%E5%92%8C%E5%BA%9C%E6%8D%9E%E9%9D%A2%E5%8A%A0%E7%9B%9F%E6%96%B9%E5%BC%8F%22%2C%22out_trade_no%22%3A+%222020021010010049%22%2C%22total_amount%22%3A+%2222.00%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&notify_url=https%3A%2F%2Fapi.5youfenqi.com%2Fgood%2Fasync-notify&sign_type=RSA2&timestamp=2020-02-10+15%3A40%3A13&version=1.0&sign=HPIF492NSi7lj65uOw2TNF3aKzLBoyuoXHr%2BZVdjxr9uscHxmS16q8WJJmrNEHOdEJamv7LnM0eIBlrFsCLD%2BekMyPk893WQQzeS7rlGJuda%2BIdzq%2B5s3KVIfteIWJNc%2BO9kWMW6NvxEQppQ0Gi1iAgxg4pczOeTSK41tozXZMBDxbIE0kZgYfBGLGPnm%2BynY6GVZb4SQzf9luBXiaqWgDmyz%2BaMQ3ymf5zo%2B1YzSo4PZ5iSgTgfvGc%2BVEwfaYi1rzLg97qO3f2JXaEYEt%2FUJy9dz9nOG26LgeVOQfhZAeIYE4aYy%2BB2ZUfX20rV8VJ6%2FnZNO2TYK8atTUzHndkt4w%3D%3D"
+}
+拿着这串数据直接唤起支付即可
 ```
 
 
