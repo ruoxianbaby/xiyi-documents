@@ -802,12 +802,42 @@ id 加盟宝id
     "info": {
         "items": [
             {
+                "id": "2",
                 "jmb_id": "1",
-                "image_url": "https://www.baidu.com",
+                "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg",
                 "name": "和府捞面",
+                "direct_store_num": "121234",
+                "apply_num": "11121",
+                "main_project": "餐饮、文化、面、点心",
+                "register_time": "2014年",
+                "location": "上海",
+                "inital_fee": "15",
+                "est_mothly_sale": "14万",
                 "est_init_investment": "10-25万",
                 "period": "永久",
-                "contact_way": "110"
+                "contact_mobile": "110",
+                "contact_person": "lixiaojie",
+                "contact_person_job": "经理",
+                "type": "0"
+            },
+            {
+                "id": "1",
+                "jmb_id": "1",
+                "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg",
+                "name": "和府捞面",
+                "direct_store_num": "121234",
+                "apply_num": "11121",
+                "main_project": "餐饮、文化、面、点心",
+                "register_time": "2014年",
+                "location": "上海",
+                "inital_fee": "15",
+                "est_mothly_sale": "14万",
+                "est_init_investment": "10-25万",
+                "period": "永久",
+                "contact_mobile": "110",
+                "contact_person": "lixiaojie",
+                "contact_person_job": "经理",
+                "type": "0"
             }
         ],
         "_links": {
@@ -816,13 +846,14 @@ id 加盟宝id
             }
         },
         "_meta": {
-            "totalCount": 1,
+            "totalCount": 2,
             "pageCount": 1,
             "currentPage": 1,
             "perPage": 20
         }
     }
 }
+列表需要用的字段：est_init_investment id  image_url period name
 ```
 
 
@@ -867,9 +898,19 @@ active
                 "jmb_id": "1",
                 "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg",
                 "name": "和府捞面",
+                "direct_store_num": "121234",
+                "apply_num": "11121",
+                "main_project": "餐饮、文化、面、点心",
+                "register_time": "2014年",
+                "location": "上海",
+                "inital_fee": "15",
+                "est_mothly_sale": "14万",
                 "est_init_investment": "10-25万",
                 "period": "永久",
-                "contact_way": "110"
+                "contact_mobile": "110",
+                "contact_person": "lixiaojie",
+                "contact_person_job": "经理",
+                "type": "0"
             }
         ],
         "_links": {
