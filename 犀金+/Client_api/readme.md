@@ -793,7 +793,7 @@ id 加盟宝id
 
 ### 我的加盟  
 - 请求方式: `get`
-- 请求地址: `jmb-user/get-my`
+- 请求地址: `jmb-user/get-my?page=1&per-page=20`
 - 请求参数:  
 
 - 响应内容:  
