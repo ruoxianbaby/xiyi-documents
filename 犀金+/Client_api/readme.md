@@ -491,7 +491,7 @@ use_out_link 为0 代表点击图片的时候跳转到 jmb_id 对应的加盟宝
 
 ### 加盟宝评论页面  
 - 请求方式: `get`
-- 请求地址: `jmb-comments?jmb_id=1`
+- 请求地址: `jmb-comments?jmb_id=1&page=1&per-page=20`
 - 请求参数:  jmb_id 是当前加盟宝详情页的加盟宝id
 
 - 响应内容:  
