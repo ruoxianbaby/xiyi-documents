@@ -763,7 +763,9 @@ id 加盟宝id
         "is_vip": true,
         "origin_price": "33.00",
         "vip_price": "22.00",
-        "period": "永久"
+        "period": "永久",
+        "type": "0",
+        "contact_way": "电话接通"
     }
 }
 ```
@@ -926,6 +928,7 @@ active
         }
     }
 }
+注： 因为有可能以后不是电话接通，所以type加以区分， 拿到0代表是电话联系
 ```
 
 
