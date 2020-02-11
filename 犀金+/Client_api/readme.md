@@ -820,7 +820,8 @@ id 加盟宝id
                 "contact_mobile": "110",
                 "contact_person": "lixiaojie",
                 "contact_person_job": "经理",
-                "type": "0"
+                "type": "0",
+                "contact_way": "电话联系"
             },
             {
                 "id": "1",
@@ -839,7 +840,8 @@ id 加盟宝id
                 "contact_mobile": "110",
                 "contact_person": "lixiaojie",
                 "contact_person_job": "经理",
-                "type": "0"
+                "type": "0",
+                "contact_way": "电话联系"
             }
         ],
         "_links": {
@@ -912,7 +914,8 @@ active
                 "contact_mobile": "110",
                 "contact_person": "lixiaojie",
                 "contact_person_job": "经理",
-                "type": "0"
+                "type": "0",
+                "contact_way": "电话联系"
             }
         ],
         "_links": {
