@@ -7,6 +7,7 @@
     - [热门专区一套restful](./#热门专区一套restful)
     - [加盟宝一套restful](./#加盟宝一套restful)
     - [一级分类一套restful](./#一级分类一套restful)
+    - [二级分类一套restful](./#二级分类一套restful)
 ### 测试主机host: 47.103.61.179:1081/  
 
 ### 全局header  
@@ -340,3 +341,24 @@ use_out_link : 如果是1 那么就使用外部链接out_link_url
 ```
 
 
+
+
+### 二级分类一套restful  
+- 请求方式: `post`
+- 请求地址: `jmb-sub-cates`
+- 请求参数:  
+```json
+{
+	"pid": 1,  父级别分类的id
+	"name": "2级分类",
+	"image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg"
+}
+```
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": ""
+}
+```
