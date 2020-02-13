@@ -242,6 +242,7 @@ use_out_link : 如果是1 那么就使用外部链接out_link_url
     "contact_person": "lixiaojie",
     "contact_person_job": "经理"
 }
+```
 
  * @property string $name 加盟宝名称
  * @property int $jmb_category_id 分类id
