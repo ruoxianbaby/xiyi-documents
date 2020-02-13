@@ -278,8 +278,6 @@ use_out_link : 如果是1 那么就使用外部链接out_link_url
  * @property string $contact_mobile 联系电话
  * @property string $contact_person 联系人昵称
  * @property string $contact_person_job 联系人职位
-```
-
 
 - 响应内容:  
 ```json
