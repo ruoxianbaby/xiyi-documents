@@ -15,8 +15,7 @@
     - [加盟宝评论](./#加盟宝评论)  
     - [加盟宝评论页面](./#加盟宝评论页面)  
     - [加盟宝评论详情](./#加盟宝评论详情)  
-    - [加盟宝评论点赞](./#加盟宝评论点赞)  
-    - [获取加盟方式](./#获取加盟方式)  
+    - [加盟宝评论点赞](./#加盟宝评论点赞)    
     - [创建支付订单](./#创建支付订单)  
     - [我的加盟](./#我的加盟)
     - [我的加盟详情](./#我的加盟详情)
@@ -348,17 +347,18 @@ use_out_link 为0 代表点击图片的时候跳转到 jmb_id 对应的加盟宝
         "items": [
             {
                 "id": "1",
-                "name": "和府捞面",
+                "name": "和府捞面3333",
                 "jmb_category_id": "5",
                 "brand_name": "品牌123",
                 "desc": "描述",
                 "direct_store_num": "121234",
                 "join_store_num": "222",
-                "apply_num": "11111",
+                "apply_num": "11130",
+                "buy_num": "0",
                 "main_project": "餐饮、文化、面、点心",
                 "register_time": "2014年",
                 "location": "上海",
-                "est_init_investment": "10-25万",
+                "est_init_investment": "10-20万",
                 "est_customer_unit_price": "45元/人",
                 "est_customer_daily_flow": "121人/日",
                 "est_mothly_sale": "14万",
@@ -371,13 +371,36 @@ use_out_link 为0 代表点击图片的时候跳转到 jmb_id 对应的加盟宝
                 "other_fee": "无",
                 "is_hot_join": "1",
                 "is_hot_recommend": "1",
-                "image_url": "https://www.baidu.com",
+                "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg",
                 "info": "富文本内容",
+                "status": "1",
                 "create_time": "2020-02-03 15:11:27",
                 "update_time": null,
                 "category_name": "餐饮",
                 "brand_year": "6",
-                "collect": "1"
+                "collect": "1",
+                "origin_price": "33.00",
+                "vip_price": "22.00",
+	        "is_vip": true,
+                "period": "永久",
+                "type": "电话接通",
+                "banner": [
+                    {
+                        "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg"
+                    },
+                    {
+                        "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg"
+                    },
+                    {
+                        "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg"
+                    },
+                    {
+                        "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg"
+                    },
+                    {
+                        "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg"
+                    }
+                ]
             }
         ],
         "_links": {
@@ -393,7 +416,6 @@ use_out_link 为0 代表点击图片的时候跳转到 jmb_id 对应的加盟宝
         }
     }
 }
-
   `name` '加盟宝名称',
   `jmb_category_id`  '分类id',
   `brand_name` '品牌名称',
