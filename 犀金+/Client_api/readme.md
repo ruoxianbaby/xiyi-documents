@@ -804,28 +804,6 @@ use_out_link 为0 代表点击图片的时候跳转到 jmb_id 对应的加盟宝
 ```
 
 
-
-### 获取加盟方式  
-- 请求方式: `get`
-- 请求地址: `jmb-detail/get?id=1`
-- 请求参数:  
-id 加盟宝id  
-- 响应内容:  
-```json
-{
-    "code": 1,
-    "message": "success",
-    "info": {
-        "is_vip": true,
-        "origin_price": "33.00",
-        "vip_price": "22.00",
-        "period": "永久",
-        "type": "0",
-        "contact_way": "电话接通"
-    }
-}
-```
-
 ### 创建支付订单  
 - 请求方式: `post`
 - 请求地址: `jmb-detail/buy`
