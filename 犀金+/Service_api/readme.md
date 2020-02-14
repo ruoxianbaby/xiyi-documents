@@ -8,6 +8,12 @@
     - [加盟宝一套restful](./#加盟宝一套restful)
     - [一级分类一套restful](./#一级分类一套restful)
     - [二级分类一套restful](./#二级分类一套restful)
+    - [详情banner的列表](./#详情banner的列表)
+    - [详情banner的详情](./#详情banner的详情)
+    - [详情banner的添加](./#详情banner的添加)
+    - [详情banner的删除](./#详情banner的删除)
+    - [详情banner的编辑](./#详情banner的编辑)
+    
 ### 测试主机host: 47.103.61.179:1081/  
 
 ### 全局header  
@@ -361,3 +367,145 @@ use_out_link : 如果是1 那么就使用外部链接out_link_url
     "info": ""
 }
 ```
+
+
+
+
+### 详情banner的列表  
+- 请求方式: `get`
+- 请求地址: `jmb-banner/get-banner?jmb_id=1`
+- 请求参数:  
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 2,
+                "jmb_id": 1,
+                "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg"
+            },
+            {
+                "id": 3,
+                "jmb_id": 1,
+                "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg"
+            },
+            {
+                "id": 6,
+                "jmb_id": 1,
+                "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_service.com/jmb-banner/get-banner?jmb_id=1&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 3,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+
+
+### 详情banner的详情  
+- 请求方式: `get`
+- 请求地址: `jmb-banner/get-detail?id=2`
+- 请求参数:  
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 2,
+                "jmb_id": 1,
+                "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_service.com/jmb-banner/get-detail?id=2&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 1,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+
+
+
+### 详情banner的编辑  
+- 请求方式: `post`
+- 请求地址: `jmb-banner/edit-banner`
+- 请求参数:  
+```json
+{
+    "id": 2,
+    "image_url":"https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg"
+}
+
+```
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "更新成功",
+    "info": ""
+}
+```
+
+
+
+
+### 详情banner的添加  
+- 请求方式: `post`
+- 请求地址: `jmb-banner/edit-banner`
+- 请求参数:  
+```json
+{
+    "jmb_id": 2,
+    "image_url":"https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg"
+}
+```
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "添加成功",
+    "info": ""
+}
+```
+
+
+### 详情banner的删除  
+- 请求方式: `post`
+- 请求地址: `jmb-banner/delete-banner`
+- 请求参数:  
+```json
+{
+    "id": 2
+}
+```
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "删除成功",
+    "info": ""
+}
+```
+
