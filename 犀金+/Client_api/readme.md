@@ -1043,8 +1043,10 @@ type 1 是加盟宝
     "code": 1,
     "message": "success",
     "info": {
+    	"id": "1",	
         "name": "猎豹贷款王",
         "apply_price": "30000",
+        "url": "https://special.geedai.com/totoroX/upload/prod/5cbd34e778aeee1ce97ebe7a.html?utm_source=wap_suishouhua",
         "image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/%E7%8C%8E%E8%B1%B9_3xCUYN2oUvzfkkglY5Ya2-Dt9Mk23VBF.jpg",
         "slogan": "合规分期",
         "loan_cycle": "1080天",
