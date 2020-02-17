@@ -22,6 +22,7 @@
     - [收藏动作](./#收藏动作)
     - [个人中心我的收藏](./#个人中心我的收藏)
     - [随机取贷超](./#随机取贷超)
+    - [搜索加盟商或加盟品类](./#搜索加盟商或加盟品类)
 ### 测试主机host: 47.103.61.179:1022/  
 
 ### 全局header  
@@ -1052,6 +1053,65 @@ type 1 是加盟宝
         "loan_cycle": "1080天",
         "rate_type": "0",   0日利率  1月利率    2年利率
         "rate_str": "0.03%"
+    }
+}
+```
+
+
+
+### 搜索加盟商或加盟品类  
+- 请求方式: `get`
+- 请求地址: `jmbs?search=2级`
+- 请求参数:  
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": "12",
+                "name": "test",
+                "direct_store_num": "123123",
+                "apply_num": "12315",
+                "est_init_investment": "40-50万",
+                "image_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2020-02-17/TI84mZRbFmW_uijJhDDjaGortfB-2F77.png",
+                "category_name": "餐饮",
+                "brand_year": "-121103"
+            },
+            {
+                "id": "10",
+                "name": "和府捞面2级",
+                "direct_store_num": "121234",
+                "apply_num": "11132",
+                "est_init_investment": "10-25万",
+                "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg",
+                "category_name": "餐饮",
+                "brand_year": "6"
+            },
+            {
+                "id": "3",
+                "name": "五星级酒店",
+                "direct_store_num": "121234",
+                "apply_num": "11117",
+                "est_init_investment": "20-30万",
+                "image_url": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/timg%20%285%29.jpg",
+                "category_name": "餐饮",
+                "brand_year": "6"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/jmbs?search=2%E7%BA%A7&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 3,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
     }
 }
 ```
