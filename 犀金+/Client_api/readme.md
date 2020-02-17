@@ -21,7 +21,7 @@
     - [我的加盟详情](./#我的加盟详情)
     - [收藏动作](./#收藏动作)
     - [个人中心我的收藏](./#个人中心我的收藏)
-
+    - [随机取贷超](./#随机取贷超)
 ### 测试主机host: 47.103.61.179:1022/  
 
 ### 全局header  
@@ -1024,4 +1024,32 @@ active
 因为里面还有文章的内容，加了个type区分类型
 type 0 代表的是文章
 type 1 是加盟宝
+```
+
+
+
+
+
+
+
+### 随机取贷超  
+- 请求方式: `get`
+- 注：这个要用犀金贷超的token去请求犀金贷超的后台,点进去是犀金贷超的贷超详情
+- 请求地址: `product/get-random`
+- 请求参数:  
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "name": "猎豹贷款王",
+        "apply_price": "30000",
+        "image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/%E7%8C%8E%E8%B1%B9_3xCUYN2oUvzfkkglY5Ya2-Dt9Mk23VBF.jpg",
+        "slogan": "合规分期",
+        "loan_cycle": "1080天",
+        "rate_type": "0",   0日利率  1月利率    2年利率
+        "rate_str": "0.03%"
+    }
+}
 ```
