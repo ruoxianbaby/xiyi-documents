@@ -1145,6 +1145,7 @@ type 1 是加盟宝
         "max_price": "30000",
         "rate_type": "0",
         "rate_str": "0.03%",
+	"rate_name": "日利率",
         "slogan": "不错",
         "apply_num": "22910",
         "rebate_condition": "每周五结算",
@@ -1215,7 +1216,7 @@ type 1 是加盟宝
 ```json
 {
     "code": 0,
-    "message": "您已经绑定11888888820过用户",
+    "message": "您已经绑定过11888888820用户",
     "info": ""
 }
 {
