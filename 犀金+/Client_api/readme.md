@@ -23,6 +23,8 @@
     - [个人中心我的收藏](./#个人中心我的收藏)
     - [随机取贷超](./#随机取贷超)
     - [搜索加盟商或加盟品类](./#搜索加盟商或加盟品类)
+- [裂变](./#裂变)
+    - [产品详情1](./#产品详情1)  
 ### 测试主机host: 47.103.61.179:1022/  
 
 ### 全局header  
@@ -1115,3 +1117,117 @@ type 1 是加盟宝
     }
 }
 ```
+
+
+
+
+
+## 裂变  
+
+### 产品详情1  
+- 请求方式: `get`
+- 请求地址: `product/get-detail?id=557`
+- 请求参数:  
+- 类型：犀金贷超接口
+注 产品详情由2个接口拼接,还有一个接口在下面
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "image": "http://www.baidu.com",
+        "company_info": "公司信息",
+        "apply_price": "10000-20万",
+        "max_price": "30000",
+        "rate_type": "0",
+        "rate_str": "0.03%",
+        "slogan": "不错",
+        "apply_num": "22910",
+        "rebate_condition": "每周五结算",
+        "silver_rate": "1%",
+        "gold_rate": "2%",
+        "diamond_rate": "3%",
+        "url": "https://www.baidu.com",
+        "first_detail_info": "下架下款及完成每日任务奖励",
+        "second_detail_info": "首次推广返现8.8",
+        "return_rate": "0%",
+        "share_h5_url": "http://wap.loan.xykj1.com/share.html?id=557&marked=MTM1NjQ2NTg4MzI=XIYIKEJIe25558ac266d678a38f736d45057d1e1",
+        "share_qrcode_url": "https://xijin-loan.oss-cn-shanghai.aliyuncs.com/product/qrcode/afeaa485385c4c2d31c47b9588fa2ba7.png",
+        "document": "我是文案",
+        "document_image_urls": [
+            {
+                "image_url": "https://www.baidu.com"
+            },
+            {
+                "image_url": "https://www.baidu.com"
+            }
+        ]
+    }
+}
+```
+
+
+
+### 产品详情2  
+- 请求方式: `get`
+- 请求地址: `bridge/get-dc-detail`
+- 请求参数:  
+- 类型：犀金接口
+注 产品详情由2个接口拼接,还有一个接口在上面
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "up_1": "发起推广",
+        "up_2": "下架申请下款",
+        "up_3": "发放推广佣金",
+        "down_1": "今日",
+        "down_2": "T+n",
+        "level": "白银级",
+        "promote_way": "点我查看最有效的推广方式",
+        "title": "拍vlog走红西瓜视频，如今月入过万",
+        "desc": "重庆女孩东莞创业记",
+        "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-08-09/NjVpkzHI5NyVYeCLIUVIxHdW0m-d43aF.jpg",
+        "describe_list": [
+            {
+                "content": "内容1"
+            },
+            {
+                "content": "内容2"
+            },
+            {
+                "content": "内容3"
+            }
+        ]
+    }
+}
+```
+
+
+
+### 登录绑定用户关系  
+- 请求方式: `get`
+- 请求地址: `user/bind-relationship`
+- 请求参数:  
+- 类型：犀金接口
+先调这个，然后再get-accesstoken，code码当成类型用，无论成功与否都继续走下去
+
+- 响应内容:  
+```json
+{
+    "code": 0,
+    "message": "您已经绑定11888888820过用户",
+    "info": ""
+}
+{
+    "code": 1,
+    "message": "绑定成功",
+    "info": ""
+}
+```
+
