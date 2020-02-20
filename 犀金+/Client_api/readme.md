@@ -1213,9 +1213,15 @@ type 1 是加盟宝
 
 
 ### 登录绑定用户关系  
-- 请求方式: `get`
+- 请求方式: `post`
 - 请求地址: `user/bind-relationship`
 - 请求参数:  
+```json
+{
+	"mobile": "18964590200",
+	"sign": "yCEDDMjA4MQ=="
+}
+```
 - 类型：犀金接口  
 先调这个，然后再get-accesstoken，code码当成类型用，无论成功与否都继续走下去
 
