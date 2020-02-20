@@ -26,6 +26,7 @@
 - [裂变](./#裂变)
     - [产品详情1](./#产品详情1)  
     - [产品详情2](./#产品详情2)
+    - [产品文案](./#产品文案)  
     - [登录绑定用户关系](./#登录绑定用户关系)  
 ### 测试主机host: 47.103.61.179:1022/  
 
@@ -1195,6 +1196,64 @@ type 1 是加盟宝
                 "content": "内容3"
             }
         ]
+    }
+}
+```
+
+### 产品文案  
+- 请求方式: `get`
+- 请求地址: `product-docs?id=557&page=1&per-page=20`
+- 请求参数:  
+
+- 类型：犀金贷超接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "product_id": 557,
+                "document": "我是文案",
+                "images": [
+                    {
+                        "image_url": "https://www.baidu.com"
+                    },
+                    {
+                        "image_url": "https://www.baidu.com"
+                    },
+                    {
+                        "image_url": "https://www.baidu.com"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "product_id": 557,
+                "document": "我是文案",
+                "images": []
+            },
+            {
+                "id": 3,
+                "product_id": 557,
+                "document": "我是文案",
+                "images": []
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_loan_api.com/product-docs?id=557&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 3,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
     }
 }
 ```
