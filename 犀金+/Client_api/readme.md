@@ -1139,6 +1139,7 @@ type 1 是加盟宝
     "code": 1,
     "message": "success",
     "info": {
+    	"id": "11",
         "image": "http://www.baidu.com",
         "company_info": "公司信息",
         "apply_price": "10000-20万",
@@ -1178,6 +1179,7 @@ type 1 是加盟宝
     "code": 1,
     "message": "success",
     "info": {
+	"id": "384",	
         "promote_way": "点我查看最有效的推广方式",
         "title": "拍vlog走红西瓜视频，如今月入过万",
         "desc": "重庆女孩东莞创业记",
