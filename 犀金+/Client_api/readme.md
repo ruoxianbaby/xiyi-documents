@@ -1154,18 +1154,10 @@ type 1 是加盟宝
         "url": "https://www.baidu.com",
         "first_detail_info": "下架下款及完成每日任务奖励",
         "second_detail_info": "首次推广返现8.8",
-        "return_rate": "0%",
-        "share_h5_url": "http://wap.loan.xykj1.com/share.html?id=557&marked=MTM1NjQ2NTg4MzI=XIYIKEJIe25558ac266d678a38f736d45057d1e1",
-        "share_qrcode_url": "https://xijin-loan.oss-cn-shanghai.aliyuncs.com/product/qrcode/afeaa485385c4c2d31c47b9588fa2ba7.png",
-        "document": "我是文案",
-        "document_image_urls": [
-            {
-                "image_url": "https://www.baidu.com"
-            },
-            {
-                "image_url": "https://www.baidu.com"
-            }
-        ]
+        "return_rate": "3%",
+        "share_h5_url": "http://wap.loan.xykj1.com/share.html?id=557&marked=MTg5NjQ1OTAyMDA=XIYIKEJI50f74a65b383f1212c97a03a415cee12",
+        "share_qrcode_url": "https://xijin-loan.oss-cn-shanghai.aliyuncs.com/product/qrcode/ea63cdb5153f6f202c61a9fd39b6a2be.png",
+        "level": "钻石级"
     }
 }
 ```
@@ -1185,12 +1177,6 @@ type 1 是加盟宝
     "code": 1,
     "message": "success",
     "info": {
-        "up_1": "发起推广",
-        "up_2": "下架申请下款",
-        "up_3": "发放推广佣金",
-        "down_1": "今日",
-        "down_2": "T+n",
-        "level": "白银级",
         "promote_way": "点我查看最有效的推广方式",
         "title": "拍vlog走红西瓜视频，如今月入过万",
         "desc": "重庆女孩东莞创业记",
