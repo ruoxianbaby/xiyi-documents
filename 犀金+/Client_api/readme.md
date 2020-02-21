@@ -28,6 +28,12 @@
     - [产品详情2](./#产品详情2)
     - [产品文案](./#产品文案)  
     - [登录绑定用户关系](./#登录绑定用户关系)  
+    - [个人中心钱包首页](./#个人中心钱包首页)  
+    - [个人中心签到](./#个人中心签到)  
+    - [个人中心我的订单](./#个人中心我的订单)  
+    - [个人中心收支明细](./#个人中心收支明细)  
+    - [个人中心我的推广等级上](./#个人中心我的推广等级上)  
+    - [个人中心我的推广等级下](./#个人中心我的推广等级下)  
 ### 测试主机host: 47.103.61.179:1022/  
 
 ### 全局header  
@@ -1286,4 +1292,234 @@ type 1 是加盟宝
     "info": ""
 }
 ```
+
+
+
+
+### 个人中心钱包首页  
+- 请求方式: `get`
+- 请求地址: `my-center/wallet`
+- 请求参数:  
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "nick_name": "微微笑",
+        "total_income": "0.23",
+        "available_money": "0.23",
+        "level": "白银级",
+        "invite_sign": "dIYYSMTc2",
+        "is_vip": false,
+        "my_users_count": "2",
+        "pay_user_count": "1",
+        "new_order_count": "2",
+        "is_sign": true,  是否已经签到
+        "sign_day": "7"   签到天数
+    }
+}
+```
+
+
+### 个人中心签到  
+- 请求方式: `get`
+- 请求地址: `my-center/attendance`
+- 请求参数:  
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "签到成功!",
+    "info": {
+        "sign_day": 7   签到的天数
+    }
+}
+
+{
+    "code": 0,
+    "message": "您今天已签到过",
+    "info": ""
+}
+```
+
+
+
+### 个人中心我的订单  
+- 请求方式: `get`
+- 请求地址: `user-dc-orders?page=1&per-page=20`
+- 请求参数:  
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "product_name": "金布袋",
+                "product_image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/1566197742%281%29_G-Sfdq4wKffXa8Ab47LvcqqX0XVfY1QZ.jpg",
+                "user_id": "1713",
+                "return_money": "3.01",
+                "create_time": "2020-02-21 11:33:43",
+                "nick_name": "feixiang",
+                "mobile": "189****0200"
+            },
+            {
+                "product_name": "金布袋",
+                "product_image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/1566197742%281%29_G-Sfdq4wKffXa8Ab47LvcqqX0XVfY1QZ.jpg",
+                "user_id": "1713",
+                "return_money": "3.01",
+                "create_time": "2020-02-21 11:33:43",
+                "nick_name": "feixiang",
+                "mobile": "189****0200"
+            }
+        ],
+        "_meta": {
+            "totalCount": 2,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+
+
+
+
+
+### 个人中心收支明细  
+- 请求方式: `get`
+- 请求地址: `user-dc-order/income-detail?page=1&per-page=20`
+- 请求参数:  
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": "1",
+                "type": "1",
+                "user_id": "1",
+                "order_sign": "2020022155534955",
+                "income": "0.00",
+                "create_time": "2020-02-21 14:12:23",
+                "image_url": "https://www.baidu.com",
+                "title": "期日签到奖励"
+            },
+            {
+                "id": "2",
+                "type": "1",
+                "user_id": "1",
+                "order_sign": "2020022157489750",
+                "income": "0.00",
+                "create_time": "2020-02-21 14:16:57",
+                "image_url": "https://www.baidu.com",
+                "title": "期日签到奖励"
+            },
+            {
+                "id": "3",
+                "type": "1",
+                "user_id": "1",
+                "order_sign": "2020022153571009",
+                "income": "0.00",
+                "create_time": "2020-02-21 14:47:01",
+                "image_url": "https://www.baidu.com",
+                "title": "期日签到奖励"
+            }
+        ],
+        "_meta": {
+            "totalCount": 9,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+
+
+
+### 个人中心我的推广等级上  
+- 请求方式: `get`
+- 请求地址: `my-center/generalize`
+- 请求参数:  
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "level": "白银级",
+        "zsxj_count": "2",
+        "fsxj_count": "3",
+        "zs_total_money": "721",
+        "total_income": "0.24"
+    }
+}
+```
+
+
+
+
+### 个人中心我的推广等级下  
+- 请求方式: `get`
+- 请求地址: `my-center/generalize-second`
+- 请求参数:  
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "user_id": 1713,
+                "nick_name": "feixiang",
+                "pay_money": 721,
+                "child_user_count": 3
+            },
+            {
+                "user_id": 22,
+                "nick_name": "冷妆",
+                "pay_money": 0,
+                "child_user_count": 0
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/my-center/generalize-second?page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 2,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+
 
