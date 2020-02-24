@@ -35,6 +35,16 @@
     - [个人中心收益大全](./#个人中心收益大全)  
     - [个人中心我的推广等级上](./#个人中心我的推广等级上)  
     - [个人中心我的推广等级下](./#个人中心我的推广等级下)  
+    - [个人中心检查自己是否已实名认证](./#个人中心检查自己是否已实名认证)  
+    - [个人中心实名认证](./#个人中心实名认证)  
+    - [个人中心我的银行卡列表](./#个人中心我的银行卡列表) 
+    - [个人中心添加支付宝信息](./#个人中心添加支付宝信息)  
+    - [个人中心添加支付宝信息](./#个人中心添加银行卡信息) 
+    - [个人中心银行卡删除](./#个人中心银行卡删除) 
+    - [个人中心我的钱包](./#个人中心我的钱包) 
+    - [个人中心二维码刷新](./#个人中心二维码刷新) 
+    - [个人中心发送短信验证码](./#个人中心发送短信验证码) 
+    - [个人中心申请提现](./#个人中心申请提现) 
 ### 测试主机host: 47.103.61.179:1022/  
 
 ### 全局header  
@@ -1583,4 +1593,281 @@ type 1 是加盟宝
 }
 ```
 
+
+
+
+### 个人中心检查自己是否已实名认证  
+- 请求方式: `get`
+- 请求地址: `my-center/check-real`
+- 请求参数:  
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "is_check": true
+    }
+}
+```
+
+
+
+### 个人中心实名认证  
+- 请求方式: `post`
+- 请求地址: `my-center/register-real`
+- 请求参数:  
+```json
+{
+	"real_name": "微微笑",
+	"identity_number" : "310112199612090024"
+}
+```
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 0,
+    "message": "您已绑定过身份信息",
+    "info": ""
+}
+```
+
+
+
+
+### 个人中心我的银行卡列表  
+- 请求方式: `get`
+- 请求地址: `user-cards?page=1&per-page=20`
+- 请求参数:  
+```json
+{
+	"real_name": "微微笑",
+	"identity_number" : "310112199612090024"
+}
+```
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": "1",
+                "type": "0",
+                "user_id": "1",
+                "zfb_account": "18964590201",
+                "zfb_receive_name": "微微笑",
+                "zfb_receive_mobile": "18964590201",
+                "create_time": "2020-02-24 11:55:27"
+            },
+            {
+                "id": "2",
+                "type": "1",
+                "user_id": "1",
+                "yhk_mobile": "18964590201",
+                "yhk_number": "31521115155646",
+                "yhk_name": "工商银行",
+                "create_time": "2020-02-24 11:55:25"
+            },
+            {
+                "id": "3",
+                "type": "1",
+                "user_id": "1",
+                "yhk_mobile": "18964590201",
+                "yhk_number": "31521115155646",
+                "yhk_name": "农业银行",
+                "create_time": "2020-02-24 11:55:25"
+            },
+            {
+                "id": "6",
+                "type": "0",
+                "user_id": "1",
+                "zfb_account": "18964590201",
+                "zfb_receive_name": "微微笑",
+                "zfb_receive_mobile": "18964590201",
+                "create_time": "2020-02-24 12:25:06"
+            }
+        ],
+        "_meta": {
+            "totalCount": 4,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+type0是支付宝
+type1是银行卡
+```
+
+
+
+
+
+### 个人中心添加支付宝信息  
+- 请求方式: `post`
+- 请求地址: `user-cards`
+- 请求参数:  
+```json
+type 0 必传，标识是支付宝
+{
+	"type" : "0",
+	"zfb_account": "18964590201",
+	"zfb_receive_name": "微微笑",
+	"zfb_receive_mobile": "18964590201"
+}
+```
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "信息添加成功",
+    "info": ""
+}
+```
+
+
+
+### 个人中心添加支付宝信息  
+- 请求方式: `post`
+- 请求地址: `user-cards`
+- 请求参数:  
+```json
+type 1 必传，标识是支付宝
+{
+	"type" : "1",
+	"yhk_mobile": "18964590201",
+	"yhk_number": "SDJidfsoi342",
+	"yhk_name": "工商银行"
+}
+```
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "信息添加成功",
+    "info": ""
+}
+```
+
+
+
+
+
+
+### 个人中心银行卡删除  
+- 请求方式: `delete`
+- 请求地址: `user-cards/7`
+- 请求参数:  
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "删除成功",
+    "info": ""
+}
+```
+
+
+
+### 个人中心我的钱包  
+- 请求方式: `get`
+- 请求地址: `my-center/get-wallet-info`
+- 请求参数:  
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "total_income": "0.24",
+        "available_money": "0.23",
+        "code_pic_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/others/user/codePic/codePic1.png"  二维码url
+    }
+}
+```
+
+
+### 个人中心二维码刷新  
+- 请求方式: `get`
+- 请求地址: `my-center/gen-code-pic?id=1`
+- 请求参数:  
+注  id 是用户的 id
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "code_pic_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/others/user/codePic/codePic1.png"
+    }
+}
+```
+
+
+
+
+### 个人中心发送短信验证码  
+- 请求方式: `post`
+- 请求地址: `my-center/send-sms`
+- 请求参数:  
+
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "验证码发送成功",
+    "info": ""
+}
+```
+
+
+
+### 个人中心申请提现  
+- 请求方式: `post`
+- 请求地址: `my-center/apply-for-price`
+- 请求参数:  
+```json
+{
+	"apply_price": "0.01",
+	"code_pic": "8177",
+	"sms_code": "2325",
+	"card_id": 6
+}
+```
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "提现申请成功！",
+    "info": ""
+}
+```
 
