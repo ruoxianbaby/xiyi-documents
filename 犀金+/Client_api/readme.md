@@ -32,6 +32,7 @@
     - [个人中心签到](./#个人中心签到)  
     - [个人中心我的订单](./#个人中心我的订单)  
     - [个人中心收支明细](./#个人中心收支明细)  
+    - [个人中心收益大全](./#个人中心收益大全)  
     - [个人中心我的推广等级上](./#个人中心我的推广等级上)  
     - [个人中心我的推广等级下](./#个人中心我的推广等级下)  
 ### 测试主机host: 47.103.61.179:1022/  
@@ -1453,6 +1454,65 @@ type 1 是加盟宝
     }
 }
 ```
+
+
+
+
+
+### 个人中心收益大全  
+- 请求方式: `get`
+- 请求地址: `product/earnings?page=1&per-page=20`
+- 请求参数:  
+
+- 类型：犀金贷超接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 371,
+                "name": "爱分期",
+                "image": "https://xijin-loan.oss-cn-shanghai.aliyuncs.com/product/images/%E7%88%B1%E5%88%86%E6%9C%9F_-58wD0V3wRgbdcwvYufzytq0LEiXVF6Z.jpg",
+                "silver_rate": "1%",
+                "gold_rate": "2%",
+                "diamond_rate": "3%",
+                "rebate_condition": "每周五结算"
+            },
+            {
+                "id": 380,
+                "name": "及贷",
+                "image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/22222_9prylq49NYpHkIVjt6-mPk3-ArixHwZs.jpg",
+                "silver_rate": "1%",
+                "gold_rate": "2%",
+                "diamond_rate": "3%",
+                "rebate_condition": "每周五结算"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_loan_api.com/product/earnings?page=1&per-page=2"
+            },
+            "next": {
+                "href": "http://my_loan_api.com/product/earnings?page=2&per-page=2"
+            },
+            "last": {
+                "href": "http://my_loan_api.com/product/earnings?page=7&per-page=2"
+            }
+        },
+        "_meta": {
+            "totalCount": 14,
+            "pageCount": 7,
+            "currentPage": 1,
+            "perPage": 2
+        }
+    }
+}
+```
+
 
 
 
