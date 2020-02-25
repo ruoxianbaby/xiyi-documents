@@ -1558,7 +1558,7 @@ type 1 是加盟宝
 
 ### 个人中心我的推广等级下  
 - 请求方式: `get`
-- 请求地址: `my-center/generalize-second`
+- 请求地址: `my-center/generalize-second?page=1&per-page=20`
 - 请求参数:  
 
 - 类型：犀金接口  
