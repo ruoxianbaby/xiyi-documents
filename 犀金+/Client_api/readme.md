@@ -1488,7 +1488,9 @@ type 1 是加盟宝
                 "order_sign": "",
                 "status": "0",
                 "title": "提现",
-                "image_url": ""
+                "image_url": "",
+		"create_time": "",
+		"apply_price": "33.33"
             },
             {
                 "id": "2",
@@ -1496,6 +1498,8 @@ type 1 是加盟宝
                 "status": "0",
                 "title": "提现",
                 "image_url": ""
+		"create_time": "",
+		"apply_price": "33.33"
             }
         ],
         "_meta": {
