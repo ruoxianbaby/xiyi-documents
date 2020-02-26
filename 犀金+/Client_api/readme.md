@@ -30,7 +30,8 @@
     - [登录绑定用户关系](./#登录绑定用户关系)  
     - [个人中心钱包首页](./#个人中心钱包首页)  
     - [个人中心签到](./#个人中心签到)  
-    - [个人中心我的订单](./#个人中心我的订单)  
+    - [个人中心我的今日订单](./#个人中心我的今日订单)  
+    - [个人中心我的全部订单](./#个人中心全部今日订单)  
     - [个人中心收支明细](./#个人中心收支明细)  
     - [个人中心提现记录列表](./#个人中心提现记录列表) 
     - [个人中心收益大全](./#个人中心收益大全)  
@@ -1359,7 +1360,45 @@ type 1 是加盟宝
 
 
 
-### 个人中心我的订单  
+### 个人中心我的今日订单  
+- 请求方式: `get`
+- 请求地址: `user-dc-orders?new=1&page=1&per-page=20`
+- 请求参数:  
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "product_name": "金布袋",
+                "product_image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/1566197742%281%29_G-Sfdq4wKffXa8Ab47LvcqqX0XVfY1QZ.jpg",
+                "user_id": "1713",
+                "status": "1",
+                "return_money": "3.01",
+                "create_time": "2020-02-21 11:33:43",
+                "nick_name": "feixiang",
+                "mobile": "189****0203"
+            }
+        ],
+        "_meta": {
+            "totalCount": 1,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+status 0 审核未通过   status 1 审核中  status 2 已下款
+如果进行筛选，将status的对应值拼接到url上即可
+```
+
+
+### 个人中心我的全部订单  
 - 请求方式: `get`
 - 请求地址: `user-dc-orders?page=1&per-page=20`
 - 请求参数:  
@@ -1377,31 +1416,24 @@ type 1 是加盟宝
                 "product_name": "金布袋",
                 "product_image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/1566197742%281%29_G-Sfdq4wKffXa8Ab47LvcqqX0XVfY1QZ.jpg",
                 "user_id": "1713",
+                "status": "1",
                 "return_money": "3.01",
                 "create_time": "2020-02-21 11:33:43",
                 "nick_name": "feixiang",
-                "mobile": "189****0200"
-            },
-            {
-                "product_name": "金布袋",
-                "product_image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/1566197742%281%29_G-Sfdq4wKffXa8Ab47LvcqqX0XVfY1QZ.jpg",
-                "user_id": "1713",
-                "return_money": "3.01",
-                "create_time": "2020-02-21 11:33:43",
-                "nick_name": "feixiang",
-                "mobile": "189****0200"
+                "mobile": "189****0203"
             }
         ],
         "_meta": {
-            "totalCount": 2,
+            "totalCount": 1,
             "pageCount": 1,
             "currentPage": 1,
             "perPage": 20
         }
     }
 }
+status 0 审核未通过   status 1 审核中  status 2 已下款
+如果进行筛选，将status的对应值拼接到url上即可
 ```
-
 
 
 
