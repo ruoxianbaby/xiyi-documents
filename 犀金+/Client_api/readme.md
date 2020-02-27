@@ -23,6 +23,7 @@
     - [个人中心我的收藏](./#个人中心我的收藏)
     - [随机取贷超](./#随机取贷超)
     - [搜索加盟商或加盟品类](./#搜索加盟商或加盟品类)
+    - [获取客服信息](./#获取客服信息)
 - [裂变](./#裂变)
     - [产品详情上](./#产品详情上)  
     - [产品详情下](./#产品详情下)
@@ -1141,6 +1142,28 @@ type 1 是加盟宝
 ```
 
 
+
+### 获取客服信息  
+- 请求方式: `get`
+- 请求地址: `general/get-customer-info`
+- 请求参数:  
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "id": 1,
+        "mobile": "18964590200",
+        "nick_name": "微微笑",
+        "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/user_demo_avatar/76776565.jpg",
+        "huanxin_username": "15061690111",
+        "huanxin_uuid": "80fc3070-d3a0-11e9-a0cc-35fc987afafc",
+        "huanxin_nickname": "15061690111",
+        "huanxin_password": "o2iSTUyXyr0ij-1m22KAuToup00JaZ1S"
+    }
+}
+```
 
 
 
