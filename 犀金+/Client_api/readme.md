@@ -1202,7 +1202,18 @@ type 1 是加盟宝
         "return_rate": "3%",
         "share_h5_url": "http://wap.loan.xykj1.com/share.html?id=557&marked=MTg5NjQ1OTAyMDA=XIYIKEJI50f74a65b383f1212c97a03a415cee12",
         "share_qrcode_url": "https://xijin-loan.oss-cn-shanghai.aliyuncs.com/product/qrcode/ea63cdb5153f6f202c61a9fd39b6a2be.png",
-        "level": "钻石级"
+        "level": "钻石级",
+	"describe_list": [
+            {
+                "content": "描述一"
+            },
+            {
+                "content": "描述二"
+            },
+            {
+                "content": "描述三"
+            }
+        ]
     }
 }
 ```
@@ -1226,18 +1237,7 @@ type 1 是加盟宝
         "promote_way": "点我查看最有效的推广方式",
         "title": "拍vlog走红西瓜视频，如今月入过万",
         "desc": "重庆女孩东莞创业记",
-        "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-08-09/NjVpkzHI5NyVYeCLIUVIxHdW0m-d43aF.jpg",
-        "describe_list": [
-            {
-                "content": "内容1"
-            },
-            {
-                "content": "内容2"
-            },
-            {
-                "content": "内容3"
-            }
-        ]
+        "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-08-09/NjVpkzHI5NyVYeCLIUVIxHdW0m-d43aF.jpg"
     }
 }
 ```
