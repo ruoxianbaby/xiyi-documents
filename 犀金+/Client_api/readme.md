@@ -48,6 +48,11 @@
     - [个人中心二维码刷新](./#个人中心二维码刷新) 
     - [个人中心发送短信验证码](./#个人中心发送短信验证码) 
     - [个人中心申请提现](./#个人中心申请提现) 
+    - [通知 铃铛红点](./#通知 铃铛红点) 
+    - [通知 贷超通知列表](./#通知 贷超通知列表) 
+    - [通知 订单通知列表](./#通知 订单通知列表) 
+    - [通知 收入通知列表](./#通知 收入通知列表) 
+    - [通知 团队通知列表](./#通知 团队通知列表) 
 ### 测试主机host: 47.103.61.179:1022/  
 
 ### 全局header  
@@ -1973,4 +1978,236 @@ type 1 必传，标识是银行卡
     "info": ""
 }
 ```
+
+
+
+
+### 通知 铃铛红点  
+- 请求方式: `get`
+- 请求地址: `inform/unread-info`
+- 请求参数:  
+
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "system_show": false,  贷超
+        "order_show": true,   订单
+        "income_show": true,   收入
+        "team_show": true  团队
+    }
+}
+true代表有小红点
+```
+
+
+
+### 通知 贷超通知列表  
+- 请求方式: `get`
+- 请求地址: `inform/system-lists?page=1&per-page=20`
+- 请求参数:  
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": "3",
+                "title": "标题",
+                "describe": "描述123",
+                "info": "文本信息很长的",
+                "image_url": "",
+                "create_time": "2020-03-10"
+            },
+            {
+                "id": "2",
+                "title": "标题",
+                "describe": "描述",
+                "info": "文本信息很长的",
+                "image_url": "",
+                "create_time": "2020-03-10"
+            }
+        ],
+        "_meta": {
+            "totalCount": 2,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+
+
+
+### 通知 订单通知列表  
+- 请求方式: `get`
+- 请求地址: `inform/order-lists?page=1&per-page=20`
+- 请求参数:  
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "product_name": "产品名",
+                "product_image": "",
+                "user_id": "2",
+                "return_money": "0.05",
+                "order_sign": "sadsad",
+                "create_time": "2020-03-10",
+                "status": "3",
+                "mobile": "1896****201",
+                "nick_name": "陌南尘"
+            },
+            {
+                "product_name": "产品名",
+                "product_image": "",
+                "user_id": "2",
+                "return_money": "0.05",
+                "order_sign": "sadsad",
+                "create_time": "2020-03-10",
+                "status": "3",
+                "mobile": "1896****201",
+                "nick_name": "陌南尘"
+            }
+        ],
+        "_meta": {
+            "totalCount": 2,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+status 0 审核未通过，1 审核中， 2 已下款， 3 审核中->已下款
+```
+
+
+
+
+
+### 通知 收入通知列表  
+- 请求方式: `get`
+- 请求地址: `inform/income-lists?page=1&per-page=20`
+- 请求参数:  
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": "37",
+                "type": "2",
+                "user_id": "1",
+                "order_sign": "sadsafsdgsgeg",
+                "income": "0.88",
+                "create_time": "2020-03-10 14:18:28",
+                "title": "恭喜您获得了犀金用户新单推广返佣!",
+                "image_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/liebian/image/liebian3.png"
+            },
+            {
+                "id": "36",
+                "type": "1",
+                "user_id": "1",
+                "order_sign": "asdasdasdsa",
+                "income": "0.05",
+                "create_time": "2020-03-10 14:18:12",
+                "title": "恭喜您获得了七天连续签到红包!",
+                "image_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/liebian/image/liebian2.png"
+            },
+            {
+                "id": "35",
+                "type": "0",
+                "user_id": "1",
+                "order_sign": "sadsdadsasda",
+                "income": "0.02",
+                "create_time": "2020-03-10 14:17:57",
+                "title": "恭喜您获得了一笔犀金推广佣金!",
+                "image_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/liebian/image/liebian3.png"
+            }
+        ],
+        "_meta": {
+            "totalCount": 3,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+type 1和2可以认为是一样的
+```
+
+
+
+
+### 通知 团队通知列表  
+- 请求方式: `get`
+- 请求地址: `inform/team-lists?page=1&per-page=20`
+- 请求参数:  
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": "51",
+                "user_id": "253",
+                "create_time": "2020-03-01",
+                "member_num": "3",
+                "nick_name": "Bug环绕的世界"
+            },
+            {
+                "id": "50",
+                "user_id": "8",
+                "create_time": "2020-03-01",
+                "member_num": "2",
+                "nick_name": "初弋"
+            },
+            {
+                "id": "49",
+                "user_id": "7",
+                "create_time": "2020-03-01",
+                "member_num": "1",
+                "nick_name": "青莳"
+            }
+        ],
+        "_meta": {
+            "totalCount": 10,
+            "pageCount": 4,
+            "currentPage": 1,
+            "perPage": 3
+        }
+    }
+}
+```
+
+
+
+
 
