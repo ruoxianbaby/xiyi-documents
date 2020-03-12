@@ -1345,17 +1345,22 @@ type 1 是加盟宝
     "code": 1,
     "message": "success",
     "info": {
+        "id": "1",
         "nick_name": "微微笑",
-        "total_income": "0.23",
-        "available_money": "0.23",
+        "total_income": "0.00",   总收入
+        "available_money": "2.00",   可提现
         "level": "白银级",
-        "invite_sign": "dIYYSMTc2",
-        "is_vip": false,
-        "my_users_count": "2",
-        "pay_user_count": "1",
-        "new_order_count": "2",
-        "is_sign": true,  是否已经签到
-        "sign_day": "7"   签到天数
+        "invite_sign": "00000b",   邀请码
+        "is_vip": false,  是否是vip
+        "vip_name": "",   vip的名字  群青会员
+        "share_url": "http://47.103.61.179:8077/loan/2.html?sign=00000b",  
+        "loan_url": "http://47.103.61.179:1080/invate_friend/?sign=00000b&callback=http://47.103.61.179:8077/loan/2.html",  分享出去的地址
+        "attendance_price": "1.80",   签到能拿的钱
+        "my_users_count": "2",    下线用户
+        "pay_user_count": "1",    下款用户
+        "new_order_count": "0",   今日订单
+        "is_sign": false,   是否已经签到
+        "sign_day": 0    签到天数
     }
 }
 ```
