@@ -1310,7 +1310,7 @@ type 1 是加盟宝
 
 ### 按钮点击  
 - 请求方式: `get`
-- 请求地址: `click?type=2&product_id=131`
+- 请求地址: `product/click?type=2&product_id=131`
 - 请求参数:  
 - 类型：犀金贷超接口  
 
