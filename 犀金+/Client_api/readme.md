@@ -55,6 +55,8 @@
     - [通知-订单通知列表](./#通知-订单通知列表) 
     - [通知-收入通知列表](./#通知-收入通知列表) 
     - [通知-团队通知列表](./#通知-团队通知列表) 
+- [补充](./#补充)
+    - [产品列表](./#产品列表)  
 ### 测试主机host: 47.103.61.179:1022/  
 
 ### 全局header  
@@ -2249,5 +2251,18 @@ type 1和2可以认为是一样的
 
 
 
+## 补充  
 
+### 补充说明  
+- 参数说明
+- 犀金贷超接口
+- 受影响的接口: products列表、product/get-detail详情
+```json
+{
+      "settlement_type": "0",
+      "return_rate": "1%",
+      "return_award": "2.60",
+}
+当settlement_type为0的时候取return_rate,当settlement_type为1的时候取return_award
+```
 
