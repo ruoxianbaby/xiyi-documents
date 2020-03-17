@@ -2256,7 +2256,7 @@ type 1和2可以认为是一样的
 ### 补充说明  
 - 参数说明
 - 犀金贷超接口
-- 受影响的接口: products列表、product/get-detail详情
+- 受影响的接口: products列表、product/get-detail详情、product/earnings收益大全
 ```json
 {
       "settlement_type": "0",
@@ -2264,5 +2264,10 @@ type 1和2可以认为是一样的
       "return_award": "2.60",
 }
 当settlement_type为0的时候取return_rate,当settlement_type为1的时候取return_award
+
+固定返佣的金额
+"silver_award": "2.60",
+"gold_award": "5.30",
+"diamond_award": "6.60",
 ```
 
