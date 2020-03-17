@@ -2263,11 +2263,9 @@ type 1和2可以认为是一样的
       "return_rate": "1%",
       "return_award": "2.60",
 }
-当settlement_type为0的时候取return_rate,当settlement_type为1的时候取return_award
-固定返佣的金额
-"silver_award": "2.60",
-"gold_award": "5.30",
-"diamond_award": "6.60"
-
 ```
-
+#### 当settlement_type为0的时候取return_rate,当settlement_type为1的时候取return_award
+#### 固定返佣的金额
+"silver_award": "2.60",  
+"gold_award": "5.30",  
+"diamond_award": "6.60"
