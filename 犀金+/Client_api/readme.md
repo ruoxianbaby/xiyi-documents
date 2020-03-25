@@ -55,6 +55,13 @@
     - [通知-订单通知列表](./#通知-订单通知列表) 
     - [通知-收入通知列表](./#通知-收入通知列表) 
     - [通知-团队通知列表](./#通知-团队通知列表) 
+    - [报备-报备列表](./#报备-报备列表) 
+    - [报备-报备详情](./#报备-报备详情) 
+    - [报备-申请报备](./#报备-申请报备)
+    - [报备-修改报备](./#报备-修改报备)
+    - [报备-选择下家信息](./#报备-选择下家信息)
+    - [报备-选择产品信息](./#报备-选择产品信息)
+    - [报备-ios图片上传](./#报备-ios图片上传)
 - [补充](./#补充)
     - [补充说明](./#补充说明)  
 ### 测试主机host: 47.103.61.179:1022/  
@@ -2250,6 +2257,263 @@ type 1和2可以认为是一样的
 ```
 
 
+### 报备-报备列表  
+- 请求方式: `get`
+- 请求地址: `user-dc-reports?page=1&per-page=20&status=0`
+- 请求参数:  
+- status是筛选参数,显示全部不用传
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": "6",
+                "order_sign": "20200324565549",
+                "name": "小小",
+                "product_image": "",
+                "pay_money": "30000.00",
+                "status": "0",
+                "return_money": "0.00",
+                "update_time": "2020-03-24 10:49:12"
+            },
+            {
+                "id": "2",
+                "order_sign": "",
+                "name": "有鱼贷",
+                "product_image": "",
+                "pay_money": "30000.00",
+                "status": "0",
+                "return_money": "0.00",
+                "update_time": "2020-03-24 10:25:52"
+            }
+        ],
+        "_meta": {
+            "totalCount": "5",
+            "pageCount": "1",
+            "currentPage": "1",
+            "perPage": "20"
+        }
+    }
+}
+status 0报备审核中，1报备已完成且成功，2报备失败
+```
+
+
+### 报备-报备详情  
+- 请求方式: `get`
+- 请求地址: `user-dc-reports/1`
+- 请求参数:  
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": "1",
+                "order_sign": "",  订单号
+                "name": "bug环绕",  下款人昵称
+                "mobile": "",
+                "leader_id": "1",
+                "user_id": "2",
+                "loan_date": "2020-03-25",  放贷时间
+                "pay_money": "30000.00",  下款额度
+                "return_money": "3.00",  应该可以到手多少钱
+                "product_id": "1",  
+                "product_name": "有鱼贷",
+                "product_image": "",
+                "image_url_1": "",
+                "image_url_2": "",
+                "image_url_3": "",
+                "image_url_4": "",
+                "fail_reason": "失败理由 如果status为2（报备审核失败）,那么这里就有内容",
+                "status": "2",
+                "create_time": null,
+                "update_time": "2020-03-24 10:25:52"
+            }
+        ],
+        "_meta": {
+            "totalCount": "1",
+            "pageCount": "1",
+            "currentPage": "1",
+            "perPage": "20"
+        }
+    }
+}
+```
+
+
+### 报备-申请报备  
+- 请求方式: `post`
+- 请求地址: `user-dc-reports`
+- 请求参数:  
+```json
+{
+    "name": "小小",  下款人姓名
+    "mobile": "18964590201",  下拉列表提供
+    "user_id": "2",   下款用户的id,下拉列表里会提供
+    "loan_date": "2020-03-24",   放贷时间
+    "product_id": "131",   产品id,下拉列表提供
+    "pay_money": "30000.00",  下款额度
+    "product_name": "有鱼贷",   下拉列表提供
+    "image_url_1": "",
+    "image_url_2": "",
+    "image_url_3": "",
+    "image_url_4": ""
+}
+```
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "操作成功",
+    "info": ""
+}
+```
+
+
+
+### 报备-修改报备  
+- 请求方式: `put`
+- 请求地址: `user-dc-reports/1`
+- 请求参数:  
+```json
+{
+    "name": "小小",  下款人姓名
+    "mobile": "18964590201",  下拉列表提供
+    "user_id": "2",   下款用户的id,下拉列表里会提供
+    "loan_date": "2020-03-24",   放贷时间
+    "product_id": "131",   产品id,下拉列表提供
+    "pay_money": "30000.00",  下款额度
+    "product_name": "有鱼贷",   下拉列表提供
+    "image_url_1": "",
+    "image_url_2": "",
+    "image_url_3": "",
+    "image_url_4": ""
+}
+```
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "操作成功",
+    "info": ""
+}
+```
+
+
+### 报备-选择下家信息  
+- 请求方式: `get`
+- 请求地址: `user-dc-report/get-user-info`
+- 请求参数:  
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": [
+        {
+            "mobile": "11888888333",
+            "nick_name": "时光偏执",
+            "user_id": "3"
+        },
+        {
+            "mobile": "18964590201",
+            "nick_name": "陌南尘",
+            "user_id": "2"
+        }
+    ]
+}
+```
+
+### 报备-选择产品信息  
+- 请求方式: `get`
+- 请求地址: `product/get-product-names`
+- 请求参数:  
+
+#### 这里是贷超接口
+- 类型：犀金贷超接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": [
+        {
+            "product_id": "131",
+            "product_name": "易品花"
+        },
+        {
+            "product_id": "199",
+            "product_name": "小朱佩奇"
+        }
+   ]
+}
+```
+
+
+### 报备-ios图片上传  
+- 请求方式: `post`
+- 请求地址: `user-dc-report/upload-img`
+- 请求参数:  
+```json
+{
+     "image": "上传的图片",
+}
+```
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "上传成功",
+    "info": "https://xijin.oss-cn-shanghai.aliyuncs.com/others/liebian/report/e15e2c8d39cf557340923a97aa33bf06.jpg"
+}
+```
+
+
+### 报备-文章信息  
+- 请求方式: `get`
+- 请求地址: `bridge/get-report-detail`
+- 请求参数:  
+
+
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "promote_way": "如何有效扩大您的团队",
+        "id": "1333",   文章id
+        "title": "为什么在京东搜索的商品，会展示在抖音广告上",
+        "desc": "被广告安排得明明白白，无处可逃",
+        "preview_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/article/images/2019-12-27/xlqeaKYQv7T1tUkK5OSt5cmKrz_7nBBj.jpg"
+    }
+}
+```
 
 ## 补充  
 
