@@ -63,6 +63,7 @@
     - [报备-下拉选择产品信息](./#报备-下拉选择产品信息)
     - [报备-ios图片上传](./#报备-ios图片上传)
     - [报备-文章信息](./#报备-文章信息)
+    - [收益大全](./#收益大全)
 - [补充](./#补充)
     - [补充说明](./#补充说明)  
 ### 测试主机host: 47.103.61.179:1022/  
@@ -2515,6 +2516,75 @@ status 0报备审核中，1报备已完成且成功，2报备失败
     }
 }
 ```
+
+
+
+### 收益大全  
+- 请求方式: `get`
+- 请求地址: `product/more-products`
+- 请求参数:  
+
+
+- 类型：犀金贷超接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": [
+        {
+            "settlement_type": "0",
+            "apply_price": "10000",
+            "image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/%E9%82%AE%E5%B1%80_VqsAXqKYT5jYRtBGYui767JLmmFWCTHo.jpg",
+            "name": "邮邮万卡",
+            "silver_rate": "",
+            "gold_rate": "",
+            "diamond_rate": "",
+            "silver_award": "2.60",
+            "gold_award": "5.30",
+            "diamond_award": "6.60"
+        },
+        {
+            "settlement_type": "0",
+            "apply_price": "20000",
+            "image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/%E6%98%9F_adrA8ZLvm09JmSf59vuK2bJ-cNjyByWf.jpg",
+            "name": "星卡贷",
+            "silver_rate": "",
+            "gold_rate": "",
+            "diamond_rate": "",
+            "silver_award": "2.60",
+            "gold_award": "5.30",
+            "diamond_award": "6.60"
+        },
+        {
+            "settlement_type": "0",
+            "apply_price": "50000",
+            "image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/1574474179150_PInCsZ_7j9Nif6lP6w3vpdYIP4ZvUmLM.jpg",
+            "name": "手机借呗～",
+            "silver_rate": "",
+            "gold_rate": "",
+            "diamond_rate": "",
+            "silver_award": "2.60",
+            "gold_award": "5.30",
+            "diamond_award": "6.60"
+        },
+        {
+            "settlement_type": "0",
+            "apply_price": "50000",
+            "image": "https://sshua.oss-cn-shanghai.aliyuncs.com/product/images/%E6%9C%89%E9%B1%BC-1_mY2p6AnFjscn0DBI39y1fZI-yX1qkcCl.png",
+            "name": "有鱼贷",
+            "silver_rate": "",
+            "gold_rate": "",
+            "diamond_rate": "",
+            "silver_award": "2.60",
+            "gold_award": "5.30",
+            "diamond_award": "6.60"
+        }
+    ]
+}
+```
+
 
 ## 补充  
 
