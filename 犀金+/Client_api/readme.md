@@ -1231,6 +1231,14 @@ type 1 是加盟宝
             {
                 "content": "描述三"
             }
+        ],
+	"promote_urls": [   推广图片轮播
+            {
+                "image_url": "https://www.baidu.com"
+            },
+            {
+                "image_url": "https://www.google.com"
+            }
         ]
     }
 }
