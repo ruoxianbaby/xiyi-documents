@@ -66,6 +66,9 @@
     - [收益大全](./#收益大全)
 - [补充](./#补充)
     - [补充说明](./#补充说明)  
+- [信用卡](./#信用卡)
+    - [信用卡列表](./#信用卡列表)  
+    - [信用卡点击](./#信用卡点击)  
 ### 测试主机host: 47.103.61.179:1022/  
 
 ### 全局header  
@@ -2612,3 +2615,83 @@ status 0报备审核中，1报备已完成且成功，2报备失败
 "silver_award": "2.60",  
 "gold_award": "5.30",  
 "diamond_award": "6.60"
+
+
+
+
+## 信用卡  
+
+### 信用卡列表  
+- 请求方式: `get`
+- 请求地址: `credit-cards?per-page=200`
+- 请求参数:  
+
+- 类型：犀金贷超接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 2,
+                "name": "1212321",
+                "image": "",
+                "url": "",
+                "desc1": "",
+                "desc2": "",
+                "desc3": "",
+                "max_price": 11,
+                "status": 1,
+                "create_time": null,
+                "update_time": null
+            },
+            {
+                "id": 1,
+                "name": "test",
+                "image": "",
+                "url": "",
+                "desc1": "",
+                "desc2": "",
+                "desc3": "",
+                "max_price": 22,
+                "status": 1,
+                "create_time": "2020-04-10 10:47:23",
+                "update_time": "2020-04-10 10:47:01"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_loan_api.com/credit-cards?page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 2,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+
+
+### 信用卡点击  
+- 请求方式: `post`
+- 请求地址: `credit-card/apply`
+- 请求参数:  
+```json
+{
+	"user_id": 1,
+	"card_id": 2
+}
+```
+
+- 类型：犀金贷超接口  
+
+- 响应内容:  
+```json
+
+```
