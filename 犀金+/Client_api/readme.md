@@ -2709,6 +2709,541 @@ status 0报备审核中，1报备已完成且成功，2报备失败
 - 类型：犀金贷超接口  
 
 - 响应内容:  
+
+
+
+
+
+## 商城  
+
+### 商品分类  
+- 请求方式: `get`
+- 请求地址: `goods/get-type`
+- 请求参数:  
+
+
+- 响应内容:  
 ```json
+{
+    "code": 1,
+    "message": "success",
+    "info": [
+        {
+            "id": "1",
+            "name": "美妆"
+        },
+        {
+            "id": "2",
+            "name": "女装"
+        },
+        {
+            "id": "3",
+            "name": "配饰"
+        },
+        {
+            "id": "4",
+            "name": "鞋履"
+        },
+        {
+            "id": "5",
+            "name": "男装"
+        }
+    ]
+}
+```
+
+
+
+### 商品列表  
+- 请求方式: `get`
+- 请求地址: `goods?type=1&is_recommand=1&page=1&per-page=20`
+- 请求参数:  
+type=1 可选，筛选分类用
+is_recommand=1  可选，是否是推荐
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "name": "商品",
+                "image": "https://www.baidu.com",
+                "original_cost": "0.02",  打折前
+                "after_discount_cost": "0.01"  打折后
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/goods?type=1&is_recommand=1&page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 1,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+
+
+
+
+### 商品详情  
+- 请求方式: `get`
+- 请求地址: `goods/1`
+- 请求参数:  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "name": "商品",
+                "goods_type_id": 1,
+                "image": "https://www.baidu.com",
+                "specification_desc": "规格描述",
+                "service": "服务描述",
+                "detail_content": "富文本内容",
+                "discount": "7.8",
+                "can_discount": true,
+                "specifications": [
+                    {
+                        "id": "1",
+                        "name": "规格1",
+                        "image_url": "",
+                        "original_cost": "0.01",
+                        "after_discount_cost": "0.01"
+                    },
+                    {
+                        "id": "2",
+                        "name": "规格2",
+                        "image_url": "",
+                        "original_cost": "44.00",
+                        "after_discount_cost": "23.00"
+                    }
+                ]
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/goods/1?page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 1,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+
+
+
+
+### 地址列表  
+- 请求方式: `get`
+- 请求地址: `goods/get-addr`
+- 请求参数:  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": [
+        {
+            "id": "4",
+            "user_id": "1",
+            "province": "11",
+            "city": "xxx",
+            "district": "xxxx",
+            "addr": "上海。。",
+            "user_name": "",
+            "mobile": "",
+            "is_default": "0",
+            "create_time": null
+        },
+        {
+            "id": "9",
+            "user_id": "1",
+            "province": "",
+            "city": "",
+            "district": "",
+            "addr": "",
+            "user_name": "",
+            "mobile": "",
+            "is_default": "0",
+            "create_time": null
+        }
+    ]
+}
+```
+
+
+
+### 地址添加  
+- 请求方式: `post`
+- 请求地址: `goods/add-addr`
+- 请求参数:  
+```json
+{
+    "is_default": 1,
+    "province": "省",
+    "city": "市",
+    "district": "区",
+    "addr": "上海嘉定",
+    "user_name": "",
+    "mobile": "18964595411"
+}
 
 ```
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": ""
+}
+```
+
+
+
+### 地址编辑  
+- 请求方式: `post`
+- 请求地址: `goods/edit-addr`
+- 请求参数:  
+```json
+{
+    "id": 2,
+    "is_default": 1,
+    "province": "省",
+    "city": "市",
+    "district": "区",
+    "addr": "上海嘉定",
+    "user_name": "",
+    "mobile": "18964595411"
+}
+```
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": ""
+}
+```
+
+
+
+### 地址删除  
+- 请求方式: `post`
+- 请求地址: `goods/del-addr`
+- 请求参数:  
+```json
+{
+	"id": 2
+}
+```
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": ""
+}
+```
+
+
+### 点击购买  
+- 请求方式: `post`
+- 请求地址: `goods/buy`
+- 请求参数:  
+```json
+{
+	"type": "original_click",
+	"specification_id": "1"
+}
+```
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "total_price": 222.2,
+        "specification_id": "1",
+        "specification": "规格1",
+        "image_url": "",
+        "goods_name": false
+    }
+}
+```
+
+
+### 分享回调  
+- 请求方式: `post`
+- 请求地址: `goods/share`
+- 请求参数:  
+```json
+{
+	"user_id": 1,
+	"goods_id": 1,
+	"api_salt": "xiyikeji888"
+}
+```
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "分享成功",
+    "info": ""
+}
+```
+
+
+
+
+### 创建订单  
+- 请求方式: `post`
+- 请求地址: `goods-order/post-zfb`
+- 请求参数:  
+```json
+{
+	"goods_id": 1,
+	"user_name":"买家名",
+	"mobile": "18964590201",
+	"receive_addr": "收货地址",
+	"specification_id": 1,
+	"number": 2
+}
+```
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": "alipay_sdk=alipay-sdk-php-easyalipay-20190926&amp;app_id=2021001107613197&amp;biz_content=%7B%22subject%22%3A+%22%E5%95%86%E5%93%81%22%2C%22out_trade_no%22%3A+%222020041453971001%22%2C%22total_amount%22%3A+%220.02%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%7D&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.app.pay&amp;notify_url=http%3A%2F%2F47.103.61.179%3A1080%2Fgoods-order%2Fzfb-async&amp;sign_type=RSA2&amp;timestamp=2020-04-14+17%3A05%3A25&amp;version=1.0&amp;sign=I3f%2FMhJB7PAzP47u%2BXDP4XFxvIn3%2BiuqRB4QnQ9bA2iE59%2FR7SEN3n78lrs9%2B51QaoNqw4p1mqr2dgUEnt%2B9uY0f2H5n1GTHKboxw%2BPFzy9jS9Gx1cWSzvAf8UQmC8dYRNDXTtNPZ3poomPA1tqgdCRrVMqybltImNiSi3EBmxluQXwi1zFODmRshO5XE7WrElO2XYw%2BzZUH3JIMJVILxaj36I3TJ%2F8iNpwYDjje5Ylel1S3%2Fbqrxa%2BxmFyruAMi%2BWZBE0UE%2BlNxVUpW%2FcVHRmWRLl95hLCaIzjjRoVJwFyHW8IxVDaxWUAjTkEPQ74NO3%2F%2BoYDKa1y6%2FgD71IwZFg%3D%3D"
+}
+```
+
+
+### 订单列表  
+- 请求方式: `get`
+- 请求地址: `goods-orders?page=1&per-page=20`
+- 请求参数:  
+
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 20,
+                "order_sign": "2020041453971001",
+                "goods_id": 1,
+                "goods_name": "商品",
+                "goods_specification_id": 1,
+                "goods_specification_name": "规格1",
+                "goods_image": "https://www.baidu.com",
+                "goods_price": "0.01",
+                "goods_price_total": "0.02",
+                "number": 2,
+                "status": 1,
+                "order_detail": "alipay_sdk=alipay-sdk-php-easyalipay-20190926&amp;app_id=2021001107613197&amp;biz_content=%7B%22subject%22%3A+%22%E5%95%86%E5%93%81%22%2C%22out_trade_no%22%3A+%222020041453971001%22%2C%22total_amount%22%3A+%220.02%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%7D&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.app.pay&amp;notify_url=http%3A%2F%2F47.103.61.179%3A1080%2Fgoods-order%2Fzfb-async&amp;sign_type=RSA2&amp;timestamp=2020-04-14+17%3A05%3A25&amp;version=1.0&amp;sign=I3f%2FMhJB7PAzP47u%2BXDP4XFxvIn3%2BiuqRB4QnQ9bA2iE59%2FR7SEN3n78lrs9%2B51QaoNqw4p1mqr2dgUEnt%2B9uY0f2H5n1GTHKboxw%2BPFzy9jS9Gx1cWSzvAf8UQmC8dYRNDXTtNPZ3poomPA1tqgdCRrVMqybltImNiSi3EBmxluQXwi1zFODmRshO5XE7WrElO2XYw%2BzZUH3JIMJVILxaj36I3TJ%2F8iNpwYDjje5Ylel1S3%2Fbqrxa%2BxmFyruAMi%2BWZBE0UE%2BlNxVUpW%2FcVHRmWRLl95hLCaIzjjRoVJwFyHW8IxVDaxWUAjTkEPQ74NO3%2F%2BoYDKa1y6%2FgD71IwZFg%3D%3D",
+                "create_time": "2020-04-14 17:05:25",
+                "apply_for_refund": false
+            },
+            {
+                "id": 19,
+                "order_sign": "2020041449571025",
+                "goods_id": 1,
+                "goods_name": "商品",
+                "goods_specification_id": 1,
+                "goods_specification_name": "规格1",
+                "goods_image": "https://www.baidu.com",
+                "goods_price": "0.01",
+                "goods_price_total": "0.02",
+                "number": 2,
+                "status": 1,
+                "order_detail": "alipay_sdk=alipay-sdk-php-easyalipay-20190926&app_id=2021001107613197&biz_content=%7B%22subject%22%3A+%22%E5%95%86%E5%93%81%22%2C%22out_trade_no%22%3A+%222020041449571025%22%2C%22total_amount%22%3A+%220.02%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&notify_url=http%3A%2F%2F47.103.61.179%3A1080%2Fgoods-order%2Fzfb-async&sign_type=RSA2&timestamp=2020-04-14+17%3A04%3A49&version=1.0&sign=cXpXtU%2BmdARewFteyBRPG%2FTcppuYPaAOjMYSWstjl5lJ2kdlcYwU1GWdJ5SPDS4I3ypzakzybzPYCV3lDoxK3FcCSJRH3oOL0i3EzwwwbIroHgYK68BcqL3qrBY%2FeqQb07etcbU2owu9YyobzMsRJIuxr9Vik%2BjmHakiSthGgg8F0ETRQFakAdFlVUE58qTqjdnB512wv0mC75Ut6Ef%2BIsMsg1hT1XrKIu0e8uX%2FSTcswPei8GxW9tsG%2B%2F%2BH2pMF5aQkxXB0MeBnkY7XdsH0c0eqkpatd%2B6300jXlBqxWpQs79cgioKVe7a5nOWQ6Uj8aPeN8IrRIKeORaD974hByw%3D%3D",
+                "create_time": "2020-04-14 17:04:49",
+                "apply_for_refund": false
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/goods-orders?page=1&per-page=2"
+            },
+            "next": {
+                "href": "http://my_xijin_api.com/goods-orders?page=2&per-page=2"
+            },
+            "last": {
+                "href": "http://my_xijin_api.com/goods-orders?page=6&per-page=2"
+            }
+        },
+        "_meta": {
+            "totalCount": 11,
+            "pageCount": 6,
+            "currentPage": 1,
+            "perPage": 2
+        }
+    }
+}
+```
+
+
+
+
+### 订单详情  
+- 请求方式: `get`
+- 请求地址: `goods-orders/1`
+- 请求参数:  
+
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "order_sign": "20200413481014",
+                "goods_id": 1,
+                "goods_name": "商品",
+                "goods_specification_id": 1,
+                "goods_specification_name": "规格1",
+                "goods_image": "https://www.baidu.com",
+                "goods_price": "88.00",
+                "goods_price_total": "111.00",
+                "user_name": "买家名",
+                "mobile": "18964590201",
+                "number": 2,
+                "receive_addr": "收货地址",
+                "status": 0,
+                "channel": "zfb",
+                "order_detail": "alipay_sdk=alipay-sdk-php-easyalipay-20190926&app_id=2021001107603787&biz_content=%7B%22subject%22%3A+%22%E5%95%86%E5%93%81%22%2C%22out_trade_no%22%3A+%2220200413481014%22%2C%22total_amount%22%3A+%2288%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&notify_url=https%3A%2F%2Fapi.5youfenqi.com%2Fgood%2Fasync-notify&sign_type=RSA2&timestamp=2020-04-13+17%3A11%3A29&version=1.0&sign=a4lFKx9GBFXiyurfhpgf55SEioJufxDRygh5FLzO1eYi9%2F%2B2qVl3w0l03qhakg9SrPad1WbEB1EVqkwFXVOrfcrtTJUddpv9R7SGTJwH6qZ9LNK8NJcDho8WVvcF9QnX8Vw0aNZFbMwsQjiG1p9bW0nzcR0yktlx76ERhkP2AkItZtzrYLm%2FWMX0b5UJmgorykcmW%2FmTSTMjiDKLrA4k%2FEj6zaITrP8WLCTuM9ft%2F6mtPx2a6O91YClUpg6e%2FoEI1ZEO%2FTLaKiPh8QGTa%2BawbX8WLlA407%2FliSt46HduPykdVFV3w25If97pQPTOBLvCHs9yisHyaP7SxQuKWX9uvQ%3D%3D",
+                "create_time": "2020-04-13 17:11:29",
+                "apply_for_refund": true
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/goods-orders/1?page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 1,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
+}
+```
+
+
+
+
+
+### 订单取消  
+- 请求方式: `post`
+- 请求地址: `goods-order/cancel`
+- 请求参数:  
+```json
+{
+	"order_id": 1
+}
+```
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "成功",
+    "info": ""
+}
+```
+
+
+
+### 申请退款  
+- 请求方式: `post`
+- 请求地址: `goods-order/apply-for-refund`
+- 请求参数:  
+```json
+{
+	"order_id": 11
+}
+```
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "成功",
+    "info": ""
+}
+```
+
+
+### 订单删除  
+- 请求方式: `post`
+- 请求地址: `goods-order/del-order`
+- 请求参数:  
+```json
+{
+	"order_id": 11
+}
+```
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "成功",
+    "info": ""
+}
+```
+
+
+### 确认收货  
+- 请求方式: `post`
+- 请求地址: `goods-order/confirm-recv`
+- 请求参数:  
+```json
+{
+	"order_id": 11
+}
+```
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "成功",
+    "info": ""
+}
+```
+
+
