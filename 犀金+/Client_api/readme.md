@@ -3069,54 +3069,103 @@ status 1待支付，2待发货，3待收货，4已完成， status参数可选�
     "info": {
         "items": [
             {
-                "id": 20,
-                "order_sign": "2020041453971001",
-                "goods_id": 1,
-                "goods_name": "商品",
-                "goods_specification_id": 1,
-                "goods_specification_name": "规格名字",
-                "goods_image": "https://www.baidu.com",
-                "goods_price": "0.01",   单价
-                "goods_price_total": "0.02",  总价
-                "number": 2,  商品数量
-                "status": 1,
-                "order_detail": "alipay_sdk=alipay-sdk-php-easyalipay-20190926&amp;app_id=2021001107613197&amp;biz_content=%7B%22subject%22%3A+%22%E5%95%86%E5%93%81%22%2C%22out_trade_no%22%3A+%222020041453971001%22%2C%22total_amount%22%3A+%220.02%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%7D&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.app.pay&amp;notify_url=http%3A%2F%2F47.103.61.179%3A1080%2Fgoods-order%2Fzfb-async&amp;sign_type=RSA2&amp;timestamp=2020-04-14+17%3A05%3A25&amp;version=1.0&amp;sign=I3f%2FMhJB7PAzP47u%2BXDP4XFxvIn3%2BiuqRB4QnQ9bA2iE59%2FR7SEN3n78lrs9%2B51QaoNqw4p1mqr2dgUEnt%2B9uY0f2H5n1GTHKboxw%2BPFzy9jS9Gx1cWSzvAf8UQmC8dYRNDXTtNPZ3poomPA1tqgdCRrVMqybltImNiSi3EBmxluQXwi1zFODmRshO5XE7WrElO2XYw%2BzZUH3JIMJVILxaj36I3TJ%2F8iNpwYDjje5Ylel1S3%2Fbqrxa%2BxmFyruAMi%2BWZBE0UE%2BlNxVUpW%2FcVHRmWRLl95hLCaIzjjRoVJwFyHW8IxVDaxWUAjTkEPQ74NO3%2F%2BoYDKa1y6%2FgD71IwZFg%3D%3D",
-                "create_time": "2020-04-14 17:05:25",
-                "apply_for_refund": false   只有status是2的时候 这个才可能会true，代表是否是退款中
-            },
-            {
-                "id": 19,
-                "order_sign": "2020041449571025",
+                "id": 1,
+                "order_sign": "20200413481014",
                 "goods_id": 1,
                 "goods_name": "商品",
                 "goods_specification_id": 1,
                 "goods_specification_name": "规格1",
                 "goods_image": "https://www.baidu.com",
-                "goods_price": "0.01",
-                "goods_price_total": "0.02",
+                "goods_price": "88.00",
+                "goods_price_total": "111.00",
+                "user_name": "买家名",
+                "mobile": "18964590201",
                 "number": 2,
-                "status": 1,
-                "order_detail": "alipay_sdk=alipay-sdk-php-easyalipay-20190926&app_id=2021001107613197&biz_content=%7B%22subject%22%3A+%22%E5%95%86%E5%93%81%22%2C%22out_trade_no%22%3A+%222020041449571025%22%2C%22total_amount%22%3A+%220.02%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&notify_url=http%3A%2F%2F47.103.61.179%3A1080%2Fgoods-order%2Fzfb-async&sign_type=RSA2&timestamp=2020-04-14+17%3A04%3A49&version=1.0&sign=cXpXtU%2BmdARewFteyBRPG%2FTcppuYPaAOjMYSWstjl5lJ2kdlcYwU1GWdJ5SPDS4I3ypzakzybzPYCV3lDoxK3FcCSJRH3oOL0i3EzwwwbIroHgYK68BcqL3qrBY%2FeqQb07etcbU2owu9YyobzMsRJIuxr9Vik%2BjmHakiSthGgg8F0ETRQFakAdFlVUE58qTqjdnB512wv0mC75Ut6Ef%2BIsMsg1hT1XrKIu0e8uX%2FSTcswPei8GxW9tsG%2B%2F%2BH2pMF5aQkxXB0MeBnkY7XdsH0c0eqkpatd%2B6300jXlBqxWpQs79cgioKVe7a5nOWQ6Uj8aPeN8IrRIKeORaD974hByw%3D%3D",
-                "create_time": "2020-04-14 17:04:49",
-                "apply_for_refund": false
+                "receive_addr": "收货地址",
+                "status": 3,
+                "channel": "zfb",
+                "order_detail": "alipay_sdk=alipay-sdk-php-easyalipay-20190926&app_id=2021001107603787&biz_content=%7B%22subject%22%3A+%22%E5%95%86%E5%93%81%22%2C%22out_trade_no%22%3A+%2220200413481014%22%2C%22total_amount%22%3A+%2288%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&notify_url=https%3A%2F%2Fapi.5youfenqi.com%2Fgood%2Fasync-notify&sign_type=RSA2&timestamp=2020-04-13+17%3A11%3A29&version=1.0&sign=a4lFKx9GBFXiyurfhpgf55SEioJufxDRygh5FLzO1eYi9%2F%2B2qVl3w0l03qhakg9SrPad1WbEB1EVqkwFXVOrfcrtTJUddpv9R7SGTJwH6qZ9LNK8NJcDho8WVvcF9QnX8Vw0aNZFbMwsQjiG1p9bW0nzcR0yktlx76ERhkP2AkItZtzrYLm%2FWMX0b5UJmgorykcmW%2FmTSTMjiDKLrA4k%2FEj6zaITrP8WLCTuM9ft%2F6mtPx2a6O91YClUpg6e%2FoEI1ZEO%2FTLaKiPh8QGTa%2BawbX8WLlA407%2FliSt46HduPykdVFV3w25If97pQPTOBLvCHs9yisHyaP7SxQuKWX9uvQ%3D%3D",
+                "create_time": "2020-04-13 17:11:29",
+                "apply_for_refund": false,
+                "logistics_info": [
+                    {
+                        "time": "2020-04-15 14:35:25",
+                        "ftime": "2020-04-15 14:35:25",
+                        "context": "[博华速运营业点]快件到达 【上海浦东博华营业点】"
+                    },
+                    {
+                        "time": "2020-04-15 13:54:44",
+                        "ftime": "2020-04-15 13:54:44",
+                        "context": "[上海浦江中转场]快件已发车"
+                    },
+                    {
+                        "time": "2020-04-15 13:25:21",
+                        "ftime": "2020-04-15 13:25:21",
+                        "context": "[上海浦江中转场]快件在【上海浦江集散中心】已装车,准备发往 【上海浦东博华营业点】"
+                    },
+                    {
+                        "time": "2020-04-15 12:58:09",
+                        "ftime": "2020-04-15 12:58:09",
+                        "context": "[上海浦江中转场]快件到达 【上海浦江集散中心】"
+                    },
+                    {
+                        "time": "2020-04-15 00:11:12",
+                        "ftime": "2020-04-15 00:11:12",
+                        "context": "[济南春晖中转场]快件已发车"
+                    },
+                    {
+                        "time": "2020-04-14 23:19:10",
+                        "ftime": "2020-04-14 23:19:10",
+                        "context": "[济南春晖中转场]快件在【济南】已装车,准备发往 【上海浦江集散中心】"
+                    },
+                    {
+                        "time": "2020-04-14 21:46:21",
+                        "ftime": "2020-04-14 21:46:21",
+                        "context": "[济南春晖中转场]快件到达 【济南】"
+                    },
+                    {
+                        "time": "2020-04-14 19:34:52",
+                        "ftime": "2020-04-14 19:34:52",
+                        "context": "[聊城江北集散点]快件已发车"
+                    },
+                    {
+                        "time": "2020-04-14 18:41:15",
+                        "ftime": "2020-04-14 18:41:15",
+                        "context": "快件在【聊城江北集散点】已装车,准备发往下一站"
+                    },
+                    {
+                        "time": "2020-04-14 18:41:15",
+                        "ftime": "2020-04-14 18:41:15",
+                        "context": "快件到达 【聊城江北集散点】"
+                    },
+                    {
+                        "time": "2020-04-14 17:33:01",
+                        "ftime": "2020-04-14 17:33:01",
+                        "context": "[聊城经济开发区集收客户营业部]快件已发车"
+                    },
+                    {
+                        "time": "2020-04-14 16:43:29",
+                        "ftime": "2020-04-14 16:43:29",
+                        "context": "快件在【聊城经济开发区集收客户营业部】已装车,准备发往 【聊城江北集散点】"
+                    },
+                    {
+                        "time": "2020-04-14 16:43:19",
+                        "ftime": "2020-04-14 16:43:19",
+                        "context": "[聊城经济开发区集收客户营业部]顺丰速运 已收取快件"
+                    }
+                ]
             }
         ],
         "_links": {
             "self": {
-                "href": "http://my_xijin_api.com/goods-orders?page=1&per-page=2"
-            },
-            "next": {
-                "href": "http://my_xijin_api.com/goods-orders?page=2&per-page=2"
-            },
-            "last": {
-                "href": "http://my_xijin_api.com/goods-orders?page=6&per-page=2"
+                "href": "http://my_xijin_api.com/goods-orders/1?page=1"
             }
         },
         "_meta": {
-            "totalCount": 11,
-            "pageCount": 6,
+            "totalCount": 1,
+            "pageCount": 1,
             "currentPage": 1,
-            "perPage": 2
+            "perPage": 20
         }
     }
 }
