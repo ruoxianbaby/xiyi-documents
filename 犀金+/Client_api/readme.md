@@ -2991,7 +2991,8 @@ type=1 可选，筛选分类用  search 搜索的商品名
             "district": "asdsadas",
             "addr": "上海。。",
             "user_name": "212",
-            "mobile": "1221"
+            "mobile": "1221",
+	    "is_default": "1"
         },
         "price": "0.01",
         "total_price": "0.02",
