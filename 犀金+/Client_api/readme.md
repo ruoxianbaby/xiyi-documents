@@ -3044,9 +3044,9 @@ type=1 可选，筛选分类用  search 搜索的商品名
 
 ### 订单列表  
 - 请求方式: `get`
-- 请求地址: `goods-orders?page=1&per-page=20`
+- 请求地址: `goods-orders?status=1&page=1&per-page=20`
 - 请求参数:  
-
+status 1待支付，2待发货，3待收货，4已完成， status参数可选，如果没传就查全部
 
 - 响应内容:  
 ```json
