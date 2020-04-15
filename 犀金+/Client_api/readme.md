@@ -2811,6 +2811,7 @@ type=1 可选，筛选分类用  search 搜索的商品名
                 "image": "https://www.baidu.com",
                 "specification_desc": "规格描述",
                 "service": "服务描述",
+		"goods_detail": "商品说明",
                 "detail_content": "富文本内容",
                 "discount": "7.8",  打折
                 "can_discount": true,  已经分享过/已经是钻石级别会员 可以直接购买打折的价格商品
