@@ -2756,9 +2756,9 @@ status 0报备审核中，1报备已完成且成功，2报备失败
 
 ### 商品列表  
 - 请求方式: `get`
-- 请求地址: `goods?type=1&page=1&per-page=20`
+- 请求地址: `goods?type=1&search=商品&page=1&per-page=20`
 - 请求参数:  
-type=1 可选，筛选分类用
+type=1 可选，筛选分类用  search 搜索的商品名
 - 响应内容:  
 ```json
 {
@@ -2812,15 +2812,15 @@ type=1 可选，筛选分类用
                 "specification_desc": "规格描述",
                 "service": "服务描述",
                 "detail_content": "富文本内容",
-                "discount": "7.8",
-                "can_discount": true,
+                "discount": "7.8",  打折
+                "can_discount": true,  已经分享过/已经是钻石级别会员 可以直接购买打折的价格商品
                 "specifications": [
                     {
                         "id": "1",
                         "name": "规格1",
                         "image_url": "",
-                        "original_cost": "0.01",
-                        "after_discount_cost": "0.01"
+                        "original_cost": "0.02",  原价
+                        "after_discount_cost": "0.01"  78折打折之后
                     },
                     {
                         "id": "2",
@@ -2864,13 +2864,13 @@ type=1 可选，筛选分类用
         {
             "id": "4",
             "user_id": "1",
-            "province": "11",
-            "city": "xxx",
-            "district": "xxxx",
-            "addr": "上海。。",
+            "province": "11",  省
+            "city": "xxx",  市
+            "district": "xxxx",   区
+            "addr": "上海。。",  详细地址
             "user_name": "",
-            "mobile": "",
-            "is_default": "0",
+            "mobile": "",  手机号
+            "is_default": "0",  是否选择为默认的收货地址
             "create_time": null
         },
         {
@@ -2972,7 +2972,7 @@ type=1 可选，筛选分类用
 - 请求参数:  
 ```json
 {
-	"type": "original_click",
+	"type": "original_click",   购买的时候选择的是原价购买，  share_click是点击分享后的价格购买
 	"specification_id": "1"
 }
 ```
@@ -3001,7 +3001,7 @@ type=1 可选，筛选分类用
 {
 	"user_id": 1,
 	"goods_id": 1,
-	"api_salt": "xiyikeji888"
+	"api_salt": "xiyikeji888"   写死这个
 }
 ```
 
@@ -3061,15 +3061,15 @@ type=1 可选，筛选分类用
                 "goods_id": 1,
                 "goods_name": "商品",
                 "goods_specification_id": 1,
-                "goods_specification_name": "规格1",
+                "goods_specification_name": "规格名字",
                 "goods_image": "https://www.baidu.com",
-                "goods_price": "0.01",
-                "goods_price_total": "0.02",
-                "number": 2,
+                "goods_price": "0.01",   单价
+                "goods_price_total": "0.02",  总价
+                "number": 2,  商品数量
                 "status": 1,
                 "order_detail": "alipay_sdk=alipay-sdk-php-easyalipay-20190926&amp;app_id=2021001107613197&amp;biz_content=%7B%22subject%22%3A+%22%E5%95%86%E5%93%81%22%2C%22out_trade_no%22%3A+%222020041453971001%22%2C%22total_amount%22%3A+%220.02%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%7D&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.app.pay&amp;notify_url=http%3A%2F%2F47.103.61.179%3A1080%2Fgoods-order%2Fzfb-async&amp;sign_type=RSA2&amp;timestamp=2020-04-14+17%3A05%3A25&amp;version=1.0&amp;sign=I3f%2FMhJB7PAzP47u%2BXDP4XFxvIn3%2BiuqRB4QnQ9bA2iE59%2FR7SEN3n78lrs9%2B51QaoNqw4p1mqr2dgUEnt%2B9uY0f2H5n1GTHKboxw%2BPFzy9jS9Gx1cWSzvAf8UQmC8dYRNDXTtNPZ3poomPA1tqgdCRrVMqybltImNiSi3EBmxluQXwi1zFODmRshO5XE7WrElO2XYw%2BzZUH3JIMJVILxaj36I3TJ%2F8iNpwYDjje5Ylel1S3%2Fbqrxa%2BxmFyruAMi%2BWZBE0UE%2BlNxVUpW%2FcVHRmWRLl95hLCaIzjjRoVJwFyHW8IxVDaxWUAjTkEPQ74NO3%2F%2BoYDKa1y6%2FgD71IwZFg%3D%3D",
                 "create_time": "2020-04-14 17:05:25",
-                "apply_for_refund": false
+                "apply_for_refund": false   只有status是2的时候 这个才可能会true，代表是否是退款中
             },
             {
                 "id": 19,
