@@ -2973,7 +2973,8 @@ type=1 可选，筛选分类用  search 搜索的商品名
 ```json
 {
 	"type": "original_click",   购买的时候选择的是原价购买，  share_click是点击分享后的价格购买
-	"specification_id": "1"
+	"specification_id": "1",
+	"number": 2  购买数量
 }
 ```
 
