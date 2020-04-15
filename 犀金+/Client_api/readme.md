@@ -2730,7 +2730,7 @@ status 0报备审核中，1报备已完成且成功，2报备失败
     "info": [
         {
             "id": "1",
-            "name": "美妆"
+            "name": "推荐"
         },
         {
             "id": "2",
@@ -2756,10 +2756,9 @@ status 0报备审核中，1报备已完成且成功，2报备失败
 
 ### 商品列表  
 - 请求方式: `get`
-- 请求地址: `goods?type=1&is_recommand=1&page=1&per-page=20`
+- 请求地址: `goods?type=1&page=1&per-page=20`
 - 请求参数:  
 type=1 可选，筛选分类用
-is_recommand=1  可选，是否是推荐
 - 响应内容:  
 ```json
 {
