@@ -2984,11 +2984,22 @@ type=1 可选，筛选分类用  search 搜索的商品名
     "code": 1,
     "message": "success",
     "info": {
-        "total_price": 222.2,
+        "addr_info": {
+            "id": "3",
+            "province": "asdasd",
+            "city": "asda",
+            "district": "asdsadas",
+            "addr": "上海。。",
+            "user_name": "212",
+            "mobile": "1221"
+        },
+        "price": "0.01",
+        "total_price": "0.02",
         "specification_id": "1",
         "specification": "规格1",
         "image_url": "",
-        "goods_name": false
+        "goods_name": "",
+        "number": "2"
     }
 }
 ```
