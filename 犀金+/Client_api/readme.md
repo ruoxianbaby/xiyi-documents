@@ -3120,7 +3120,7 @@ status 1待支付，2待发货，3待收货，4已完成， status参数可选�
         }
     }
 }
-
+"apply_for_refund": 只有在待发货状态，如果是true，那么就是正在申请退款中
 ```
 
 
@@ -3157,7 +3157,7 @@ status 1待支付，2待发货，3待收货，4已完成， status参数可选�
                 "channel": "zfb",
                 "order_detail": "alipay_sdk=alipay-sdk-php-easyalipay-20190926&app_id=2021001107603787&biz_content=%7B%22subject%22%3A+%22%E5%95%86%E5%93%81%22%2C%22out_trade_no%22%3A+%2220200413481014%22%2C%22total_amount%22%3A+%2288%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&notify_url=https%3A%2F%2Fapi.5youfenqi.com%2Fgood%2Fasync-notify&sign_type=RSA2&timestamp=2020-04-13+17%3A11%3A29&version=1.0&sign=a4lFKx9GBFXiyurfhpgf55SEioJufxDRygh5FLzO1eYi9%2F%2B2qVl3w0l03qhakg9SrPad1WbEB1EVqkwFXVOrfcrtTJUddpv9R7SGTJwH6qZ9LNK8NJcDho8WVvcF9QnX8Vw0aNZFbMwsQjiG1p9bW0nzcR0yktlx76ERhkP2AkItZtzrYLm%2FWMX0b5UJmgorykcmW%2FmTSTMjiDKLrA4k%2FEj6zaITrP8WLCTuM9ft%2F6mtPx2a6O91YClUpg6e%2FoEI1ZEO%2FTLaKiPh8QGTa%2BawbX8WLlA407%2FliSt46HduPykdVFV3w25If97pQPTOBLvCHs9yisHyaP7SxQuKWX9uvQ%3D%3D",
                 "create_time": "2020-04-13 17:11:29",
-                "apply_for_refund": true,
+                "apply_for_refund": false,
                 "logistics_info": [
                     {
                         "time": "2020-04-15 14:35:25",
