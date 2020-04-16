@@ -73,6 +73,7 @@
     - [商品分类](./#商品分类) 
     - [商品列表](./#商品列表)  
     - [商品详情](./#商品详情) 
+    - [邀请好友url](./#邀请好友url) 
     - [地址列表](./#地址列表) 
     - [地址添加](./#地址添加) 
     - [地址编辑](./#地址编辑) 
@@ -2830,7 +2831,8 @@ type=1 可选，筛选分类用  search 搜索的商品名
                         "original_cost": "44.00",
                         "after_discount_cost": "23.00"
                     }
-                ]
+                ],
+		"invite_url": "http://47.103.61.179:1080/invate_friend/?sign=00000b&callback=http://47.103.61.179:8077/loan/2.html?sign=00000b"
             }
         ],
         "_links": {
@@ -2848,6 +2850,20 @@ type=1 可选，筛选分类用  search 搜索的商品名
 }
 ```
 
+
+### 邀请好友url  
+- 请求方式: `get`
+- 请求地址: `goods/get-invite-url`
+- 请求参数:  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": "http://47.103.61.179:1080/invate_friend/?sign=00000b&callback=http://47.103.61.179:8077/loan/2.html?sign=00000b"
+}
+```
 
 
 
