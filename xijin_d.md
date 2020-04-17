@@ -218,10 +218,10 @@ withdraw_id&nbsp;&nbsp;&nbsp;提现订单号
 {
     "orderNo":202004151032496186912628
     "idNo":123456196108041236
-    "name":奧巴哈
+    "name":"奧巴哈"
     "cardNo":6228481099305925274
-    "bankCode":ABC
-    "bankName":农业银行
+    "bankCode":"ABC"
+    "bankName":"农业银行"
     "reserveMobile":13701874183
 }
 ```
@@ -252,14 +252,14 @@ or
 
 ```json
 {
-    orderNo:202004151032496186912628
-    idNo:123456196108041236
-    name:奧巴哈
-    cardNo:6228481099305925274
-    bankCode:ABC
-    bankName:农业银行
-    reserveMobile:13701874183
-    verifyCode:1234
+    "orderNo":202004151032496186912628
+    "idNo":123456196108041236
+    "name":"奧巴哈"
+    "cardNo":6228481099305925274
+    "bankCode":"ABC"
+    "bankName":"农业银行"
+    "reserveMobile":13701874183
+    "verifyCode":1234
 }
 ```
 
@@ -278,12 +278,12 @@ or
 - 请求地址: {host}`/cjh-open-api/loan-calculate`
 
 - 请求内容:  
-注:&nbsp;
+注:&nbsp;&nbsp;&nbsp;period&nbsp;&nbsp;&nbsp;取决于审核列表的&nbsp;&nbsp;&nbsp;termOptions
 ```json
 {
-    amount:1000
-    period:2
-    orderNo:202004151553566272868616
+    "amount":1000
+    "period":2
+    "orderNo":202004151553566272868616
 }
 ```
 
@@ -295,25 +295,33 @@ or
     "message": "Success",
     "info": {
         "actualAmount": 1000,
-        "payAmount": 1036,
-        "payFee": 36,
-        "remark": "本金1000.00元，利息36.00元",
+        "payAmount": 1037.52,
+        "payFee": 47.52,
+        "remark": "本金1000.00元，利息47.52元",
         "repayPlan": [
             {
-                "payAmount": 518,
-                "payCorpus": 500,
+                "payAmount": 345.84,
+                "payCorpus": 330,
                 "payDate": 1596643200000,
-                "payFee": 18,
+                "payFee": 15.84,
                 "serviceCharge": 0,
                 "tenor": 1
             },
             {
-                "payAmount": 518,
-                "payCorpus": 500,
+                "payAmount": 345.84,
+                "payCorpus": 330,
                 "payDate": 1599321600000,
-                "payFee": 18,
+                "payFee": 15.84,
                 "serviceCharge": 0,
                 "tenor": 2
+            },
+            {
+                "payAmount": 345.84,
+                "payCorpus": 330,
+                "payDate": 1601913600000,
+                "payFee": 15.84,
+                "serviceCharge": 0,
+                "tenor": 3
             }
         ],
         "serviceFee": 0
