@@ -5,7 +5,15 @@
 ### 测试主机host: 47.103.61.179:1022/  
 - [超即花](./#超即花)  
     - [审核记录](./#审核记录)  
-    
+    - [银行列表](./#银行列表)  
+    - [银行卡列表](./#银行卡列表)  
+    - [银行卡绑卡](./#银行卡绑卡)  
+    - [银行卡验证码绑卡](./#银行卡验证码绑卡)  
+    - [贷款试算](./#贷款试算)  
+    - [合同预览](./#合同预览)  
+    - [活体校验](./#活体校验)  
+    - [提现申请](./#提现申请)  
+
 ### 全局header  
 
 key |  vaule
@@ -135,31 +143,6 @@ withdraw_id&nbsp;&nbsp;&nbsp;提现订单号
 ### 银行列表
 - 请求方式: `get`
 - 请求地址: {host}`/bank-list`
-
-- 响应内容:  
-
-```json
-{
-    "code": 1,
-    "message": "Success",
-    "info": [
-        {
-            "bankCode": "BOB",
-            "bankName": "北京银行",
-            "icon": "http://download.geexfinance.com/bankList-V1/BOB@3x.png"
-        },
-        {
-            "bankCode": "CBHB",
-            "bankName": "渤海银行",
-            "icon": "http://download.geexfinance.com/bankList-V1/CBHB@3x.png"
-        }
-    ]
-}
-```
-
-### 银行列表
-- 请求方式: `get`
-- 请求地址: {host}`/cjh-open-api/bank-list`
 
 - 响应内容:  
 
