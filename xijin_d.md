@@ -28,6 +28,11 @@ Authorization | Bearer ***access_token***
 - 请求地址: {host}`order-list`
 
 - 响应内容:  
+status   200：审批中； 300：审批通过； 400：审批拒绝； 500：额度冻结  
+maxLoanAmt   审批额度  
+approveTime   审核日期  
+face_flow_id   活体校验流水号  
+withdraw_id   提现订单号  
 
 ```json
 {
