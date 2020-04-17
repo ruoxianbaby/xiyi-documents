@@ -216,12 +216,12 @@ withdraw_id&nbsp;&nbsp;&nbsp;提现订单号
 
 ```json
 {
-    "orderNo":202004151032496186912628
-    "idNo":123456196108041236
-    "name":"奧巴哈"
-    "cardNo":6228481099305925274
-    "bankCode":"ABC"
-    "bankName":"农业银行"
+    "orderNo":202004151032496186912628,
+    "idNo":123456196108041236,
+    "name":"奧巴哈",
+    "cardNo":6228481099305925274,
+    "bankCode":"ABC",
+    "bankName":"农业银行",
     "reserveMobile":13701874183
 }
 ```
@@ -252,13 +252,13 @@ or
 
 ```json
 {
-    "orderNo":202004151032496186912628
-    "idNo":123456196108041236
-    "name":"奧巴哈"
-    "cardNo":6228481099305925274
-    "bankCode":"ABC"
-    "bankName":"农业银行"
-    "reserveMobile":13701874183
+    "orderNo":202004151032496186912628,
+    "idNo":123456196108041236,
+    "name":"奧巴哈",
+    "cardNo":6228481099305925274,
+    "bankCode":"ABC",
+    "bankName":"农业银行",
+    "reserveMobile":13701874183,
     "verifyCode":1234
 }
 ```
@@ -281,8 +281,8 @@ or
 注:&nbsp;&nbsp;&nbsp;period&nbsp;&nbsp;&nbsp;取决于审核列表的&nbsp;&nbsp;&nbsp;termOptions
 ```json
 {
-    "amount":1000
-    "period":2
+    "amount":1000,
+    "period":2,
     "orderNo":202004151553566272868616
 }
 ```
