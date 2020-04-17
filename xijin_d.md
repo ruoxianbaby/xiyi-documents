@@ -328,3 +328,53 @@ or
     }
 }
 ```
+
+### 合同预览
+- 请求方式: `get`
+- 请求地址: {host}`/cjh-open-api/contract-show`
+
+- 请求内容:  
+orderNo&nbsp;&nbsp;&nbsp;渠道方订单号  
+contractNo&nbsp;&nbsp;&nbsp;合同编号&nbsp;&nbsp;&nbsp;1委托代扣协议&nbsp;&nbsp;&nbsp;2居间服务协议，&nbsp;&nbsp;&nbsp;3借款合同，&nbsp;&nbsp;&nbsp;4数据查询授权书
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "Success",
+    "info": {
+        "actualAmount": 1000,
+        "payAmount": 1037.52,
+        "payFee": 47.52,
+        "remark": "本金1000.00元，利息47.52元",
+        "repayPlan": [
+            {
+                "payAmount": 345.84,
+                "payCorpus": 330,
+                "payDate": 1596643200000,
+                "payFee": 15.84,
+                "serviceCharge": 0,
+                "tenor": 1
+            },
+            {
+                "payAmount": 345.84,
+                "payCorpus": 330,
+                "payDate": 1599321600000,
+                "payFee": 15.84,
+                "serviceCharge": 0,
+                "tenor": 2
+            },
+            {
+                "payAmount": 345.84,
+                "payCorpus": 330,
+                "payDate": 1601913600000,
+                "payFee": 15.84,
+                "serviceCharge": 0,
+                "tenor": 3
+            }
+        ],
+        "serviceFee": 0
+    }
+}
+```
