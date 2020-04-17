@@ -344,37 +344,55 @@ contractNo&nbsp;&nbsp;&nbsp;合同编号&nbsp;&nbsp;&nbsp;1委托代扣协议&nb
     "code": 1,
     "message": "Success",
     "info": {
-        "actualAmount": 1000,
-        "payAmount": 1037.52,
-        "payFee": 47.52,
-        "remark": "本金1000.00元，利息47.52元",
-        "repayPlan": [
-            {
-                "payAmount": 345.84,
-                "payCorpus": 330,
-                "payDate": 1596643200000,
-                "payFee": 15.84,
-                "serviceCharge": 0,
-                "tenor": 1
-            },
-            {
-                "payAmount": 345.84,
-                "payCorpus": 330,
-                "payDate": 1599321600000,
-                "payFee": 15.84,
-                "serviceCharge": 0,
-                "tenor": 2
-            },
-            {
-                "payAmount": 345.84,
-                "payCorpus": 330,
-                "payDate": 1601913600000,
-                "payFee": 15.84,
-                "serviceCharge": 0,
-                "tenor": 3
-            }
-        ],
-        "serviceFee": 0
+        "contractUrl": "https://beta.geexfinance.com/geexweixinb/views/app/chaojihua/commission_withholding.html?cName=%E5%A5%A7%E5%B7%B4%E5%93%88&cIdno=123456196108041236"
     }
+}
+```
+
+### 活体校验
+- 请求方式: `POST`
+- 请求地址: {host}`/cjh-open-api/user-verify`
+
+- 请求内容:  
+```json
+{
+    "orderNo":"202004151032496186912628",
+    "userId":1,
+    "name":"奧巴哈",
+    "idNo":123456196108041236,
+    "image1": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/4QBsRXhpZgAASUkqAAgAAAADADEBAgAHAAAAMgAAABICAwACAAAAAgACAGmHBAABAAAAOgAAAAAAAABQaWNhc2EAAAMAAJAHAAQAAAAwMjIwAqAEAAEAAAD0AQAAA6AEAAEAAAAsAQAAAAAAAP/bAEMABwUFBgUEBwYFBggHBwgKEQsKCQkK................"
+}
+```
+
+- 响应内容:  
+
+```json
+{
+    "code": 0,
+    "message": "提交成功",
+    "info": ""
+}
+```
+
+### 提现申请
+- 请求方式: `POST`
+- 请求地址: {host}`/cjh-open-api/loan-submit`
+
+- 请求内容:  
+```json
+{
+    "orderNo":202004151032496186912628,
+    "loanAmt":1000,
+    "period":3
+}
+```
+
+- 响应内容:  
+
+```json
+{
+    "code": 0,
+    "message": "审批提现前置条件不符合",
+    "info": ""
 }
 ```
