@@ -3059,7 +3059,8 @@ type=1 可选，筛选分类用  search 搜索的商品名
 	"mobile": "18964590201",
 	"receive_addr": "收货地址",
 	"specification_id": 1,
-	"number": 2
+	"number": 2,
+	"type" : "original_click"
 }
 ```
 
@@ -3068,7 +3069,10 @@ type=1 可选，筛选分类用  search 搜索的商品名
 {
     "code": 1,
     "message": "success",
-    "info": "alipay_sdk=alipay-sdk-php-easyalipay-20190926&amp;app_id=2021001107613197&amp;biz_content=%7B%22subject%22%3A+%22%E5%95%86%E5%93%81%22%2C%22out_trade_no%22%3A+%222020041453971001%22%2C%22total_amount%22%3A+%220.02%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%7D&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.app.pay&amp;notify_url=http%3A%2F%2F47.103.61.179%3A1080%2Fgoods-order%2Fzfb-async&amp;sign_type=RSA2&amp;timestamp=2020-04-14+17%3A05%3A25&amp;version=1.0&amp;sign=I3f%2FMhJB7PAzP47u%2BXDP4XFxvIn3%2BiuqRB4QnQ9bA2iE59%2FR7SEN3n78lrs9%2B51QaoNqw4p1mqr2dgUEnt%2B9uY0f2H5n1GTHKboxw%2BPFzy9jS9Gx1cWSzvAf8UQmC8dYRNDXTtNPZ3poomPA1tqgdCRrVMqybltImNiSi3EBmxluQXwi1zFODmRshO5XE7WrElO2XYw%2BzZUH3JIMJVILxaj36I3TJ%2F8iNpwYDjje5Ylel1S3%2Fbqrxa%2BxmFyruAMi%2BWZBE0UE%2BlNxVUpW%2FcVHRmWRLl95hLCaIzjjRoVJwFyHW8IxVDaxWUAjTkEPQ74NO3%2F%2BoYDKa1y6%2FgD71IwZFg%3D%3D"
+    "info": {
+        "order_id": 45,
+        "order": "alipay_sdk=alipay-sdk-php-easyalipay-20190926&app_id=2021001107613197&biz_content=%7B%22subject%22%3A+%22%E5%95%86%E5%93%81%22%2C%22out_trade_no%22%3A+%2220200417525557%22%2C%22total_amount%22%3A+%220.02%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&notify_url=http%3A%2F%2F47.103.61.179%3A1080%2Fgoods-order%2Fzfb-async&sign_type=RSA2&timestamp=2020-04-17+11%3A16%3A52&version=1.0&sign=doRIGt9oiujRJ34yUDMOUrRyr5PJ3YumOi9CCBBLbT9HwOsfMN3DN5aaxFypcvsC2OwkJnKaMf9u3HYYbYnB5QfppfQWzYb8JGlm63%2FXBCzcSXPUjTdy%2BQpLveoQob%2FBgFkIo4Qgjh7jENJ1WEyOb4heIJFeN0JCkZVwRl6VsYnRU3th0Sn9AzM6TUcej79JZZFVuQfIHkNxrPhUZuDWL4RbNQWAJZtfUH6JAEtuqWytGZyx%2Ftcbz%2FHyCk5grDH5U0jnhZdIi3ovXsoa9dartSAldTrBzZANt%2F0q3mP9gScAWygYd3aPAghZTLyUvgNuYma%2BCqny1Nz2whMbq9GlJA%3D%3D"
+    }
 }
 ```
 
