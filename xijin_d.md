@@ -216,13 +216,13 @@ withdraw_id&nbsp;&nbsp;&nbsp;提现订单号
 
 ```json
 {
-    orderNo:202004151032496186912628
-    idNo:123456196108041236
-    name:奧巴哈
-    cardNo:6228481099305925274
-    bankCode:ABC
-    bankName:农业银行
-    reserveMobile:13701874183
+    "orderNo":202004151032496186912628
+    "idNo":123456196108041236
+    "name":奧巴哈
+    "cardNo":6228481099305925274
+    "bankCode":ABC
+    "bankName":农业银行
+    "reserveMobile":13701874183
 }
 ```
 
