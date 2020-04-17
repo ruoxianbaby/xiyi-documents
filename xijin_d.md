@@ -25,7 +25,7 @@ Authorization | Bearer ***access_token***
 
 ### 审核记录
 - 请求方式: `get`
-- 请求地址: {host}`order-list`
+- 请求地址: {host}`cjh-open-api/order-list`
 
 - 响应内容:  
 status   200：审批中； 300：审批通过； 400：审批拒绝； 500：额度冻结  
@@ -132,4 +132,191 @@ withdraw_id&nbsp;&nbsp;&nbsp;提现订单号
 }
 ```
 
+### 银行列表
+- 请求方式: `get`
+- 请求地址: {host}`/bank-list`
 
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "Success",
+    "info": [
+        {
+            "bankCode": "BOB",
+            "bankName": "北京银行",
+            "icon": "http://download.geexfinance.com/bankList-V1/BOB@3x.png"
+        },
+        {
+            "bankCode": "CBHB",
+            "bankName": "渤海银行",
+            "icon": "http://download.geexfinance.com/bankList-V1/CBHB@3x.png"
+        }
+    ]
+}
+```
+
+### 银行列表
+- 请求方式: `get`
+- 请求地址: {host}`/cjh-open-api/bank-list`
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "Success",
+    "info": [
+        {
+            "bankCode": "BOB",
+            "bankName": "北京银行",
+            "icon": "http://download.geexfinance.com/bankList-V1/BOB@3x.png"
+        },
+        {
+            "bankCode": "CBHB",
+            "bankName": "渤海银行",
+            "icon": "http://download.geexfinance.com/bankList-V1/CBHB@3x.png"
+        }
+    ]
+}
+```
+
+### 银行卡列表
+- 请求方式: `get`
+- 请求地址: {host}`/cjh-open-api/bank-card-list`
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "Success",
+    "info": [
+        {
+            "bankCode": "ABC",
+            "bankName": "农业银行",
+            "cardNo": "6228481099305925274",
+            "channel": "SUISHOU01",
+            "defaultFlag": true,
+            "idNo": "123456196108041236",
+            "name": "奧巴哈",
+            "reserveMobile": "13701874183",
+            "uid": "1b7d7a937d3811eab7fab7e6d7245602"
+        }
+    ]
+}
+```
+
+### 银行卡绑卡
+- 请求方式: `post`
+- 请求地址: {host}`/cjh-open-api/bank-card-bind`
+
+- 请求内容:  
+
+```json
+{
+    orderNo:202004151032496186912628
+    idNo:123456196108041236
+    name:奧巴哈
+    cardNo:6228481099305925274
+    bankCode:ABC
+    bankName:农业银行
+    reserveMobile:13701874183
+}
+```
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "绑卡成功",
+    "info": ""
+}
+```
+or
+```json
+{
+    "code": 1,
+    "message": "验证码发送成功",
+    "info": ""
+}
+```
+
+### 银行卡验证码绑卡
+- 请求方式: `post`
+- 请求地址: {host}`/cjh-open-api/bank-card-bind-captcha`
+
+- 请求内容:  
+
+```json
+{
+    orderNo:202004151032496186912628
+    idNo:123456196108041236
+    name:奧巴哈
+    cardNo:6228481099305925274
+    bankCode:ABC
+    bankName:农业银行
+    reserveMobile:13701874183
+    verifyCode:1234
+}
+```
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "绑卡成功",
+    "info": ""
+}
+```
+
+### 贷款试算
+- 请求方式: `get`
+- 请求地址: {host}`/cjh-open-api/loan-calculate`
+
+- 请求内容:  
+注:&nbsp;
+```json
+{
+    amount:1000
+    period:2
+    orderNo:202004151553566272868616
+}
+```
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "Success",
+    "info": {
+        "actualAmount": 1000,
+        "payAmount": 1036,
+        "payFee": 36,
+        "remark": "本金1000.00元，利息36.00元",
+        "repayPlan": [
+            {
+                "payAmount": 518,
+                "payCorpus": 500,
+                "payDate": 1596643200000,
+                "payFee": 18,
+                "serviceCharge": 0,
+                "tenor": 1
+            },
+            {
+                "payAmount": 518,
+                "payCorpus": 500,
+                "payDate": 1599321600000,
+                "payFee": 18,
+                "serviceCharge": 0,
+                "tenor": 2
+            }
+        ],
+        "serviceFee": 0
+    }
+}
+```
