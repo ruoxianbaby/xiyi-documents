@@ -2,7 +2,7 @@
 
 ### 测试主机host: 47.103.61.179:1022/  
 - [超即花](./xijin_d.md/#超即花)  
-    - [审核记录](./xijin_d.md/#审核记录)  
+    - [审核记录去还款借还记录](./xijin_d.md/#审核记录去还款借还记录)  
     - [银行列表](./xijin_d.md/#银行列表)  
     - [银行卡列表](./xijin_d.md/#银行卡列表)  
     - [银行卡绑卡](./xijin_d.md/#银行卡绑卡)  
@@ -29,7 +29,7 @@ Authorization | Bearer ***access_token***
 
 ## 超即花
 
-### 审核记录
+### 审核记录去还款借还记录
 - 请求方式: `get`
 - 请求地址: {host}`cjh-open-api/order-list?type=`  
 type　0：审核记录；１：去还款；２：借还记录；
