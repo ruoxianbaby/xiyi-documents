@@ -39,64 +39,27 @@ maxLoanAmt&nbsp;&nbsp;&nbsp;审批额度
 approveTime&nbsp;&nbsp;&nbsp;审核日期  
 face_flow_id&nbsp;&nbsp;&nbsp;活体校验流水号  
 withdraw_id&nbsp;&nbsp;&nbsp;提现订单号  
+loan_status　4001提现审批中；4002提现审批通过；4003提现审批拒绝；4009贷款取消；4101放款成功；4102放款失败；4201还款中；4202已逾期；4203贷款结清  
+loanAmount　放款金额
 
 ```json
 {
     "code": 1,
     "message": "Success",
     "info": [
+{
+    "code": 1,
+    "message": "Success",
+    "info": [
         {
-            "id": "241",
-            "no": "202004151553566272868616",
-            "u_id": "1",
-            "status": "300",
-            "audit_data": {
-                "status": "300",
-                "amtRange": 100,
-                "maxLoanAmt": 50000,
-                "minLoanAmt": 1000,
-                "amountLimit": {
-                    "totalAmount": 50000,
-                    "surplusAmount": 50000
-                },
-                "approveTime": 1586758320000,
-                "termOptions": [
-                    {
-                        "name": "现金贷-1期-超即花",
-                        "term": 1,
-                        "termId": 2038
-                    },
-                    {
-                        "name": "现金贷-3期-超即花",
-                        "term": 3,
-                        "termId": 2044
-                    },
-                    {
-                        "name": "现金贷-6期-超即花",
-                        "term": 6,
-                        "termId": 2047
-                    },
-                    {
-                        "name": "1",
-                        "term": 2,
-                        "termId": 2168
-                    }
-                ]
-            },
-            "face_flow_id": "",
-            "withdraw_id": "",
-            "create_time": "2020-04-15 15:53:56",
-            "update_time": "2020-04-15 15:57:35"
-        },
-        {
-            "id": "240",
-            "no": "202004151542362667520532",
+            "id": "246",
+            "no": "202004201121514513233949",
             "u_id": "1",
             "status": "300",
             "audit_data": {
                 "status": "300",
                 "channel": "SUISHOU01",
-                "orderNo": "202004151542362667520532",
+                "orderNo": "202004201121514513233949",
                 "amtRange": 100,
                 "isCustom": 0,
                 "maxLoanAmt": 50000,
@@ -105,8 +68,13 @@ withdraw_id&nbsp;&nbsp;&nbsp;提现订单号
                     "totalAmount": 50000,
                     "surplusAmount": 50000
                 },
-                "approveTime": 1586937237965,
+                "approveTime": 1587352920960,
                 "termOptions": [
+                    {
+                        "name": "现金贷-12期",
+                        "term": 12,
+                        "termId": 1333
+                    },
                     {
                         "name": "现金贷-1期-超即花",
                         "term": 1,
@@ -129,61 +97,17 @@ withdraw_id&nbsp;&nbsp;&nbsp;提现订单号
                     }
                 ]
             },
-            "face_flow_id": "",
-            "withdraw_id": "",
-            "create_time": "2020-04-15 15:42:36",
-            "update_time": "2020-04-15 15:53:58"
-        }
-    ]
-}
-```
-
-### 银行列表
-- 请求方式: `get`
-- 请求地址: {host}`/bank-list`
-
-- 响应内容:  
-
-```json
-{
-    "code": 1,
-    "message": "Success",
-    "info": [
-        {
-            "bankCode": "BOB",
-            "bankName": "北京银行",
-            "icon": "http://download.geexfinance.com/bankList-V1/BOB@3x.png"
-        },
-        {
-            "bankCode": "CBHB",
-            "bankName": "渤海银行",
-            "icon": "http://download.geexfinance.com/bankList-V1/CBHB@3x.png"
-        }
-    ]
-}
-```
-
-### 银行卡列表
-- 请求方式: `get`
-- 请求地址: {host}`/cjh-open-api/bank-card-list`
-
-- 响应内容:  
-
-```json
-{
-    "code": 1,
-    "message": "Success",
-    "info": [
-        {
-            "bankCode": "ABC",
-            "bankName": "农业银行",
-            "cardNo": "6228481099305925274",
-            "channel": "SUISHOU01",
-            "defaultFlag": true,
-            "idNo": "123456196108041236",
-            "name": "奧巴哈",
-            "reserveMobile": "13701874183",
-            "uid": "1b7d7a937d3811eab7fab7e6d7245602"
+            "loan_status": "4002",
+            "loan_data": {
+                "loanAmount": 1000,
+                "orderNo": "202004201121514513233949",
+                "orderStatus": "4002",
+                "userMonthFee": 1.6
+            },
+            "face_flow_id": "84ce1b35-82b6-11ea-9117-1d09ee44d0a7",
+            "withdraw_id": "2445460470891306",
+            "create_time": "2020-04-20 11:21:51",
+            "update_time": "2020-04-20 11:29:31"
         }
     ]
 }
