@@ -43,7 +43,8 @@ approveTime　审核日期
 face_flow_id　活体校验流水号  
 withdraw_id　提现订单号  
 loan_status　4001提现审批中；4002提现审批通过；4003提现审批拒绝；4009贷款取消；4101放款成功；4102放款失败；4201还款中；4202已逾期；4203贷款结清  
-loanAmount　放款金额
+loanAmount　放款金额  
+remainTime　剩余时间  
 
 ```json
 {
@@ -67,7 +68,7 @@ loanAmount　放款金额
                     "totalAmount": 50000,
                     "surplusAmount": 50000
                 },
-                "approveTime": 1587448861092,
+                "approveTime": "2020-04-21",
                 "termOptions": [
                     {
                         "name": "现金贷-12期  超即花",
@@ -94,14 +95,20 @@ loanAmount　放款金额
                         "term": 2,
                         "termId": 2168
                     }
-                ]
+                ],
+                "remainTime": "6天"
             },
-            "loan_status": "4000",
-            "loan_data": null,
-            "face_flow_id": "",
-            "withdraw_id": "",
+            "loan_status": "4002",
+            "loan_data": {
+                "orderNo": "202004211400163844171940",
+                "loanAmount": 1000,
+                "orderStatus": "4002",
+                "userMonthFee": 1.6
+            },
+            "face_flow_id": "76eca81b-8398-11ea-9117-8534739079ee",
+            "withdraw_id": "2446255427175216",
             "create_time": "2020-04-21 14:00:16",
-            "update_time": "2020-04-21 14:01:01",
+            "update_time": "2020-04-21 14:23:45",
             "product_name": "test-cjh",
             "image": "https://xijin-loan.oss-cn-shanghai.aliyuncs.com/product/images/%E5%B0%8F%E8%8A%B1_EktrkEOSTRVzBoX1zhINiKPzLq9CAN4c_RS8dSHY5Yr4Y9-DYTZlnLCKqUuMxBf3X.jpg"
         }
