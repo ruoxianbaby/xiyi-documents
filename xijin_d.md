@@ -35,14 +35,15 @@ Authorization | Bearer ***access_token***
 type　0：审核记录；１：去还款；２：借还记录；
 
 - 响应内容:  
-status　200：审批中； 300：审批通过； 400：审批拒绝； 500：额度冻结  
+status　
+order_status　200：审批中； 300：审批通过； 400：审批拒绝； 500：额度冻结4001提现审批中； 4001提现审批中； 4002提现审批通过； 4003提现审批拒绝； 4009贷款取消； 4101放款成功； 4102放款失败； 4201还款中； 4202已逾期； 4203贷款结清 
 maxLoanAmt　最高贷款金额  
 minLoanAmt　最小贷款金额  
 amtRange　最大审批金额和最小审批金额间的最小变更金额  
 approveTime　审核日期  
 face_flow_id　活体校验流水号  
 withdraw_id　提现订单号  
-loan_status　4001提现审批中；4002提现审批通过；4003提现审批拒绝；4009贷款取消；4101放款成功；4102放款失败；4201还款中；4202已逾期；4203贷款结清  
+ 
 loanAmount　放款金额  
 remainTime　剩余时间  
 
@@ -109,6 +110,7 @@ remainTime　剩余时间
             "withdraw_id": "2446255427175216",
             "create_time": "2020-04-21 14:00:16",
             "update_time": "2020-04-21 14:23:45",
+            "order_status": "4002",
             "product_name": "test-cjh",
             "image": "https://xijin-loan.oss-cn-shanghai.aliyuncs.com/product/images/%E5%B0%8F%E8%8A%B1_EktrkEOSTRVzBoX1zhINiKPzLq9CAN4c_RS8dSHY5Yr4Y9-DYTZlnLCKqUuMxBf3X.jpg"
         }
