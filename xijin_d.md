@@ -51,14 +51,14 @@ loanAmount　放款金额
     "message": "Success",
     "info": [
         {
-            "id": "246",
-            "no": "202004201121514513233949",
-            "u_id": "1",
+            "id": "263",
+            "no": "202004211400163844171940",
+            "u_id": "4",
             "status": "300",
             "audit_data": {
                 "status": "300",
                 "channel": "SUISHOU01",
-                "orderNo": "202004201121514513233949",
+                "orderNo": "202004211400163844171940",
                 "amtRange": 100,
                 "isCustom": 0,
                 "maxLoanAmt": 50000,
@@ -67,10 +67,10 @@ loanAmount　放款金额
                     "totalAmount": 50000,
                     "surplusAmount": 50000
                 },
-                "approveTime": 1587352920960,
+                "approveTime": 1587448861092,
                 "termOptions": [
                     {
-                        "name": "现金贷-12期",
+                        "name": "现金贷-12期  超即花",
                         "term": 12,
                         "termId": 1333
                     },
@@ -96,17 +96,14 @@ loanAmount　放款金额
                     }
                 ]
             },
-            "loan_status": "4002",
-            "loan_data": {
-                "loanAmount": 1000,
-                "orderNo": "202004201121514513233949",
-                "orderStatus": "4002",
-                "userMonthFee": 1.6
-            },
-            "face_flow_id": "84ce1b35-82b6-11ea-9117-1d09ee44d0a7",
-            "withdraw_id": "2445460470891306",
-            "create_time": "2020-04-20 11:21:51",
-            "update_time": "2020-04-20 11:29:31"
+            "loan_status": "4000",
+            "loan_data": null,
+            "face_flow_id": "",
+            "withdraw_id": "",
+            "create_time": "2020-04-21 14:00:16",
+            "update_time": "2020-04-21 14:01:01",
+            "product_name": "test-cjh",
+            "image": "https://xijin-loan.oss-cn-shanghai.aliyuncs.com/product/images/%E5%B0%8F%E8%8A%B1_EktrkEOSTRVzBoX1zhINiKPzLq9CAN4c_RS8dSHY5Yr4Y9-DYTZlnLCKqUuMxBf3X.jpg"
         }
     ]
 }
