@@ -109,6 +109,59 @@ loanAmount　放款金额
 }
 ```
 
+### 银行列表
+- 请求方式: `GET`
+- 请求地址: {host}`/cjh-open-api/bank-list`
+测试账号　ICBC  ，6212262406000281813 ； ABC  ，6228481099305925274； 
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "Success",
+    "info": [
+        {
+            "bankCode": "ICBC",
+            "bankName": "工商银行",
+            "icon": "http://download.geexfinance.com/bankList-V1/ICBC@3x.png"
+        },
+        {
+            "bankCode": "ABC",
+            "bankName": "农业银行",
+            "icon": "http://download.geexfinance.com/bankList-V1/ABC@3x.png"
+        }
+    ]
+}
+```
+
+### 银行卡列表
+- 请求方式: `GET`
+- 请求地址: {host}`/cjh-open-api/bank-list`
+测试账号　ICBC  ，6212262406000281813 ； ABC  ，6228481099305925274； 
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "Success",
+    "info": [
+        {
+            "bankCode": "ABC",
+            "bankName": "农业银行",
+            "cardNo": "6228481099305925274",
+            "channel": "SUISHOU01",
+            "defaultFlag": true,
+            "idNo": "310107199104053435",
+            "name": "沈黎昂",
+            "reserveMobile": "13701874180",
+            "uid": "60c1f119839511ea9117df7a35ff2bf3"
+        }
+    ]
+}
+```
+
 ### 银行卡绑卡
 - 请求方式: `post`
 - 请求地址: {host}`/cjh-open-api/bank-card-bind`
