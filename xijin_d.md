@@ -37,7 +37,7 @@ type　0：审核记录；１：去还款；２：借还记录；
 - 响应内容:  
 status　200：审批中； 300：审批通过； 400：审批拒绝； 500：额度冻结  
 maxLoanAmt　最高贷款金额  
-minLoanAmt　最小贷款金额
+minLoanAmt　最小贷款金额  
 amtRange　最大审批金额和最小审批金额间的最小变更金额  
 approveTime　审核日期  
 face_flow_id　活体校验流水号  
