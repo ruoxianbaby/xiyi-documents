@@ -144,8 +144,7 @@ remainTime　剩余时间
 
 ### 银行卡列表
 - 请求方式: `GET`
-- 请求地址: {host}`/cjh-open-api/bank-list`
-测试账号　ICBC  ，6212262406000281813 ； ABC  ，6228481099305925274； 
+- 请求地址: {host}`/cjh-open-api/bank-card-list`  
 
 - 响应内容:  
 
