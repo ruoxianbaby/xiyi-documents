@@ -42,7 +42,6 @@ amtRange　最大审批金额和最小审批金额间的最小变更金额
 approveTime　审核日期  
 face_flow_id　活体校验流水号  
 withdraw_id　提现订单号  
- 
 loanAmount　放款金额  
 remainTime　剩余时间  
 
