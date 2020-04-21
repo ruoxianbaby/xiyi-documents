@@ -50,10 +50,6 @@ loanAmount　放款金额
     "code": 1,
     "message": "Success",
     "info": [
-{
-    "code": 1,
-    "message": "Success",
-    "info": [
         {
             "id": "246",
             "no": "202004201121514513233949",
