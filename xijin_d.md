@@ -238,7 +238,7 @@ or
 ```
 
 ### 贷款试算
-- 请求方式: `get`
+- 请求方式: `POST`
 - 请求地址: {host}`/cjh-open-api/loan-calculate`
 
 - 请求内容:  
@@ -294,7 +294,7 @@ or
 ```
 
 ### 合同预览
-- 请求方式: `get`
+- 请求方式: `GET`
 - 请求地址: {host}`/cjh-open-api/contract-show`
 
 - 请求内容:  
