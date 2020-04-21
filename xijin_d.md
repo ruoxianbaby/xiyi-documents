@@ -193,7 +193,9 @@ remainTime　剩余时间
 {
     "code": 1,
     "message": "绑卡成功",
-    "info": ""
+    "info": {
+        "status": "3001"
+    }
 }
 ```
 or
@@ -201,7 +203,9 @@ or
 {
     "code": 1,
     "message": "验证码发送成功",
-    "info": ""
+    "info": {
+        "status": "3003"
+    }
 }
 ```
 
