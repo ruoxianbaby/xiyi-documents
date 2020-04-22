@@ -11,6 +11,7 @@
     - [合同预览](./xijin_d.md/#合同预览)  
     - [活体校验](./xijin_d.md/#活体校验)  
     - [提现申请](./xijin_d.md/#提现申请)  
+    - [用户信息](./xijin_d.md/#用户信息)  
 
 ### 全局header  
 
@@ -360,5 +361,55 @@ contractNo&nbsp;&nbsp;&nbsp;合同编号&nbsp;&nbsp;&nbsp;1委托代扣协议&nb
     "code": 0,
     "message": "审批提现前置条件不符合",
     "info": ""
+}
+```
+
+### 用户信息
+- 请求方式: `GET`
+- 请求地址: {host}`/cjh-open-api/user-info`
+verifiedIdName　姓名  
+verifiedIdNo　身份证  
+
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "SUCCESS",
+    "info": {
+        "name1": "联系人",
+        "name2": "联系从",
+        "degree": "40",
+        "mobile1": "110",
+        "mobile2": "120",
+        "marriage": "01",
+        "houseCity": "北京市",
+        "relation1": "8",
+        "relation2": "5",
+        "companyCity": "北京市",
+        "companyName": "公司名称",
+        "verifiedIdNo": "310107199104053401",
+        "houseCityCode": "110000",
+        "houseDistrict": "东城区",
+        "houseProvince": "北京市",
+        "monthlyIncome": "37",
+        "preCreditScore": "100",
+        "verifiedIdName": "沈黎昂",
+        "verifiedIdRace": "汉",
+        "companyCityCode": "110000",
+        "companyDistrict": "东城区",
+        "companyProvince": "北京市",
+        "verifiedIdGender": "男",
+        "verifiedIdIssued": "上海市公安局静安分局",
+        "houseDistrictCode": "110101",
+        "houseProvinceCode": "110000",
+        "verifiedIdAddress": "上海市静安区中华新路940号901室",
+        "houseDetailAddress": "家庭详细地址",
+        "verifiedIdBirthday": "19910405",
+        "verifiedIdValidEnd": "20370805",
+        "companyDistrictCode": "110101",
+        "companyProvinceCode": "110000",
+        "verifiedIdValidBegin": "20170805"
+    }
 }
 ```
