@@ -110,7 +110,8 @@ remainTime　剩余时间
             "update_time": "2020-04-21 14:23:45",
             "order_status": "4002",
             "product_name": "test-cjh",
-            "image": "https://xijin-loan.oss-cn-shanghai.aliyuncs.com/product/images/%E5%B0%8F%E8%8A%B1_EktrkEOSTRVzBoX1zhINiKPzLq9CAN4c_RS8dSHY5Yr4Y9-DYTZlnLCKqUuMxBf3X.jpg"
+            "image": "https://xijin-loan.oss-cn-shanghai.aliyuncs.com/product/images/%E5%B0%8F%E8%8A%B1_EktrkEOSTRVzBoX1zhINiKPzLq9CAN4c_RS8dSHY5Yr4Y9-DYTZlnLCKqUuMxBf3X.jpg",
+            "order_status_msg": "审批通过"
         }
     ]
 }
