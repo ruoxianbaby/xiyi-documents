@@ -366,7 +366,7 @@ contractNo&nbsp;&nbsp;&nbsp;合同编号&nbsp;&nbsp;&nbsp;1委托代扣协议&nb
 
 ### 用户信息
 - 请求方式: `GET`
-- 请求地址: {host}`/cjh-open-api/user-info`
+- 请求地址: {host}`/cjh-open-api/user-info`  
 verifiedIdName　姓名  
 verifiedIdNo　身份证  
 
