@@ -324,9 +324,6 @@ contractNo&nbsp;&nbsp;&nbsp;合同编号&nbsp;&nbsp;&nbsp;1委托代扣协议&nb
 ```json
 {
     "orderNo":"202004151032496186912628",
-    "userId":1,
-    "name":"奧巴哈",
-    "idNo":123456196108041236,
     "image1": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/4QBsRXhpZgAASUkqAAgAAAADADEBAgAHAAAAMgAAABICAwACAAAAAgACAGmHBAABAAAAOgAAAAAAAABQaWNhc2EAAAMAAJAHAAQAAAAwMjIwAqAEAAEAAAD0AQAAA6AEAAEAAAAsAQAAAAAAAP/bAEMABwUFBgUEBwYFBggHBwgKEQsKCQkK................"
 }
 ```
