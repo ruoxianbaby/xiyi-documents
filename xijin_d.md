@@ -422,7 +422,18 @@ verifiedIdNo　身份证
 }
 ```
 - 响应内容:  
+loanAmount　借款金额  
+orderNo　订单号  
+createTime　借款日期  
+allPayAmount　合计  
+payedAmount　已还  
+needPayAmount　待还  
 
+allPayAmount　总金额  
+isPaid　当期是否已结清  
+lateFee　当期违约金
+
+```json
 {
     "code": 0,
     "message": "Success",
@@ -460,3 +471,4 @@ verifiedIdNo　身份证
         "payedAmount": 0
     }
 }
+```
