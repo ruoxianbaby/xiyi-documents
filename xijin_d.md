@@ -428,10 +428,11 @@ createTime　借款日期
 allPayAmount　合计  
 payedAmount　已还  
 needPayAmount　待还  
-
+  
 allPayAmount　总金额  
 isPaid　当期是否已结清  
-lateFee　当期违约金
+lateFee　当期违约金  
+currTenor　当前期数  
 
 ```json
 {
