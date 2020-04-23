@@ -12,6 +12,7 @@
     - [活体校验](./xijin_d.md/#活体校验)  
     - [提现申请](./xijin_d.md/#提现申请)  
     - [用户信息](./xijin_d.md/#用户信息)  
+    - [还款计划](./xijin_d.md/#还款计划)  
 
 ### 全局header  
 
@@ -410,3 +411,52 @@ verifiedIdNo　身份证
     }
 }
 ```
+
+### 还款计划
+- 请求方式: `POST`
+- 请求地址: {host}`/cjh-open-api/repay-plan-list`  
+- 请求内容:  
+```json
+{
+    "orderNo":202004151032496186912628
+}
+```
+- 响应内容:  
+
+{
+    "code": 0,
+    "message": "Success",
+    "info": {
+        "bankCode": "ABC",
+        "bankName": "",
+        "cardNo": "6228481099305925274",
+        "earlyRepay": 0,
+        "orderNo": "202004231024255422109743",
+        "repayPlan": [
+            {
+                "allPaidAmount": 0,
+                "allPayAmount": 349.43,
+                "allPayCorpus": 330.02,
+                "allPayFee": 19.41,
+                "canRepayDate": 1587657600000,
+                "canRepayStatus": true,
+                "corpusAmt": 330.02,
+                "currTenor": 1,
+                "isPaid": false,
+                "isPaying": false,
+                "lateFee": 0,
+                "overDays": 0,
+                "payDate": 1589904000000,
+                "payTillTime": "23:00:00",
+                "payType": 3,
+                "remainAmount": 349.43
+            }
+        ],
+        "withdrawId": "2447554854052707",
+        "loanAmount": "1000.00",
+        "createTime": "2020-04-23",
+        "needPayAmount": 1047.96,
+        "allPayAmount": 1047.96,
+        "payedAmount": 0
+    }
+}
