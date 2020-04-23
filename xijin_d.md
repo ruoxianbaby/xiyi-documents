@@ -13,6 +13,7 @@
     - [提现申请](./xijin_d.md/#提现申请)  
     - [用户信息](./xijin_d.md/#用户信息)  
     - [还款计划](./xijin_d.md/#还款计划)  
+    - [提交还款](./xijin_d.md/#提交还款)  
 
 ### 全局header  
 
@@ -474,4 +475,24 @@ currTenor　当前期数
         "payedAmount": 0
     }
 }
+```
+
+### 提交还款
+- 请求方式: `POST`
+- 请求地址: {host}`/cjh-open-api/repay-submit`  
+- 请求内容:  
+payType　还款类型 1.正常还款；2.提前结清
+period　期数 正常还款必填，提前结清可为空
+
+```json
+{
+    "orderNo":202004151032496186912628,
+    "payType":1,
+    "period":1
+}
+```
+- 响应内容:  
+
+```json
+{"code":0,"message":"提交成功","info":""}
 ```
