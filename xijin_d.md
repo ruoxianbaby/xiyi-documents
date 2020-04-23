@@ -186,7 +186,8 @@ remainTime　剩余时间
     "cardNo":6228481099305925274,
     "bankCode":"ABC",
     "bankName":"农业银行",
-    "reserveMobile":13701874183
+    "reserveMobile":13701874183,
+    "busiType":"1:绑新卡  2:换旧卡"
 }
 ```
 
