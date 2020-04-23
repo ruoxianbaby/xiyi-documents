@@ -151,6 +151,7 @@ remainTime　剩余时间
 - 请求地址: {host}`/cjh-open-api/bank-card-list`  
 
 - 响应内容:  
+defaultFlag　是否默认卡  
 
 ```json
 {
