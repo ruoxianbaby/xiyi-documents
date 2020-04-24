@@ -47,6 +47,10 @@ face_flow_id　活体校验流水号
 withdraw_id　提现订单号  
 loanAmount　放款金额  
 remainTime　剩余时间  
+apply_time　申请时间  
+needPayAmount　待还金额  
+repayCount　期数  
+currentPayed　本期已还 true false
 
 ```json
 {
@@ -115,7 +119,11 @@ remainTime　剩余时间
             "product_name": "test-cjh",
             "image": "https://xijin-loan.oss-cn-shanghai.aliyuncs.com/product/images/%E5%B0%8F%E8%8A%B1_EktrkEOSTRVzBoX1zhINiKPzLq9CAN4c_RS8dSHY5Yr4Y9-DYTZlnLCKqUuMxBf3X.jpg",
             "order_status_msg": "审批通过",
-            "approveTime": "2020-04-22"
+            "approveTime": "2020-04-22"，
+            "apply_time": "2020-04-24 15:04:16",
+            "needPayAmount": 0,
+            "repayCount": 3,
+            "currentPayed": true
         }
     ]
 }
