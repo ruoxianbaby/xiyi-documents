@@ -429,7 +429,7 @@ verifiedIdNo　身份证
 - 请求方式: `POST`
 - 请求地址: {host}`/cjh-open-api/repay-plan-list`  
 - 请求内容:  
-type　0：还款记录；1：还款账单；
+type　0：借还账单；1：还款账单；
 
 ```json
 {
