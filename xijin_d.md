@@ -52,6 +52,7 @@ needPayAmount　待还金额
 repayCount　期数  
 currentPayed　本期已还 true false  
 repayTime　还款日期  
+loan_status　4101放款成功；4201还款中；4202已逾期；4203贷款结清
 
 ```json
 {
