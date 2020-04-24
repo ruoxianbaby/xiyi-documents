@@ -50,7 +50,8 @@ remainTime　剩余时间
 apply_time　申请时间  
 needPayAmount　待还金额  
 repayCount　期数  
-currentPayed　本期已还 true false
+currentPayed　本期已还 true false  
+repayTime　还款日期  
 
 ```json
 {
