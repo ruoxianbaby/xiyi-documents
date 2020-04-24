@@ -429,9 +429,12 @@ verifiedIdNo　身份证
 - 请求方式: `POST`
 - 请求地址: {host}`/cjh-open-api/repay-plan-list`  
 - 请求内容:  
+type　0：还款记录；1：还款账单；
+
 ```json
 {
-    "orderNo":202004151032496186912628
+    "orderNo":202004151032496186912628,
+    "type":1,0
 }
 ```
 - 响应内容:  
