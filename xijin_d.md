@@ -490,6 +490,70 @@ currTenor　当前期数
 }
 ```
 
+### 还款账单
+- 请求方式: `POST`
+- 请求地址: {host}`/cjh-open-api/repay-plan`  
+- 请求内容:  
+
+```json
+{
+    "orderNo":202004151032496186912628
+}
+```
+- 响应内容:  
+loanAmount　借款金额  
+orderNo　订单号  
+createTime　借款日期  
+allPayAmount　合计  
+payedAmount　已还  
+needPayAmount　待还  
+currentPayed　当期已还状态  
+canAllPay　是否可以提前结清  
+currentRepay.allPayAmount　当期还款金额  
+currentRepay.payDate　当期还款日期  
+lessTenor　剩余期数
+
+```json
+{
+    "code": 1,
+    "message": "Success",
+    "info": {
+        "bankCode": "ABC",
+        "bankName": "农业银行",
+        "cardNo": "6228481099305925274",
+        "earlyRepay": 0,
+        "orderNo": "202004261020125146752246",
+        "withdrawId": "2449676470952757",
+        "loanAmount": "2000.00",
+        "createTime": "2020-04-26",
+        "currentPayed": false,
+        "canAllPay": false,
+        "currentRepay": {
+            "allPaidAmount": 0,
+            "allPayAmount": 2031.97,
+            "allPayCorpus": 2000,
+            "allPayFee": 31.97,
+            "canRepayDate": 1587916800000,
+            "canRepayStatus": false,
+            "corpusAmt": 2000,
+            "currTenor": 1,
+            "isPaid": false,
+            "isPaying": false,
+            "lateFee": 0,
+            "overDays": 0,
+            "payDate": "05-23",
+            "payTillTime": "23:00:00",
+            "payType": 3,
+            "remainAmount": 2031.97
+        },
+        "lessTenor": 1,
+        "needPayAmount": 2031.97,
+        "allPayAmount": 2031.97,
+        "payedAmount": 0
+    }
+}
+```
+
 ### 提交还款
 - 请求方式: `POST`
 - 请求地址: {host}`/cjh-open-api/repay-submit`  
