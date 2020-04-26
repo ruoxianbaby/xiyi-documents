@@ -510,7 +510,7 @@ allPayAmount　合计
 payedAmount　已还  
 needPayAmount　待还  
 currentPayed　当期已还状态 true：不显示本期；false：显示本期；  
-canAllPay　是否可以提前结清 true：不显示提前还款；false：显示提前还款；  
+canAllPay　是否可以提前结清 true：显示提前还款；false：不显示提前还款；  
 currentRepay.allPayAmount　当期还款金额  
 currentRepay.currTenor　当期还款期数  
 currentRepay.payDate　当期还款日期  
