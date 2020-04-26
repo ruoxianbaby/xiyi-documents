@@ -450,6 +450,7 @@ allPayCorpus　当期本金
 allPayFee　当期手续费
 lateFee　当期违约金  
 currTenor　当前期数  
+isPaying　是否还款中
 
 ```json
 {
