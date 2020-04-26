@@ -429,12 +429,10 @@ verifiedIdNo　身份证
 - 请求方式: `POST`
 - 请求地址: {host}`/cjh-open-api/repay-plan-list`  
 - 请求内容:  
-type　0：借还账单；1：还款账单；
 
 ```json
 {
-    "orderNo":202004151032496186912628,
-    "type":1,0
+    "orderNo":202004151032496186912628
 }
 ```
 - 响应内容:  
@@ -447,6 +445,8 @@ needPayAmount　待还
 repayPlan:  
 allPayAmount　总金额  
 isPaid　当期是否已结清  
+allPayCorpus　当期本金
+allPayFee　当期手续费
 lateFee　当期违约金  
 currTenor　当前期数  
 
