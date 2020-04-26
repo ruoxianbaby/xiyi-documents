@@ -559,8 +559,8 @@ lessTenor　剩余期数
 - 请求方式: `POST`
 - 请求地址: {host}`/cjh-open-api/repay-submit`  
 - 请求内容:  
-payType　还款类型 1.正常还款；2.提前结清
-period　期数 正常还款必填，提前结清可为空
+payType　还款类型 1.正常还款；2.提前结清  
+period　期数 正常还款必填，提前结清可为空  
 
 ```json
 {
