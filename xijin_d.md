@@ -508,8 +508,8 @@ createTime　借款日期
 allPayAmount　合计  
 payedAmount　已还  
 needPayAmount　待还  
-currentPayed　当期已还状态  
-canAllPay　是否可以提前结清  
+currentPayed　当期已还状态 true：不显示本期；false：显示本期；  
+canAllPay　是否可以提前结清 true：不显示提前还款；false：显示提前还款；  
 currentRepay.allPayAmount　当期还款金额  
 currentRepay.payDate　当期还款日期  
 lessTenor　剩余期数
