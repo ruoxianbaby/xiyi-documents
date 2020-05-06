@@ -518,7 +518,7 @@ use_out_link : 如果是1 那么就使用外部链接out_link_url
 
 
 ## 规格  
-
+### 见 http://www.macrozheng.com/admin/#/pms/addProduct
 ### 规格添加
 - 请求方式: `post`
 - 请求地址: `goods-specifications`
