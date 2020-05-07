@@ -2861,6 +2861,9 @@ type=1 可选，筛选分类用  search 搜索的商品名
                 "invite_url": "http://47.103.61.179:1080/invate_friend/?sign=00000b&callback=http://47.103.61.179:8077/loan/2.html?sign=00000b",
                 "specifications_arr": [
                     {
+		    	"id": "342", // 单规格有这个
+			"original_cost": "33.41", // 单规格有这个
+                        "after_discount_cost": "26.06"  // 单规格有这个
                         "main_specification": "蓝色",
                         "image_url": "https://www.baidu.com1",
                         "sub": [
