@@ -2795,7 +2795,7 @@ type=1 可选，筛选分类用  search 搜索的商品名
 
 ### 商品详情  
 - 请求方式: `get`
-- 请求地址: `goods/1`
+- 请求地址: `goods/1?version=new`
 - 请求参数:  
 
 - 响应内容:  
@@ -2807,37 +2807,112 @@ type=1 可选，筛选分类用  search 搜索的商品名
         "items": [
             {
                 "id": 1,
-                "name": "商品",
-                "goods_type_id": 1,
-                "image": "https://www.baidu.com",
-                "specification_desc": "规格描述",
-                "service": "服务描述",
-		"goods_detail": "商品说明",
-                "detail_content": "富文本内容",
-                "discount": "7.8",  打折
-                "can_discount": true,  已经分享过/已经是钻石级别会员 可以直接购买打折的价格商品
+                "name": "【测试商品】罗技G502 HERO 主宰者 游戏鼠标吃鸡宏 g502 加重模块",
+                "goods_type_id": 11,
+                "image": "https://xijin.oss-cn-shanghai.aliyuncs.com/others/2020-04-22/-yEc2my4rSJ6r_LTYG__IEYzhidDOB2w.jpg",
+                "specification_desc": "罗技G502 HERO 主宰者游戏鼠标裸标",
+                "service": "包邮、七天无理由退换货",
+                "goods_detail": "产品包含无线鼠标和有线鼠标两种，如需要充电鼠标垫，请另行配置",
+                "detail_content": "<ul><li>品牌:&nbsp;Logitech/罗技</li><li>型号:&nbsp;G502</li><li>成色:&nbsp;全新</li><li>接口类型:&nbsp;USB</li><li>光学分辨率:&nbsp;1600dpi</li><li>工作方式:&nbsp;机械/滚轮</li><li>是否支持人体工程学:&nbsp;支持</li></ul><p><br></p><p><img src=\"https://xijin.oss-cn-shanghai.aliyuncs.com/others/2020-04-22/7MohiWiMWCqQ-roBpB7YD9MoV4BEI2QG.jpg\"></p><p><img src=\"https://xijin.oss-cn-shanghai.aliyuncs.com/others/2020-04-22/DfE6rM5W-RjKlN9yx3RpfFWfAJKtydHz.jpg\"></p><p><img src=\"https://xijin.oss-cn-shanghai.aliyuncs.com/others/2020-04-22/Cj92OoKCUCEXjZKapojtycFErfkUbhse.jpg\"></p><p><img src=\"https://xijin.oss-cn-shanghai.aliyuncs.com/others/2020-04-22/XyUoGo5dssLw6a_qdwOWalx-l6TMhGPH.jpg\"></p><p><img src=\"https://xijin.oss-cn-shanghai.aliyuncs.com/others/2020-04-22/OjwmX2g_EDsSF0t8mfJlq4MW4hS3wTJL.jpg\"></p>",
+                "logistics_fee": "0.01",
+                "discount": "7.8",
+                "main_specification_name": "颜色",
+                "second_specification_name": "鞋码",
+                "top_time": "0000-00-00 00:00:00",
+                "dis_count": "7.8",
+                "can_discount": false,
                 "specifications": [
                     {
-                        "id": "1",
-                        "name": "规格1",
-                        "image_url": "",
-                        "original_cost": "0.02",  原价
-                        "after_discount_cost": "0.01"  78折打折之后
+                        "id": "339",
+                        "name": "蓝色 39",
+                        "image_url": "https://www.baidu.com1",
+                        "original_cost": "30.51",
+                        "after_discount_cost": "23.79"
                     },
                     {
-                        "id": "2",
-                        "name": "规格2",
-                        "image_url": "",
-                        "original_cost": "44.00",
-                        "after_discount_cost": "23.00"
+                        "id": "341",
+                        "name": "绿色 31",
+                        "image_url": "https://www.baidu.com",
+                        "original_cost": "30.51",
+                        "after_discount_cost": "23.79"
+                    },
+                    {
+                        "id": "337",
+                        "name": "蓝色 37",
+                        "image_url": "https://www.baidu.com1",
+                        "original_cost": "33.41",
+                        "after_discount_cost": "26.06"
+                    },
+                    {
+                        "id": "340",
+                        "name": "绿色 22",
+                        "image_url": "https://www.baidu.com",
+                        "original_cost": "33.41",
+                        "after_discount_cost": "26.06"
+                    },
+                    {
+                        "id": "338",
+                        "name": "蓝色 38",
+                        "image_url": "https://www.baidu.com1",
+                        "original_cost": "34.86",
+                        "after_discount_cost": "27.19"
                     }
                 ],
-		"invite_url": "http://47.103.61.179:1080/invate_friend/?sign=00000b&callback=http://47.103.61.179:8077/loan/2.html?sign=00000b"
+                "invite_url": "http://47.103.61.179:1080/invate_friend/?sign=00000b&callback=http://47.103.61.179:8077/loan/2.html?sign=00000b",
+                "specifications_arr": [
+                    {
+                        "main_specification": "蓝色",
+                        "image_url": "https://www.baidu.com1",
+                        "sub": [
+                            {
+                                "id": "339",
+                                "second_specification": "39",
+                                "image_url": "https://www.baidu.com1",
+                                "original_cost": "30.51",
+                                "after_discount_cost": "23.79"
+                            },
+                            {
+                                "id": "337",
+                                "second_specification": "37",
+                                "image_url": "https://www.baidu.com1",
+                                "original_cost": "33.41",
+                                "after_discount_cost": "26.06"
+                            },
+                            {
+                                "id": "338",
+                                "second_specification": "38",
+                                "image_url": "https://www.baidu.com1",
+                                "original_cost": "34.86",
+                                "after_discount_cost": "27.19"
+                            }
+                        ]
+                    },
+                    {
+                        "main_specification": "绿色",
+                        "image_url": "https://www.baidu.com",
+                        "sub": [
+                            {
+                                "id": "341",
+                                "second_specification": "31",
+                                "image_url": "https://www.baidu.com",
+                                "original_cost": "30.51",
+                                "after_discount_cost": "23.79"
+                            },
+                            {
+                                "id": "340",
+                                "second_specification": "22",
+                                "image_url": "https://www.baidu.com",
+                                "original_cost": "33.41",
+                                "after_discount_cost": "26.06"
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "_links": {
             "self": {
-                "href": "http://my_xijin_api.com/goods/1?page=1"
+                "href": "http://my_xijin_api.com/goods/1?version=new&page=1"
             }
         },
         "_meta": {
