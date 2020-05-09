@@ -105,7 +105,7 @@ Authorization | Bearer ***access_token***
 
 ```json
 {
-    "cid": f6cc42455d49551c675f525301d1639a, 
+    "cid": "f6cc42455d49551c675f525301d1639a", 
     "channel_id": 1
 }
 ```  
