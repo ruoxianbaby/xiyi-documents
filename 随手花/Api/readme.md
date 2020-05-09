@@ -3,6 +3,7 @@
 - [user模块](./#user模块)  
     - [获取短信验证码](./#获取短信验证码)  
     - [获取access_token](./#获取access_token)
+    - [闪登](./#闪登)
     - [获取用户信息接口](./#获取用户信息)  
     - [获取用户申请记录](./#获取用户申请记录)
     - [获取h5url](./#获取h5url)
@@ -83,6 +84,29 @@ Authorization | Bearer ***access_token***
 {
     "mobile": 15821827706, 
     "sms_code": 5934
+}
+```  
+- 响应内容:  
+
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "access_token": "uFYrhY7NUj68X9K_EbAFJ6axpWJVY70E"
+    }
+}
+```
+
+### 闪登
+- 请求方式: `post`
+- 请求地址: {host}`user/acquire-token`
+- 请求参数:  
+
+```json
+{
+    "cid": f6cc42455d49551c675f525301d1639a, 
+    "channel_id": 1
 }
 ```  
 - 响应内容:  
