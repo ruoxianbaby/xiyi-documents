@@ -88,6 +88,8 @@
     - [订单删除](./#订单删除) 
     - [确认收货](./#确认收货) 
 - [权益](./#权益)
+    - [查询9.9包邮](./#查询9.9包邮) 
+    - [6大类目接口](./#6大类目接口) 
     - [创建权益订单](./#创建权益订单) 
 ### 测试主机host: 47.103.61.179:1022/  
 
@@ -3434,6 +3436,658 @@ status 1待支付，2待发货，3待收货，4已完成， status参数可选�
     "code": 1,
     "message": "订单创建成功",
     "info": "alipay_sdk=alipay-sdk-php-easyalipay-20190926&app_id=2016102100732339&biz_content=%7B%22subject%22%3A+%22%E7%8A%80%E9%87%91%E5%AD%A3%E5%8D%A1%E4%BC%9A%E5%91%98%22%2C%22out_trade_no%22%3A+%2220200511485649%22%2C%22total_amount%22%3A+%2269%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%2C%22passback_params%22%3A%22interests_quarter%22%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&notify_url=http%3A%2F%2F47.103.61.179%3A1080%2Fgoods-order%2Fzfb-async&sign_type=RSA2&timestamp=2020-05-11+14%3A29%3A36&version=1.0&sign=NYIeyhkQ962ICyHFfNvRR%2B6281mWS6FsxF1kJUFvotUITIPuIRsIxxADlcCF245%2FvGHn%2Brmkitr%2FcV3wiSw9Li%2FIiRz0A4%2Fdf0Obh6CdM4GQkscyuwjZv39YqgeDFU%2Bq%2FHcWa%2FwuHUHlKgkeWnjMuTMpxI8zHPkPtRfKCLtBaWI5X7USxugkFpxwwykGOaJH8CNv%2F1zlioLPVD3b8alYFWT8pQCWJe4VEzmSfZ4mGXhAcorutJ3v25p4aDnnlNPn9G6SnvPfrJr9Dnm7IgpViOhNSj2f85Be6dbtHVTKBSM5H%2FZhxXw3DUICQ7OSyaUBg%2F0aq7YLbCPtBiZk1divJA%3D%3D"
+}
+```
+
+
+### 6大类目接口  
+- 请求方式: `get`
+- 请求地址: `jusheng-interests/allcategorylist`
+- 请求参数:  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": [
+        {
+            "id": "1",
+            "name": "今日爆款",
+            "titleOne": "爆款排行榜",
+            "titleTwo": "帮你智慧购",
+            "titleThree": "最高返90%",
+            "btnText": "大牌好物",
+            "imgBgUrl": "https://ajqh-app-uat.apass.cn/static/tbk/tbk_cat_1_bg.png?v=0.4488466417978122",
+            "imgBgUrlVip": "https://img.alicdn.com/bao/uploaded/i2/2937365488/O1CN019s3Vtm1qPYCyTXTOp_!!0-item_pic.jpg",
+            "cashBackTitle": "最高返90%",
+            "subCategoryList": [
+                {
+                    "name": "今日爆款",
+                    "materialId": "30443"
+                },
+                {
+                    "name": "品牌抢购",
+                    "materialId": "3786"
+                },
+                {
+                    "name": "有好货",
+                    "materialId": "4092"
+                }
+            ],
+            "bannerList": [
+                {
+                    "bannerType": "0",
+                    "imgUrl": "https://ajqh-app-uat.apass.cn/static/banner/20200402162922064.jpg?v=0.6499887203404042",
+                    "linkUrl": "weex://ajqhapp?jsId=home&router=router_hungry",
+                    "productId": "0",
+                    "productDetailId": "0",
+                    "brandId": "0",
+                    "backgroundColor": ""
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "人气餐饮",
+            "titleOne": "\"返现\"喂饱你",
+            "titleTwo": "最高10%",
+            "titleThree": "最高返10%",
+            "btnText": "肯德基/必胜客",
+            "imgBgUrl": "https://ajqh-app-uat.apass.cn/static/tbk/tbk_cat_2_bg.png?v=0.8318266957725841",
+            "imgBgUrlVip": "https://img.alicdn.com/bao/uploaded/i2/2937365488/O1CN019s3Vtm1qPYCyTXTOp_!!0-item_pic.jpg",
+            "cashBackTitle": "最高返10%",
+            "subCategoryList": [
+                {
+                    "name": "肯德基/必胜客/麦当劳",
+                    "materialId": "19810"
+                }
+            ],
+            "bannerList": [
+                {
+                    "bannerType": "2",
+                    "imgUrl": "https://ajqh-app-uat.apass.cn/static/banner/20200402163055575.jpg?v=0.7010080666817405",
+                    "linkUrl": "",
+                    "productId": "142",
+                    "productDetailId": "467",
+                    "brandId": "0",
+                    "backgroundColor": ""
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "name": "旅游出行",
+            "titleOne": "全场最高返6%",
+            "titleTwo": "",
+            "titleThree": "最高返6%",
+            "btnText": "酒店/签证/自助餐",
+            "imgBgUrl": "https://ajqh-app-uat.apass.cn/static/tbk/tbk_cat_3_bg.png?v=0.3383499995402588",
+            "imgBgUrlVip": "https://img.alicdn.com/bao/uploaded/i5/TB1gzz6FxD1gK0jSZFsxHPldVXa_085243.jpg",
+            "cashBackTitle": "最高返6%",
+            "subCategoryList": [
+                {
+                    "name": "酒店",
+                    "materialId": "27913"
+                },
+                {
+                    "name": "自助餐",
+                    "materialId": "27914"
+                },
+                {
+                    "name": "签证",
+                    "materialId": "26077"
+                },
+                {
+                    "name": "门票",
+                    "materialId": "19811"
+                }
+            ],
+            "bannerList": [
+                {
+                    "bannerType": "1",
+                    "imgUrl": "https://ajqh-app-uat.apass.cn/static/banner/20200402163129159.jpg?v=0.11099973631837723",
+                    "linkUrl": "",
+                    "productId": "0",
+                    "productDetailId": "0",
+                    "brandId": "102",
+                    "backgroundColor": ""
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "name": "电影演出",
+            "titleOne": "超低折扣帮你省",
+            "titleTwo": "",
+            "titleThree": "最高返33%",
+            "btnText": "电影票/演唱会",
+            "imgBgUrl": "https://ajqh-app-uat.apass.cn/static/tbk/tbk_cat_4_bg.png?v=0.20189868444906323",
+            "imgBgUrlVip": "https://img.alicdn.com/bao/uploaded/i3/4249041175/O1CN01hHQ0IR1KYBySGuIpq_!!4249041175-0-lubanu-s.jpg",
+            "cashBackTitle": "最高返33%",
+            "subCategoryList": [
+                {
+                    "name": "数字内容",
+                    "materialId": "29105"
+                },
+                {
+                    "name": "优酷视频",
+                    "materialId": "28636"
+                },
+                {
+                    "name": "电影演出",
+                    "materialId": "19812"
+                },
+                {
+                    "name": "大麦演出",
+                    "materialId": "25378"
+                }
+            ],
+            "bannerList": [
+                {
+                    "bannerType": "1",
+                    "imgUrl": "https://ajqh-app-uat.apass.cn/static/banner/20200402163146627.jpg?v=0.286221156846311",
+                    "linkUrl": "",
+                    "productId": "0",
+                    "productDetailId": "0",
+                    "brandId": "3",
+                    "backgroundColor": ""
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "name": "医疗健康",
+            "titleOne": "唯健康不可辜负",
+            "titleTwo": "折扣抢订",
+            "titleThree": "最高返8%",
+            "btnText": "疫苗/口腔",
+            "imgBgUrl": "https://ajqh-app-uat.apass.cn/static/tbk/tbk_cat_5_bg.png?v=0.08044663524985418",
+            "imgBgUrlVip": "https://img.alicdn.com/bao/uploaded/i2/2318552307/TB1NblipFooBKNjSZPhXXc2CXXa_!!0-item_pic.jpg",
+            "cashBackTitle": "最高返8%",
+            "subCategoryList": [
+                {
+                    "name": "口腔",
+                    "materialId": "25888"
+                },
+                {
+                    "name": "疫苗",
+                    "materialId": "25885"
+                },
+                {
+                    "name": "基因检测",
+                    "materialId": "25890"
+                }
+            ],
+            "bannerList": [
+                {
+                    "bannerType": "0",
+                    "imgUrl": "https://ajqh-app-uat.apass.cn/static/banner/20200402163206071.jpg?v=0.6410563942645848",
+                    "linkUrl": "weex://ajqhapp?jsId=fydvip&router=router_vip",
+                    "productId": "0",
+                    "productDetailId": "0",
+                    "brandId": "0",
+                    "backgroundColor": ""
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "name": "上门服务",
+            "titleOne": "品质到家",
+            "titleTwo": "",
+            "titleThree": "最高返10%",
+            "btnText": "家政/修手机",
+            "imgBgUrl": "https://ajqh-app-uat.apass.cn/static/tbk/tbk_cat_6_bg.png?v=0.18251639576463075",
+            "imgBgUrlVip": "https://img.alicdn.com/bao/uploaded/i4/3885826257/O1CN012LAtIo1w5kmOc4xt0_!!0-item_pic.jpg",
+            "cashBackTitle": "最高返10%",
+            "subCategoryList": [
+                {
+                    "name": "家政/保洁/修手机",
+                    "materialId": "19814"
+                }
+            ],
+            "bannerList": [
+                {
+                    "bannerType": "4",
+                    "imgUrl": "https://ajqh-app-uat.apass.cn/static/banner/20200402163230586.jpg?v=0.49872665149603446",
+                    "linkUrl": "https://s.click.taobao.com/bp3Qslv",
+                    "productId": "0",
+                    "productDetailId": "0",
+                    "brandId": "0",
+                    "backgroundColor": ""
+                }
+            ]
+        }
+    ]
+}
+```
+
+
+
+### 查询9.9包邮  
+- 请求方式: `get`
+- 请求地址: `jusheng-interests/goods99-info-list`
+- 请求参数:  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "m9ProductList": [
+            [
+                {
+                    "goodsId": "595441515207",
+                    "goodsTitle": "包邮9.9元九块九男装衣服学生版T恤短袖9块特价便宜货10元速干薄",
+                    "itemDescription": "",
+                    "couponInfo": "满2减1",
+                    "couponAmount": "1",
+                    "goodsListPicUrl": "https://img.alicdn.com/bao/uploaded/i4/2733150275/O1CN01AZd4kw1DtzRslY8HY_!!2733150275.jpg",
+                    "thirdMallPrice": "5.8",
+                    "ourPrice": "4.80",
+                    "commissionAmount": "0.96",
+                    "ourVipPrice": "3.84",
+                    "salesCount": "361",
+                    "userType": "淘宝",
+                    "couponShareUrl": "https://oauth.taobao.com/authorize?response_type=code&client_id=28370897&redirect_uri=https://card-app.pmstar.cn/appweb/tbk/oauth/callback&view=wap&state=0_595441515207_",
+                    "smallImages": [
+                        "https://img.alicdn.com/i4/2733150275/O1CN01VD4OJR1DtzRvV5zbl_!!2733150275.jpg",
+                        "https://img.alicdn.com/i3/2733150275/O1CN0117L6hx1DtzRt4DOcP_!!2733150275.jpg",
+                        "https://img.alicdn.com/i3/2733150275/O1CN018tlswL1DtzRuBXPzd_!!2733150275.jpg",
+                        "https://img.alicdn.com/i3/2733150275/O1CN01T2enU51DtzRt4Bih7_!!2733150275.jpg",
+                        "https://img.alicdn.com/i1/2733150275/O1CN01OmNRHw1DtzRsla0gS_!!2733150275.jpg",
+                        "https://img.alicdn.com/i2/2733150275/O1CN01nviJ4q1DtzRvV5FsT_!!2733150275.jpg",
+                        "https://img.alicdn.com/i4/2733150275/O1CN017AQSUv1DtzRr6AayV_!!2733150275.jpg",
+                        "https://img.alicdn.com/i1/2733150275/O1CN01fvrMHY1DtzRw8dPeH_!!2733150275.jpg",
+                        "https://img.alicdn.com/i1/2733150275/O1CN01jtrLlJ1DtzRw8dHKX_!!2733150275.jpg"
+                    ],
+                    "commissionRate": "2000",
+                    "levelOneCategoryId": "30",
+                    "levelOneCategoryName": "男装",
+                    "categoryId": "50000436",
+                    "categoryName": "T恤"
+                },
+                {
+                    "goodsId": "589557574833",
+                    "goodsTitle": "包邮9.9元九块九男生衣服学生韩版T恤短袖9块便宜货15元以下上衣",
+                    "itemDescription": "",
+                    "couponInfo": "满2减1",
+                    "couponAmount": "1",
+                    "goodsListPicUrl": "https://img.alicdn.com/bao/uploaded/i3/2733150275/O1CN01f4afyh1DtzQQIIZoZ_!!2733150275.jpg",
+                    "thirdMallPrice": "6.9",
+                    "ourPrice": "5.90",
+                    "commissionAmount": "1.18",
+                    "ourVipPrice": "4.72",
+                    "salesCount": "115",
+                    "userType": "淘宝",
+                    "couponShareUrl": "https://oauth.taobao.com/authorize?response_type=code&client_id=28370897&redirect_uri=https://card-app.pmstar.cn/appweb/tbk/oauth/callback&view=wap&state=0_589557574833_",
+                    "smallImages": [
+                        "https://img.alicdn.com/i4/2733150275/O1CN01Yi96sI1DtzQSq7JH6_!!2733150275.jpg",
+                        "https://img.alicdn.com/i2/2733150275/O1CN018eNDOF1DtzQRQz3By_!!2733150275.jpg",
+                        "https://img.alicdn.com/i4/2733150275/O1CN01ONvE7g1DtzQQb4Q2h_!!2733150275.jpg",
+                        "https://img.alicdn.com/i1/2733150275/O1CN01q1i3oO1DtzQRQz3CP_!!2733150275.jpg"
+                    ],
+                    "commissionRate": "2000",
+                    "levelOneCategoryId": "30",
+                    "levelOneCategoryName": "男装",
+                    "categoryId": "50000436",
+                    "categoryName": "T恤"
+                },
+                {
+                    "goodsId": "615408766568",
+                    "goodsTitle": "夏季套装全场包邮9.9元九块九男装休闲修身运动九分裤9块特价便宜",
+                    "itemDescription": "",
+                    "couponInfo": "",
+                    "couponAmount": "",
+                    "goodsListPicUrl": "https://img.alicdn.com/bao/uploaded/i4/2528947880/O1CN01YeDgnv2855ahthEK7_!!2528947880.jpg",
+                    "thirdMallPrice": "9.8",
+                    "ourPrice": "9.80",
+                    "commissionAmount": "0.49",
+                    "ourVipPrice": "9.31",
+                    "salesCount": "1058",
+                    "userType": "淘宝",
+                    "couponShareUrl": "https://oauth.taobao.com/authorize?response_type=code&client_id=28370897&redirect_uri=https://card-app.pmstar.cn/appweb/tbk/oauth/callback&view=wap&state=0_615408766568_",
+                    "smallImages": [
+                        "https://img.alicdn.com/i4/2528947880/O1CN01O7EkF42855agPG5lG_!!2528947880.jpg",
+                        "https://img.alicdn.com/i4/2528947880/O1CN01t9HL672855airV4OL_!!2528947880.jpg",
+                        "https://img.alicdn.com/i1/2528947880/O1CN01bwlRv72855afrQb0E_!!2528947880.jpg",
+                        "https://img.alicdn.com/i3/2528947880/O1CN01RY3xgE2855aXvES2R_!!2528947880.jpg"
+                    ],
+                    "commissionRate": "500",
+                    "levelOneCategoryId": "30",
+                    "levelOneCategoryName": "男装",
+                    "categoryId": "3035",
+                    "categoryName": "休闲裤"
+                }
+            ],
+            [
+                {
+                    "goodsId": "594775264275",
+                    "goodsTitle": "新品包邮9.9元工作九块九便宜男装圆领修身潮韩版T恤短袖9块10元",
+                    "itemDescription": "",
+                    "couponInfo": "",
+                    "couponAmount": "",
+                    "goodsListPicUrl": "https://img.alicdn.com/bao/uploaded/i3/2914834811/O1CN01bzK8EA1lPU0FV7LVw_!!2914834811.jpg",
+                    "thirdMallPrice": "9.9",
+                    "ourPrice": "9.90",
+                    "commissionAmount": "0.50",
+                    "ourVipPrice": "9.40",
+                    "salesCount": "250",
+                    "userType": "淘宝",
+                    "couponShareUrl": "https://oauth.taobao.com/authorize?response_type=code&client_id=28370897&redirect_uri=https://card-app.pmstar.cn/appweb/tbk/oauth/callback&view=wap&state=0_594775264275_",
+                    "smallImages": [
+                        "https://img.alicdn.com/i4/2914834811/O1CN016QhbSF1lPU0D2poK6_!!2914834811.jpg",
+                        "https://img.alicdn.com/i4/2914834811/O1CN010VI9BU1lPU07HTuWN_!!2914834811.jpg",
+                        "https://img.alicdn.com/i3/2914834811/O1CN010lP5XE1lPU0D2qoiz_!!2914834811.jpg",
+                        "https://img.alicdn.com/i1/2914834811/O1CN01zCeARx1lPU0GNdIye_!!2914834811.png",
+                        "https://img.alicdn.com/i4/2914834811/O1CN019qUf981lPU0HhnPMl_!!2914834811.jpg",
+                        "https://img.alicdn.com/i2/2914834811/O1CN01dxOJVA1lPU0HEBscw_!!2914834811.jpg",
+                        "https://img.alicdn.com/i3/2914834811/O1CN01Tnrfze1lPU0Hhp19D_!!2914834811.jpg",
+                        "https://img.alicdn.com/i2/2914834811/O1CN01MWzXj51lPU0HEAXVY_!!2914834811.jpg",
+                        "https://img.alicdn.com/i2/2914834811/O1CN01m0p4oM1lPU0EL0zTD_!!2914834811.jpg"
+                    ],
+                    "commissionRate": "500",
+                    "levelOneCategoryId": "30",
+                    "levelOneCategoryName": "男装",
+                    "categoryId": "50000436",
+                    "categoryName": "T恤"
+                },
+                {
+                    "goodsId": "597943445850",
+                    "goodsTitle": "哈伦裤子包邮9.9天天特价男装休闲修身批发运动裤9块特价10元便宜",
+                    "itemDescription": "",
+                    "couponInfo": "",
+                    "couponAmount": "",
+                    "goodsListPicUrl": "https://img.alicdn.com/bao/uploaded/i4/2528947880/O1CN01M1hzIL2855aBpNwAh_!!0-item_pic.jpg",
+                    "thirdMallPrice": "9.9",
+                    "ourPrice": "9.90",
+                    "commissionAmount": "0.50",
+                    "ourVipPrice": "9.40",
+                    "salesCount": "71",
+                    "userType": "淘宝",
+                    "couponShareUrl": "https://oauth.taobao.com/authorize?response_type=code&client_id=28370897&redirect_uri=https://card-app.pmstar.cn/appweb/tbk/oauth/callback&view=wap&state=0_597943445850_",
+                    "smallImages": [
+                        "https://img.alicdn.com/i2/2528947880/O1CN01FGkZ532855XbWbjnR_!!2528947880.jpg",
+                        "https://img.alicdn.com/i4/2528947880/O1CN01uudhU82855URLc5lY_!!2528947880.jpg",
+                        "https://img.alicdn.com/i4/2528947880/TB2awEeaDqWBKNjSZFxXXcpLpXa_!!2528947880.jpg"
+                    ],
+                    "commissionRate": "500",
+                    "levelOneCategoryId": "30",
+                    "levelOneCategoryName": "男装",
+                    "categoryId": "3035",
+                    "categoryName": "休闲裤"
+                },
+                {
+                    "goodsId": "570401136219",
+                    "goodsTitle": "新款便宜包邮9.9元九块九女装圆领修身潮韩版T恤短袖9块10元半袖",
+                    "itemDescription": "",
+                    "couponInfo": "",
+                    "couponAmount": "",
+                    "goodsListPicUrl": "https://img.alicdn.com/bao/uploaded/i2/1756830840/TB2acV8lyCYBuNkHFCcXXcHtVXa_!!1756830840.jpg",
+                    "thirdMallPrice": "9.9",
+                    "ourPrice": "9.90",
+                    "commissionAmount": "0.50",
+                    "ourVipPrice": "9.40",
+                    "salesCount": "161",
+                    "userType": "淘宝",
+                    "couponShareUrl": "https://oauth.taobao.com/authorize?response_type=code&client_id=28370897&redirect_uri=https://card-app.pmstar.cn/appweb/tbk/oauth/callback&view=wap&state=0_570401136219_",
+                    "smallImages": [
+                        "https://img.alicdn.com/i3/1756830840/TB2B6slc6gy_uJjSZSyXXbqvVXa_!!1756830840.jpg",
+                        "https://img.alicdn.com/i3/1756830840/TB2x1D5kRDH8KJjy1zeXXXjepXa_!!1756830840.jpg",
+                        "https://img.alicdn.com/i1/1756830840/TB24C2DkRHH8KJjy0FbXXcqlpXa_!!1756830840.jpg",
+                        "https://img.alicdn.com/i1/1756830840/TB2T1_dkNTI8KJjSspiXXbM4FXa_!!1756830840.jpg"
+                    ],
+                    "commissionRate": "500",
+                    "levelOneCategoryId": "16",
+                    "levelOneCategoryName": "女装/女士精品",
+                    "categoryId": "50000671",
+                    "categoryName": "T恤"
+                }
+            ],
+            [
+                {
+                    "goodsId": "599525349467",
+                    "goodsTitle": "9.9包邮夏装男士半袖10元内干活上衣短袖t恤青年大码便宜体恤9块9",
+                    "itemDescription": "",
+                    "couponInfo": "",
+                    "couponAmount": "",
+                    "goodsListPicUrl": "https://img.alicdn.com/bao/uploaded/i3/1102058740/O1CN01SFD2bg2EQyA2k3Rcu_!!1102058740.jpg",
+                    "thirdMallPrice": "9.8",
+                    "ourPrice": "9.80",
+                    "commissionAmount": "0.78",
+                    "ourVipPrice": "9.02",
+                    "salesCount": "136",
+                    "userType": "淘宝",
+                    "couponShareUrl": "https://oauth.taobao.com/authorize?response_type=code&client_id=28370897&redirect_uri=https://card-app.pmstar.cn/appweb/tbk/oauth/callback&view=wap&state=0_599525349467_",
+                    "smallImages": [
+                        "https://img.alicdn.com/i2/1102058740/O1CN01JCCK3k2EQyA8EaGvf_!!1102058740.jpg",
+                        "https://img.alicdn.com/i1/1102058740/O1CN01XRqfeG2EQyAAFG080_!!1102058740.jpg",
+                        "https://img.alicdn.com/i1/1102058740/O1CN01ug4Qcf2EQyAAMy4kV_!!1102058740.jpg",
+                        "https://img.alicdn.com/i4/1102058740/O1CN01yOp1Dk2EQyACsZAzX_!!1102058740.jpg"
+                    ],
+                    "commissionRate": "800",
+                    "levelOneCategoryId": "30",
+                    "levelOneCategoryName": "男装",
+                    "categoryId": "50000436",
+                    "categoryName": "T恤"
+                },
+                {
+                    "goodsId": "613589697573",
+                    "goodsTitle": "新款便宜包邮9.9元九块九男装圆领修身潮韩版T恤短袖9块特价10元",
+                    "itemDescription": "",
+                    "couponInfo": "",
+                    "couponAmount": "",
+                    "goodsListPicUrl": "https://img.alicdn.com/bao/uploaded/i4/1921739944/O1CN01YPrjib2NKP4Cs0QBl_!!1921739944.jpg",
+                    "thirdMallPrice": "9.96",
+                    "ourPrice": "9.96",
+                    "commissionAmount": "0.50",
+                    "ourVipPrice": "9.46",
+                    "salesCount": "20",
+                    "userType": "淘宝",
+                    "couponShareUrl": "https://oauth.taobao.com/authorize?response_type=code&client_id=28370897&redirect_uri=https://card-app.pmstar.cn/appweb/tbk/oauth/callback&view=wap&state=0_613589697573_",
+                    "smallImages": [
+                        "https://img.alicdn.com/i1/1921739944/O1CN01S56Hls2NKP4AxnCcH_!!1921739944.jpg",
+                        "https://img.alicdn.com/i4/1921739944/O1CN01EadZN82NKP4CF5TSd_!!1921739944.jpg",
+                        "https://img.alicdn.com/i1/1921739944/O1CN01aB59E32NKP4AXJR3h_!!1921739944.jpg",
+                        "https://img.alicdn.com/i2/1921739944/O1CN01NTjym32NKP4ERkFYk_!!1921739944.jpg"
+                    ],
+                    "commissionRate": "500",
+                    "levelOneCategoryId": "30",
+                    "levelOneCategoryName": "男装",
+                    "categoryId": "50000436",
+                    "categoryName": "T恤"
+                },
+                {
+                    "goodsId": "582198327209",
+                    "goodsTitle": "便宜新款纯色9.9元九块九男装圆领韩版T恤短袖9块特价10-20元以内",
+                    "itemDescription": "",
+                    "couponInfo": "",
+                    "couponAmount": "",
+                    "goodsListPicUrl": "https://img.alicdn.com/bao/uploaded/i1/3370941532/O1CN01ApTiCI1NBhFUOrX6v_!!3370941532.jpg",
+                    "thirdMallPrice": "9.9",
+                    "ourPrice": "9.90",
+                    "commissionAmount": "1.51",
+                    "ourVipPrice": "8.39",
+                    "salesCount": "162",
+                    "userType": "淘宝",
+                    "couponShareUrl": "https://oauth.taobao.com/authorize?response_type=code&client_id=28370897&redirect_uri=https://card-app.pmstar.cn/appweb/tbk/oauth/callback&view=wap&state=0_582198327209_",
+                    "smallImages": [
+                        "https://img.alicdn.com/i4/3370941532/O1CN01PAkIMR1NBhFVDIfLV_!!3370941532.jpg",
+                        "https://img.alicdn.com/i2/3370941532/O1CN01vChhoT1NBhLnKbUIr_!!3370941532.jpg",
+                        "https://img.alicdn.com/i3/3370941532/O1CN01hcJlWN1NBhFTlvNdO_!!3370941532.jpg",
+                        "https://img.alicdn.com/i1/3370941532/O1CN01AkJYP01NBhFMwinwl_!!3370941532.png"
+                    ],
+                    "commissionRate": "1521",
+                    "levelOneCategoryId": "30",
+                    "levelOneCategoryName": "男装",
+                    "categoryId": "50000436",
+                    "categoryName": "T恤"
+                }
+            ],
+            [
+                {
+                    "goodsId": "599434286094",
+                    "goodsTitle": "夏季裤子全场包邮9.9元九块九男装休闲修身运动九分裤9块特价便宜",
+                    "itemDescription": "",
+                    "couponInfo": "",
+                    "couponAmount": "",
+                    "goodsListPicUrl": "https://img.alicdn.com/bao/uploaded/i1/1137782382/O1CN01mtGWl81TT00otLBzG_!!0-item_pic.jpg",
+                    "thirdMallPrice": "9.5",
+                    "ourPrice": "9.50",
+                    "commissionAmount": "1.90",
+                    "ourVipPrice": "7.60",
+                    "salesCount": "263",
+                    "userType": "淘宝",
+                    "couponShareUrl": "https://oauth.taobao.com/authorize?response_type=code&client_id=28370897&redirect_uri=https://card-app.pmstar.cn/appweb/tbk/oauth/callback&view=wap&state=0_599434286094_",
+                    "smallImages": [
+                        "https://img.alicdn.com/i3/1137782382/O1CN013q2W8x1TSzyaAQxb5_!!1137782382.jpg",
+                        "https://img.alicdn.com/i1/1137782382/O1CN01oY836C1TSzyWOCPm2_!!1137782382.jpg",
+                        "https://img.alicdn.com/i3/1137782382/O1CN01mM5CBJ1TSzyQaZfOU_!!1137782382.jpg",
+                        "https://img.alicdn.com/i2/1137782382/O1CN016kAsc31TSzyaiWQ9E_!!1137782382.jpg"
+                    ],
+                    "commissionRate": "2000",
+                    "levelOneCategoryId": "30",
+                    "levelOneCategoryName": "男装",
+                    "categoryId": "3035",
+                    "categoryName": "休闲裤"
+                },
+                {
+                    "goodsId": "586964713657",
+                    "goodsTitle": "包邮9.9元九块九男生衣服学生大童刺绣T恤短袖9块便宜货10元以下",
+                    "itemDescription": "",
+                    "couponInfo": "满2减1",
+                    "couponAmount": "1",
+                    "goodsListPicUrl": "https://img.alicdn.com/bao/uploaded/i2/2510809153/O1CN01EaxT5L2HU7giXIH08_!!2510809153.jpg",
+                    "thirdMallPrice": "9.9",
+                    "ourPrice": "8.90",
+                    "commissionAmount": "1.78",
+                    "ourVipPrice": "7.12",
+                    "salesCount": "10",
+                    "userType": "淘宝",
+                    "couponShareUrl": "https://oauth.taobao.com/authorize?response_type=code&client_id=28370897&redirect_uri=https://card-app.pmstar.cn/appweb/tbk/oauth/callback&view=wap&state=0_586964713657_",
+                    "smallImages": [
+                        "https://img.alicdn.com/i3/2510809153/O1CN015FXlcb2HU7gh9zJrz_!!2510809153.png",
+                        "https://img.alicdn.com/i4/2510809153/O1CN01N0Bgp62HU7geaoBxq_!!2510809153.jpg",
+                        "https://img.alicdn.com/i1/2510809153/O1CN01gkhVn22HU7gfCyYct_!!2510809153.jpg",
+                        "https://img.alicdn.com/i1/2510809153/O1CN01fNerR82HU7gfqwZHG_!!2510809153.jpg"
+                    ],
+                    "commissionRate": "2000",
+                    "levelOneCategoryId": "30",
+                    "levelOneCategoryName": "男装",
+                    "categoryId": "50000436",
+                    "categoryName": "T恤"
+                },
+                {
+                    "goodsId": "555573737934",
+                    "goodsTitle": "包邮9.9元九块九男装衣服圆领修身学生夏季韩版T恤短袖9块10元内",
+                    "itemDescription": "",
+                    "couponInfo": "",
+                    "couponAmount": "",
+                    "goodsListPicUrl": "https://img.alicdn.com/bao/uploaded/i3/1832156387/TB2i5FmX0AmyKJjSZFGXXb.fFXa_!!1832156387.jpg",
+                    "thirdMallPrice": "8.5",
+                    "ourPrice": "8.50",
+                    "commissionAmount": "0.43",
+                    "ourVipPrice": "8.07",
+                    "salesCount": "211",
+                    "userType": "淘宝",
+                    "couponShareUrl": "https://oauth.taobao.com/authorize?response_type=code&client_id=28370897&redirect_uri=https://card-app.pmstar.cn/appweb/tbk/oauth/callback&view=wap&state=0_555573737934_",
+                    "smallImages": [
+                        "https://img.alicdn.com/i1/1832156387/TB2wtXtX6ZnyKJjSZFxXXabIpXa_!!1832156387.jpg",
+                        "https://img.alicdn.com/i2/1832156387/TB243RlX63nyKJjSZFHXXaTCpXa_!!1832156387.jpg",
+                        "https://img.alicdn.com/i1/1832156387/TB2w54qX4olyKJjSZFDXXbNfpXa_!!1832156387.jpg",
+                        "https://img.alicdn.com/i4/1832156387/TB2cD0mXYAlyKJjSZFwXXXtqpXa_!!1832156387.jpg"
+                    ],
+                    "commissionRate": "500",
+                    "levelOneCategoryId": "30",
+                    "levelOneCategoryName": "男装",
+                    "categoryId": "50000436",
+                    "categoryName": "T恤"
+                }
+            ],
+            [
+                {
+                    "goodsId": "614705494441",
+                    "goodsTitle": "买一送一9.9元衣服九块九男装圆领修身潮韩版T恤短袖9块特价10元",
+                    "itemDescription": "",
+                    "couponInfo": "",
+                    "couponAmount": "",
+                    "goodsListPicUrl": "https://img.alicdn.com/bao/uploaded/i4/1067505678/O1CN01ia6JR91roZRzL4h9v_!!1067505678.jpg",
+                    "thirdMallPrice": "9.9",
+                    "ourPrice": "9.90",
+                    "commissionAmount": "0.99",
+                    "ourVipPrice": "8.91",
+                    "salesCount": "68",
+                    "userType": "淘宝",
+                    "couponShareUrl": "https://oauth.taobao.com/authorize?response_type=code&client_id=28370897&redirect_uri=https://card-app.pmstar.cn/appweb/tbk/oauth/callback&view=wap&state=0_614705494441_",
+                    "smallImages": [
+                        "https://img.alicdn.com/i1/1067505678/O1CN01AYVkPb1roZRzL3p6e_!!1067505678.jpg",
+                        "https://img.alicdn.com/i4/1067505678/O1CN01KiE7Ch1roZS9SUH3U_!!1067505678.jpg",
+                        "https://img.alicdn.com/i3/1067505678/O1CN01YFmTsT1roZS50EB1K_!!1067505678.jpg",
+                        "https://img.alicdn.com/i4/1067505678/O1CN01EKUN371roZSAqPf86_!!1067505678.jpg"
+                    ],
+                    "commissionRate": "1000",
+                    "levelOneCategoryId": "30",
+                    "levelOneCategoryName": "男装",
+                    "categoryId": "50000436",
+                    "categoryName": "T恤"
+                },
+                {
+                    "goodsId": "574195191584",
+                    "goodsTitle": "便宜新款纯棉9.9元九块九男装圆领韩版T恤短袖9块特价10-20元以内",
+                    "itemDescription": "",
+                    "couponInfo": "",
+                    "couponAmount": "",
+                    "goodsListPicUrl": "https://img.alicdn.com/bao/uploaded/i4/2654552386/TB1mgaiF9BYBeNjy0FeXXbnmFXa_!!0-item_pic.jpg",
+                    "thirdMallPrice": "9.9",
+                    "ourPrice": "9.90",
+                    "commissionAmount": "0.50",
+                    "ourVipPrice": "9.40",
+                    "salesCount": "28",
+                    "userType": "淘宝",
+                    "couponShareUrl": "https://oauth.taobao.com/authorize?response_type=code&client_id=28370897&redirect_uri=https://card-app.pmstar.cn/appweb/tbk/oauth/callback&view=wap&state=0_574195191584_",
+                    "smallImages": [
+                        "https://img.alicdn.com/i4/2654552386/TB2e.hMlsUrBKNjSZPxXXX00pXa_!!2654552386.jpg",
+                        "https://img.alicdn.com/i2/2654552386/TB2TlNLFY5YBuNjSspoXXbeNFXa_!!2654552386.jpg",
+                        "https://img.alicdn.com/i3/2654552386/TB2ysZ4FMmTBuNjy1XbXXaMrVXa_!!2654552386.jpg",
+                        "https://img.alicdn.com/i4/2654552386/TB2rhMnlvImBKNjSZFlXXc43FXa_!!2654552386.jpg"
+                    ],
+                    "commissionRate": "501",
+                    "levelOneCategoryId": "30",
+                    "levelOneCategoryName": "男装",
+                    "categoryId": "50000436",
+                    "categoryName": "T恤"
+                },
+                {
+                    "goodsId": "612800917523",
+                    "goodsTitle": "包邮9.9元九块九男生衣服学生速干超薄T恤短袖9块便宜货10元以下",
+                    "itemDescription": "",
+                    "couponInfo": "满2减1",
+                    "couponAmount": "1",
+                    "goodsListPicUrl": "https://img.alicdn.com/bao/uploaded/i2/2510809153/O1CN01JWArlE2HU7mEW3wZB_!!2510809153.jpg",
+                    "thirdMallPrice": "9.9",
+                    "ourPrice": "8.90",
+                    "commissionAmount": "1.78",
+                    "ourVipPrice": "7.12",
+                    "salesCount": "46",
+                    "userType": "淘宝",
+                    "couponShareUrl": "https://oauth.taobao.com/authorize?response_type=code&client_id=28370897&redirect_uri=https://card-app.pmstar.cn/appweb/tbk/oauth/callback&view=wap&state=0_612800917523_",
+                    "smallImages": [
+                        "https://img.alicdn.com/i1/2510809153/O1CN01MOvbua2HU7mB7HvmV_!!2510809153.jpg",
+                        "https://img.alicdn.com/i4/2510809153/O1CN01u2Exni2HU7mAxZ4VP_!!2510809153.jpg",
+                        "https://img.alicdn.com/i2/2510809153/O1CN012KZ3WD2HU7m7sIlwX_!!2510809153.jpg",
+                        "https://img.alicdn.com/i1/2510809153/O1CN01DHY3ho2HU7mB7Ijg1_!!2510809153.jpg"
+                    ],
+                    "commissionRate": "2000",
+                    "levelOneCategoryId": "30",
+                    "levelOneCategoryName": "男装",
+                    "categoryId": "50000436",
+                    "categoryName": "T恤"
+                }
+            ]
+        ]
+    }
 }
 ```
 
