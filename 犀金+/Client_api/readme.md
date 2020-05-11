@@ -87,6 +87,8 @@
     - [申请退款](./#申请退款) 
     - [订单删除](./#订单删除) 
     - [确认收货](./#确认收货) 
+- [权益](./#权益)
+    - [创建订单](./#创建订单) 
 ### 测试主机host: 47.103.61.179:1022/  
 
 ### 全局header  
@@ -3406,6 +3408,32 @@ status 1待支付，2待发货，3待收货，4已完成， status参数可选�
     "code": 1,
     "message": "成功",
     "info": ""
+}
+```
+
+
+
+
+
+## 权益  
+
+### 创建订单  
+- 请求方式: `post`
+- 请求地址: `goods/get-type`
+- 请求参数:  
+```json
+{
+	"vip_type": 1,   1是季卡会员  2是终生会员
+	"pay_type": 1	 1支付宝   2微信(暂时没微信)
+}
+```
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "订单创建成功",
+    "info": "alipay_sdk=alipay-sdk-php-easyalipay-20190926&app_id=2016102100732339&biz_content=%7B%22subject%22%3A+%22%E7%8A%80%E9%87%91%E5%AD%A3%E5%8D%A1%E4%BC%9A%E5%91%98%22%2C%22out_trade_no%22%3A+%2220200511485649%22%2C%22total_amount%22%3A+%2269%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%2C%22passback_params%22%3A%22interests_quarter%22%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&notify_url=http%3A%2F%2F47.103.61.179%3A1080%2Fgoods-order%2Fzfb-async&sign_type=RSA2&timestamp=2020-05-11+14%3A29%3A36&version=1.0&sign=NYIeyhkQ962ICyHFfNvRR%2B6281mWS6FsxF1kJUFvotUITIPuIRsIxxADlcCF245%2FvGHn%2Brmkitr%2FcV3wiSw9Li%2FIiRz0A4%2Fdf0Obh6CdM4GQkscyuwjZv39YqgeDFU%2Bq%2FHcWa%2FwuHUHlKgkeWnjMuTMpxI8zHPkPtRfKCLtBaWI5X7USxugkFpxwwykGOaJH8CNv%2F1zlioLPVD3b8alYFWT8pQCWJe4VEzmSfZ4mGXhAcorutJ3v25p4aDnnlNPn9G6SnvPfrJr9Dnm7IgpViOhNSj2f85Be6dbtHVTKBSM5H%2FZhxXw3DUICQ7OSyaUBg%2F0aq7YLbCPtBiZk1divJA%3D%3D"
 }
 ```
 
