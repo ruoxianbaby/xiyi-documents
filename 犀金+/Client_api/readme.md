@@ -91,6 +91,8 @@
     - [查询9.9包邮](./#查询9.9包邮) 
     - [6大类目接口](./#6大类目接口) 
     - [创建权益订单](./#创建权益订单) 
+    - [劵列表](./#劵列表)    
+    - [劵已过期列表](./#劵已过期列表)   
 ### 测试主机host: 47.103.61.179:1022/  
 
 ### 全局header  
@@ -4092,3 +4094,286 @@ status 1待支付，2待发货，3待收货，4已完成， status参数可选�
 ```
 
 
+### 劵列表  
+- 请求方式: `get`
+- 请求地址: `jusheng-interests/get-coupon?type=1`
+- 请求参数:  
+
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "video": [
+            {
+                "id": "199",
+                "start_time": "2020-05-11",
+                "end_time": "2020-05-18",
+                "type": "1",
+                "status": "0"
+            },
+            {
+                "id": "200",
+                "start_time": "2020-05-19",
+                "end_time": "2020-05-25",
+                "type": "1",
+                "status": "0"
+            }
+        ],
+        "tel": [
+            {
+                "id": "184",
+                "start_time": "2020-05-11",
+                "end_time": "2020-06-10",
+                "type": "2",
+                "status": "0"
+            },
+            {
+                "id": "185",
+                "start_time": "2020-06-11",
+                "end_time": "2020-07-10",
+                "type": "2",
+                "status": "0"
+            },
+            {
+                "id": "186",
+                "start_time": "2020-07-11",
+                "end_time": "2020-08-09",
+                "type": "3",
+                "status": "0"
+            },
+            {
+                "id": "187",
+                "start_time": "2020-08-10",
+                "end_time": "2020-09-08",
+                "type": "3",
+                "status": "0"
+            },
+            {
+                "id": "188",
+                "start_time": "2020-09-09",
+                "end_time": "2020-10-08",
+                "type": "3",
+                "status": "0"
+            },
+            {
+                "id": "189",
+                "start_time": "2020-10-09",
+                "end_time": "2020-11-07",
+                "type": "3",
+                "status": "0"
+            },
+            {
+                "id": "190",
+                "start_time": "2020-11-08",
+                "end_time": "2020-12-07",
+                "type": "3",
+                "status": "0"
+            },
+            {
+                "id": "191",
+                "start_time": "2020-12-08",
+                "end_time": "2021-01-06",
+                "type": "3",
+                "status": "0"
+            },
+            {
+                "id": "192",
+                "start_time": "2021-01-07",
+                "end_time": "2021-02-05",
+                "type": "3",
+                "status": "0"
+            },
+            {
+                "id": "193",
+                "start_time": "2021-02-06",
+                "end_time": "2021-03-07",
+                "type": "3",
+                "status": "0"
+            },
+            {
+                "id": "194",
+                "start_time": "2021-03-08",
+                "end_time": "2021-04-06",
+                "type": "3",
+                "status": "0"
+            },
+            {
+                "id": "195",
+                "start_time": "2021-04-07",
+                "end_time": "2021-05-06",
+                "type": "3",
+                "status": "0"
+            },
+            {
+                "id": "196",
+                "start_time": "2021-05-07",
+                "end_time": "2021-06-05",
+                "type": "3",
+                "status": "0"
+            },
+            {
+                "id": "197",
+                "start_time": "2021-06-06",
+                "end_time": "2021-07-05",
+                "type": "3",
+                "status": "0"
+            },
+            {
+                "id": "198",
+                "start_time": "2021-07-06",
+                "end_time": "2021-08-04",
+                "type": "3",
+                "status": "0"
+            }
+        ]
+    }
+}
+type 2 10元话费，3 5元话费，1 视频劵
+```
+
+
+
+
+
+### 劵已过期列表  
+- 请求方式: `get`
+- 请求地址: `jusheng-interests/get-coupon?type=2`
+- 请求参数:  
+
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "video": [
+            {
+                "id": "199",
+                "start_time": "",
+                "end_time": "2020-05-18",
+                "type": "1",
+                "coupon_status": "2"
+            },
+            {
+                "id": "200",
+                "start_time": "",
+                "end_time": "2020-05-25",
+                "type": "1",
+                "coupon_status": "2"
+            }
+        ],
+        "tel": [
+            {
+                "id": "184",
+                "start_time": "",
+                "end_time": "2020-06-10",
+                "type": "2",
+                "coupon_status": "1"
+            },
+            {
+                "id": "185",
+                "start_time": "",
+                "end_time": "2020-07-10",
+                "type": "2",
+                "coupon_status": "1"
+            },
+            {
+                "id": "186",
+                "start_time": "",
+                "end_time": "2020-08-09",
+                "type": "3",
+                "coupon_status": "1"
+            },
+            {
+                "id": "187",
+                "start_time": "",
+                "end_time": "2020-09-08",
+                "type": "3",
+                "coupon_status": "1"
+            },
+            {
+                "id": "188",
+                "start_time": "",
+                "end_time": "2020-10-08",
+                "type": "3",
+                "coupon_status": "1"
+            },
+            {
+                "id": "189",
+                "start_time": "",
+                "end_time": "2020-11-07",
+                "type": "3",
+                "coupon_status": "2"
+            },
+            {
+                "id": "190",
+                "start_time": "",
+                "end_time": "2020-12-07",
+                "type": "3",
+                "coupon_status": "2"
+            },
+            {
+                "id": "191",
+                "start_time": "",
+                "end_time": "2021-01-06",
+                "type": "3",
+                "coupon_status": "2"
+            },
+            {
+                "id": "192",
+                "start_time": "",
+                "end_time": "2021-02-05",
+                "type": "3",
+                "coupon_status": "2"
+            },
+            {
+                "id": "193",
+                "start_time": "",
+                "end_time": "2021-03-07",
+                "type": "3",
+                "coupon_status": "2"
+            },
+            {
+                "id": "194",
+                "start_time": "",
+                "end_time": "2021-04-06",
+                "type": "3",
+                "coupon_status": "2"
+            },
+            {
+                "id": "195",
+                "start_time": "",
+                "end_time": "2021-05-06",
+                "type": "3",
+                "coupon_status": "2"
+            },
+            {
+                "id": "196",
+                "start_time": "",
+                "end_time": "2021-06-05",
+                "type": "3",
+                "coupon_status": "2"
+            },
+            {
+                "id": "197",
+                "start_time": "",
+                "end_time": "2021-07-05",
+                "type": "3",
+                "coupon_status": "2"
+            },
+            {
+                "id": "198",
+                "start_time": "",
+                "end_time": "2021-08-04",
+                "type": "3",
+                "coupon_status": "2"
+            }
+        ]
+    }
+}
+coupon_status 1 已使用   2已过期
+```
