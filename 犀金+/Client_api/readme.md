@@ -3463,17 +3463,17 @@ status 1待支付，2待发货，3待收货，4已完成， status参数可选�
     "info": {
         "banner": [
             {
-                "type": "1",
+                "type": "1",  饿了么图,跳转到url里 这里是空串 第三方人还没给
                 "image_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/quanyi/ele.png",
                 "url": ""
             },
             {
-                "type": "2",
+                "type": "2",   商城图,跳转商城
                 "image_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/quanyi/shop.png",
                 "url": ""
             },
             {
-                "type": "3",
+                "type": "3",   权益推广的,黄金、钻石级什么的 
                 "image_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/quanyi/promote.png",
                 "url": ""
             }
