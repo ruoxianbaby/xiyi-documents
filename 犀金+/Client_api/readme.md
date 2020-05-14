@@ -4118,58 +4118,56 @@ status 1待支付，2待发货，3待收货，4已完成， status参数可选�
 {
     "code": 1,
     "message": "success",
-    "info": {
-        "categoryList": [
-            {
-                "id": "1193",
-                "name": "测试",
-                "showOrder": "1",
-                "isDelete": "0",
-                "brandInfoList": [
-                    {
-                        "id": "120",
-                        "brandName": "青桔单车",
-                        "brandLogo": "https://ajqh-app-uat.apass.cn/appweb/fileView/loadcommon?url=/brand/20200508095632626.jpg",
-                        "brandDesc": "123",
-                        "showOrder": "1",
-                        "isDelete": "0"
-                    }
-                ]
-            },
-            {
-                "id": "1182",
-                "name": "影音视频",
-                "showOrder": "4",
-                "isDelete": "0",
-                "brandInfoList": [
-                    {
-                        "id": "3",
-                        "brandName": "瑞幸咖啡",
-                        "brandLogo": "https://ajqh-app-uat.apass.cn/appweb/fileView/loadcommon?url=/brand/20200313165751145.jpg",
-                        "brandDesc": "das",
-                        "showOrder": "1",
-                        "isDelete": "0"
-                    },
-                    {
-                        "id": "119",
-                        "brandName": "优酷",
-                        "brandLogo": "https://ajqh-app-uat.apass.cn/appweb/fileView/loadcommon?url=/brand/20200417182920078.jpg",
-                        "brandDesc": "优酷",
-                        "showOrder": "1",
-                        "isDelete": "0"
-                    },
-                    {
-                        "id": "2",
-                        "brandName": "美团",
-                        "brandLogo": "https://ajqh-app-uat.apass.cn/appweb/fileView/loadcommon?url=/brand/20200313164211543.jpg",
-                        "brandDesc": "sdada",
-                        "showOrder": "1",
-                        "isDelete": "1"
-                    }
-                ]
-            }
-        ]
-    }
+    "info": [
+        {
+            "id": "1193",
+            "name": "测试",
+            "showOrder": "1",
+            "isDelete": "0",
+            "brandInfoList": [
+                {
+                    "id": "120",
+                    "brandName": "青桔单车",
+                    "brandLogo": "https://ajqh-app-uat.apass.cn/appweb/fileView/loadcommon?url=/brand/20200508095632626.jpg",
+                    "brandDesc": "123",
+                    "showOrder": "1",
+                    "isDelete": "0"
+                }
+            ]
+        },
+        {
+            "id": "1182",
+            "name": "影音视频",
+            "showOrder": "4",
+            "isDelete": "0",
+            "brandInfoList": [
+                {
+                    "id": "3",
+                    "brandName": "瑞幸咖啡",
+                    "brandLogo": "https://ajqh-app-uat.apass.cn/appweb/fileView/loadcommon?url=/brand/20200313165751145.jpg",
+                    "brandDesc": "das",
+                    "showOrder": "1",
+                    "isDelete": "0"
+                },
+                {
+                    "id": "119",
+                    "brandName": "优酷",
+                    "brandLogo": "https://ajqh-app-uat.apass.cn/appweb/fileView/loadcommon?url=/brand/20200417182920078.jpg",
+                    "brandDesc": "优酷",
+                    "showOrder": "1",
+                    "isDelete": "0"
+                },
+                {
+                    "id": "2",
+                    "brandName": "美团",
+                    "brandLogo": "https://ajqh-app-uat.apass.cn/appweb/fileView/loadcommon?url=/brand/20200313164211543.jpg",
+                    "brandDesc": "sdada",
+                    "showOrder": "1",
+                    "isDelete": "1"
+                }
+            ]
+        }
+    ]
 }
 ```
 
