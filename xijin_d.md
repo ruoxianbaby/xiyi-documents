@@ -16,6 +16,9 @@
     - [还款账单](./xijin_d.md/#还款账单)  
     - [提交还款](./xijin_d.md/#提交还款)  
 
+- [列表页](./xijin_d.md/#列表页)  
+    - [banner](./xijin_d.md/#banner)  
+
 ### 全局header  
 
 key |  vaule
@@ -575,4 +578,23 @@ period　期数 正常还款必填，提前结清可为空
 
 ```json
 {"code":0,"message":"提交成功","info":""}
+```
+
+## 列表页
+
+### banner
+- 请求方式: `get`
+- 请求地址: {host}`product/banner`  
+
+```json
+{
+    "code": 1,
+    "message": "Success",
+    "info": {
+        "header_show": false,
+        "url": "https://m-stg2.tianxiaxinyong.com/cooperation/b-test.html?token=UDxL70bRgmXCA8CCcD5XEtzEcCYKnegO?token=UDxL70bRgmXCA8CCcD5XEtzEcCYKnegO",
+        "pic": "https://xijin.oss-cn-shanghai.aliyuncs.com/image/jiekepuhui.png",
+        "r_id": 1357
+    }
+}
 ```
