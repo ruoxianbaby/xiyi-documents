@@ -30,6 +30,7 @@
     - [产品文案](./#产品文案)  
     - [按钮点击](./#按钮点击)  
     - [登录绑定用户关系](./#登录绑定用户关系)  
+    - [个人中心首页](./#个人中心首页)  
     - [个人中心钱包首页](./#个人中心钱包首页)  
     - [个人中心签到](./#个人中心签到)  
     - [个人中心我的今日订单](./#个人中心我的今日订单)  
@@ -1395,7 +1396,36 @@ type 1 是加盟宝
 }
 ```
 
+### 个人中心首页  
+- 请求方式: `get`
+- 请求地址: `my-center/index`
+- 请求参数:  
 
+- 类型：犀金接口  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "user_info": {
+            "id": 253,
+            "mobile": "15901725624",
+            "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/image/1568877224300.jpg",
+            "invite_sign": "0000jt",
+            "share_url": "http://47.103.61.179:8077/loan/2.html?sign=0000jt",
+            "loan_url": "http://47.103.61.179:1080/invate_friend/?sign=0000jt&callback=http://47.103.61.179:8077/loan/2.html?sign=0000jt"
+        },
+        "interest_info": {
+            "vip_type": "2",
+            "expire_time": "2120-05-18 23:59:59",
+            "gift_bag_num": "0",
+            "money_saved": "110"
+        }
+    }
+}
+```
 
 
 ### 个人中心钱包首页  
