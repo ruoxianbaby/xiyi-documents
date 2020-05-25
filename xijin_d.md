@@ -593,6 +593,8 @@ period　期数 正常还款必填，提前结清可为空
     "info": {
         "header_show": false,
         "url": "https://m-stg2.tianxiaxinyong.com/cooperation/b-test.html?token=UDxL70bRgmXCA8CCcD5XEtzEcCYKnegO?token=UDxL70bRgmXCA8CCcD5XEtzEcCYKnegO",
+        "p_id": 595,
+        "p_name": "即科普惠",
         "pic": "https://xijin.oss-cn-shanghai.aliyuncs.com/image/jiekepuhui.png",
         "r_id": 1357
     }
