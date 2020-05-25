@@ -1412,6 +1412,7 @@ type 1 是加盟宝
         "user_info": {
             "id": 253,
             "mobile": "15901725624",
+            "nick_name": "Bug环绕的世界",
             "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/image/1568877224300.jpg",
             "invite_sign": "0000jt",
             "share_url": "http://47.103.61.179:8077/loan/2.html?sign=0000jt",
