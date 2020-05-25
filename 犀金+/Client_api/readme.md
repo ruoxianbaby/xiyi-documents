@@ -1409,21 +1409,16 @@ type 1 是加盟宝
     "code": 1,
     "message": "success",
     "info": {
-        "user_info": {
-            "id": 253,
-            "mobile": "15901725624",
-            "nick_name": "Bug环绕的世界",
-            "avatar_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/image/1568877224300.jpg",
-            "invite_sign": "0000jt",
-            "share_url": "http://47.103.61.179:8077/loan/2.html?sign=0000jt",
-            "loan_url": "http://47.103.61.179:1080/invate_friend/?sign=0000jt&callback=http://47.103.61.179:8077/loan/2.html?sign=0000jt"
-        },
-        "interest_info": {
-            "vip_type": "2",
-            "expire_time": "2120-05-18 23:59:59",
-            "gift_bag_num": "0",
-            "money_saved": "110"
-        }
+        "type": "2",
+        "expire_time": "",
+        "info1": "终生享九大权益",
+        "info2": "限时4折优惠",
+        "price_now": "199",
+        "price_origin": "399",
+        "gift_bag_num": "0",
+        "cash_amount": "0",
+        "money_saved": "110",
+        "vip_share_url": "http://47.103.61.179:1082/h5_items/huiyuanshare.html?sign=0000jt"
     }
 }
 ```
