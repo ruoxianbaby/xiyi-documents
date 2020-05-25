@@ -3469,7 +3469,9 @@ status 1待支付，2待发货，3待收货，4已完成， status参数可选�
         "price_now": "199",
         "price_origin": "399",
         "gift_bag_num": "0",  礼包数
-	"cash_amount": "0"    金额
+	"cash_amount": "0",    金额
+	"money_saved": "110",
+	"vip_share_url": "http://47.103.61.179:1082/h5_items/huiyuanshare.html?sign=0000jt"
     }
 }
 ```
