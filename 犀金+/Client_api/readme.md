@@ -1423,7 +1423,11 @@ type 1 是加盟宝
         "vip_type": "2",
         "expire_time": "2120-05-18 23:59:59",
         "gift_bag_num": "0",
-        "money_saved": "110"
+        "money_saved": "110",
+        "new_order_id": 82,
+        "new_order_image": "https://xijin.oss-cn-shanghai.aliyuncs.com/others/2020-04-22/9iRNJZzBcjlz5ncBbnvuBr24Z3CNGDcs.jpg",
+        "new_order_status_msg": "已发货",
+        "new_order_date": "05-26"
     }
 }
 ```
