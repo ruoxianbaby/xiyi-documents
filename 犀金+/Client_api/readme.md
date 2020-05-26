@@ -93,6 +93,8 @@
     - [购物车修改](./#购物车修改) 
     - [购物车删除](./#购物车删除) 
     - [首页banner](./#首页banner) 
+    - [新订单创建](./#新订单创建) 
+    - [新点击购买](./#新点击购买) 
 - [权益](./#权益)
     - [section1](./#section1) 
     - [section2](./#section2) 
@@ -3617,6 +3619,109 @@ type 0 daichao 1 shangpin
     }
 }
 ```
+
+
+### 新订单创建  
+- 请求方式: `post`
+- 请求地址: `goods-order/create-order`
+- 请求内容:  
+```json
+{
+	"buy_type": "zfb",
+	"user_name":"买家名",
+	"mobile": "18964590201",
+	"receive_addr": "收货地址",
+	"shopping_goods":[
+		{
+			"specification_id": 7,
+			"goods_id": 4,
+			"number": 1
+		},
+		{
+			"specification_id": 8,
+			"goods_id": 5,
+			"number": 2
+		}
+	]
+}
+```
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "order_id": "89",
+        "order": "alipay_sdk=alipay-sdk-php-easyalipay-20190926&app_id=2016102100732339&biz_content=%7B%22subject%22%3A+%22%E8%BF%90%E5%8A%A8%E6%97%A0%E7%BA%BF%E8%93%9D%E7%89%99%E8%80%B3%E6%9C%BA%E5%8F%8C%E8%80%B3%E5%85%A5%E8%80%B3%E5%A4%B4%E6%88%B4%E5%BC%8F%E9%A2%88%E6%8C%82%E8%84%96%E5%BC%8F%E5%8D%95%E8%B7%91%E6%AD%A5%E7%94%B7%E5%A5%B3%E9%80%9A%E7%94%A8%E8%B6%85%E5%B0%8F%E5%9E%8B%E9%80%82%E7%94%A8oppo%E8%8B%B9%E6%9E%9Cvivo+iPhoneX%E5%BC%80%E8%BD%A6%E8%B6%85%E9%95%BF%E5%BE%85%E6%9C%BA%E5%AE%89%E5%8D%93%22%2C%22out_trade_no%22%3A+%2220200526102565%22%2C%22total_amount%22%3A+%2267.35%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%2C%22passback_params%22%3A%22goods%22%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&notify_url=http%3A%2F%2F47.103.61.179%3A1080%2Fgoods-order%2Fzfb-async&sign_type=RSA2&timestamp=2020-05-26+11%3A42%3A55&version=1.0&sign=McnG2LBjKfB14AZCZSxhMGf2yZUhIsIcb2gWmo9kqcgfF5gJBxQsaHf0zoPNSK4wZScxLE6GEj%2FwTfHfC1ku0exZ55oePJ4OuUugB5R9cwP2TljLvI45ejwcd86iSEP7RUOJzxRFNtREaVQu9LaGW5kzUyaokAFKw5RphY30xJIpZyUdJ3hY7%2FNodDFi0IrWlEoibQpekqMniz8%2BWWcJ4CWisRHvqR%2Fa0MM%2BloIKky1XPqNBIFIAjBoikpJ%2FJqc9pb0xQ3V7yR%2FGUR0z6C7aNxqdCofCWzT9mKViZ6%2Fourk9Nsp0fHAFJvCxf6UmkzAjOIWc37rquvgTmXSZPyvJVg%3D%3D"
+    }
+}
+```
+
+
+### 新点击购买  
+- 请求方式: `post`
+- 请求地址: `goods/buy2`
+- 请求内容:  
+```json
+{
+	"cart_list":[
+		{
+			"specification_id": 7,
+			"goods_id": 4,
+			"number": 1
+		},
+		{
+			"specification_id": 8,
+			"goods_id": 5,
+			"number": 2
+		}
+	]
+}
+```
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "price_total": "55.35",
+        "logistics_fee": "12",
+        "addr_info": {
+            "id": "17",
+            "user_id": "1",
+            "province": "上海市",
+            "city": "上海市",
+            "district": "黄浦区",
+            "addr": "nn",
+            "user_name": "s",
+            "mobile": "15601897815",
+            "is_default": "0",
+            "create_time": "2020-05-08 17:58:34"
+        },
+        "cart_list": [
+            {
+                "specification_id": "7",
+                "goods_id": "4",
+                "number": "1",
+                "price": "18.45",
+                "image_url": "",
+                "goods_name": "运动无线蓝牙耳机双耳入耳头戴式颈挂脖式单跑步男女通用超小型适用oppo苹果vivo iPhoneX开车超长待机安卓",
+                "specification": "魅夜黑"
+            },
+            {
+                "specification_id": "8",
+                "goods_id": "5",
+                "number": "2",
+                "price": "18.45",
+                "image_url": "",
+                "goods_name": "新款铝合金手机桌面支架 平板电脑直播通用懒人支架多角度调节",
+                "specification": "亮光银"
+            }
+        ]
+    }
+}
+```
+
 
 
 ## 权益  
