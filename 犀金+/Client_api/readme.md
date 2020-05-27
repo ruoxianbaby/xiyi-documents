@@ -2817,7 +2817,7 @@ status 0报备审核中，1报备已完成且成功，2报备失败
         {
             "id": "1",
             "name": "爆款",
-            "type": "1",
+            "type": "0",
             "image_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/others/2020-05-26/ks-MlvLf_1cxOJypllpnr_4T0Tpe9fwu.png"
         },
         {
