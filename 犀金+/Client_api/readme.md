@@ -72,6 +72,7 @@
     - [信用卡点击](./#信用卡点击)  
 - [商城](./#商城)
     - [商品分类](./#商品分类) 
+    - [商品分类首页](./#商品分类首页) 
     - [商品列表](./#商品列表)  
     - [商品详情](./#商品详情) 
     - [邀请好友url](./#邀请好友url) 
@@ -2801,7 +2802,69 @@ status 0报备审核中，1报备已完成且成功，2报备失败
 }
 ```
 
+### 商品分类首页  
+- 请求方式: `get`
+- 请求地址: `goods/get-type-index`
+- 请求参数:  
 
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": [
+        {
+            "id": "1",
+            "name": "爆款",
+            "type": "1",
+            "image_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/others/2020-05-26/ks-MlvLf_1cxOJypllpnr_4T0Tpe9fwu.png"
+        },
+        {
+            "id": "2",
+            "name": "美妆",
+            "image_url": "",
+            "type": 0
+        },
+        {
+            "id": "4",
+            "name": "鞋包",
+            "image_url": "",
+            "type": 0
+        },
+        {
+            "id": "11",
+            "name": "数码",
+            "image_url": "",
+            "type": 0
+        },
+        {
+            "id": "13",
+            "name": "洗护",
+            "image_url": "",
+            "type": 0
+        },
+        {
+            "id": "14",
+            "name": "日用品",
+            "image_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/others/2020-05-26/dS-3a1nRnH3HgbS6ZRqoT_u9X9yOFNup.png",
+            "type": 0
+        },
+        {
+            "id": "88888888",
+            "name": "会员",
+            "type": "1",
+            "image_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/others/2020-05-26/ks-MlvLf_1cxOJypllpnr_4T0Tpe9fwu.png"
+        },
+        {
+            "id": "88888888",
+            "name": "借钱",
+            "type": "2",
+            "image_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/others/2020-05-26/ks-MlvLf_1cxOJypllpnr_4T0Tpe9fwu.png"
+        }
+    ]
+}
+```
 
 ### 商品列表  
 - 请求方式: `get`
