@@ -3704,6 +3704,7 @@ type 0 daichao 1 shangpin
 - 请求内容:  
 ```json
 {
+	"pay_version": "ios_v2",   ios必须参数
 	"buy_type": "zfb",
 	"user_name":"买家名",
 	"mobile": "18964590201",
@@ -4697,7 +4698,8 @@ type 0 daichao 1 shangpin
 ```json
 {
 	"vip_type": 1,   1是季卡会员  2是终生会员
-	"pay_type": 1	 1支付宝   2微信(暂时没微信)
+	"pay_type": 1,	 1支付宝   2微信(暂时没微信)
+	"pay_version": "ios_v2"   ios必须参数
 }
 ```
 
