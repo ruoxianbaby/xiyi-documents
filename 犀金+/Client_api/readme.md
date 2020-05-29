@@ -107,6 +107,7 @@
     - [劵已过期列表](./#劵已过期列表)   
     - [获取用户信息](./#获取用户信息)   
     - [客服url](./#客服url)   
+    - [常见问题url](./#常见问题url)   
 ### 测试主机host: 47.103.61.179:1022/  
 
 ### 全局header  
@@ -5029,5 +5030,19 @@ coupon_status 1 已使用   2已过期
     "code": 1,
     "message": "success",
     "info": "123"
+}
+```
+
+### 常见问题url  
+- 请求方式: `get`
+- 请求地址: `user/question-url`
+- 请求参数:  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": "http://www.xykj1.com/gather/kefu"
 }
 ```
