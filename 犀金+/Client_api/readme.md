@@ -108,6 +108,7 @@
     - [获取用户信息](./#获取用户信息)   
     - [客服url](./#客服url)   
     - [常见问题url](./#常见问题url)   
+    - [首页banner-xijing](./#首页banner-xijing)   
 ### 测试主机host: 47.103.61.179:1022/  
 
 ### 全局header  
@@ -5044,5 +5045,54 @@ coupon_status 1 已使用   2已过期
     "code": 1,
     "message": "success",
     "info": "http://www.xykj1.com/gather/kefu"
+}
+```
+
+### 首页banner-xijing  
+- 请求方式: `get`
+- 请求地址: `index-banner/index-banner-xijing`
+- 请求参数:  
+
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "id": 1,
+                "img_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-12-04/6JscpFRzQVKhNuftOjEQBlf2cR40UKc_.png",
+                "web_url": "",
+                "type": 0,
+                "g_id": 123
+            },
+            {
+                "id": 2,
+                "img_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-12-04/gbHsHCMxy31Nbx5Dn5LPhU6XKFGSUy9A.png",
+                "web_url": "",
+                "type": 0,
+                "g_id": 123
+            },
+            {
+                "id": 3,
+                "img_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-12-04/rNZcqqU44PZmzSxL9SXk8WTCgdANO9Df.png",
+                "web_url": "https://www.baidu.com",
+                "type": 1,
+                "g_id": 0
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://xj.org/index-banner/index-banner-xijing?page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 3,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
+    }
 }
 ```
