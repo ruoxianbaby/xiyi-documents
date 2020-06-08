@@ -5059,41 +5059,28 @@ type： 0：商品；1：h5；
 {
     "code": 1,
     "message": "success",
-    "info": {
-        "items": [
-            {
-                "id": 1,
-                "img_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-12-04/6JscpFRzQVKhNuftOjEQBlf2cR40UKc_.png",
-                "web_url": "",
-                "type": 0,
-                "g_id": 123
-            },
-            {
-                "id": 2,
-                "img_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-12-04/gbHsHCMxy31Nbx5Dn5LPhU6XKFGSUy9A.png",
-                "web_url": "",
-                "type": 0,
-                "g_id": 123
-            },
-            {
-                "id": 3,
-                "img_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-12-04/rNZcqqU44PZmzSxL9SXk8WTCgdANO9Df.png",
-                "web_url": "https://www.baidu.com",
-                "type": 1,
-                "g_id": 0
-            }
-        ],
-        "_links": {
-            "self": {
-                "href": "http://xj.org/index-banner/index-banner-xijing?page=1"
-            }
+    "info": [
+        {
+            "id": 1,
+            "img_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-12-04/6JscpFRzQVKhNuftOjEQBlf2cR40UKc_.png",
+            "web_url": "",
+            "type": 0,
+            "g_id": 33
         },
-        "_meta": {
-            "totalCount": 3,
-            "pageCount": 1,
-            "currentPage": 1,
-            "perPage": 20
+        {
+            "id": 2,
+            "img_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-12-04/gbHsHCMxy31Nbx5Dn5LPhU6XKFGSUy9A.png",
+            "web_url": "",
+            "type": 0,
+            "g_id": 44
+        },
+        {
+            "id": 3,
+            "img_url": "https://xijin.oss-cn-shanghai.aliyuncs.com/bang/images2019-12-04/rNZcqqU44PZmzSxL9SXk8WTCgdANO9Df.png",
+            "web_url": "https://www.baidu.com",
+            "type": 1,
+            "g_id": 0
         }
-    }
+    ]
 }
 ```
