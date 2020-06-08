@@ -98,6 +98,7 @@
     - [新点击购买](./#新点击购买) 
     - [新订单列表](./#新订单列表) 
     - [新订单详情](./#新订单详情) 
+    - [信息统计接口(通用)](./#信息统计接口(通用))
 - [权益](./#权益)
     - [section1](./#section1) 
     - [section2](./#section2) 
@@ -3936,6 +3937,25 @@ type 0 daichao 1 shangpin
             "perPage": 20
         }
     }
+}
+```
+
+
+### 信息统计接口(通用)  
+- 请求方式: `get`
+- 请求地址: `open/request-data`
+- 请求参数:  type:类型（如商品type=1）  id:产品（如商品ID:id=288）  user_id  
+- 响应内容:  
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": "TYPE参数错误"
+}
+{
+    "code": 1,
+    "message": "success",
+    "info": "success!"
 }
 ```
 
