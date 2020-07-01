@@ -3715,6 +3715,7 @@ type 0 daichao 1 shangpin
 	"user_name":"买家名",
 	"mobile": "18964590201",
 	"receive_addr": "收货地址",
+    "coupon_code": "优惠券码",
 	"shopping_goods":[
 		{
 			"specification_id": 7,
