@@ -3811,6 +3811,12 @@ type 0 daichao 1 shangpin
 ### 商品优惠券列表  
 - 请求方式: `get`
 - 请求地址: `coupon/user-coupon`
+- 请求内容:  
+```json
+{
+	"price_total" : '商品价格(不含运费)'
+}
+```
 - 响应内容:   
 ```json
 {
