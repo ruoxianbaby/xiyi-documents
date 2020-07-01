@@ -3800,7 +3800,7 @@ type 0 daichao 1 shangpin
                 "specification": "亮光银"
             }
         ],
-        "coupon_count": "2"//符合商品的可用优惠券数量
+        "coupon_count": "可用优惠券数量"
     }
 }
 ```
