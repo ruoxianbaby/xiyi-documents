@@ -97,6 +97,7 @@
     - [新订单创建](./#新订单创建) 
     - [新点击购买](./#新点击购买) 
     - [商品优惠券列表](./#商品优惠券列表) 
+    - [失效优惠券列表](./#失效优惠券列表) 
     - [新订单列表](./#新订单列表) 
     - [新订单详情](./#新订单详情) 
     - [信息统计接口-通用](./#信息统计接口-通用)
@@ -3831,6 +3832,30 @@ type 0 daichao 1 shangpin
                         "coupon_code": "xj9xK5XPFkbq5w",
                         "end_time": "2020-07-11 23:59:59",
                         "name": "优惠券4",
+                        "description": "123123123",
+                        "amount": "10.00",
+                        "limit_amount": "40.00"
+                    }
+                ]
+    }
+}
+```
+
+ 
+### 失效优惠券列表  
+- 请求方式: `get`
+- 请求地址: `coupon/lose-coupon`
+- 响应内容:   
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "coupon_list": [
+                    {
+                        "coupon_code": "xjuTS7bGsg8glu",
+                        "end_time": "2020-06-28 23:59:59",
+                        "name": "优惠券5",
                         "description": "123123123",
                         "amount": "10.00",
                         "limit_amount": "40.00"
