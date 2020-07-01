@@ -3799,7 +3799,8 @@ type 0 daichao 1 shangpin
                 "goods_name": "新款铝合金手机桌面支架 平板电脑直播通用懒人支架多角度调节",
                 "specification": "亮光银"
             }
-        ]
+        ],
+        "coupon_count": "2"//符合商品的可用优惠券数量
     }
 }
 ```
