@@ -96,6 +96,7 @@
     - [首页banner](./#首页banner) 
     - [新订单创建](./#新订单创建) 
     - [新点击购买](./#新点击购买) 
+    - [商品优惠券列表](./#商品优惠券列表) 
     - [新订单列表](./#新订单列表) 
     - [新订单详情](./#新订单详情) 
     - [信息统计接口-通用](./#信息统计接口-通用)
@@ -3805,7 +3806,39 @@ type 0 daichao 1 shangpin
 }
 ```
 
-
+ 
+### 商品优惠券列表  
+- 请求方式: `get`
+- 请求地址: `coupon/user-coupon`
+- 响应内容:   
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "coupon_list": [
+                    {
+                        "coupon_code": "xjy0zwrhMukP6u",
+                        "end_time": "2020-07-05 23:59:59",
+                        "name": "优惠券2",
+                        "description": "12312312",
+                        "amount": "20.00",
+                        "limit_amount": "40.00"
+                    }
+                ],
+        "disable_coupon": [
+                    {
+                        "coupon_code": "xj9xK5XPFkbq5w",
+                        "end_time": "2020-07-11 23:59:59",
+                        "name": "优惠券4",
+                        "description": "123123123",
+                        "amount": "10.00",
+                        "limit_amount": "40.00"
+                    }
+                ]
+    }
+}
+```
 
 ### 新订单列表  
 - 请求方式: `get`
