@@ -4720,7 +4720,7 @@ type 0 daichao 1 shangpin
 - 请求参数:  
 ```json
 {
-	"vip_type": 1,   1是季卡会员  2是终生会员
+	"vip_type": 1,   1是季卡会员  2是终生会员  10是啸鹰会员
 	"pay_type": 1,	 1支付宝   2微信(暂时没微信)
 	"pay_version": "ios_v2"   ios必须参数
 }
