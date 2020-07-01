@@ -3988,7 +3988,8 @@ type 0 daichao 1 shangpin
                         "number": "2",
                         "specification_img": "https://xijin.oss-cn-shanghai.aliyuncs.com/others/2020-04-22/PoZFJu4_-mqkeA-Rl-dJfjNF_bHp1jcv.jpg"
                     }
-                ]
+                ],
+                "coupon_amount": "20.00" //优惠金额
             }
         ],
         "_links": {
