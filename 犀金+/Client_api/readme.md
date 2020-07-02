@@ -3214,8 +3214,8 @@ type=1 可选，筛选分类用  search 搜索的商品名
         "image_url": "",
         "goods_name": "",
         "number": "2",
-        "is_vip" => 0, //0是永久会员1不是
-        "coupon_count" => "可用优惠券数"
+        "is_vip" => 0, //0是永久会员1不是  
+        "coupon_count" => "可用优惠券数" //会员显示可用数，0为暂无可用
     }
 }
 ```
