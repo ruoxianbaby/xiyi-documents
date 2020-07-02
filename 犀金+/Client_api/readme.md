@@ -96,6 +96,7 @@
     - [首页banner](./#首页banner) 
     - [新订单创建](./#新订单创建) 
     - [新点击购买](./#新点击购买) 
+    - [首页优惠券列表](./#首页优惠券列表) 
     - [商品优惠券列表](./#商品优惠券列表) 
     - [失效优惠券列表](./#失效优惠券列表) 
     - [新订单列表](./#新订单列表) 
@@ -3807,6 +3808,46 @@ type 0 daichao 1 shangpin
         ],
         "is_vip" => 0, //0是永久会员1不是
         "coupon_count": "可用优惠券数量"
+    }
+}
+```
+ 
+### 首页优惠券列表  
+- 请求方式: `get`
+- 请求地址: `coupons`
+- 响应内容: 首页弹出优惠券/会员领取优惠券列表
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+        "items": [
+            {
+                "name": "优惠券6",
+                "description": "",
+                "coupon_code": "xj2X1f6cYbTws0",
+                "amount": "10.00",
+                "limit_amount": "40.00"
+            },
+            {
+                "name": "优惠券5",
+                "description": "123123123",
+                "coupon_code": "xjuTS7bGsg8glu",
+                "amount": "10.00",
+                "limit_amount": "40.00"
+            }
+        ],
+        "_links": {
+            "self": {
+                "href": "http://my_xijin_api.com/coupons?page=1"
+            }
+        },
+        "_meta": {
+            "totalCount": 2,
+            "pageCount": 1,
+            "currentPage": 1,
+            "perPage": 20
+        }
     }
 }
 ```
