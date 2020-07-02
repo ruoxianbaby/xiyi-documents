@@ -98,7 +98,7 @@
     - [新点击购买](./#新点击购买) 
     - [首页优惠券列表](./#首页优惠券列表) 
     - [优惠券领取](./#优惠券领取) 
-    - [会员优惠券列表](./#会员优惠券列表) 
+    - [商品购买优惠券列表](./#商品购买优惠券列表) 
     - [失效优惠券列表](./#失效优惠券列表) 
     - [新订单列表](./#新订单列表) 
     - [新订单详情](./#新订单详情) 
@@ -3878,7 +3878,7 @@ type 0 daichao 1 shangpin
 ```
 
  
-### 会员优惠券列表  
+### 商品购买优惠券列表  
 - 请求方式: `get`
 - 请求地址: `coupon/user-coupon`
 - 请求内容:  
@@ -3916,7 +3916,46 @@ type 0 daichao 1 shangpin
     }
 }
 ```
-
+ 
+### 我的礼包-优惠券列表  
+- 请求方式: `get`
+- 请求地址: `coupon/user-coupon`
+- 响应内容:  用户所有优惠券 coupon_status:0未使用 1已使用 2已过期
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": [
+        {
+            "coupon_code": "xj9xK5XPFkbq5w",
+            "coupon_status": "0",
+            "end_time": "2020-07-11 23:59:59",
+            "name": "优惠券4",
+            "description": "123123123",
+            "amount": "10.00",
+            "limit_amount": "40.00"
+        },
+        {
+            "coupon_code": "xjlb9IJdSqFfDy",
+            "coupon_status": "1",
+            "end_time": "2020-07-08 23:59:59",
+            "name": "优惠券3",
+            "description": "123123123",
+            "amount": "10.00",
+            "limit_amount": "40.00"
+        },
+        {
+            "coupon_code": "xjuTS7bGsg8glu",
+            "coupon_status": "2",
+            "end_time": "2020-06-28 23:59:59",
+            "name": "优惠券5",
+            "description": "123123123",
+            "amount": "10.00",
+            "limit_amount": "40.00"
+        },
+    ]
+}
+```
  
 ### 失效优惠券列表  
 - 请求方式: `get`
