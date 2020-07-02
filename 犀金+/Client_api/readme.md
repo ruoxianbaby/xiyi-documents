@@ -3828,8 +3828,47 @@ type 0 daichao 1 shangpin
         "web_url": "http://www.xykj1.com/gather/vue_items/huiyuan/#/index",
         "share_url": "http://www.xykj1.com/gather/vue_items/huiyuanshare/#/index",
         "title": "12313",
+        "status": "1",  // 0不弹  1弹出
         "share_title": "123123",
         "share_desc": "1231"
+    }
+}
+```
+
+ 
+### 购买会员-优惠券列表  
+- 请求方式: `get`
+- 请求地址: `coupon/coupon`
+- 响应内容: 
+```json
+{
+    "code": 1,
+    "message": "success",
+    "info": {
+                {
+                    "coupon_code": "xj2X1f6cYbTws0",
+                    "overdue": "7",
+                    "name": "优惠券6",
+                    "description": "",
+                    "amount": "10.00",
+                    "limit_amount": "40.00"
+                },
+                {
+                    "coupon_code": "xjuTS7bGsg8glu",
+                    "overdue": "7",
+                    "name": "优惠券5",
+                    "description": "123123123",
+                    "amount": "10.00",
+                    "limit_amount": "60.00"
+                },
+                {
+                    "coupon_code": "xj9xK5XPFkbq5w",
+                    "overdue": "7",
+                    "name": "优惠券4",
+                    "description": "123123123",
+                    "amount": "15.00",
+                    "limit_amount": "50.00"
+                }
     }
 }
 ```
