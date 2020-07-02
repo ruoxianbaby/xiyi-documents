@@ -3821,7 +3821,7 @@ type 0 daichao 1 shangpin
 	"price_total" : '商品价格(不含运费)'
 }
 ```
-- 响应内容:   
+- 响应内容:   coupon_list:可用优惠券列表   disable_coupon:暂不可用优惠券列表
 ```json
 {
     "code": 1,
