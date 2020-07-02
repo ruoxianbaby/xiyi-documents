@@ -3823,33 +3823,34 @@ type 0 daichao 1 shangpin
     "code": 1,
     "message": "success",
     "info": {
-        "items": [
+        "coupon_list": [
             {
+                "coupon_code": "xj2X1f6cYbTws0",
+                "overdue": "7",
                 "name": "优惠券6",
                 "description": "",
-                "coupon_code": "xj2X1f6cYbTws0",
                 "amount": "10.00",
                 "limit_amount": "40.00"
             },
             {
+                "coupon_code": "xjuTS7bGsg8glu",
+                "overdue": "7",
                 "name": "优惠券5",
                 "description": "123123123",
-                "coupon_code": "xjuTS7bGsg8glu",
                 "amount": "10.00",
-                "limit_amount": "40.00"
+                "limit_amount": "60.00"
+            },
+            {
+                "coupon_code": "xj9xK5XPFkbq5w",
+                "overdue": "7",
+                "name": "优惠券4",
+                "description": "123123123",
+                "amount": "15.00",
+                "limit_amount": "50.00"
             }
         ],
-        "_links": {
-            "self": {
-                "href": "http://my_xijin_api.com/coupons?page=1"
-            }
-        },
-        "_meta": {
-            "totalCount": 2,
-            "pageCount": 1,
-            "currentPage": 1,
-            "perPage": 20
-        }
+        "alert": "www.baidu.com",  //弹出大图
+        "left": ""   //左侧悬浮小图
     }
 }
 ```
@@ -3897,11 +3898,14 @@ type 0 daichao 1 shangpin
         "coupon_list": [
                     {
                         "coupon_code": "xjy0zwrhMukP6u",
-                        "end_time": "2020-07-05 23:59:59",
+                        "coupon_status": "0",
+                        "start_time": "2020-06-27",
+                        "end_time": "2020-07-03",
                         "name": "优惠券2",
                         "description": "12312312",
                         "amount": "20.00",
-                        "limit_amount": "40.00"
+                        "limit_amount": "40.00",
+                        "status": "2"
                     }
                 ],
         "disable_coupon": [
