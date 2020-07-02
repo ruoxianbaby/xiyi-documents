@@ -3823,34 +3823,13 @@ type 0 daichao 1 shangpin
     "code": 1,
     "message": "success",
     "info": {
-        "coupon_list": [
-            {
-                "coupon_code": "xj2X1f6cYbTws0",
-                "overdue": "7",
-                "name": "优惠券6",
-                "description": "",
-                "amount": "10.00",
-                "limit_amount": "40.00"
-            },
-            {
-                "coupon_code": "xjuTS7bGsg8glu",
-                "overdue": "7",
-                "name": "优惠券5",
-                "description": "123123123",
-                "amount": "10.00",
-                "limit_amount": "60.00"
-            },
-            {
-                "coupon_code": "xj9xK5XPFkbq5w",
-                "overdue": "7",
-                "name": "优惠券4",
-                "description": "123123123",
-                "amount": "15.00",
-                "limit_amount": "50.00"
-            }
-        ],
-        "alert": "www.baidu.com",  //弹出大图
-        "left": ""   //左侧悬浮小图
+        "alert": "www.baidu.com",   //优惠券大图
+        "left": "img_url",          //左边悬浮小图
+        "web_url": "http://www.xykj1.com/gather/vue_items/huiyuan/#/index",
+        "share_url": "http://www.xykj1.com/gather/vue_items/huiyuanshare/#/index",
+        "title": "12313",
+        "share_title": "123123",
+        "share_desc": "1231"
     }
 }
 ```
