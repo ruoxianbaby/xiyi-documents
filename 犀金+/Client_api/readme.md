@@ -3855,23 +3855,31 @@ type 0 daichao 1 shangpin
 ### 失效优惠券列表  
 - 请求方式: `get`
 - 请求地址: `coupon/lose-coupon`
-- 响应内容:   
+- 响应内容:   coupon_status: 1已使用 2已过期
 ```json
 {
     "code": 1,
     "message": "success",
-    "info": {
-        "coupon_list": [
-                    {
-                        "coupon_code": "xjuTS7bGsg8glu",
-                        "end_time": "2020-06-28 23:59:59",
-                        "name": "优惠券5",
-                        "description": "123123123",
-                        "amount": "10.00",
-                        "limit_amount": "40.00"
-                    }
-                ]
-    }
+    "info": [
+                {
+                    "coupon_code": "xjuTS7bGsg8glu",
+                    "coupon_status": "2",  
+                    "end_time": "2020-06-28 23:59:59",
+                    "name": "优惠券5",
+                    "description": "123123123",
+                    "amount": "10.00",
+                    "limit_amount": "40.00"
+                },
+                {
+                    "coupon_code": "xj2X1f6cYbTws0",
+                    "coupon_status": "1",
+                    "end_time": "2020-06-28 23:59:59",
+                    "name": "优惠券6",
+                    "description": "",
+                    "amount": "10.00",
+                    "limit_amount": "40.00"
+                }
+    ]
 }
 ```
 
