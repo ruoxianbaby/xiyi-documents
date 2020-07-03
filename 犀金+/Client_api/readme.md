@@ -3874,7 +3874,7 @@ type 0 daichao 1 shangpin
 }
 ```
  
-### 优惠券领取  
+### 优惠券领取   //预留
 - 请求方式: `post`
 - 请求地址: `coupon/add-coupon`
 - 请求内容:  
@@ -4961,7 +4961,7 @@ type 0 daichao 1 shangpin
                 "id": "199",
                 "start_time": "2020-05-11",
                 "end_time": "2020-05-18",
-                "type": "1",   1视频劵，2 10元话费，3 5元话费
+                "type": "1",   1视频劵，2 10元话费，3 5元话费  4商品优惠券
                 "status": "0"  status 0默认,1今天过期,2明天过期,3后天过期
             },
             {
@@ -5078,10 +5078,54 @@ type 0 daichao 1 shangpin
                 "type": "3",
                 "status": "0"
             }
+        ],
+        "goods": [
+            {
+                "id": "244",
+                "coupon_code": "xjy0zwrhMukP6u",
+                "user_id": "1",
+                "coupon_status": "0",
+                "start_time": "2020-06-27",
+                "end_time": "2020-07-03",
+                "name": "优惠券2",
+                "description": "12312312",
+                "amount": "20.00",
+                "limit_amount": "40.00",
+                "type": "4",
+                "status": "2"
+            },
+            {
+                "id": "248",
+                "coupon_code": "xjlb9IJdSqFfDy",
+                "user_id": "1",
+                "coupon_status": "0",
+                "start_time": "2020-07-02",
+                "end_time": "2020-07-08",
+                "name": "优惠券3",
+                "description": "123123123",
+                "amount": "10.00",
+                "limit_amount": "80.00",
+                "type": "4",
+                "status": "0"
+            },
+            {
+                "id": "245",
+                "coupon_code": "xj9xK5XPFkbq5w",
+                "user_id": "1",
+                "coupon_status": "0",
+                "start_time": "2020-07-05",
+                "end_time": "2020-07-11",
+                "name": "优惠券4",
+                "description": "123123123",
+                "amount": "15.00",
+                "limit_amount": "50.00",
+                "type": "4",
+                "status": "0"
+            }
         ]
     }
 }
-type 2 10元话费，3 5元话费，1 视频劵
+type 2 10元话费，3 5元话费，1 视频劵  4商品优惠券
 ```
 
 
