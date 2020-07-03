@@ -3874,7 +3874,7 @@ type 0 daichao 1 shangpin
 }
 ```
  
-### 优惠券领取   //预留
+### 优惠券领取   
 - 请求方式: `post`
 - 请求地址: `coupon/add-coupon`
 - 请求内容:  
