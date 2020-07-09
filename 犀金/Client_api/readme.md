@@ -679,10 +679,13 @@ Authorization | Bearer ***access_token***
 - 请求参数:   
 ```json
 {
-    "type": 1,
-    "user_id": 10,
-    "feedback_type": 1,
-    "content": "你的🐎死了"
+	"type":3,
+	"user_id":2,
+	"user_name":"1212",
+	"email":"1212@qq.com",
+	"mobile":"124456679",
+	"feedback_type":1,
+	"content":"1212"
 }
 ```  
 
